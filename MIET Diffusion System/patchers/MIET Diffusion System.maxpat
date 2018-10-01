@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 336.0, 118.0, 1635.0, 488.0 ],
+		"rect" : [ 244.0, 122.0, 1635.0, 488.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -133,26 +133,26 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 618.0, 186.0, 38.0, 49.0 ],
-									"text" : "24. 26.91"
+									"text" : "32. 0."
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
-									"linecount" : 4,
+									"linecount" : 6,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 243.0, 480.0, 50.0, 62.0 ],
-									"text" : "set \"Tip: Is the dsp on?\""
+									"text" : "set \"Tip: Is the master fader up?\""
 								}
 
 							}
@@ -164,7 +164,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 374.226776123046875, 272.164947509765625, 50.0, 22.0 ],
-									"text" : "1"
+									"text" : "0"
 								}
 
 							}
@@ -841,13 +841,14 @@
 					"fontface" : 1,
 					"fontsize" : 24.0,
 					"id" : "obj-21",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 879.0, 733.0, 306.0, 33.0 ],
+					"patching_rect" : [ 879.0, 733.0, 306.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 812.0, 10.0, 434.0, 33.0 ],
-					"text" : "Tip: Is the dsp on?",
+					"text" : "Tip: Is the master fader up?",
 					"textjustification" : 1
 				}
 
@@ -2500,7 +2501,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 490.0, 172.0, 747.0, 476.0 ],
+						"rect" : [ 956.0, 480.0, 747.0, 476.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -6836,7 +6837,7 @@
 									"nodecolor" : [ 0.129412, 1.0, 1.0, 0.5 ],
 									"nodenumber" : 8,
 									"nodesnames" : [ "1", "2", "3", "4", "5", "6", "7", "8" ],
-									"nsize" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.005843 ],
+									"nsize" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
@@ -6934,7 +6935,7 @@
 									"nodecolor" : [ 0.988235, 0.4, 1.0, 0.5 ],
 									"nodenumber" : 8,
 									"nodesnames" : [ "1", "2", "3", "4", "5", "6", "7", "8" ],
-									"nsize" : [ 0.001461, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+									"nsize" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
@@ -6959,7 +6960,7 @@
 									"nodecolor" : [ 0.129412, 1.0, 0.501961, 0.5 ],
 									"nodenumber" : 8,
 									"nodesnames" : [ "1", "2", "3", "4", "5", "6", "7", "8" ],
-									"nsize" : [ 0.0, 0.0, 0.0, 0.000649, 0.0, 0.0, 0.0, 0.0 ],
+									"nsize" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
@@ -14616,7 +14617,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 38.0, 512.0, 50.0, 62.0 ],
-													"text" : "\"Music Now (from TC)\""
+													"text" : "\"Stereo Pairs (ins 1-16)\""
 												}
 
 											}
@@ -16156,7 +16157,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 44.5, 29.0, 142.0, 19.0 ],
 									"rounded" : 0.0,
-									"text" : "Music Now (from TC)",
+									"text" : "Stereo Pairs (ins 1-16)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "sceneName",
 									"wordwrap" : 0
@@ -18631,7 +18632,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 473.0, 426.0, 50.0, 22.0 ],
-													"text" : "19"
+													"text" : "5"
 												}
 
 											}
@@ -20581,7 +20582,7 @@
 			}
  ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.9, 0.5, 0.5, 1.0 ]
+		"bgcolor" : [ 0.5, 0.5, 0.9, 1.0 ]
 	}
 
 }
