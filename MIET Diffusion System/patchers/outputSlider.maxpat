@@ -900,7 +900,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 502.0, 415.0, 50.0, 35.0 ],
 									"style" : "",
-									"text" : "MCU4 0"
+									"text" : "MCU-1 80"
 								}
 
 							}
@@ -1773,6 +1773,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-10",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -1892,6 +1893,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-48",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -1968,7 +1970,7 @@
 					"presentation_rect" : [ 4.0, 188.0, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.text[7]",
+							"parameter_longname" : "live.text[178]",
 							"parameter_shortname" : "live.text[26]",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -2009,7 +2011,7 @@
 					"presentation_rect" : [ 4.0, 166.0, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.text[8]",
+							"parameter_longname" : "live.text[179]",
 							"parameter_shortname" : "live.text[26]",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -2039,6 +2041,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -2089,6 +2092,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-35",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
@@ -2154,6 +2158,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-29",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
@@ -2190,7 +2195,7 @@
 					"presentation_rect" : [ 4.0, 26.0, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.text[9]",
+							"parameter_longname" : "live.text[180]",
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2,
 							"parameter_mmax" : 1.0,
@@ -2234,6 +2239,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -2273,6 +2279,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -2308,7 +2315,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 4.0, 48.0, 20.0 ],
 					"style" : "",
-					"text" : "2",
+					"text" : "-98",
 					"textjustification" : 1
 				}
 
@@ -2341,6 +2348,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -2354,6 +2362,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -2368,6 +2377,7 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-1",
+					"interval" : 10,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -2378,7 +2388,7 @@
 					"presentation_rect" : [ 0.0, 48.0, 48.0, 111.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "1[3]",
+							"parameter_longname" : "1[35]",
 							"parameter_shortname" : "1",
 							"parameter_type" : 0,
 							"parameter_mmin" : -70.0,
@@ -2411,7 +2421,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 225, 225, 0, 0.00001 ],
+					"bgcolor" : [ 225, 225, 0, 0.0 ],
 					"id" : "obj-31",
 					"maxclass" : "panel",
 					"mode" : 0,
