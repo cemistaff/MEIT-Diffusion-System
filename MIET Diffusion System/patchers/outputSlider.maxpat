@@ -1652,7 +1652,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1772.0, 539.0, 640.0, 480.0 ],
+						"rect" : [ 1026.0, 567.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1682,12 +1682,24 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "int", "int" ],
+									"patching_rect" : [ 50.0, 273.0, 61.0, 22.0 ],
+									"text" : "change 0."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 58.0, 324.0, 57.0, 22.0 ],
+									"patching_rect" : [ 50.0, 328.0, 57.0, 22.0 ],
 									"text" : "pow 0.33"
 								}
 
@@ -1711,7 +1723,7 @@
 									"numinlets" : 6,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 58.0, 300.0, 97.0, 22.0 ],
+									"patching_rect" : [ 50.0, 300.0, 97.0, 22.0 ],
 									"text" : "scale 0. 1. 0. 0.9"
 								}
 
@@ -1723,7 +1735,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 58.0, 357.0, 135.0, 22.0 ],
+									"patching_rect" : [ 50.0, 357.0, 135.0, 22.0 ],
 									"text" : "bgfillcolor 225 225 0 $1"
 								}
 
@@ -1833,6 +1845,13 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-21", 0 ]
 								}
 
@@ -1955,11 +1974,11 @@
 					"presentation_rect" : [ 4.0, 188.0, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[143]",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "live.text[26]"
+							"parameter_shortname" : "live.text[26]",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -1995,11 +2014,11 @@
 					"presentation_rect" : [ 4.0, 166.0, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[144]",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "live.text[26]"
+							"parameter_shortname" : "live.text[26]",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -2153,11 +2172,11 @@
 					"presentation_rect" : [ 4.0, 26.0, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text[145]",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "live.text"
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "val1", "val2" ]
 						}
 
 					}
@@ -2265,8 +2284,7 @@
 					"patching_rect" : [ 223.0, 133.0, 43.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 4.0, 28.0, 20.0 ],
-					"text" : "1",
-					"textjustification" : 0
+					"text" : "1"
 				}
 
 			}
@@ -2335,14 +2353,14 @@
 					"presentation_rect" : [ 0.0, 48.0, 48.0, 111.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "1[59]",
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "1"
+							"parameter_shortname" : "1",
+							"parameter_defer" : 1
 						}
 
 					}
@@ -2735,10 +2753,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-15" : [ "live.text[145]", "live.text", 0 ],
-			"obj-38" : [ "live.text[144]", "live.text[26]", 0 ],
 			"obj-42" : [ "live.text[143]", "live.text[26]", 0 ],
 			"obj-1" : [ "1[59]", "1", 0 ],
+			"obj-38" : [ "live.text[144]", "live.text[26]", 0 ],
+			"obj-15" : [ "live.text[145]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
