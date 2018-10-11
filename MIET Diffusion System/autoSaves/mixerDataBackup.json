@@ -18,7 +18,8 @@
 	}
 ,
 	"io" : 	{
-		"size" : [ 48, 48 ]
+		"size" : [ 48, 48 ],
+		"crossFreq" : 50.0
 	}
 ,
 	"midi" : 	{
@@ -30,6 +31,12 @@
 			"devices" : [ "MIDISPORT 4x4 Port A" ]
 		}
 
+	}
+,
+	"dsp" : 	{
+		"svs" : 4,
+		"ivs" : 4,
+		"sr" : 1
 	}
 
 }
