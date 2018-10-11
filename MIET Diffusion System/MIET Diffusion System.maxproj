@@ -2,8 +2,8 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3622040082,
-	"viewrect" : [ 33.0, 76.0, 300.0, 500.0 ],
+	"modificationdate" : 3622047342,
+	"viewrect" : [ 1337.0, 1058.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,11 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"audio_safety~.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
