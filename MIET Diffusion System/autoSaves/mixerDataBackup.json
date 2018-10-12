@@ -38,5 +38,9 @@
 		"ivs" : 4,
 		"sr" : 1
 	}
+,
+	"sub" : 	{
+		"attinuation" : -6.0
+	}
 
 }
