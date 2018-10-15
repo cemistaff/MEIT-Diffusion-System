@@ -42,5 +42,9 @@
 	"sub" : 	{
 		"attinuation" : -6.0
 	}
+,
+	"mixer" : 	{
+		"attinuation" : -3.0
+	}
 
 }
