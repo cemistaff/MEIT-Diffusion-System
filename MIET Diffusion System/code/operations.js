@@ -28,7 +28,7 @@ function makeDefaultScene(inputs, outputs){
 		newScene.set("inputRouting", inputRouting); //set the key "inputRouting" to a dictionary of arrays
 		newScene.set("outputLevel", makeZeroArray(outputs));  //create another array at the key "outputArray"
 		newScene.set("record", makeZeroArray(outputs));
-		
+
 
 
 		// If there are no scenes, create the first one
@@ -42,8 +42,8 @@ function makeDefaultScene(inputs, outputs){
 		// If there is more than one scene, make another
 
 		else {
-				var sceneNo = numberofScenes + 1;  //sceneNo is base 1
- 				newScene.set("name", "new scene "+String(sceneNo));
+				var sceneNo = numberofScenes+1;  //sceneNo is base 1
+ 				newScene.set("name", "new scene "+String(sceneNo-1));
 				post ("created scene " + String(sceneNo)+ "\n"); //Make a name for the key
 				preset.set("Scene"+String(sceneNo), newScene);
 				numberofScenes ++;
