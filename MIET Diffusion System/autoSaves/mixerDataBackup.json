@@ -18,7 +18,7 @@
 	}
 ,
 	"io" : 	{
-		"size" : [ 48, 48 ],
+		"size" : [ 32, 32 ],
 		"crossFreq" : 50.0,
 		"recordingBusses" : 16.0
 	}
