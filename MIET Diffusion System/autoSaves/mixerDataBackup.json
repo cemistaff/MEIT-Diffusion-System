@@ -18,8 +18,9 @@
 	}
 ,
 	"io" : 	{
-		"size" : [ 48, 48 ],
-		"crossFreq" : 50.0
+		"size" : [ 32, 32 ],
+		"crossFreq" : 50.0,
+		"recordingBusses" : 16.0
 	}
 ,
 	"midi" : 	{
@@ -44,7 +45,8 @@
 	}
 ,
 	"mixer" : 	{
-		"attinuation" : -6.0
+		"attinuation" : -6.0,
+		"subList" : [ 29, 30 ]
 	}
 
 }
