@@ -1,4 +1,4 @@
-# MEIT-Diffusion-System
+# MEIT Diffusion System
 Mixing desk used to diffuse sound in the Merrill Ellis Intermedia Theater at UNT
 
 Requires Max 8 to run
