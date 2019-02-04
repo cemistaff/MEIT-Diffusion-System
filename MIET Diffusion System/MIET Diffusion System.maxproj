@@ -2,8 +2,8 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3625463143,
-	"viewrect" : [ 228.0, 757.0, 300.0, 500.0 ],
+	"modificationdate" : 3632115499,
+	"viewrect" : [ 212.0, 288.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -16,14 +16,14 @@
 				"toplevel" : 1
 			}
 ,
+			"meit_3_ring_routing.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"meit_3_ring_desk.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/mixing desk/meit 3 ring",
-					"projectrelativepath" : "./mixing desk/meit 3 ring"
-				}
-
+				"local" : 1
 			}
 ,
 			"mc.outputFixer~.maxpat" : 			{
@@ -40,13 +40,21 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+
+		}
 ,
-			"meit_3_ring_routing.maxpat" : 			{
-				"kind" : "patcher",
+		"media" : 		{
+			"cemi_logo_black.png" : 			{
+				"kind" : "imagefile",
+				"local" : 1
+			}
+,
+			"Liscense.png" : 			{
+				"kind" : "imagefile",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/mixing desk/meit 3 ring",
-					"projectrelativepath" : "./mixing desk/meit 3 ring"
+					"bootpath" : "D:/Desktop",
+					"projectrelativepath" : "../../../../Desktop"
 				}
 
 			}
@@ -72,5 +80,6 @@
 	"readonly" : 0,
 	"devpathtype" : 0,
 	"devpath" : ".",
-	"sortmode" : 0
+	"sortmode" : 0,
+	"viewmode" : 0
 }
