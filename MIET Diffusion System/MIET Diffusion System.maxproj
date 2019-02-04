@@ -2,7 +2,7 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3632115499,
+	"modificationdate" : 3632115952,
 	"viewrect" : [ 212.0, 288.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -51,12 +51,7 @@
 ,
 			"Liscense.png" : 			{
 				"kind" : "imagefile",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "D:/Desktop",
-					"projectrelativepath" : "../../../../Desktop"
-				}
-
+				"local" : 1
 			}
 
 		}
