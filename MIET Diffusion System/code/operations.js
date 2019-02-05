@@ -14,6 +14,8 @@ function makeZeroArray(number){  //creates an array of a given length filled wit
 		return myArray;
 		}
 
+randomWords = ["Transmorgified", "Kitten", "Apple", "Flaming", "Fabulous", "Norted", "Snorting", "Transfigured", "Boulez", "The Grandest", "Gandalf", "Confused", "McCannon", "Puppies", "Petrified"]
+
 function makeDefaultScene(inputs, outputs){
 	//his function creates a defualt scene with a set number of inputs and outputs
 
@@ -30,12 +32,12 @@ function makeDefaultScene(inputs, outputs){
 		newScene.set("record", makeZeroArray(outputs));
 
 
-
+		sceneName = randomWords[Math.floor((Math.random()*randomWords.length))] +" "+ randomWords[Math.floor((Math.random()*randomWords.length))];
 		// If there are no scenes, create the first one
 		if (preset.getkeys() == null){
-				newScene.set("name", "new scene 1");
+				newScene.set("name", sceneName);
 				 preset.set("Scene1", newScene);
-				 post ("created scene1 \n");
+				 post ("created scene \n");
 				numberOfScenes = 1;
 			}
 
@@ -43,8 +45,8 @@ function makeDefaultScene(inputs, outputs){
 
 		else {
 				var sceneNo = numberofScenes+1;  //sceneNo is base 1
- 				newScene.set("name", "new scene "+String(sceneNo-1));
-				post ("created scene " + String(sceneNo)+ "\n"); //Make a name for the key
+ 				newScene.set("name", sceneName);
+				post ("created scene \n"); //Make a name for the key
 				preset.set("Scene"+String(sceneNo), newScene);
 				numberofScenes ++;
 				}
