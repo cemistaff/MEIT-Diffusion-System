@@ -80,7 +80,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "closedpatch" ],
 					"patching_rect" : [ 865.0, 23.0, 30.0, 30.0 ]
 				}
 
@@ -970,11 +970,11 @@
 					"presentation_rect" : [ 381.1666259765625, 327.0, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[76]",
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.text[76]"
 						}
 
 					}
@@ -998,11 +998,11 @@
 					"presentation_rect" : [ 381.1666259765625, 293.0, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[77]",
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.text[77]"
 						}
 
 					}
@@ -1026,11 +1026,11 @@
 					"presentation_rect" : [ 310.1666259765625, 327.0, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[74]",
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.text[74]"
 						}
 
 					}
@@ -1054,11 +1054,11 @@
 					"presentation_rect" : [ 310.1666259765625, 293.0, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[75]",
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.text[75]"
 						}
 
 					}
@@ -1098,11 +1098,11 @@
 					"presentation_rect" : [ 236.5, 327.0, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[73]",
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.text[73]"
 						}
 
 					}
@@ -1142,11 +1142,11 @@
 					"presentation_rect" : [ 236.5, 293.0, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text",
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.text"
 						}
 
 					}
@@ -1208,7 +1208,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 31, 1 ],
+					"args" : [ 32 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1231,7 +1231,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 30, 1 ],
+					"args" : [ 31 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1313,7 +1313,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 27, 1 ],
+					"args" : [ 28 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1336,7 +1336,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 26, 1 ],
+					"args" : [ 27 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1359,7 +1359,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 25, 1 ],
+					"args" : [ 26 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1382,7 +1382,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 24, 1 ],
+					"args" : [ 25 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1405,7 +1405,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 29, 1 ],
+					"args" : [ 30 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1428,7 +1428,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 28, 1 ],
+					"args" : [ 29 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1480,12 +1480,12 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-19",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.499991999999999, 116.5, 218.0, 47.0 ],
-					"text" : "To create a new outputSlider create:\n[ bpatcher ouputSlider @args io# mcu# ]"
+					"patching_rect" : [ 48.499992370605469, 116.5, 218.0, 33.0 ],
+					"text" : "To create a new outputSlider create:\n[ bpatcher ouputSlider @args io# ]"
 				}
 
 			}
@@ -1580,7 +1580,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 23, 2 ],
+					"args" : [ 24 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1603,7 +1603,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 22, 2 ],
+					"args" : [ 23 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1626,7 +1626,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 21, 2 ],
+					"args" : [ 22 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1649,7 +1649,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 20, 2 ],
+					"args" : [ 21 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1672,7 +1672,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 19, 2 ],
+					"args" : [ 20 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1695,7 +1695,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 18, 2 ],
+					"args" : [ 19 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1718,7 +1718,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 17, 2 ],
+					"args" : [ 18 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1741,7 +1741,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 16, 2 ],
+					"args" : [ 17 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1764,7 +1764,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 15, 3 ],
+					"args" : [ 16 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1787,7 +1787,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 14, 3 ],
+					"args" : [ 15 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1810,7 +1810,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 13, 3 ],
+					"args" : [ 14 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1833,7 +1833,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 12, 3 ],
+					"args" : [ 13 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1856,7 +1856,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 11, 3 ],
+					"args" : [ 12 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1879,7 +1879,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 10, 3 ],
+					"args" : [ 11 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1902,7 +1902,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 9, 3 ],
+					"args" : [ 10 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1925,7 +1925,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 8, 3 ],
+					"args" : [ 9 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1948,7 +1948,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 6, 4 ],
+					"args" : [ 7 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1971,7 +1971,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 4, 4 ],
+					"args" : [ 5 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1994,7 +1994,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 3, 4 ],
+					"args" : [ 4 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -2017,7 +2017,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 7, 4 ],
+					"args" : [ 8 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -2040,7 +2040,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 5, 4 ],
+					"args" : [ 6 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -2063,7 +2063,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 2, 4 ],
+					"args" : [ 3 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -2086,7 +2086,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 1, 4 ],
+					"args" : [ 2 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -2109,7 +2109,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ 0, 4 ],
+					"args" : [ 1 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
