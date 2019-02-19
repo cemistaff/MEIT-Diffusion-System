@@ -2,7 +2,7 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3633353034,
+	"modificationdate" : 3633436882,
 	"viewrect" : [ 212.0, 288.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -31,7 +31,22 @@
 				"local" : 1
 			}
 ,
+			"diffusionPivotOut.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
 			"mc.audio_safety~.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"diffusionPivotIn.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -57,15 +72,6 @@
 		}
 ,
 		"code" : 		{
-			"arrayLookup.js" : 			{
-				"kind" : "javascript",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
-					"projectrelativepath" : "./code"
-				}
-
-			}
 
 		}
 
