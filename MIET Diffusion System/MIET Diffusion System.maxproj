@@ -2,7 +2,7 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3633436882,
+	"modificationdate" : 3633500889,
 	"viewrect" : [ 212.0, 288.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -21,6 +21,16 @@
 				"local" : 1
 			}
 ,
+			"dmodeEditor.spliter.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
 			"meit_3_ring_desk.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -29,16 +39,6 @@
 			"mc.outputFixer~.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
-			}
-,
-			"diffusionPivotOut.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
 			}
 ,
 			"mc.audio_safety~.maxpat" : 			{
@@ -51,9 +51,19 @@
 				"local" : 1
 			}
 ,
-			"audio_safety~.maxpat" : 			{
+			"diffusionPivotOut.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"audio_safety~.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
