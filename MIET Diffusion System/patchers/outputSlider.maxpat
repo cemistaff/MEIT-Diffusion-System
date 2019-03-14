@@ -140,7 +140,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 815.0, 180.0, 29.5, 22.0 ],
+					"patching_rect" : [ 819.0, 184.0, 29.5, 22.0 ],
 					"text" : "- 1"
 				}
 
@@ -380,7 +380,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 550.0, 340.0, 150.0, 33.0 ],
+					"patching_rect" : [ 550.0, 376.0, 150.0, 33.0 ],
 					"text" : "puts this on the moist important thread"
 				}
 
@@ -392,7 +392,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 504.0, 340.0, 35.0, 22.0 ],
+					"patching_rect" : [ 504.0, 376.0, 35.0, 22.0 ],
 					"text" : "del 0"
 				}
 
@@ -404,7 +404,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 504.0, 305.0, 29.5, 22.0 ],
+					"patching_rect" : [ 504.0, 341.0, 29.5, 22.0 ],
 					"text" : "t b i"
 				}
 
@@ -416,7 +416,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 815.0, 150.0, 81.0, 22.0 ],
+					"patching_rect" : [ 819.0, 154.0, 81.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -664,7 +664,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 550.0, 238.0, 138.0, 22.0 ],
+					"patching_rect" : [ 550.0, 258.0, 138.0, 22.0 ],
 					"text" : "r #0_routeButton"
 				}
 
@@ -1597,7 +1597,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 615.5, 465.0, 150.0, 33.0 ],
+					"patching_rect" : [ 615.5, 501.0, 150.0, 33.0 ],
 					"text" : "Flashes based on input level"
 				}
 
@@ -1632,7 +1632,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 550.0, 270.0, 150.0, 20.0 ],
+					"patching_rect" : [ 550.0, 306.0, 150.0, 20.0 ],
 					"text" : "Opens routing gui"
 				}
 
@@ -2006,7 +2006,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 530.5, 465.0, 75.0, 22.0 ],
+					"patching_rect" : [ 530.5, 501.0, 75.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2092,11 +2092,11 @@
 					"presentation_rect" : [ 4.0, 188.0, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "live.text[18]",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "live.text[26]"
+							"parameter_shortname" : "live.text[26]",
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_type" : 2
 						}
 
 					}
@@ -2132,11 +2132,11 @@
 					"presentation_rect" : [ 4.0, 166.0, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "live.text[253]",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "live.text[26]"
+							"parameter_shortname" : "live.text[26]",
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_type" : 2
 						}
 
 					}
@@ -2153,7 +2153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 579.0, 199.0, 24.0, 22.0 ],
+					"patching_rect" : [ 579.0, 172.0, 24.0, 22.0 ],
 					"text" : "t 0"
 				}
 
@@ -2187,7 +2187,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 504.0, 418.0, 128.0, 22.0 ],
+					"patching_rect" : [ 504.0, 454.0, 128.0, 22.0 ],
 					"text" : "s setAndOpenRouting"
 				}
 
@@ -2199,7 +2199,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 669.0, 205.0, 170.0, 22.0 ],
+					"patching_rect" : [ 669.0, 212.0, 170.0, 22.0 ],
 					"text" : "if $i2 != $i3 && $i1 == 1 then 0"
 				}
 
@@ -2235,7 +2235,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 504.0, 238.0, 43.0, 22.0 ],
+					"patching_rect" : [ 509.0, 231.0, 43.0, 22.0 ],
 					"text" : "set $1"
 				}
 
@@ -2259,7 +2259,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 504.0, 390.0, 94.0, 22.0 ],
+					"patching_rect" : [ 504.0, 426.0, 94.0, 22.0 ],
 					"text" : "pack input 0 #1"
 				}
 
@@ -2272,16 +2272,16 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 504.0, 270.0, 40.0, 20.0 ],
+					"patching_rect" : [ 504.0, 306.0, 40.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 26.0, 40.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "live.text[17]",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "live.text"
+							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_type" : 2
 						}
 
 					}
@@ -2327,7 +2327,7 @@
 					"patching_rect" : [ 223.0, 133.0, 43.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 4.0, 28.0, 20.0 ],
-					"text" : "16"
+					"text" : "#1"
 				}
 
 			}
@@ -2384,14 +2384,14 @@
 					"presentation_rect" : [ 0.0, 48.0, 48.0, 111.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_defer" : 1,
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
-							"parameter_mmin" : -70.0,
 							"parameter_longname" : "1[52]",
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "1"
+							"parameter_shortname" : "1",
+							"parameter_defer" : 1,
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0
 						}
 
 					}
@@ -2427,7 +2427,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 530.5, 511.5, 63.5, 59.0 ],
+					"patching_rect" : [ 530.5, 547.5, 63.5, 59.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 8.0, 10.0, 10.0 ],
 					"proportion" : 0.39,
@@ -2839,7 +2839,20 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-15" : [ "live.text[17]", "live.text", 0 ],
+			"obj-42" : [ "live.text[18]", "live.text[26]", 0 ],
+			"obj-38" : [ "live.text[253]", "live.text[26]", 0 ],
+			"obj-1" : [ "1[52]", "1", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
