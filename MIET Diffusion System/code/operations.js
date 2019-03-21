@@ -30,7 +30,7 @@ function makeDefaultScene(inputs, outputs){
 		newScene.set("inputRouting", inputRouting); //set the key "inputRouting" to a dictionary of arrays
 		newScene.set("outputLevel", makeZeroArray(outputs));  //create another array at the key "outputArray"
 		newScene.set("record", makeZeroArray(outputs));
-
+		newScene.replace("ambisonicPlayer::playback", makeZeroArray(outputs));
 
 		sceneName = randomWords[Math.floor((Math.random()*randomWords.length))] +" "+ randomWords[Math.floor((Math.random()*randomWords.length))];
 		// If there are no scenes, create the first one
