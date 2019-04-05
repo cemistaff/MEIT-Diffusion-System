@@ -44,7 +44,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.0, 334.0, 55.0, 22.0 ],
+					"patching_rect" : [ 131.0, 334.0, 55.0, 22.0 ],
 					"text" : "r #0_dial"
 				}
 
@@ -213,6 +213,30 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 230.0, 115.0, 125.0, 22.0 ],
+									"text" : "r routingWindowOpen"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 134.0, 119.0, 32.0, 22.0 ],
+									"text" : "gate"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-12",
 									"maxclass" : "message",
@@ -397,7 +421,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 105.0, 139.0, 67.0, 22.0 ],
+									"patching_rect" : [ 147.0, 76.0, 67.0, 22.0 ],
 									"text" : "r MidiInput"
 								}
 
@@ -473,6 +497,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-53", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"order" : 0,
 									"source" : [ "obj-4", 1 ]
@@ -503,7 +534,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-53", 0 ],
+									"destination" : [ "obj-3", 1 ],
 									"source" : [ "obj-51", 0 ]
 								}
 
@@ -512,6 +543,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-53", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -676,7 +714,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 243.0, 121.0, 118.0, 22.0 ],
+					"patching_rect" : [ 271.0, 113.0, 118.0, 22.0 ],
 					"text" : "r setSpeakerGroups"
 				}
 
@@ -751,7 +789,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 112.0, 135.0, 115.0, 22.0 ],
+					"patching_rect" : [ 116.0, 132.0, 115.0, 22.0 ],
 					"text" : "r recallInputRouting"
 				}
 
