@@ -22,12 +22,23 @@ function makeDefaultScene(inputs, outputs){
 	var newScene = new Dict();  //Create an empty dictionary
 
 	var inputRouting = new Dict();  //and another
+	
+	var reverb = new Dict();
 
 	for (var i = 0; i < inputs; i++){  //iterate to create input arrays
 		inputRouting.set(String(i),makeZeroArray(outputs));  //creates arrays at index "i"
+	
+		reverb.set(String(i),[0.5,0.5,0.0]);
+		
 		}
+	
+		reverb.set("master", 0.0);
+	
+
+			
 
 		newScene.set("inputRouting", inputRouting); //set the key "inputRouting" to a dictionary of arrays
+		newScene.set("reverb", reverb);
 		newScene.set("outputLevel", makeZeroArray(outputs));  //create another array at the key "outputArray"
 		newScene.set("record", makeZeroArray(outputs));
 		newScene.replace("ambisonicPlayer::playback", makeZeroArray(outputs));
@@ -50,5 +61,6 @@ function makeDefaultScene(inputs, outputs){
 				preset.set("Scene"+String(sceneNo), newScene);
 				numberofScenes ++;
 				}
+
 		outlet(0, sceneNo);  //output the last scene number (this is important for the setNumberofScenes function
 	}

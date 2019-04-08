@@ -2,8 +2,8 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3636967978,
-	"viewrect" : [ 231.0, 266.0, 300.0, 500.0 ],
+	"modificationdate" : 3637581939,
+	"viewrect" : [ 231.0, 292.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -36,6 +36,26 @@
 				"local" : 1
 			}
 ,
+			"mc.audio_safety~.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mc.meshVerb.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"poly.meshVerb.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mc.meshVerb.spaceMixer.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"mc.meshVerb.maxhelp" : 			{
 				"kind" : "helpfile",
 				"local" : 1,
@@ -44,11 +64,6 @@
 					"projectrelativepath" : "../../../../Downloads/mesh reverb"
 				}
 
-			}
-,
-			"mc.audio_safety~.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
 			}
 ,
 			"meit_3_ring_routing.maxpat" : 			{
@@ -71,27 +86,32 @@
 
 			}
 ,
-			"mc.meshVerb.spaceMixer.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"mc.meshVerb.maxpat" : 			{
-				"kind" : "patcher",
+			"mc.meshVerbSimplified.maxhelp" : 			{
+				"kind" : "helpfile",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb"
+					"bootpath" : "~/Downloads/mesh reverb 3",
+					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
 				}
 
 			}
 ,
-			"poly.meshVerb.maxpat" : 			{
+			"mc.meshVerbSimplified.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb"
+					"bootpath" : "~/Downloads/mesh reverb 3",
+					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
+				}
+
+			}
+,
+			"poly.meshVerb.simple.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Downloads/mesh reverb 3",
+					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
 				}
 
 			}
@@ -114,27 +134,27 @@
 		"code" : 		{
 			"poly.meshVerb.junctions.gendsp" : 			{
 				"kind" : "gendsp",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb"
-				}
-
+				"local" : 1
 			}
 ,
 			"poly.meshVerb.poke.gendsp" : 			{
 				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"poly.meshVerb.junctions.simple.gendsp" : 			{
+				"kind" : "gendsp",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb"
+					"bootpath" : "~/Downloads/mesh reverb 3",
+					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
 				}
 
 			}
 
 		}
 ,
-		"externals" : 		{
+		"data" : 		{
 
 		}
 
