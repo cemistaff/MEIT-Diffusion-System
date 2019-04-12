@@ -2,7 +2,7 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3637581939,
+	"modificationdate" : 3637917660,
 	"viewrect" : [ 231.0, 292.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -41,19 +41,49 @@
 				"local" : 1
 			}
 ,
-			"mc.meshVerb.maxpat" : 			{
+			"mc.meshVerbSimplified.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Downloads/mesh reverb 3",
+					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
+				}
+
 			}
 ,
-			"poly.meshVerb.maxpat" : 			{
+			"poly.meshVerb.simple.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Downloads/mesh reverb 3",
+					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
+				}
+
 			}
 ,
 			"mc.meshVerb.spaceMixer.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"mc.meshVerb.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
+			"poly.meshVerb.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"mc.meshVerb.maxhelp" : 			{
@@ -95,26 +125,6 @@
 				}
 
 			}
-,
-			"mc.meshVerbSimplified.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb 3",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
-				}
-
-			}
-,
-			"poly.meshVerb.simple.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb 3",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
-				}
-
-			}
 
 		}
 ,
@@ -132,16 +142,6 @@
 		}
 ,
 		"code" : 		{
-			"poly.meshVerb.junctions.gendsp" : 			{
-				"kind" : "gendsp",
-				"local" : 1
-			}
-,
-			"poly.meshVerb.poke.gendsp" : 			{
-				"kind" : "gendsp",
-				"local" : 1
-			}
-,
 			"poly.meshVerb.junctions.simple.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1,
@@ -151,10 +151,29 @@
 				}
 
 			}
+,
+			"poly.meshVerb.junctions.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"poly.meshVerb.poke.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
 
 		}
 ,
 		"data" : 		{
+			"meshReverbPrests.json" : 			{
+				"kind" : "json",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/Saves",
+					"projectrelativepath" : "./Saves"
+				}
+
+			}
 
 		}
 
