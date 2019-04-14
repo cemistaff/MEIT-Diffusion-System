@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u981009053",
+		"name" : "u386004553",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -35,6 +35,9 @@
 					"gridRand" : [ 0.0 ],
 					"randRange" : [ 0.082872928176796, 0.30939226519337 ],
 					"smoothing" : [ 0.001 ],
+					"ERMix" : [ 1.0 ],
+					"ERRC" : [ 0.5 ],
+					"ERDepth" : [ 1.0 ],
 					"presetName" : [ "Very Large Room" ]
 				}
 
@@ -73,6 +76,9 @@
 					"gridRand" : [ 0.0 ],
 					"randRange" : [ 0.160220994475138, 0.298342541436464 ],
 					"smoothing" : [ 0.001 ],
+					"ERMix" : [ 0.5 ],
+					"ERRC" : [ 0.1 ],
+					"ERDepth" : [ 0.12 ],
 					"presetName" : [ "Subtle Hall" ]
 				}
 
@@ -111,6 +117,9 @@
 					"gridRand" : [ 0.0 ],
 					"randRange" : [ 0.0, 0.049723756906077 ],
 					"smoothing" : [ 0.001 ],
+					"ERMix" : [ 0.5 ],
+					"ERRC" : [ 0.9 ],
+					"ERDepth" : [ 0.5 ],
 					"presetName" : [ "Slapback Reverb" ]
 				}
 

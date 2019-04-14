@@ -2,8 +2,8 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3637917660,
-	"viewrect" : [ 231.0, 292.0, 300.0, 474.0 ],
+	"modificationdate" : 3638098019,
+	"viewrect" : [ 526.0, 817.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,7 +14,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -25,7 +25,7 @@
 				"local" : 1,
 				"toplevel" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -43,22 +43,12 @@
 ,
 			"mc.meshVerbSimplified.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb 3",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
-				}
-
+				"local" : 1
 			}
 ,
 			"poly.meshVerb.simple.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb 3",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
-				}
-
+				"local" : 1
 			}
 ,
 			"mc.meshVerb.spaceMixer.maxpat" : 			{
@@ -66,32 +56,12 @@
 				"local" : 1
 			}
 ,
-			"mc.meshVerb.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
 			"poly.meshVerb.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
-			"mc.meshVerb.maxhelp" : 			{
-				"kind" : "helpfile",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb"
 				}
 
 			}
@@ -110,18 +80,8 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
-			"mc.meshVerbSimplified.maxhelp" : 			{
-				"kind" : "helpfile",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb 3",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
 				}
 
 			}
@@ -144,12 +104,7 @@
 		"code" : 		{
 			"poly.meshVerb.junctions.simple.gendsp" : 			{
 				"kind" : "gendsp",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads/mesh reverb 3",
-					"projectrelativepath" : "../../../../Downloads/mesh reverb 3"
-				}
-
+				"local" : 1
 			}
 ,
 			"poly.meshVerb.junctions.gendsp" : 			{
@@ -167,12 +122,7 @@
 		"data" : 		{
 			"meshReverbPrests.json" : 			{
 				"kind" : "json",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/Saves",
-					"projectrelativepath" : "./Saves"
-				}
-
+				"local" : 1
 			}
 
 		}
