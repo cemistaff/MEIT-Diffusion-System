@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1063.0, 682.0, 1270.0, 917.0 ],
+		"rect" : [ 233.0, 79.0, 1270.0, 823.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -200,7 +200,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 169.0, 167.0, 38.0, 21.0 ],
+					"patching_rect" : [ 168.0, 127.0, 38.0, 21.0 ],
 					"text" : "mc.+~"
 				}
 
@@ -245,11 +245,11 @@
 				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 168.0, 85.0, 138.0, 21.0 ],
-					"text" : "routepass multichannelsignal"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 147.0, 83.0, 168.0, 21.0 ],
+					"text" : "routepass multichannelsignal signal"
 				}
 
 			}
@@ -389,7 +389,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-38",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -402,7 +402,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-39",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -524,6 +524,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-24", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-24", 1 ]
 				}
 
@@ -595,7 +602,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"midpoints" : [ 178.5, 152.5, 52.5, 152.5 ],
+					"midpoints" : [ 177.5, 152.5, 52.5, 152.5 ],
 					"order" : 1,
 					"source" : [ "obj-32", 0 ]
 				}
@@ -694,11 +701,15 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
+					"fontname" : [ "Futura Medium" ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"fontface" : [ 0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -709,17 +720,11 @@
 						"autogradient" : 0.0
 					}
 ,
-					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontsize" : [ 10.0 ],
 					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontname" : [ "Futura Medium" ]
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
