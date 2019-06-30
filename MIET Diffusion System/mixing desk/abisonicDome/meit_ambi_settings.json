@@ -29,7 +29,7 @@
 ,
 	"midi" : 	{
 		"MCU" : 		{
-			"devices" : [ "MCU Pro USB v3.1 Port 4", "MCU Pro USB v3.1 Port 3", "MCU Pro USB v3.1 Port 2", "MCU Pro USB v3.1 Port 1", "MIDISPORT 4x4 Port D" ],
+			"devices" : [ "MCU Pro USB v3.1 Port 4", "MCU Pro USB v3.1 Port 3", "MCU Pro USB v3.1 Port 2", "MCU Pro USB v3.1 Port 1" ],
 			"buttons" : 			{
 				"0" : "rec",
 				"1" : "solo",
