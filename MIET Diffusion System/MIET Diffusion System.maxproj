@@ -2,7 +2,7 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3639219941,
+	"modificationdate" : 3644752384,
 	"viewrect" : [ 526.0, 817.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -58,7 +58,12 @@
 ,
 			"poly.meshVerb.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"meit_3_ring_routing.maxpat" : 			{
@@ -98,6 +103,21 @@
 ,
 		"code" : 		{
 			"poly.meshVerb.junctions.simple.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"0df.2pole.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"projectrelativepath" : "./code"
+				}
+
+			}
+,
+			"mc.meshVerb.junctions.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
 			}

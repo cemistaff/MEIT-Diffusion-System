@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u432000500",
+		"name" : "u959004223",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -38,6 +38,11 @@
 					"gridRand" : [ 0.0 ],
 					"randRange" : [ 0.082872928176796, 0.30939226519337 ],
 					"smoothing" : [ 0.001 ],
+					"filterMode" : [ 2.0 ],
+					"wallFilterMix" : [ 0.748031496062992 ],
+					"wallFilterQ" : [ 0.5 ],
+					"wallFilterFreq" : [ 2400.393700787404669 ],
+					"wobble" : [ 0.0 ],
 					"presetName" : [ "Very Large Room" ]
 				}
 
@@ -74,11 +79,16 @@
 					"ERDepth" : [ 0.12 ],
 					"ERMix" : [ 0.5 ],
 					"ERRC" : [ 0.1 ],
-					"RC" : [ 0.579748031496063 ],
-					"damping" : [ 0.379133858267717 ],
+					"RC" : [ 0.999 ],
+					"damping" : [ 0.177165354330709 ],
 					"gridRand" : [ 0.0 ],
 					"randRange" : [ 0.160220994475138, 0.298342541436464 ],
 					"smoothing" : [ 0.001 ],
+					"filterMode" : [ 0.0 ],
+					"wallFilterMix" : [ 1.0 ],
+					"wallFilterQ" : [ 0.830708661417322 ],
+					"wallFilterFreq" : [ 2713.779527559058806 ],
+					"wobble" : [ 0.0 ],
 					"presetName" : [ "Subtle Hall" ]
 				}
 
@@ -120,6 +130,11 @@
 					"gridRand" : [ 0.0 ],
 					"randRange" : [ 0.0, 0.049723756906077 ],
 					"smoothing" : [ 0.001 ],
+					"filterMode" : [  ],
+					"wallFilterMix" : [  ],
+					"wallFilterQ" : [  ],
+					"wallFilterFreq" : [  ],
+					"wobble" : [  ],
 					"presetName" : [ "Slapback Reverb" ]
 				}
 

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "dsp.gen",
-		"rect" : [ 169.0, 122.0, 1314.0, 747.0 ],
+		"rect" : [ 1214.0, 598.0, 1314.0, 885.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -38,18 +38,6 @@
 		"style" : "Minimal",
 		"subpatcher_template" : "minimal",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 558.0, 145.0, 26.0, 21.0 ],
-					"text" : "in 2"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
@@ -310,13 +298,13 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "getChannel(row,col, squareSide){\r\n\treturn (row*squareSide+col)*4;\r\n\t} \r\n\t\r\nParam RC(0.8);\r\nParam damp(0.1);\r\nd = 1-clip(damp, 0,1);\r\nreflection = 0-clip(RC, 0, 0.99999);\r\ninput = in1;\r\nlookup = in2;\r\nposition = in3;\r\ndt = in4;\r\nnCh = voicecount;\r\nch = voice-1;\r\n\r\nlen = dim(delBuf);\r\n\r\noutput = 0;\r\ntoWall = 0;\r\n\r\n\r\noutputT = 0;\r\noutputB= 0;\r\noutputL = 0;\r\noutputR = 0;\r\n\r\nwallT = 0;\r\nwallB= 0;\r\nwallL = 0;\r\nwallR = 0;\r\n\r\ntopOffset = 0;\r\nbottomOffset = 1;\r\nleftOffset = 2;\r\nrightOffset = 3;\r\n\r\n\r\n\r\nZj = 0;\r\n\r\n\r\nsquareSide = floor(sqrt(nCh));\r\nrow = floor(ch/squareSide);\r\ncol = ch % (squareSide);\r\n\r\n//Top Side\r\nchan = getChannel(row,col,squareSide);\r\n\r\n\t\tif (row == 0){ //Is it the top wall?\r\n\t\t\tchan = getChannel(row,col,squareSide);\r\n\t\t\tlookupChan = chan+topOffset;\r\n\r\n\t\t\toutputT, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\twallT = 1;\r\n\t\t\t}\r\n\t\t\r\n\t\telse{ //If it is not the top row, grab a sample from above\r\n\t\t\tchan = getChannel(row-1, col,squareSide);\r\n\t\t\tlookupChan = chan+bottomOffset;\r\n\t\t\toutputT, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\t\t\r\n\t\t\t}\r\n\t\t\toutputT *= d;\r\n\t\t\toutputT += input*0.25;\r\n\t\t\t\r\n//Bottom Side\r\n\r\n\t\tif (row == squareSide - 1){ //Is it the bottom wall?\r\n\t\t\tchan = getChannel(row,col,squareSide);\t\r\n\t\t    lookupChan = chan+bottomOffset;\r\n\t\t\toutputB, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\twallB = 1;\r\n\t\t\t}\r\n\t\t\t\r\n\t\telse{\r\n\t\t\tchan = getChannel(row+1,col,squareSide);\r\n\t\t\tlookupChan = chan+topOffset;\r\n\t\t\toutputB, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\t}\r\n\t\t    outputB*= d;\r\n\t\t\toutputB += input*0.25;\r\n\t\t\t\r\n//Left Side\t\t\t\r\n\t\t\r\n\t\tif (col == 0) {  //Is it the left wall?\r\n\t\t\tchan = getChannel(row,col,squareSide);\r\n\t\t    lookupChan = chan+leftOffset;\r\n\t\t\toutputL, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\twallL = 1;\r\n\t\t\t\r\n\t\t\t}\r\n\t\t\r\n\t\telse{\r\n\t\t\tchan = getChannel(row,col-1,squareSide);\r\n\t\t    lookupChan = chan+rightOffset;\r\n\t\t\toutputL, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\t}\r\n\t\t\toutputL *= d;\r\n\t\t\toutputL += input*0.25;\r\n\r\n//Right Side\r\n\t\t\t\t\t\t\t\t\t\r\n\t\tif( col == squareSide-1 ){ //Is it the right wall?\r\n\t\t\tchan = getChannel(row,col);\r\n\t\t    lookupChan = chan+rightOffset;\r\n\t\t\toutputR, index = peek(delBuf, wrap(position-dt,0,len-1), chan+rightOffset);\r\n\t\t\twallR = 1;\r\n\t\t\t}\r\n\t\t\r\n\t\telse{\r\n\t\t\tchan = getChannel(row,col+1);\r\n\t\t\tlookupChan = chan+leftOffset;\r\n\t\t\toutputR, index = peek(delBuf, wrap(position-dt,0,len-1), chan+leftOffset);\r\n\t\t\t}\r\n\t\toutputR *= d;\r\n\t\toutputR += input*0.25;\r\n\t\t\r\nZj = (outputT+outputB+outputL+outputR)*0.5;\r\n\r\nwriteT= (Zj-outputT)*((reflection*wallT)+1*(1-wallT));\r\nwriteB= (Zj-outputB)*((reflection*wallB)+1*(1-wallB));\r\nwriteL= (Zj-outputL)*((reflection*wallL)+1*(1-wallL));\r\nwriteR= (Zj-outputR)*((reflection*wallR)+1*(1-wallR));\r\n\t\r\npoke(delBuf, writeT, position, ch*4+topOffset,0);\r\npoke(delBuf, writeB , position, ch*4+bottomOffset,0);\r\npoke(delBuf, writeL , position, ch*4+leftOffset,0);\r\npoke(delBuf, writeR , position, ch*4+rightOffset,0);\r\n\r\nclearPos = wrap(position+vectorsize, 0, len-1);\r\n\r\npoke(delBuf, 0,clearPos , ch*4+topOffset, 0);\r\npoke(delBuf, 0, clearPos, ch*4+bottomOffset, 0);\r\npoke(delBuf, 0, clearPos, ch*4+leftOffset, 0);\r\npoke(delBuf, 0, clearPos, ch*4+rightOffset, 0);\r\nout1 = Zj;",
+					"code" : "getChannel(row,col, squareSide){\r\n\treturn (row*squareSide+col)*4;\r\n\t} \r\n\t\r\nParam RC(0.8);\r\nParam damp(0.1);\r\nd = 1-clip(damp, 0,1);\r\nreflection = 0-clip(RC, 0, 0.99999);\r\ninput = in1;\r\nlookup = in2;\r\nposition = in3;\r\n\r\nnCh = voicecount;\r\nch = voice-1;\r\n\r\nlen = dim(delBuf);\r\n\r\noutput = 0;\r\ntoWall = 0;\r\n\r\n\r\noutputT = 0;\r\noutputB= 0;\r\noutputL = 0;\r\noutputR = 0;\r\n\r\nwallT = 0;\r\nwallB= 0;\r\nwallL = 0;\r\nwallR = 0;\r\n\r\ntopOffset = 0;\r\nbottomOffset = 1;\r\nleftOffset = 2;\r\nrightOffset = 3;\r\n\r\n\r\n\r\nZj = 0;\r\n\r\n\r\nsquareSide = floor(sqrt(nCh));\r\nrow = floor(ch/squareSide);\r\ncol = ch % (squareSide);\r\n\r\n//Top Side\r\nchan = getChannel(row,col,squareSide);\r\n\r\n\t\tif (row == 0){ //Is it the top wall?\r\n\t\t\tchan = getChannel(row,col,squareSide);\r\n\t\t\tlookupChan = chan+topOffset;\r\n\t\t\tdt = peek(dtBuf, 0, lookupChan);\r\n\t\t\toutputT, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\twallT = 1;\r\n\t\t\t}\r\n\t\t\r\n\t\telse{ //If it is not the top row, grab a sample from above\r\n\t\t\tchan = getChannel(row-1, col,squareSide);\r\n\t\t\tlookupChan = chan+bottomOffset;\r\n\t\t\tdt = peek(dtBuf, 0, lookupChan);\r\n\t\t\toutputT, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\t\t\r\n\t\t\t}\r\n\t\t\toutputT *= d;\r\n\t\t\toutputT += input*0.25;\r\n\t\t\t\r\n//Bottom Side\r\n\r\n\t\tif (row == squareSide - 1){ //Is it the bottom wall?\r\n\t\t\tchan = getChannel(row,col,squareSide);\t\r\n\t\t    lookupChan = chan+bottomOffset;\r\n\t\t\tdt = peek(dtBuf, 0, lookupChan)\t;\r\n\t\t\toutputB, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\twallB = 1;\r\n\t\t\t}\r\n\t\t\t\r\n\t\telse{\r\n\t\t\tchan = getChannel(row+1,col,squareSide);\r\n\t\t\tlookupChan = chan+topOffset;\r\n\t\t\tdt = peek(dtBuf, 0, lookupChan);\r\n\t\t\toutputB, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\t}\r\n\t\t    outputB*= d;\r\n\t\t\toutputB += input*0.25;\r\n\t\t\t\r\n//Left Side\t\t\t\r\n\t\t\r\n\t\tif (col == 0) {  //Is it the left wall?\r\n\t\t\tchan = getChannel(row,col,squareSide);\r\n\t\t    lookupChan = chan+leftOffset;\r\n\t\t\tdt = peek(dtBuf, 0, lookupChan)\t;\r\n\t\t\toutputL, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\twallL = 1;\r\n\t\t\t\r\n\t\t\t}\r\n\t\t\r\n\t\telse{\r\n\t\t\tchan = getChannel(row,col-1,squareSide);\r\n\t\t    lookupChan = chan+rightOffset;\r\n\t\t\tdt = peek(dtBuf, 0, lookupChan)\t;\r\n\t\t\toutputL, index = peek(delBuf, wrap(position-dt,0,len-1), lookupChan);\r\n\t\t\t}\r\n\t\t\toutputL *= d;\r\n\t\t\toutputL += input*0.25;\r\n\r\n//Right Side\r\n\t\t\t\t\t\t\t\t\t\r\n\t\tif( col == squareSide-1 ){ //Is it the right wall?\r\n\t\t\tchan = getChannel(row,col);\r\n\t\t    lookupChan = chan+rightOffset;\r\n\t\t\tdt = peek(dtBuf, 0, lookupChan);\r\n\t\t\toutputR, index = peek(delBuf, wrap(position-dt,0,len-1), chan+rightOffset);\r\n\t\t\twallR = 1;\r\n\t\t\t}\r\n\t\t\r\n\t\telse{\r\n\t\t\tchan = getChannel(row,col+1);\r\n\t\t\tlookupChan = chan+leftOffset;\r\n\t\t\tdt = peek(dtBuf, 0, lookupChan)\t;\r\n\t\t\toutputR, index = peek(delBuf, wrap(position-dt,0,len-1), chan+leftOffset);\r\n\t\t\t}\r\n\t\toutputR *= d;\r\n\t\toutputR += input*0.25;\r\n\t\t\r\nZj = (outputT+outputB+outputL+outputR)*0.5;\r\n\r\nwriteT= (Zj-outputT)*((reflection*wallT)+1*(1-wallT));\r\nwriteB= (Zj-outputB)*((reflection*wallB)+1*(1-wallB));\r\nwriteL= (Zj-outputL)*((reflection*wallL)+1*(1-wallL));\r\nwriteR= (Zj-outputR)*((reflection*wallR)+1*(1-wallR));\r\n\t\r\npoke(delBuf, writeT, position, ch*4+topOffset,0);\r\npoke(delBuf, writeB , position, ch*4+bottomOffset,0);\r\npoke(delBuf, writeL , position, ch*4+leftOffset,0);\r\npoke(delBuf, writeR , position, ch*4+rightOffset,0);\r\n\r\nclearPos = wrap(position+vectorsize, 0, len-1);\r\n\r\npoke(delBuf, 0,clearPos , ch*4+topOffset, 0);\r\npoke(delBuf, 0, clearPos, ch*4+bottomOffset, 0);\r\npoke(delBuf, 0, clearPos, ch*4+leftOffset, 0);\r\npoke(delBuf, 0, clearPos, ch*4+rightOffset, 0);\r\nout1 = Zj;",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
 					"fontsize" : 10.0,
 					"id" : "obj-38",
 					"maxclass" : "codebox",
-					"numinlets" : 4,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 73.33331298828125, 176.0, 450.0, 240.0 ]
@@ -376,13 +364,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 1 ],
 					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-38", 3 ],
-					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -500,6 +481,12 @@
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
+					"fontsize" : [ 10.0 ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -510,17 +497,11 @@
 						"autogradient" : 0.0
 					}
 ,
-					"fontsize" : [ 10.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontname" : [ "Futura Medium" ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontface" : [ 0 ],
-					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ]
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
