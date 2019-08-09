@@ -2,7 +2,7 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3647162040,
+	"modificationdate" : 3648148343,
 	"viewrect" : [ 526.0, 817.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -108,6 +108,11 @@
 			}
 ,
 			"0df.2pole.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"multitap.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
 			}
