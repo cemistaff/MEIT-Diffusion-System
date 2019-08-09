@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 6,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 264.0, 170.0, 1457.0, 813.0 ],
+		"rect" : [ 184.0, 143.0, 1457.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 38.0, 523.5, 185.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Open Ambisonic File Playback"
 				}
 
@@ -691,13 +690,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 608.0, 142.0, 1115.0, 923.0 ],
+						"rect" : [ 232.0, 49.0, 491.0, 218.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1380,7 +1379,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1509,7 +1508,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1744,14 +1743,15 @@
 														"styles" : [ 															{
 																"name" : "Minimal",
 																"default" : 																{
-																	"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-																	"fontface" : [ 0 ],
-																	"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 																	"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+																	"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+																	"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+																	"fontname" : [ "Futura Medium" ],
+																	"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 																	"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"fontsize" : [ 10.0 ],
+																	"fontface" : [ 0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -1762,8 +1762,7 @@
 																		"autogradient" : 0.0
 																	}
 ,
-																	"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-																	"fontname" : [ "Futura Medium" ],
+																	"fontsize" : [ 10.0 ],
 																	"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
@@ -2322,14 +2321,15 @@
 						"styles" : [ 							{
 								"name" : "Minimal",
 								"default" : 								{
-									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-									"fontface" : [ 0 ],
-									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+									"fontname" : [ "Futura Medium" ],
+									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontsize" : [ 10.0 ],
+									"fontface" : [ 0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -2340,8 +2340,7 @@
 										"autogradient" : 0.0
 									}
 ,
-									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-									"fontname" : [ "Futura Medium" ],
+									"fontsize" : [ 10.0 ],
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
@@ -2398,7 +2397,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3115,7 +3114,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3442,7 +3441,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3652,7 +3651,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4122,7 +4121,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4359,7 +4358,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5046,7 +5045,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5127,7 +5126,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5446,7 +5445,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5809,7 +5808,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5854,7 +5853,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -6495,7 +6494,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6635,7 +6634,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -6790,7 +6789,7 @@
 																		"appversion" : 																		{
 																			"major" : 8,
 																			"minor" : 0,
-																			"revision" : 6,
+																			"revision" : 8,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -7341,7 +7340,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7422,7 +7421,7 @@
 																		"appversion" : 																		{
 																			"major" : 8,
 																			"minor" : 0,
-																			"revision" : 6,
+																			"revision" : 8,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -7880,7 +7879,7 @@
 																		"appversion" : 																		{
 																			"major" : 8,
 																			"minor" : 0,
-																			"revision" : 6,
+																			"revision" : 8,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -8211,7 +8210,7 @@
 																		"appversion" : 																		{
 																			"major" : 8,
 																			"minor" : 0,
-																			"revision" : 6,
+																			"revision" : 8,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -8802,7 +8801,7 @@
 																		"appversion" : 																		{
 																			"major" : 8,
 																			"minor" : 0,
-																			"revision" : 6,
+																			"revision" : 8,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -10560,7 +10559,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -11269,7 +11268,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11949,7 +11948,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -12370,7 +12369,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -12899,7 +12898,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -13832,7 +13831,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -13927,7 +13926,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -13960,7 +13959,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-42",
@@ -14038,7 +14036,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -14412,7 +14410,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -14767,7 +14765,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -14850,7 +14848,7 @@
 																		"appversion" : 																		{
 																			"major" : 8,
 																			"minor" : 0,
-																			"revision" : 6,
+																			"revision" : 8,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -15072,7 +15070,8 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 790.666666666666515, 879.0, 100.0, 22.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 17.75, 44.0, 105.5, 22.0 ]
+																	"presentation_rect" : [ 17.75, 44.0, 105.5, 22.0 ],
+																	"varname" : "ERmode"
 																}
 
 															}
@@ -15364,7 +15363,7 @@
 																		"appversion" : 																		{
 																			"major" : 8,
 																			"minor" : 0,
-																			"revision" : 6,
+																			"revision" : 8,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -15906,7 +15905,7 @@
 																	"patching_rect" : [ 940.0, 380.0, 191.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 89.0, 14.0, 164.0, 22.0 ],
-																	"text" : "\"Very Large Room\"",
+																	"text" : "\"Subtle Hall\"",
 																	"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 
@@ -15955,7 +15954,7 @@
 																	"numoutlets" : 3,
 																	"outlettype" : [ "", "", "" ],
 																	"patching_rect" : [ 940.0, 442.0, 181.0, 22.0 ],
-																	"restore" : [ "Very Large Room" ],
+																	"restore" : [ "Subtle Hall" ],
 																	"saved_object_attributes" : 																	{
 																		"parameter_enable" : 0,
 																		"parameter_mappable" : 0
@@ -15983,7 +15982,7 @@
 																	}
 ,
 																	"text" : "pattrstorage",
-																	"varname" : "u023001466"
+																	"varname" : "u538002082"
 																}
 
 															}
@@ -16101,48 +16100,49 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 451.0, 52.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"1-1" : [ 3.793480522926892 ],
-																		"1-2" : [ 39.562832450562304 ],
-																		"1-3" : [ 8.978208716054073 ],
-																		"1-4" : [ 9.905964713092434 ],
-																		"1-5" : [ 4.127189696481523 ],
-																		"2-1" : [ 4.683371652405917 ],
-																		"2-2" : [ 31.100902194902702 ],
-																		"2-3" : [ 20.292996449154014 ],
-																		"2-4" : [ 16.995415879756528 ],
-																		"2-5" : [ 16.946783329530504 ],
-																		"3-1" : [ 17.190835971790122 ],
-																		"3-2" : [ 6.830500969612913 ],
-																		"3-3" : [ 43.081328492852961 ],
-																		"3-4" : [ 9.972706547803362 ],
-																		"3-5" : [ 35.45246981805515 ],
-																		"4-1" : [ 17.785639202733904 ],
-																		"4-2" : [ 3.776394613240891 ],
-																		"4-3" : [ 13.679103102083513 ],
-																		"4-4" : [ 5.409033373939593 ],
-																		"4-5" : [ 3.939244689935556 ],
-																		"5-1" : [ 6.598239384818889 ],
-																		"5-2" : [ 12.140481339214276 ],
-																		"5-3" : [ 46.589412808928707 ],
-																		"5-4" : [ 7.450087668512687 ],
-																		"5-5" : [ 38.374160374360692 ],
-																		"ERDepth" : [ 0.41732283464567 ],
-																		"ERMix" : [ 1.0 ],
-																		"ERRC" : [ 0.374015748031496 ],
-																		"RC" : [ 0.98092125984252 ],
-																		"damping" : [ 0.09488188976378 ],
-																		"filterMode" : [ 2.0 ],
+																		"1-1" : [ 22.293222563162576 ],
+																		"1-2" : [ 22.464966430686065 ],
+																		"1-3" : [ 13.50574063234161 ],
+																		"1-4" : [ 21.00804559992725 ],
+																		"1-5" : [ 43.601514337304963 ],
+																		"2-1" : [ 27.401548054378779 ],
+																		"2-2" : [ 26.76928323460394 ],
+																		"2-3" : [ 13.890903610588193 ],
+																		"2-4" : [ 18.997992165362401 ],
+																		"2-5" : [ 24.61130488810381 ],
+																		"3-1" : [ 15.408244029090731 ],
+																		"3-2" : [ 13.850814183339867 ],
+																		"3-3" : [ 24.880608152949971 ],
+																		"3-4" : [ 18.488786663406792 ],
+																		"3-5" : [ 20.881687784929358 ],
+																		"4-1" : [ 26.232865130924392 ],
+																		"4-2" : [ 13.648464067956695 ],
+																		"4-3" : [ 21.954492275969436 ],
+																		"4-4" : [ 29.934318142804134 ],
+																		"4-5" : [ 33.174933039242276 ],
+																		"5-1" : [ 18.462620700210692 ],
+																		"5-2" : [ 34.613585270242353 ],
+																		"5-3" : [ 21.954492275969436 ],
+																		"5-4" : [ 16.788633382040839 ],
+																		"5-5" : [ 40.984378840271582 ],
+																		"ERDepth" : [ 0.12 ],
+																		"ERMix" : [ 0.5 ],
+																		"ERRC" : [ 0.1 ],
+																		"ERmode" : [ 0 ],
+																		"RC" : [ 0.999 ],
+																		"damping" : [ 0.177165354330709 ],
+																		"filterMode" : [ 0.0 ],
 																		"gridRand" : [ 0.0 ],
-																		"randRange" : [ 0.082872928176796, 0.30939226519337 ],
+																		"randRange" : [ 0.160220994475138, 0.298342541436464 ],
 																		"smoothing" : [ 0.001 ],
-																		"wallFilterFreq" : [ 2400.393700787404669 ],
-																		"wallFilterMix" : [ 0.748031496062992 ],
-																		"wallFilterQ" : [ 0.5 ],
+																		"wallFilterFreq" : [ 2713.779527559058806 ],
+																		"wallFilterMix" : [ 1.0 ],
+																		"wallFilterQ" : [ 0.830708661417322 ],
 																		"wobble" : [ 0.0 ]
 																	}
 ,
 																	"text" : "autopattr",
-																	"varname" : "u068003651"
+																	"varname" : "u566013078"
 																}
 
 															}
@@ -18671,13 +18671,13 @@
 , 															{
 																"name" : "Minimal",
 																"default" : 																{
-																	"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-																	"fontface" : [ 0 ],
-																	"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 																	"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+																	"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+																	"fontname" : [ "Futura Medium" ],
+																	"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 																	"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"fontsize" : [ 10.0 ],
+																	"fontface" : [ 0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -18688,7 +18688,7 @@
 																		"autogradient" : 0.0
 																	}
 ,
-																	"fontname" : [ "Futura Medium" ],
+																	"fontsize" : [ 10.0 ],
 																	"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
@@ -18698,10 +18698,10 @@
 , 															{
 																"name" : "Purple",
 																"default" : 																{
-																	"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 																	"color" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
-																	"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+																	"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -18710,9 +18710,9 @@
 , 															{
 																"name" : "Sky",
 																"default" : 																{
-																	"bgcolor" : [ 0.4, 0.4, 1.0, 1.0 ],
-																	"elementcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 																	"color" : [ 0.501961, 1.0, 0.0, 1.0 ],
+																	"elementcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+																	"bgcolor" : [ 0.4, 0.4, 1.0, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 																	"selectioncolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -18727,8 +18727,8 @@
 																		"autogradient" : 0
 																	}
 ,
-																	"accentcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
-																	"textcolor" : [ 0.0, 0.0, 1.0, 1.0 ]
+																	"textcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+																	"accentcolor" : [ 0.0, 0.0, 1.0, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -18786,7 +18786,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -19691,13 +19691,13 @@
 , 											{
 												"name" : "Minimal",
 												"default" : 												{
-													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-													"fontface" : [ 0 ],
-													"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"elementcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+													"fontname" : [ "Futura Medium" ],
+													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"fontsize" : [ 10.0 ],
+													"fontface" : [ 0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -19708,7 +19708,7 @@
 														"autogradient" : 0.0
 													}
 ,
-													"fontname" : [ "Futura Medium" ],
+													"fontsize" : [ 10.0 ],
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
@@ -19718,10 +19718,10 @@
 , 											{
 												"name" : "Purple",
 												"default" : 												{
-													"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 													"color" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
-													"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+													"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+													"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -19730,9 +19730,9 @@
 , 											{
 												"name" : "Sky",
 												"default" : 												{
-													"bgcolor" : [ 0.4, 0.4, 1.0, 1.0 ],
-													"elementcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
 													"color" : [ 0.501961, 1.0, 0.0, 1.0 ],
+													"elementcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.4, 0.4, 1.0, 1.0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 													"selectioncolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 													"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -19747,8 +19747,8 @@
 														"autogradient" : 0
 													}
 ,
-													"accentcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
-													"textcolor" : [ 0.0, 0.0, 1.0, 1.0 ]
+													"textcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+													"accentcolor" : [ 0.0, 0.0, 1.0, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -19807,7 +19807,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -20127,7 +20127,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -20358,7 +20358,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -20427,7 +20427,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -20910,7 +20910,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -21128,7 +21128,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -21567,7 +21567,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -21828,7 +21828,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -22193,7 +22193,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 93.559585999999996, 651.0, 800.0, 35.0 ],
+									"patching_rect" : [ 92.559585999999996, 606.0, 800.0, 20.0 ],
 									"text" : "mc.dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64",
 									"varname" : "dac"
 								}
@@ -22206,7 +22206,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 114.5, 55.0, 800.0, 22.0 ],
+									"patching_rect" : [ 113.5, 10.0, 800.0, 20.0 ],
 									"text" : "mc.adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48",
 									"varname" : "adc"
 								}
@@ -22215,11 +22215,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-17",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "list" ],
-									"patching_rect" : [ 114.5, 243.0, 180.0, 22.0 ],
+									"patching_rect" : [ 113.5, 198.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 48 48 0. @ramp 10",
 									"varname" : "inputMatrix"
 								}
@@ -22228,11 +22229,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-20",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "list" ],
-									"patching_rect" : [ 114.5, 285.0, 180.0, 22.0 ],
+									"patching_rect" : [ 113.5, 240.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 48 48 0. @ramp 10",
 									"varname" : "outputMatrix"
 								}
@@ -22241,11 +22243,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-21",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "list" ],
-									"patching_rect" : [ 400.833252000000016, 213.0, 183.0, 22.0 ],
+									"patching_rect" : [ 399.833252000000016, 168.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 48 16. 0. @ramp 10",
 									"varname" : "recordingMatrix"
 								}
@@ -22454,14 +22457,15 @@
 						"styles" : [ 							{
 								"name" : "Minimal",
 								"default" : 								{
-									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-									"fontface" : [ 0 ],
-									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+									"fontname" : [ "Futura Medium" ],
+									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontsize" : [ 10.0 ],
+									"fontface" : [ 0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -22472,8 +22476,7 @@
 										"autogradient" : 0.0
 									}
 ,
-									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-									"fontname" : [ "Futura Medium" ],
+									"fontsize" : [ 10.0 ],
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
@@ -22533,7 +22536,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -22615,7 +22618,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -23457,7 +23460,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -24775,7 +24778,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -24921,7 +24924,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -25214,7 +25217,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -25609,7 +25612,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -25677,7 +25680,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -25892,7 +25895,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -26497,7 +26500,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27192,7 +27195,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27411,7 +27414,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27826,7 +27829,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -27987,7 +27990,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -29111,14 +29114,15 @@
 										"styles" : [ 											{
 												"name" : "Minimal",
 												"default" : 												{
-													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-													"fontface" : [ 0 ],
-													"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 													"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+													"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+													"fontname" : [ "Futura Medium" ],
+													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 													"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"fontsize" : [ 10.0 ],
+													"fontface" : [ 0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -29129,8 +29133,7 @@
 														"autogradient" : 0.0
 													}
 ,
-													"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-													"fontname" : [ "Futura Medium" ],
+													"fontsize" : [ 10.0 ],
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
@@ -29210,7 +29213,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -30887,13 +30890,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 74.0, 128.0, 1316.0, 620.0 ],
+						"rect" : [ 63.0, 88.0, 1316.0, 620.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -31022,7 +31025,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -31188,7 +31191,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -31504,7 +31507,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -31761,14 +31764,15 @@
 														"styles" : [ 															{
 																"name" : "Minimal",
 																"default" : 																{
-																	"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-																	"fontface" : [ 0 ],
-																	"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 																	"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+																	"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+																	"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+																	"fontname" : [ "Futura Medium" ],
+																	"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 																	"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"fontsize" : [ 10.0 ],
+																	"fontface" : [ 0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -31779,8 +31783,7 @@
 																		"autogradient" : 0.0
 																	}
 ,
-																	"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-																	"fontname" : [ "Futura Medium" ],
+																	"fontsize" : [ 10.0 ],
 																	"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 																}
 ,
@@ -32134,7 +32137,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -32179,7 +32182,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 0,
-															"revision" : 6,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -32941,7 +32944,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -33392,7 +33395,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 6,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -34842,349 +34845,349 @@
  ],
 		"parameters" : 		{
 			"obj-66::obj-44::obj-130::obj-11" : [ "live.toggle[64]", "live.toggle", 0 ],
-			"obj-156::obj-1::obj-42" : [ "live.text[144]", "live.text[26]", 0 ],
-			"obj-156::obj-29::obj-42" : [ "live.text[119]", "live.text[26]", 0 ],
-			"obj-156::obj-44::obj-15" : [ "live.text[116]", "live.text", 0 ],
-			"obj-156::obj-61::obj-15" : [ "live.text[30]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-146" : [ "4-2", "4-2", 0 ],
-			"obj-39::obj-95" : [ "live.menu[2]", "live.menu", 0 ],
-			"obj-66::obj-44::obj-110::obj-10" : [ "speakerLevel[56]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-23::obj-10" : [ "speakerLevel[44]", "speakerLevel", 0 ],
 			"obj-66::obj-44::obj-2::obj-37" : [ "live.text[241]", "live.text[116]", 0 ],
-			"obj-156::obj-35::obj-15" : [ "live.text[125]", "live.text", 0 ],
-			"obj-156::obj-38::obj-1" : [ "1[68]", "1", 0 ],
-			"obj-66::obj-44::obj-128::obj-10" : [ "speakerLevel[65]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-2::obj-45" : [ "live.text[293]", "live.text[116]", 0 ],
-			"obj-155::obj-23" : [ "live.text[115]", "live.text[111]", 0 ],
-			"obj-156::obj-21::obj-15" : [ "live.text[141]", "live.text", 0 ],
-			"obj-156::obj-28::obj-1" : [ "1[75]", "1", 0 ],
-			"obj-156::obj-60::obj-1" : [ "1[60]", "1", 0 ],
-			"obj-12::obj-30::obj-3::obj-162" : [ "5-2", "5-2", 0 ],
-			"obj-66::obj-44::obj-122::obj-11" : [ "live.toggle[54]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-21::obj-10" : [ "speakerLevel[78]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-2::obj-33" : [ "live.text[233]", "live.text[116]", 0 ],
-			"obj-155::obj-1" : [ "live.text[111]", "live.text[111]", 0 ],
-			"obj-156::obj-34::obj-38" : [ "live.text[124]", "live.text[26]", 0 ],
-			"obj-156::obj-37::obj-42" : [ "live.text[55]", "live.text[26]", 0 ],
-			"obj-66::obj-44::obj-125::obj-11" : [ "live.toggle[68]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-2::obj-43" : [ "live.text[291]", "live.text[116]", 0 ],
-			"obj-156::obj-23::obj-1" : [ "1[87]", "1", 0 ],
-			"obj-156::obj-43::obj-1" : [ "1[73]", "1", 0 ],
-			"obj-156::obj-47::obj-15" : [ "live.text[20]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-29" : [ "ERMix", "ERMix", 0 ],
-			"obj-66::obj-44::obj-120::obj-10" : [ "speakerLevel[58]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-24::obj-11" : [ "live.toggle[45]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-2::obj-32" : [ "live.text[242]", "live.text[116]", 0 ],
-			"obj-66::obj-44::obj-2::obj-48" : [ "obj1[2]", "obj1[2]", 0 ],
-			"obj-156::obj-52::obj-15" : [ "live.text[49]", "live.text", 0 ],
-			"obj-39::obj-32" : [ "live.numbox[5]", "live.numbox[1]", 0 ],
-			"obj-66::obj-44::obj-4::obj-11" : [ "live.toggle[69]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-2::obj-80" : [ "obj1[10]", "obj1[10]", 0 ],
-			"obj-66::obj-44::obj-2::obj-44" : [ "live.text[292]", "live.text[116]", 0 ],
-			"obj-156::obj-27::obj-1" : [ "1[85]", "1", 0 ],
-			"obj-156::obj-42::obj-38" : [ "live.text[70]", "live.text[26]", 0 ],
-			"obj-156::obj-75::obj-42" : [ "live.text[18]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-58" : [ "gridRand", "gridRand", 0 ],
-			"obj-66::obj-44::obj-117::obj-11" : [ "live.toggle[40]", "live.toggle", 0 ],
-			"obj-156::obj-33::obj-1" : [ "1[79]", "1", 0 ],
-			"obj-156::obj-50::obj-1" : [ "1[64]", "1", 0 ],
-			"obj-12::obj-30::obj-3::obj-98" : [ "1-5", "1-5", 0 ],
-			"obj-66::obj-44::obj-6::obj-10" : [ "speakerLevel[72]", "speakerLevel", 0 ],
-			"obj-156::obj-26::obj-1" : [ "1[84]", "1", 0 ],
-			"obj-156::obj-41::obj-15" : [ "live.text[69]", "live.text", 0 ],
-			"obj-156::obj-73::obj-1" : [ "1[56]", "1", 0 ],
-			"obj-12::obj-30::obj-3::obj-106" : [ "wallFilterQ", "wallFilterQ", 0 ],
-			"obj-42" : [ "live.text[95]", "live.text[95]", 0 ],
-			"obj-155::obj-20" : [ "open", "open", 0 ],
-			"obj-156::obj-32::obj-42" : [ "live.text[122]", "live.text[26]", 0 ],
-			"obj-156::obj-63::obj-42" : [ "live.text[36]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-105" : [ "2-5", "2-5", 0 ],
-			"obj-66::obj-44::obj-81::obj-11" : [ "live.toggle[48]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-16::obj-10" : [ "speakerLevel[73]", "speakerLevel", 0 ],
-			"obj-156::obj-25::obj-15" : [ "live.text[129]", "live.text", 0 ],
-			"obj-156::obj-40::obj-1" : [ "1[70]", "1", 0 ],
-			"obj-156::obj-78::obj-1" : [ "1[53]", "1", 0 ],
-			"obj-156::obj-78::obj-42" : [ "live.text[6]", "live.text[26]", 0 ],
-			"obj-66::obj-44::obj-131::obj-10" : [ "speakerLevel[63]", "speakerLevel", 0 ],
-			"obj-156::obj-1::obj-38" : [ "live.text[143]", "live.text[26]", 0 ],
-			"obj-156::obj-30::obj-1" : [ "1[77]", "1", 0 ],
-			"obj-156::obj-62::obj-42" : [ "live.text[33]", "live.text[26]", 0 ],
-			"obj-156::obj-77::obj-42" : [ "live.text[1]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-121" : [ "3-5", "3-5", 0 ],
-			"obj-1" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-66::obj-44::obj-111::obj-11" : [ "live.toggle[55]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-12::obj-11" : [ "live.toggle[76]", "live.toggle", 0 ],
-			"obj-156::obj-24::obj-1" : [ "1[82]", "1", 0 ],
-			"obj-156::obj-38::obj-42" : [ "live.text[56]", "live.text[26]", 0 ],
-			"obj-58" : [ "live.text[130]", "live.text[130]", 0 ],
-			"obj-66::obj-44::obj-129::obj-11" : [ "live.toggle[41]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-2::obj-60" : [ "obj1[7]", "obj1[7]", 0 ],
-			"obj-156::obj-21::obj-38" : [ "live.text[140]", "live.text[26]", 0 ],
-			"obj-156::obj-28::obj-38" : [ "live.text[88]", "live.text[26]", 0 ],
-			"obj-156::obj-60::obj-38" : [ "live.text[25]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-137" : [ "4-5", "4-5", 0 ],
-			"obj-23" : [ "live.slider", "live.slider", 0 ],
-			"obj-66::obj-44::obj-108::obj-11" : [ "live.toggle[49]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-22::obj-11" : [ "live.toggle[77]", "live.toggle", 0 ],
-			"obj-155::obj-9" : [ "saveScene", "saveScene", 0 ],
-			"obj-156::obj-34::obj-15" : [ "live.text[101]", "live.text", 0 ],
-			"obj-156::obj-37::obj-1" : [ "1[67]", "1", 0 ],
-			"obj-156::obj-77::obj-15" : [ "live.text[2]", "live.text", 0 ],
-			"obj-66::obj-44::obj-126::obj-10" : [ "speakerLevel[67]", "speakerLevel", 0 ],
-			"obj-156::obj-23::obj-42" : [ "live.text[137]", "live.text[26]", 0 ],
-			"obj-156::obj-44::obj-1" : [ "1[74]", "1", 0 ],
-			"obj-156::obj-71::obj-1" : [ "1[59]", "1", 0 ],
-			"obj-12::obj-30::obj-3::obj-153" : [ "5-5", "5-5", 0 ],
-			"obj-66::obj-44::obj-121::obj-11" : [ "live.toggle[57]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-36::obj-10" : [ "speakerLevel[80]", "speakerLevel", 0 ],
-			"obj-156::obj-10::obj-15" : [ "live.text[50]", "live.text", 0 ],
-			"obj-66::obj-44::obj-124::obj-11" : [ "live.toggle[42]", "live.toggle", 0 ],
-			"obj-156::obj-22::obj-15" : [ "live.text[134]", "live.text", 0 ],
-			"obj-156::obj-43::obj-42" : [ "live.text[73]", "live.text[26]", 0 ],
-			"obj-156::obj-47::obj-42" : [ "live.text[21]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-19" : [ "damping", "damping", 0 ],
-			"obj-66::obj-44::obj-118::obj-10" : [ "speakerLevel[60]", "speakerLevel", 0 ],
-			"obj-156::obj-52::obj-42" : [ "live.text[47]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-92" : [ "1-3", "1-3", 0 ],
-			"obj-66::obj-44::obj-8::obj-11" : [ "live.toggle[71]", "live.toggle", 0 ],
-			"obj-156::obj-27::obj-42" : [ "live.text[132]", "live.text[26]", 0 ],
-			"obj-156::obj-41::obj-38" : [ "live.text[66]", "live.text[26]", 0 ],
-			"obj-156::obj-73::obj-42" : [ "live.text[13]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-59" : [ "wallFilterFreq", "wallFilterFreq", 0 ],
-			"obj-66::obj-44::obj-116::obj-11" : [ "live.toggle[61]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-2::obj-54" : [ "obj1[4]", "obj1[4]", 0 ],
-			"obj-66::obj-44::obj-2::obj-26" : [ "live.text[238]", "live.text[116]", 0 ],
-			"obj-156::obj-32::obj-1" : [ "1[78]", "1", 0 ],
-			"obj-156::obj-63::obj-38" : [ "live.text[34]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-111" : [ "2-3", "2-3", 0 ],
-			"obj-39::obj-105" : [ "live.text[178]", "live.text[181]", 0 ],
-			"obj-66::obj-44::obj-79::obj-10" : [ "speakerLevel[38]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-1::obj-10" : [ "speakerLevel[43]", "speakerLevel", 0 ],
-			"obj-156::obj-25::obj-38" : [ "live.text[128]", "live.text[26]", 0 ],
-			"obj-156::obj-40::obj-42" : [ "live.text[64]", "live.text[26]", 0 ],
-			"obj-156::obj-72::obj-1" : [ "1[55]", "1", 0 ],
-			"obj-4::obj-94" : [ "live.text[86]", "live.text[85]", 0 ],
-			"obj-66::obj-44::obj-2::obj-17" : [ "live.text[177]", "live.text[116]", 0 ],
-			"obj-156::obj-30::obj-15" : [ "live.text[121]", "live.text", 0 ],
-			"obj-156::obj-62::obj-1" : [ "1[62]", "1", 0 ],
-			"obj-156::obj-72::obj-38" : [ "live.text[11]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-127" : [ "3-3", "3-3", 0 ],
-			"obj-39::obj-79" : [ "live.menu", "live.menu", 0 ],
-			"obj-66::obj-44::obj-80::obj-10" : [ "speakerLevel[53]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-18::obj-11" : [ "live.toggle[75]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-2::obj-38" : [ "live.text[240]", "live.text[116]", 0 ],
-			"obj-156::obj-24::obj-42" : [ "live.text[127]", "live.text[26]", 0 ],
-			"obj-156::obj-39::obj-15" : [ "live.text[60]", "live.text", 0 ],
-			"obj-39::obj-63" : [ "live.text[209]", "live.text[181]", 0 ],
-			"obj-66::obj-44::obj-130::obj-10" : [ "speakerLevel[64]", "speakerLevel", 0 ],
-			"obj-156::obj-1::obj-15" : [ "live.text[145]", "live.text", 0 ],
-			"obj-156::obj-29::obj-15" : [ "live.text[118]", "live.text", 0 ],
-			"obj-156::obj-61::obj-42" : [ "live.text[28]", "live.text[26]", 0 ],
-			"obj-156::obj-57" : [ "live.text[43]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-143" : [ "4-3", "4-3", 0 ],
-			"obj-66::obj-44::obj-109::obj-11" : [ "live.toggle[39]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-23::obj-11" : [ "live.toggle[44]", "live.toggle", 0 ],
-			"obj-156::obj-35::obj-1" : [ "1[81]", "1", 0 ],
-			"obj-156::obj-31::obj-42" : [ "live.text[159]", "live.text[26]", 0 ],
-			"obj-156::obj-38::obj-38" : [ "live.text[57]", "live.text[26]", 0 ],
-			"obj-4::obj-83" : [ "live.text[84]", "live.text[83]", 0 ],
-			"obj-66::obj-44::obj-127::obj-11" : [ "live.toggle[66]", "live.toggle", 0 ],
-			"obj-156::obj-21::obj-1" : [ "1[88]", "1", 0 ],
-			"obj-156::obj-28::obj-42" : [ "live.text[117]", "live.text[26]", 0 ],
-			"obj-156::obj-71::obj-38" : [ "live.text[22]", "live.text[26]", 0 ],
-			"obj-156::obj-55" : [ "live.text[136]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-159" : [ "5-3", "5-3", 0 ],
-			"obj-39::obj-93" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-63" : [ "live.text", "live.text", 0 ],
-			"obj-66::obj-44::obj-122::obj-10" : [ "speakerLevel[54]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-19::obj-11" : [ "live.toggle[79]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-2::obj-41" : [ "obj1[1]", "obj1[1]", 0 ],
-			"obj-156::obj-34::obj-42" : [ "live.text[100]", "live.text[26]", 0 ],
-			"obj-156::obj-10::obj-38" : [ "live.text[52]", "live.text[26]", 0 ],
-			"obj-78" : [ "live.text[146]", "live.text[130]", 0 ],
-			"obj-66::obj-44::obj-125::obj-10" : [ "speakerLevel[68]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-2::obj-78" : [ "obj1[9]", "obj1[9]", 0 ],
 			"obj-155::obj-22" : [ "live.text[79]", "live.text[111]", 0 ],
-			"obj-156::obj-22::obj-38" : [ "live.text[133]", "live.text[26]", 0 ],
-			"obj-156::obj-43::obj-38" : [ "live.text[74]", "live.text[26]", 0 ],
-			"obj-156::obj-47::obj-1" : [ "1[58]", "1", 0 ],
-			"obj-12::obj-30::obj-3::obj-40" : [ "ERRC", "ERRC", 0 ],
-			"obj-66::obj-44::obj-119::obj-11" : [ "live.toggle[59]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-24::obj-10" : [ "speakerLevel[45]", "speakerLevel", 0 ],
-			"obj-156::obj-52::obj-1" : [ "1[65]", "1", 0 ],
-			"obj-12::obj-30::obj-3::obj-84" : [ "1-1", "1-1", 0 ],
-			"obj-39::obj-59" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
-			"obj-66::obj-44::obj-9::obj-11" : [ "live.toggle[70]", "live.toggle", 0 ],
-			"obj-156::obj-27::obj-38" : [ "live.text[108]", "live.text[26]", 0 ],
-			"obj-156::obj-42::obj-15" : [ "live.text[71]", "live.text", 0 ],
-			"obj-156::obj-75::obj-15" : [ "live.text[17]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-44" : [ "randRange", "randRange", 0 ],
-			"obj-70" : [ "live.text[148]", "live.text[148]", 0 ],
-			"obj-66::obj-44::obj-117::obj-10" : [ "speakerLevel[40]", "speakerLevel", 0 ],
+			"obj-156::obj-35::obj-15" : [ "live.text[125]", "live.text", 0 ],
+			"obj-156::obj-31::obj-42" : [ "live.text[159]", "live.text[26]", 0 ],
+			"obj-156::obj-10::obj-1" : [ "1[66]", "1", 0 ],
+			"obj-66::obj-44::obj-80::obj-11" : [ "live.toggle[53]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-23::obj-11" : [ "live.toggle[44]", "live.toggle", 0 ],
+			"obj-155::obj-10" : [ "clearPreset", "clearPreset", 0 ],
+			"obj-156::obj-23::obj-1" : [ "1[87]", "1", 0 ],
+			"obj-156::obj-44::obj-15" : [ "live.text[116]", "live.text", 0 ],
+			"obj-156::obj-42::obj-38" : [ "live.text[70]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-128::obj-10" : [ "speakerLevel[65]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-2::obj-46" : [ "live.text[294]", "live.text[116]", 0 ],
 			"obj-156::obj-33::obj-38" : [ "live.text[99]", "live.text[26]", 0 ],
 			"obj-156::obj-50::obj-38" : [ "live.text[37]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-117" : [ "2-1", "2-1", 0 ],
-			"obj-66::obj-44::obj-6::obj-11" : [ "live.toggle[72]", "live.toggle", 0 ],
-			"obj-155::obj-10" : [ "clearPreset", "clearPreset", 0 ],
-			"obj-156::obj-26::obj-38" : [ "live.text[106]", "live.text[26]", 0 ],
-			"obj-156::obj-41::obj-1" : [ "1[71]", "1", 0 ],
-			"obj-156::obj-73::obj-38" : [ "live.text[14]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-68" : [ "wobble", "wobble", 0 ],
-			"obj-73" : [ "rev amount", "rev amount", 0 ],
-			"obj-156::obj-32::obj-15" : [ "live.text[96]", "live.text", 0 ],
-			"obj-156::obj-31::obj-1" : [ "1[22]", "1", 0 ],
-			"obj-156::obj-63::obj-1" : [ "1[63]", "1", 0 ],
-			"obj-12::obj-30::obj-3::obj-133" : [ "3-1", "3-1", 0 ],
-			"obj-66::obj-44::obj-81::obj-10" : [ "speakerLevel[48]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-14::obj-10" : [ "speakerLevel[74]", "speakerLevel", 0 ],
-			"obj-156::obj-25::obj-1" : [ "1[83]", "1", 0 ],
-			"obj-156::obj-39::obj-38" : [ "live.text[59]", "live.text[26]", 0 ],
-			"obj-156::obj-77::obj-1" : [ "1[52]", "1", 0 ],
-			"obj-156::obj-77::obj-38" : [ "live.text[3]", "live.text[26]", 0 ],
-			"obj-39::obj-21" : [ "crossFreq", "crossFreq", 0 ],
-			"obj-44" : [ "live.text[214]", "live.text[68]", 0 ],
-			"obj-66::obj-44::obj-131::obj-11" : [ "live.toggle[63]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-2::obj-58" : [ "obj1[6]", "obj1[6]", 0 ],
-			"obj-66::obj-44::obj-2::obj-46" : [ "live.text[294]", "live.text[116]", 0 ],
-			"obj-156::obj-29::obj-38" : [ "live.text[90]", "live.text[26]", 0 ],
-			"obj-156::obj-61::obj-38" : [ "live.text[29]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-149" : [ "4-1", "4-1", 0 ],
-			"obj-66::obj-44::obj-110::obj-11" : [ "live.toggle[56]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-12::obj-10" : [ "speakerLevel[76]", "speakerLevel", 0 ],
-			"obj-156::obj-35::obj-42" : [ "live.text[102]", "live.text[26]", 0 ],
-			"obj-156::obj-38::obj-15" : [ "live.text[58]", "live.text", 0 ],
-			"obj-66::obj-44::obj-128::obj-11" : [ "live.toggle[65]", "live.toggle", 0 ],
-			"obj-156::obj-21::obj-42" : [ "live.text[142]", "live.text[26]", 0 ],
-			"obj-156::obj-28::obj-15" : [ "live.text[89]", "live.text", 0 ],
-			"obj-156::obj-60::obj-42" : [ "live.text[27]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-165" : [ "5-1", "5-1", 0 ],
-			"obj-66::obj-44::obj-108::obj-10" : [ "speakerLevel[49]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-21::obj-11" : [ "live.toggle[78]", "live.toggle", 0 ],
-			"obj-155::obj-6" : [ "live.text[149]", "live.text[111]", 0 ],
-			"obj-156::obj-34::obj-1" : [ "1[80]", "1", 0 ],
-			"obj-156::obj-37::obj-38" : [ "live.text[53]", "live.text[26]", 0 ],
-			"obj-66::obj-44::obj-126::obj-11" : [ "live.toggle[67]", "live.toggle", 0 ],
-			"obj-156::obj-23::obj-15" : [ "live.text[139]", "live.text", 0 ],
-			"obj-156::obj-44::obj-38" : [ "live.text[114]", "live.text[26]", 0 ],
-			"obj-156::obj-71::obj-15" : [ "live.text[23]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-49" : [ "ERDepth", "ERDepth", 0 ],
-			"obj-11" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
-			"obj-3" : [ "live.text[94]", "live.text[94]", 0 ],
-			"obj-66::obj-44::obj-120::obj-11" : [ "live.toggle[58]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-36::obj-11" : [ "live.toggle[80]", "live.toggle", 0 ],
-			"obj-156::obj-10::obj-1" : [ "1[66]", "1", 0 ],
-			"obj-66::obj-44::obj-4::obj-10" : [ "speakerLevel[69]", "speakerLevel", 0 ],
-			"obj-156::obj-22::obj-1" : [ "1[86]", "1", 0 ],
-			"obj-156::obj-42::obj-1" : [ "1[72]", "1", 0 ],
-			"obj-156::obj-75::obj-38" : [ "live.text[16]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-112" : [ "filterMode", "filterMode", 0 ],
-			"obj-66::obj-44::obj-118::obj-11" : [ "live.toggle[60]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-2::obj-30" : [ "live.text[232]", "live.text[116]", 0 ],
-			"obj-66::obj-44::obj-2::obj-50" : [ "obj1[3]", "obj1[3]", 0 ],
-			"obj-156::obj-33::obj-15" : [ "live.text[123]", "live.text", 0 ],
-			"obj-156::obj-50::obj-15" : [ "live.text[45]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-95" : [ "1-4", "1-4", 0 ],
-			"obj-66::obj-44::obj-8::obj-10" : [ "speakerLevel[71]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-2::obj-82" : [ "obj1[11]", "obj1[11]", 0 ],
-			"obj-156::obj-26::obj-42" : [ "live.text[131]", "live.text[26]", 0 ],
-			"obj-156::obj-41::obj-42" : [ "live.text[65]", "live.text[26]", 0 ],
-			"obj-156::obj-73::obj-15" : [ "live.text[15]", "live.text", 0 ],
-			"obj-156::obj-20::obj-42" : [ "live.text[7]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-57" : [ "wallFilterMix", "mix", 0 ],
-			"obj-66::obj-44::obj-115::obj-11" : [ "live.toggle[62]", "live.toggle", 0 ],
-			"obj-156::obj-32::obj-38" : [ "live.text[92]", "live.text[26]", 0 ],
-			"obj-156::obj-63::obj-15" : [ "live.text[35]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-108" : [ "2-4", "2-4", 0 ],
-			"obj-66::obj-44::obj-79::obj-11" : [ "live.toggle[38]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-16::obj-11" : [ "live.toggle[73]", "live.toggle", 0 ],
-			"obj-156::obj-25::obj-42" : [ "live.text[105]", "live.text[26]", 0 ],
-			"obj-156::obj-40::obj-15" : [ "live.text[62]", "live.text", 0 ],
-			"obj-156::obj-20::obj-1" : [ "1[54]", "1", 0 ],
-			"obj-4::obj-84" : [ "live.text[85]", "live.text[85]", 0 ],
-			"obj-66::obj-44::obj-115::obj-10" : [ "speakerLevel[62]", "speakerLevel", 0 ],
-			"obj-156::obj-30::obj-42" : [ "live.text[91]", "live.text[26]", 0 ],
-			"obj-156::obj-62::obj-38" : [ "live.text[31]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-124" : [ "3-4", "3-4", 0 ],
-			"obj-66::obj-44::obj-111::obj-10" : [ "speakerLevel[55]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-18::obj-10" : [ "speakerLevel[75]", "speakerLevel", 0 ],
-			"obj-156::obj-24::obj-15" : [ "live.text[104]", "live.text", 0 ],
-			"obj-156::obj-39::obj-1" : [ "1[69]", "1", 0 ],
-			"obj-39::obj-46" : [ "live.text[181]", "live.text[181]", 0 ],
-			"obj-79" : [ "live.text[162]", "live.text[130]", 0 ],
-			"obj-66::obj-44::obj-129::obj-10" : [ "speakerLevel[41]", "speakerLevel", 0 ],
-			"obj-156::obj-1::obj-1" : [ "1[89]", "1", 0 ],
-			"obj-156::obj-29::obj-1" : [ "1[76]", "1", 0 ],
-			"obj-156::obj-61::obj-1" : [ "1[61]", "1", 0 ],
-			"obj-156::obj-72::obj-42" : [ "live.text[10]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-140" : [ "4-4", "4-4", 0 ],
-			"obj-66::obj-44::obj-109::obj-10" : [ "speakerLevel[39]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-22::obj-10" : [ "speakerLevel[77]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-2::obj-35" : [ "obj1", "obj1", 0 ],
-			"obj-156::obj-35::obj-38" : [ "live.text[103]", "live.text[26]", 0 ],
-			"obj-156::obj-37::obj-15" : [ "live.text[54]", "live.text", 0 ],
-			"obj-156::obj-60::obj-15" : [ "live.text[26]", "live.text", 0 ],
-			"obj-156::obj-78::obj-38" : [ "live.text[4]", "live.text[26]", 0 ],
-			"obj-4::obj-82" : [ "live.text[83]", "live.text[83]", 0 ],
-			"obj-39::obj-44" : [ "live.text[208]", "live.text[181]", 0 ],
-			"obj-66::obj-44::obj-127::obj-10" : [ "speakerLevel[66]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-2::obj-64" : [ "obj1[8]", "obj1[8]", 0 ],
-			"obj-156::obj-23::obj-38" : [ "live.text[138]", "live.text[26]", 0 ],
-			"obj-156::obj-44::obj-42" : [ "live.text[87]", "live.text[26]", 0 ],
-			"obj-156::obj-71::obj-42" : [ "live.text[24]", "live.text[26]", 0 ],
-			"obj-156::obj-20::obj-38" : [ "live.text[8]", "live.text[26]", 0 ],
-			"obj-12::obj-30::obj-3::obj-156" : [ "5-4", "5-4", 0 ],
-			"obj-66::obj-44::obj-121::obj-10" : [ "speakerLevel[57]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-19::obj-10" : [ "speakerLevel[79]", "speakerLevel", 0 ],
-			"obj-156::obj-31::obj-38" : [ "live.text[160]", "live.text[26]", 0 ],
-			"obj-156::obj-10::obj-42" : [ "live.text[51]", "live.text[26]", 0 ],
-			"obj-156::obj-78::obj-15" : [ "live.text[5]", "live.text", 0 ],
-			"obj-39::obj-20" : [ "live.numbox[4]", "live.numbox[1]", 0 ],
-			"obj-39::obj-1" : [ "live.numbox[3]", "live.numbox[1]", 0 ],
-			"obj-66::obj-44::obj-124::obj-10" : [ "speakerLevel[42]", "speakerLevel", 0 ],
-			"obj-66::obj-55" : [ "number", "number", 0 ],
-			"obj-155::obj-8" : [ "live.text[112]", "live.text[111]", 0 ],
-			"obj-156::obj-22::obj-42" : [ "live.text[110]", "live.text[26]", 0 ],
-			"obj-156::obj-43::obj-15" : [ "live.text[113]", "live.text", 0 ],
-			"obj-156::obj-47::obj-38" : [ "live.text[19]", "live.text[26]", 0 ],
-			"obj-156::obj-20::obj-15" : [ "live.text[9]", "live.text", 0 ],
-			"obj-156::obj-51" : [ "live.text[42]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-23" : [ "RC", "RC", 0 ],
-			"obj-66::obj-44::obj-78::obj-11" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-119::obj-10" : [ "speakerLevel[59]", "speakerLevel", 0 ],
-			"obj-156::obj-52::obj-38" : [ "live.text[48]", "live.text[26]", 0 ],
-			"obj-156::obj-58" : [ "live.text[44]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-89" : [ "1-2", "1-2", 0 ],
-			"obj-39::obj-60" : [ "live.numbox[2]", "live.numbox[1]", 0 ],
-			"obj-59::obj-13" : [ "mcs.vst~", "mcs.vst~", 0 ],
-			"obj-66::obj-44::obj-9::obj-10" : [ "speakerLevel[70]", "speakerLevel", 0 ],
-			"obj-155::obj-18" : [ "live.text[98]", "live.text[111]", 0 ],
-			"obj-156::obj-27::obj-15" : [ "live.text[109]", "live.text", 0 ],
-			"obj-156::obj-42::obj-42" : [ "live.text[72]", "live.text[26]", 0 ],
-			"obj-156::obj-75::obj-1" : [ "1[57]", "1", 0 ],
+			"obj-12::obj-30::obj-3::obj-58" : [ "gridRand", "gridRand", 0 ],
 			"obj-12::obj-30::obj-3::obj-38" : [ "smoothing", "smoothing", 0 ],
-			"obj-66::obj-44::obj-78::obj-10" : [ "speakerLevel[1]", "speakerLevel", 0 ],
-			"obj-66::obj-44::obj-116::obj-10" : [ "speakerLevel[61]", "speakerLevel", 0 ],
-			"obj-156::obj-33::obj-42" : [ "live.text[97]", "live.text[26]", 0 ],
-			"obj-156::obj-31::obj-15" : [ "live.text[161]", "live.text", 0 ],
-			"obj-156::obj-50::obj-42" : [ "live.text[46]", "live.text[26]", 0 ],
+			"obj-12::obj-30::obj-3::obj-112" : [ "filterMode", "filterMode", 0 ],
+			"obj-66::obj-44::obj-109::obj-10" : [ "speakerLevel[39]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-21::obj-10" : [ "speakerLevel[78]", "speakerLevel", 0 ],
+			"obj-156::obj-22::obj-42" : [ "live.text[110]", "live.text[26]", 0 ],
+			"obj-156::obj-41::obj-38" : [ "live.text[66]", "live.text[26]", 0 ],
+			"obj-156::obj-51" : [ "live.text[42]", "live.text", 0 ],
+			"obj-66::obj-44::obj-125::obj-10" : [ "speakerLevel[68]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-2::obj-48" : [ "obj1[2]", "obj1[2]", 0 ],
+			"obj-156::obj-32::obj-42" : [ "live.text[122]", "live.text[26]", 0 ],
+			"obj-156::obj-63::obj-15" : [ "live.text[35]", "live.text", 0 ],
+			"obj-156::obj-58" : [ "live.text[44]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-95" : [ "1-4", "1-4", 0 ],
+			"obj-39::obj-79" : [ "live.menu", "live.menu", 0 ],
+			"obj-39::obj-21" : [ "crossFreq", "crossFreq", 0 ],
+			"obj-66::obj-44::obj-78::obj-11" : [ "live.toggle[1]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-122::obj-10" : [ "speakerLevel[54]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-24::obj-11" : [ "live.toggle[45]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-80" : [ "obj1[10]", "obj1[10]", 0 ],
+			"obj-156::obj-27::obj-38" : [ "live.text[108]", "live.text[26]", 0 ],
+			"obj-156::obj-40::obj-38" : [ "live.text[63]", "live.text[26]", 0 ],
+			"obj-156::obj-47::obj-15" : [ "live.text[20]", "live.text", 0 ],
+			"obj-156::obj-73::obj-38" : [ "live.text[14]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-4::obj-10" : [ "speakerLevel[69]", "speakerLevel", 0 ],
+			"obj-156::obj-30::obj-1" : [ "1[77]", "1", 0 ],
+			"obj-156::obj-62::obj-1" : [ "1[62]", "1", 0 ],
 			"obj-156::obj-59" : [ "live.text[135]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-108" : [ "2-4", "2-4", 0 ],
+			"obj-39::obj-60" : [ "live.numbox[2]", "live.numbox[1]", 0 ],
+			"obj-66::obj-44::obj-119::obj-11" : [ "live.toggle[59]", "live.toggle", 0 ],
+			"obj-156::obj-26::obj-42" : [ "live.text[131]", "live.text[26]", 0 ],
+			"obj-156::obj-39::obj-1" : [ "1[69]", "1", 0 ],
+			"obj-156::obj-60::obj-38" : [ "live.text[25]", "live.text[26]", 0 ],
+			"obj-156::obj-75::obj-1" : [ "1[57]", "1", 0 ],
+			"obj-66::obj-44::obj-6::obj-11" : [ "live.toggle[72]", "live.toggle", 0 ],
+			"obj-156::obj-31::obj-1" : [ "1[22]", "1", 0 ],
+			"obj-156::obj-29::obj-1" : [ "1[76]", "1", 0 ],
+			"obj-156::obj-61::obj-42" : [ "live.text[28]", "live.text[26]", 0 ],
+			"obj-156::obj-56" : [ "live.text[41]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-124" : [ "3-4", "3-4", 0 ],
+			"obj-63" : [ "live.text", "live.text", 0 ],
+			"obj-66::obj-44::obj-117::obj-10" : [ "speakerLevel[40]", "speakerLevel", 0 ],
+			"obj-156::obj-24::obj-38" : [ "live.text[126]", "live.text[26]", 0 ],
+			"obj-156::obj-37::obj-38" : [ "live.text[53]", "live.text[26]", 0 ],
+			"obj-156::obj-78::obj-42" : [ "live.text[6]", "live.text[26]", 0 ],
+			"obj-156::obj-77::obj-1" : [ "1[52]", "1", 0 ],
+			"obj-66::obj-44::obj-16::obj-10" : [ "speakerLevel[73]", "speakerLevel", 0 ],
+			"obj-156::obj-1::obj-42" : [ "live.text[144]", "live.text[26]", 0 ],
+			"obj-156::obj-44::obj-1" : [ "1[74]", "1", 0 ],
+			"obj-12::obj-30::obj-3::obj-140" : [ "4-4", "4-4", 0 ],
+			"obj-39::obj-105" : [ "live.text[178]", "live.text[181]", 0 ],
+			"obj-66::obj-44::obj-131::obj-11" : [ "live.toggle[63]", "live.toggle", 0 ],
+			"obj-156::obj-35::obj-1" : [ "1[81]", "1", 0 ],
+			"obj-156::obj-10::obj-15" : [ "live.text[50]", "live.text", 0 ],
+			"obj-70" : [ "live.text[148]", "live.text[148]", 0 ],
+			"obj-66::obj-44::obj-81::obj-11" : [ "live.toggle[48]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-12::obj-11" : [ "live.toggle[76]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-60" : [ "obj1[7]", "obj1[7]", 0 ],
+			"obj-156::obj-21::obj-38" : [ "live.text[140]", "live.text[26]", 0 ],
+			"obj-156::obj-43::obj-1" : [ "1[73]", "1", 0 ],
+			"obj-12::obj-30::obj-3::obj-156" : [ "5-4", "5-4", 0 ],
+			"obj-66::obj-44::obj-78::obj-10" : [ "speakerLevel[1]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-129::obj-10" : [ "speakerLevel[41]", "speakerLevel", 0 ],
+			"obj-156::obj-34::obj-38" : [ "live.text[124]", "live.text[26]", 0 ],
+			"obj-156::obj-52::obj-1" : [ "1[65]", "1", 0 ],
+			"obj-66::obj-44::obj-110::obj-10" : [ "speakerLevel[56]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-22::obj-10" : [ "speakerLevel[77]", "speakerLevel", 0 ],
+			"obj-156::obj-23::obj-42" : [ "live.text[137]", "live.text[26]", 0 ],
+			"obj-156::obj-42::obj-1" : [ "1[72]", "1", 0 ],
+			"obj-39::obj-93" : [ "live.menu[1]", "live.menu", 0 ],
+			"obj-66::obj-44::obj-126::obj-10" : [ "speakerLevel[67]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-2::obj-32" : [ "live.text[242]", "live.text[116]", 0 ],
+			"obj-156::obj-33::obj-1" : [ "1[79]", "1", 0 ],
+			"obj-156::obj-50::obj-1" : [ "1[64]", "1", 0 ],
+			"obj-12::obj-30::obj-3::obj-89" : [ "1-2", "1-2", 0 ],
+			"obj-12::obj-30::obj-3::obj-106" : [ "wallFilterQ", "wallFilterQ", 0 ],
+			"obj-44" : [ "live.text[214]", "live.text[68]", 0 ],
+			"obj-73" : [ "rev amount", "rev amount", 0 ],
+			"obj-66::obj-44::obj-108::obj-11" : [ "live.toggle[49]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-36::obj-11" : [ "live.toggle[80]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-43" : [ "live.text[291]", "live.text[116]", 0 ],
+			"obj-155::obj-8" : [ "live.text[112]", "live.text[111]", 0 ],
+			"obj-156::obj-27::obj-15" : [ "live.text[109]", "live.text", 0 ],
+			"obj-156::obj-40::obj-15" : [ "live.text[62]", "live.text", 0 ],
+			"obj-156::obj-72::obj-15" : [ "live.text[12]", "live.text", 0 ],
+			"obj-156::obj-77::obj-42" : [ "live.text[1]", "live.text[26]", 0 ],
+			"obj-39::obj-32" : [ "live.numbox[5]", "live.numbox[1]", 0 ],
+			"obj-66::obj-44::obj-124::obj-11" : [ "live.toggle[42]", "live.toggle", 0 ],
+			"obj-66::obj-55" : [ "number", "number", 0 ],
+			"obj-156::obj-30::obj-15" : [ "live.text[121]", "live.text", 0 ],
+			"obj-156::obj-62::obj-38" : [ "live.text[31]", "live.text[26]", 0 ],
 			"obj-12::obj-30::obj-3::obj-114" : [ "2-2", "2-2", 0 ],
-			"obj-66::obj-44::obj-1::obj-11" : [ "live.toggle[43]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-120::obj-10" : [ "speakerLevel[58]", "speakerLevel", 0 ],
+			"obj-156::obj-26::obj-38" : [ "live.text[106]", "live.text[26]", 0 ],
+			"obj-156::obj-39::obj-15" : [ "live.text[60]", "live.text", 0 ],
+			"obj-156::obj-47::obj-38" : [ "live.text[19]", "live.text[26]", 0 ],
+			"obj-156::obj-75::obj-15" : [ "live.text[17]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-19" : [ "damping", "damping", 0 ],
+			"obj-66::obj-44::obj-8::obj-11" : [ "live.toggle[71]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-54" : [ "obj1[4]", "obj1[4]", 0 ],
+			"obj-156::obj-29::obj-15" : [ "live.text[118]", "live.text", 0 ],
+			"obj-156::obj-61::obj-15" : [ "live.text[30]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-130" : [ "3-2", "3-2", 0 ],
+			"obj-66::obj-44::obj-118::obj-11" : [ "live.toggle[60]", "live.toggle", 0 ],
 			"obj-66::obj-44::obj-2::obj-39" : [ "live.text[239]", "live.text[116]", 0 ],
 			"obj-66::obj-33" : [ "reverbLevel", "level", 0 ],
-			"obj-156::obj-26::obj-15" : [ "live.text[107]", "live.text", 0 ],
-			"obj-156::obj-40::obj-38" : [ "live.text[63]", "live.text[26]", 0 ],
-			"obj-156::obj-72::obj-15" : [ "live.text[12]", "live.text", 0 ],
-			"obj-66::obj-44::obj-2::obj-56" : [ "obj1[5]", "obj1[5]", 0 ],
+			"obj-156::obj-25::obj-15" : [ "live.text[129]", "live.text", 0 ],
+			"obj-156::obj-38::obj-1" : [ "1[68]", "1", 0 ],
+			"obj-156::obj-20::obj-1" : [ "1[54]", "1", 0 ],
+			"obj-156::obj-78::obj-38" : [ "live.text[4]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-1::obj-11" : [ "live.toggle[43]", "live.toggle", 0 ],
+			"obj-155::obj-1" : [ "live.text[111]", "live.text[111]", 0 ],
+			"obj-156::obj-1::obj-15" : [ "live.text[145]", "live.text", 0 ],
+			"obj-156::obj-28::obj-1" : [ "1[75]", "1", 0 ],
+			"obj-156::obj-71::obj-1" : [ "1[59]", "1", 0 ],
+			"obj-12::obj-30::obj-3::obj-29" : [ "ERMix", "ERMix", 0 ],
+			"obj-12::obj-30::obj-3::obj-146" : [ "4-2", "4-2", 0 ],
+			"obj-39::obj-63" : [ "live.text[209]", "live.text[181]", 0 ],
+			"obj-11" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-66::obj-44::obj-115::obj-11" : [ "live.toggle[62]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-38" : [ "live.text[240]", "live.text[116]", 0 ],
+			"obj-156::obj-24::obj-42" : [ "live.text[127]", "live.text[26]", 0 ],
+			"obj-156::obj-37::obj-1" : [ "1[67]", "1", 0 ],
+			"obj-66::obj-44::obj-79::obj-11" : [ "live.toggle[38]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-18::obj-11" : [ "live.toggle[75]", "live.toggle", 0 ],
+			"obj-156::obj-21::obj-42" : [ "live.text[142]", "live.text[26]", 0 ],
+			"obj-156::obj-43::obj-15" : [ "live.text[113]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-162" : [ "5-2", "5-2", 0 ],
+			"obj-66::obj-44::obj-130::obj-10" : [ "speakerLevel[64]", "speakerLevel", 0 ],
+			"obj-156::obj-34::obj-42" : [ "live.text[100]", "live.text[26]", 0 ],
+			"obj-156::obj-52::obj-15" : [ "live.text[49]", "live.text", 0 ],
+			"obj-156::obj-60::obj-15" : [ "live.text[26]", "live.text", 0 ],
+			"obj-66::obj-44::obj-111::obj-10" : [ "speakerLevel[55]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-23::obj-10" : [ "speakerLevel[44]", "speakerLevel", 0 ],
+			"obj-156::obj-23::obj-38" : [ "live.text[138]", "live.text[26]", 0 ],
+			"obj-156::obj-42::obj-15" : [ "live.text[71]", "live.text", 0 ],
+			"obj-66::obj-44::obj-127::obj-11" : [ "live.toggle[66]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-41" : [ "obj1[1]", "obj1[1]", 0 ],
+			"obj-155::obj-18" : [ "live.text[98]", "live.text[111]", 0 ],
+			"obj-156::obj-33::obj-15" : [ "live.text[123]", "live.text", 0 ],
+			"obj-156::obj-31::obj-38" : [ "live.text[160]", "live.text[26]", 0 ],
+			"obj-156::obj-50::obj-15" : [ "live.text[45]", "live.text", 0 ],
+			"obj-4::obj-94" : [ "live.text[86]", "live.text[85]", 0 ],
+			"obj-12::obj-30::obj-3::obj-59" : [ "wallFilterFreq", "wallFilterFreq", 0 ],
+			"obj-12::obj-30::obj-3::obj-44" : [ "randRange", "randRange", 0 ],
+			"obj-3" : [ "live.text[94]", "live.text[94]", 0 ],
+			"obj-66::obj-44::obj-109::obj-11" : [ "live.toggle[39]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-19::obj-10" : [ "speakerLevel[79]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-2::obj-78" : [ "obj1[9]", "obj1[9]", 0 ],
+			"obj-156::obj-22::obj-1" : [ "1[86]", "1", 0 ],
+			"obj-156::obj-41::obj-1" : [ "1[71]", "1", 0 ],
+			"obj-156::obj-72::obj-42" : [ "live.text[10]", "live.text[26]", 0 ],
+			"obj-39::obj-1" : [ "live.numbox[3]", "live.numbox[1]", 0 ],
+			"obj-66::obj-44::obj-125::obj-11" : [ "live.toggle[68]", "live.toggle", 0 ],
+			"obj-156::obj-32::obj-1" : [ "1[78]", "1", 0 ],
+			"obj-156::obj-63::obj-42" : [ "live.text[36]", "live.text[26]", 0 ],
+			"obj-12::obj-30::obj-3::obj-98" : [ "1-5", "1-5", 0 ],
+			"obj-66::obj-44::obj-121::obj-10" : [ "speakerLevel[57]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-24::obj-10" : [ "speakerLevel[45]", "speakerLevel", 0 ],
+			"obj-156::obj-27::obj-42" : [ "live.text[132]", "live.text[26]", 0 ],
+			"obj-156::obj-40::obj-1" : [ "1[70]", "1", 0 ],
+			"obj-156::obj-47::obj-42" : [ "live.text[21]", "live.text[26]", 0 ],
+			"obj-156::obj-73::obj-15" : [ "live.text[15]", "live.text", 0 ],
+			"obj-66::obj-44::obj-9::obj-11" : [ "live.toggle[70]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-26" : [ "live.text[238]", "live.text[116]", 0 ],
+			"obj-156::obj-31::obj-15" : [ "live.text[161]", "live.text", 0 ],
 			"obj-156::obj-30::obj-38" : [ "live.text[120]", "live.text[26]", 0 ],
-			"obj-156::obj-62::obj-15" : [ "live.text[32]", "live.text", 0 ],
-			"obj-156::obj-56" : [ "live.text[41]", "live.text", 0 ],
-			"obj-12::obj-30::obj-3::obj-130" : [ "3-2", "3-2", 0 ],
-			"obj-66::obj-44::obj-80::obj-11" : [ "live.toggle[53]", "live.toggle", 0 ],
-			"obj-66::obj-44::obj-14::obj-11" : [ "live.toggle[74]", "live.toggle", 0 ],
-			"obj-156::obj-24::obj-38" : [ "live.text[126]", "live.text[26]", 0 ],
-			"obj-156::obj-39::obj-42" : [ "live.text[61]", "live.text[26]", 0 ],
+			"obj-156::obj-62::obj-42" : [ "live.text[33]", "live.text[26]", 0 ],
+			"obj-4::obj-83" : [ "live.text[84]", "live.text[83]", 0 ],
+			"obj-12::obj-30::obj-3::obj-105" : [ "2-5", "2-5", 0 ],
+			"obj-42" : [ "live.text[95]", "live.text[95]", 0 ],
+			"obj-66::obj-44::obj-119::obj-10" : [ "speakerLevel[59]", "speakerLevel", 0 ],
+			"obj-156::obj-25::obj-1" : [ "1[83]", "1", 0 ],
+			"obj-156::obj-38::obj-15" : [ "live.text[58]", "live.text", 0 ],
+			"obj-156::obj-73::obj-1" : [ "1[56]", "1", 0 ],
+			"obj-156::obj-77::obj-15" : [ "live.text[2]", "live.text", 0 ],
+			"obj-66::obj-44::obj-6::obj-10" : [ "speakerLevel[72]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-2::obj-17" : [ "live.text[177]", "live.text[116]", 0 ],
+			"obj-156::obj-28::obj-42" : [ "live.text[117]", "live.text[26]", 0 ],
+			"obj-156::obj-60::obj-1" : [ "1[60]", "1", 0 ],
+			"obj-12::obj-30::obj-3::obj-121" : [ "3-5", "3-5", 0 ],
+			"obj-66::obj-44::obj-116::obj-11" : [ "live.toggle[61]", "live.toggle", 0 ],
+			"obj-155::obj-20" : [ "open", "open", 0 ],
+			"obj-155::obj-9" : [ "saveScene", "saveScene", 0 ],
+			"obj-155::obj-23" : [ "live.text[115]", "live.text[111]", 0 ],
+			"obj-156::obj-24::obj-15" : [ "live.text[104]", "live.text", 0 ],
+			"obj-156::obj-37::obj-15" : [ "live.text[54]", "live.text", 0 ],
+			"obj-156::obj-20::obj-42" : [ "live.text[7]", "live.text[26]", 0 ],
+			"obj-79" : [ "live.text[162]", "live.text[130]", 0 ],
+			"obj-66::obj-44::obj-14::obj-10" : [ "speakerLevel[74]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-2::obj-58" : [ "obj1[6]", "obj1[6]", 0 ],
+			"obj-156::obj-1::obj-1" : [ "1[89]", "1", 0 ],
+			"obj-156::obj-44::obj-38" : [ "live.text[114]", "live.text[26]", 0 ],
+			"obj-156::obj-57" : [ "live.text[43]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-137" : [ "4-5", "4-5", 0 ],
+			"obj-66::obj-44::obj-131::obj-10" : [ "speakerLevel[63]", "speakerLevel", 0 ],
+			"obj-156::obj-35::obj-38" : [ "live.text[103]", "live.text[26]", 0 ],
+			"obj-156::obj-10::obj-42" : [ "live.text[51]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-80::obj-10" : [ "speakerLevel[53]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-12::obj-10" : [ "speakerLevel[76]", "speakerLevel", 0 ],
+			"obj-156::obj-21::obj-15" : [ "live.text[141]", "live.text", 0 ],
+			"obj-156::obj-43::obj-38" : [ "live.text[74]", "live.text[26]", 0 ],
+			"obj-156::obj-55" : [ "live.text[136]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-153" : [ "5-5", "5-5", 0 ],
+			"obj-66::obj-44::obj-128::obj-11" : [ "live.toggle[65]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-33" : [ "live.text[233]", "live.text[116]", 0 ],
+			"obj-156::obj-34::obj-1" : [ "1[80]", "1", 0 ],
+			"obj-156::obj-52::obj-38" : [ "live.text[48]", "live.text[26]", 0 ],
+			"obj-12::obj-30::obj-3::obj-23" : [ "RC", "RC", 0 ],
+			"obj-66::obj-44::obj-110::obj-11" : [ "live.toggle[56]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-21::obj-11" : [ "live.toggle[78]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-45" : [ "live.text[293]", "live.text[116]", 0 ],
+			"obj-156::obj-22::obj-15" : [ "live.text[134]", "live.text", 0 ],
+			"obj-156::obj-41::obj-15" : [ "live.text[69]", "live.text", 0 ],
+			"obj-39::obj-95" : [ "live.menu[2]", "live.menu", 0 ],
+			"obj-66::obj-44::obj-126::obj-11" : [ "live.toggle[67]", "live.toggle", 0 ],
+			"obj-156::obj-32::obj-15" : [ "live.text[96]", "live.text", 0 ],
+			"obj-156::obj-63::obj-38" : [ "live.text[34]", "live.text[26]", 0 ],
+			"obj-12::obj-30::obj-3::obj-68" : [ "wobble", "wobble", 0 ],
+			"obj-12::obj-30::obj-3::obj-92" : [ "1-3", "1-3", 0 ],
 			"obj-33" : [ "live.text[68]", "live.text[68]", 0 ],
+			"obj-66::obj-44::obj-122::obj-11" : [ "live.toggle[54]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-36::obj-10" : [ "speakerLevel[80]", "speakerLevel", 0 ],
+			"obj-156::obj-27::obj-1" : [ "1[85]", "1", 0 ],
+			"obj-156::obj-40::obj-42" : [ "live.text[64]", "live.text[26]", 0 ],
+			"obj-156::obj-71::obj-38" : [ "live.text[22]", "live.text[26]", 0 ],
+			"obj-156::obj-73::obj-42" : [ "live.text[13]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-4::obj-11" : [ "live.toggle[69]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-50" : [ "obj1[3]", "obj1[3]", 0 ],
+			"obj-156::obj-30::obj-42" : [ "live.text[91]", "live.text[26]", 0 ],
+			"obj-156::obj-62::obj-15" : [ "live.text[32]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-111" : [ "2-3", "2-3", 0 ],
+			"obj-39::obj-59" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
+			"obj-59::obj-13" : [ "mcs.vst~", "mcs.vst~", 0 ],
+			"obj-66::obj-44::obj-120::obj-11" : [ "live.toggle[58]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-82" : [ "obj1[11]", "obj1[11]", 0 ],
+			"obj-156::obj-26::obj-1" : [ "1[84]", "1", 0 ],
+			"obj-156::obj-39::obj-42" : [ "live.text[61]", "live.text[26]", 0 ],
+			"obj-156::obj-71::obj-15" : [ "live.text[23]", "live.text", 0 ],
+			"obj-156::obj-75::obj-42" : [ "live.text[18]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-8::obj-10" : [ "speakerLevel[71]", "speakerLevel", 0 ],
+			"obj-156::obj-29::obj-38" : [ "live.text[90]", "live.text[26]", 0 ],
+			"obj-156::obj-61::obj-1" : [ "1[61]", "1", 0 ],
+			"obj-156::obj-20::obj-15" : [ "live.text[9]", "live.text", 0 ],
+			"obj-12::obj-30::obj-3::obj-127" : [ "3-3", "3-3", 0 ],
+			"obj-66::obj-44::obj-117::obj-11" : [ "live.toggle[40]", "live.toggle", 0 ],
+			"obj-156::obj-25::obj-42" : [ "live.text[105]", "live.text[26]", 0 ],
+			"obj-156::obj-38::obj-42" : [ "live.text[56]", "live.text[26]", 0 ],
+			"obj-156::obj-78::obj-1" : [ "1[53]", "1", 0 ],
+			"obj-156::obj-78::obj-15" : [ "live.text[5]", "live.text", 0 ],
+			"obj-66::obj-44::obj-16::obj-11" : [ "live.toggle[73]", "live.toggle", 0 ],
+			"obj-156::obj-28::obj-38" : [ "live.text[88]", "live.text[26]", 0 ],
+			"obj-156::obj-71::obj-42" : [ "live.text[24]", "live.text[26]", 0 ],
+			"obj-12::obj-30::obj-3::obj-40" : [ "ERRC", "ERRC", 0 ],
+			"obj-12::obj-30::obj-3::obj-143" : [ "4-3", "4-3", 0 ],
+			"obj-39::obj-46" : [ "live.text[181]", "live.text[181]", 0 ],
+			"obj-66::obj-44::obj-115::obj-10" : [ "speakerLevel[62]", "speakerLevel", 0 ],
+			"obj-156::obj-35::obj-42" : [ "live.text[102]", "live.text[26]", 0 ],
+			"obj-156::obj-10::obj-38" : [ "live.text[52]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-81::obj-10" : [ "speakerLevel[48]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-18::obj-10" : [ "speakerLevel[75]", "speakerLevel", 0 ],
+			"obj-156::obj-21::obj-1" : [ "1[88]", "1", 0 ],
+			"obj-156::obj-43::obj-42" : [ "live.text[73]", "live.text[26]", 0 ],
+			"obj-12::obj-30::obj-3::obj-159" : [ "5-3", "5-3", 0 ],
+			"obj-39::obj-44" : [ "live.text[208]", "live.text[181]", 0 ],
+			"obj-66::obj-44::obj-129::obj-11" : [ "live.toggle[41]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-35" : [ "obj1", "obj1", 0 ],
+			"obj-156::obj-34::obj-15" : [ "live.text[101]", "live.text", 0 ],
+			"obj-156::obj-52::obj-42" : [ "live.text[47]", "live.text[26]", 0 ],
+			"obj-78" : [ "live.text[146]", "live.text[130]", 0 ],
+			"obj-66::obj-44::obj-111::obj-11" : [ "live.toggle[55]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-22::obj-11" : [ "live.toggle[77]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-64" : [ "obj1[8]", "obj1[8]", 0 ],
+			"obj-156::obj-23::obj-15" : [ "live.text[139]", "live.text", 0 ],
+			"obj-156::obj-42::obj-42" : [ "live.text[72]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-127::obj-10" : [ "speakerLevel[66]", "speakerLevel", 0 ],
+			"obj-156::obj-33::obj-42" : [ "live.text[97]", "live.text[26]", 0 ],
+			"obj-156::obj-50::obj-42" : [ "live.text[46]", "live.text[26]", 0 ],
+			"obj-4::obj-84" : [ "live.text[85]", "live.text[85]", 0 ],
+			"obj-12::obj-30::obj-3::obj-84" : [ "1-1", "1-1", 0 ],
+			"obj-12::obj-30::obj-3::obj-57" : [ "wallFilterMix", "mix", 0 ],
+			"obj-66::obj-44::obj-108::obj-10" : [ "speakerLevel[49]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-19::obj-11" : [ "live.toggle[79]", "live.toggle", 0 ],
+			"obj-156::obj-22::obj-38" : [ "live.text[133]", "live.text[26]", 0 ],
+			"obj-156::obj-41::obj-42" : [ "live.text[65]", "live.text[26]", 0 ],
+			"obj-156::obj-72::obj-38" : [ "live.text[11]", "live.text[26]", 0 ],
+			"obj-39::obj-20" : [ "live.numbox[4]", "live.numbox[1]", 0 ],
+			"obj-66::obj-44::obj-124::obj-10" : [ "speakerLevel[42]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-2::obj-30" : [ "live.text[232]", "live.text[116]", 0 ],
+			"obj-156::obj-32::obj-38" : [ "live.text[92]", "live.text[26]", 0 ],
+			"obj-156::obj-63::obj-1" : [ "1[63]", "1", 0 ],
+			"obj-12::obj-30::obj-3::obj-117" : [ "2-1", "2-1", 0 ],
+			"obj-1" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-66::obj-44::obj-121::obj-11" : [ "live.toggle[57]", "live.toggle", 0 ],
+			"obj-66::obj-44::obj-2::obj-44" : [ "live.text[292]", "live.text[116]", 0 ],
+			"obj-156::obj-26::obj-15" : [ "live.text[107]", "live.text", 0 ],
+			"obj-156::obj-39::obj-38" : [ "live.text[59]", "live.text[26]", 0 ],
+			"obj-156::obj-47::obj-1" : [ "1[58]", "1", 0 ],
+			"obj-156::obj-75::obj-38" : [ "live.text[16]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-9::obj-10" : [ "speakerLevel[70]", "speakerLevel", 0 ],
+			"obj-156::obj-29::obj-42" : [ "live.text[119]", "live.text[26]", 0 ],
+			"obj-156::obj-61::obj-38" : [ "live.text[29]", "live.text[26]", 0 ],
+			"obj-4::obj-82" : [ "live.text[83]", "live.text[83]", 0 ],
+			"obj-12::obj-30::obj-3::obj-133" : [ "3-1", "3-1", 0 ],
+			"obj-23" : [ "live.slider", "live.slider", 0 ],
+			"obj-66::obj-44::obj-118::obj-10" : [ "speakerLevel[60]", "speakerLevel", 0 ],
+			"obj-156::obj-25::obj-38" : [ "live.text[128]", "live.text[26]", 0 ],
+			"obj-156::obj-38::obj-38" : [ "live.text[57]", "live.text[26]", 0 ],
+			"obj-156::obj-72::obj-1" : [ "1[55]", "1", 0 ],
+			"obj-156::obj-77::obj-38" : [ "live.text[3]", "live.text[26]", 0 ],
+			"obj-66::obj-44::obj-1::obj-10" : [ "speakerLevel[43]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-2::obj-56" : [ "obj1[5]", "obj1[5]", 0 ],
+			"obj-155::obj-6" : [ "live.text[149]", "live.text[111]", 0 ],
+			"obj-156::obj-28::obj-15" : [ "live.text[89]", "live.text", 0 ],
+			"obj-156::obj-60::obj-42" : [ "live.text[27]", "live.text[26]", 0 ],
+			"obj-12::obj-30::obj-3::obj-49" : [ "ERDepth", "ERDepth", 0 ],
+			"obj-12::obj-30::obj-3::obj-149" : [ "4-1", "4-1", 0 ],
+			"obj-66::obj-44::obj-116::obj-10" : [ "speakerLevel[61]", "speakerLevel", 0 ],
+			"obj-156::obj-24::obj-1" : [ "1[82]", "1", 0 ],
+			"obj-156::obj-37::obj-42" : [ "live.text[55]", "live.text[26]", 0 ],
+			"obj-156::obj-20::obj-38" : [ "live.text[8]", "live.text[26]", 0 ],
+			"obj-58" : [ "live.text[130]", "live.text[130]", 0 ],
+			"obj-66::obj-44::obj-79::obj-10" : [ "speakerLevel[38]", "speakerLevel", 0 ],
+			"obj-66::obj-44::obj-14::obj-11" : [ "live.toggle[74]", "live.toggle", 0 ],
+			"obj-156::obj-1::obj-38" : [ "live.text[143]", "live.text[26]", 0 ],
+			"obj-156::obj-44::obj-42" : [ "live.text[87]", "live.text[26]", 0 ],
+			"obj-12::obj-30::obj-3::obj-165" : [ "5-1", "5-1", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -35194,484 +35197,36 @@
 					"parameter_longname" : "live.toggle[64]"
 				}
 ,
-				"obj-156::obj-1::obj-42" : 				{
-					"parameter_longname" : "live.text[144]"
-				}
-,
-				"obj-156::obj-29::obj-42" : 				{
-					"parameter_longname" : "live.text[119]"
-				}
-,
-				"obj-156::obj-44::obj-15" : 				{
-					"parameter_longname" : "live.text[116]"
-				}
-,
-				"obj-156::obj-61::obj-15" : 				{
-					"parameter_longname" : "live.text[30]"
-				}
-,
-				"obj-66::obj-44::obj-110::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[56]"
-				}
-,
-				"obj-66::obj-44::obj-23::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[44]"
-				}
-,
 				"obj-156::obj-35::obj-15" : 				{
 					"parameter_longname" : "live.text[125]"
 				}
 ,
-				"obj-156::obj-38::obj-1" : 				{
-					"parameter_longname" : "1[68]"
+				"obj-156::obj-10::obj-1" : 				{
+					"parameter_longname" : "1[66]"
 				}
 ,
-				"obj-66::obj-44::obj-128::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[65]"
-				}
-,
-				"obj-156::obj-21::obj-15" : 				{
-					"parameter_longname" : "live.text[141]"
-				}
-,
-				"obj-156::obj-28::obj-1" : 				{
-					"parameter_longname" : "1[75]"
-				}
-,
-				"obj-156::obj-60::obj-1" : 				{
-					"parameter_longname" : "1[60]"
-				}
-,
-				"obj-66::obj-44::obj-122::obj-11" : 				{
-					"parameter_longname" : "live.toggle[54]"
-				}
-,
-				"obj-66::obj-44::obj-21::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[78]"
-				}
-,
-				"obj-156::obj-34::obj-38" : 				{
-					"parameter_longname" : "live.text[124]"
-				}
-,
-				"obj-156::obj-37::obj-42" : 				{
-					"parameter_longname" : "live.text[55]"
-				}
-,
-				"obj-66::obj-44::obj-125::obj-11" : 				{
-					"parameter_longname" : "live.toggle[68]"
-				}
-,
-				"obj-156::obj-23::obj-1" : 				{
-					"parameter_longname" : "1[87]"
-				}
-,
-				"obj-156::obj-43::obj-1" : 				{
-					"parameter_longname" : "1[73]"
-				}
-,
-				"obj-156::obj-47::obj-15" : 				{
-					"parameter_longname" : "live.text[20]"
-				}
-,
-				"obj-66::obj-44::obj-120::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[58]"
-				}
-,
-				"obj-66::obj-44::obj-24::obj-11" : 				{
-					"parameter_longname" : "live.toggle[45]"
-				}
-,
-				"obj-156::obj-52::obj-15" : 				{
-					"parameter_longname" : "live.text[49]"
-				}
-,
-				"obj-66::obj-44::obj-4::obj-11" : 				{
-					"parameter_longname" : "live.toggle[69]"
-				}
-,
-				"obj-156::obj-27::obj-1" : 				{
-					"parameter_longname" : "1[85]"
-				}
-,
-				"obj-156::obj-42::obj-38" : 				{
-					"parameter_longname" : "live.text[70]"
-				}
-,
-				"obj-156::obj-75::obj-42" : 				{
-					"parameter_longname" : "live.text[18]"
-				}
-,
-				"obj-66::obj-44::obj-117::obj-11" : 				{
-					"parameter_longname" : "live.toggle[40]"
-				}
-,
-				"obj-156::obj-33::obj-1" : 				{
-					"parameter_longname" : "1[79]"
-				}
-,
-				"obj-156::obj-50::obj-1" : 				{
-					"parameter_longname" : "1[64]"
-				}
-,
-				"obj-66::obj-44::obj-6::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[72]"
-				}
-,
-				"obj-156::obj-26::obj-1" : 				{
-					"parameter_longname" : "1[84]"
-				}
-,
-				"obj-156::obj-41::obj-15" : 				{
-					"parameter_longname" : "live.text[69]"
-				}
-,
-				"obj-156::obj-73::obj-1" : 				{
-					"parameter_longname" : "1[56]"
-				}
-,
-				"obj-156::obj-32::obj-42" : 				{
-					"parameter_longname" : "live.text[122]"
-				}
-,
-				"obj-156::obj-63::obj-42" : 				{
-					"parameter_longname" : "live.text[36]"
-				}
-,
-				"obj-66::obj-44::obj-81::obj-11" : 				{
-					"parameter_longname" : "live.toggle[48]"
-				}
-,
-				"obj-66::obj-44::obj-16::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[73]"
-				}
-,
-				"obj-156::obj-25::obj-15" : 				{
-					"parameter_longname" : "live.text[129]"
-				}
-,
-				"obj-156::obj-40::obj-1" : 				{
-					"parameter_longname" : "1[70]"
-				}
-,
-				"obj-156::obj-78::obj-1" : 				{
-					"parameter_longname" : "1[53]"
-				}
-,
-				"obj-156::obj-78::obj-42" : 				{
-					"parameter_longname" : "live.text[6]"
-				}
-,
-				"obj-66::obj-44::obj-131::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[63]"
-				}
-,
-				"obj-156::obj-1::obj-38" : 				{
-					"parameter_longname" : "live.text[143]"
-				}
-,
-				"obj-156::obj-30::obj-1" : 				{
-					"parameter_longname" : "1[77]"
-				}
-,
-				"obj-156::obj-62::obj-42" : 				{
-					"parameter_longname" : "live.text[33]"
-				}
-,
-				"obj-156::obj-77::obj-42" : 				{
-					"parameter_longname" : "live.text[1]"
-				}
-,
-				"obj-66::obj-44::obj-111::obj-11" : 				{
-					"parameter_longname" : "live.toggle[55]"
-				}
-,
-				"obj-66::obj-44::obj-12::obj-11" : 				{
-					"parameter_longname" : "live.toggle[76]"
-				}
-,
-				"obj-156::obj-24::obj-1" : 				{
-					"parameter_longname" : "1[82]"
-				}
-,
-				"obj-156::obj-38::obj-42" : 				{
-					"parameter_longname" : "live.text[56]"
-				}
-,
-				"obj-66::obj-44::obj-129::obj-11" : 				{
-					"parameter_longname" : "live.toggle[41]"
-				}
-,
-				"obj-156::obj-21::obj-38" : 				{
-					"parameter_longname" : "live.text[140]"
-				}
-,
-				"obj-156::obj-28::obj-38" : 				{
-					"parameter_longname" : "live.text[88]"
-				}
-,
-				"obj-156::obj-60::obj-38" : 				{
-					"parameter_longname" : "live.text[25]"
-				}
-,
-				"obj-66::obj-44::obj-108::obj-11" : 				{
-					"parameter_longname" : "live.toggle[49]"
-				}
-,
-				"obj-66::obj-44::obj-22::obj-11" : 				{
-					"parameter_longname" : "live.toggle[77]"
-				}
-,
-				"obj-156::obj-34::obj-15" : 				{
-					"parameter_longname" : "live.text[101]"
-				}
-,
-				"obj-156::obj-37::obj-1" : 				{
-					"parameter_longname" : "1[67]"
-				}
-,
-				"obj-156::obj-77::obj-15" : 				{
-					"parameter_longname" : "live.text[2]"
-				}
-,
-				"obj-66::obj-44::obj-126::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[67]"
-				}
-,
-				"obj-156::obj-23::obj-42" : 				{
-					"parameter_longname" : "live.text[137]"
-				}
-,
-				"obj-156::obj-44::obj-1" : 				{
-					"parameter_longname" : "1[74]"
-				}
-,
-				"obj-156::obj-71::obj-1" : 				{
-					"parameter_longname" : "1[59]"
-				}
-,
-				"obj-66::obj-44::obj-121::obj-11" : 				{
-					"parameter_longname" : "live.toggle[57]"
-				}
-,
-				"obj-66::obj-44::obj-36::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[80]"
-				}
-,
-				"obj-156::obj-10::obj-15" : 				{
-					"parameter_longname" : "live.text[50]"
-				}
-,
-				"obj-66::obj-44::obj-124::obj-11" : 				{
-					"parameter_longname" : "live.toggle[42]"
-				}
-,
-				"obj-156::obj-22::obj-15" : 				{
-					"parameter_longname" : "live.text[134]"
-				}
-,
-				"obj-156::obj-43::obj-42" : 				{
-					"parameter_longname" : "live.text[73]"
-				}
-,
-				"obj-156::obj-47::obj-42" : 				{
-					"parameter_longname" : "live.text[21]"
-				}
-,
-				"obj-66::obj-44::obj-118::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[60]"
-				}
-,
-				"obj-156::obj-52::obj-42" : 				{
-					"parameter_longname" : "live.text[47]"
-				}
-,
-				"obj-66::obj-44::obj-8::obj-11" : 				{
-					"parameter_longname" : "live.toggle[71]"
-				}
-,
-				"obj-156::obj-27::obj-42" : 				{
-					"parameter_longname" : "live.text[132]"
-				}
-,
-				"obj-156::obj-41::obj-38" : 				{
-					"parameter_longname" : "live.text[66]"
-				}
-,
-				"obj-156::obj-73::obj-42" : 				{
-					"parameter_longname" : "live.text[13]"
-				}
-,
-				"obj-66::obj-44::obj-116::obj-11" : 				{
-					"parameter_longname" : "live.toggle[61]"
-				}
-,
-				"obj-156::obj-32::obj-1" : 				{
-					"parameter_longname" : "1[78]"
-				}
-,
-				"obj-156::obj-63::obj-38" : 				{
-					"parameter_longname" : "live.text[34]"
-				}
-,
-				"obj-66::obj-44::obj-79::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[38]"
-				}
-,
-				"obj-66::obj-44::obj-1::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[43]"
-				}
-,
-				"obj-156::obj-25::obj-38" : 				{
-					"parameter_longname" : "live.text[128]"
-				}
-,
-				"obj-156::obj-40::obj-42" : 				{
-					"parameter_longname" : "live.text[64]"
-				}
-,
-				"obj-156::obj-72::obj-1" : 				{
-					"parameter_longname" : "1[55]"
-				}
-,
-				"obj-156::obj-30::obj-15" : 				{
-					"parameter_longname" : "live.text[121]"
-				}
-,
-				"obj-156::obj-62::obj-1" : 				{
-					"parameter_longname" : "1[62]"
-				}
-,
-				"obj-156::obj-72::obj-38" : 				{
-					"parameter_longname" : "live.text[11]"
-				}
-,
-				"obj-66::obj-44::obj-80::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[53]"
-				}
-,
-				"obj-66::obj-44::obj-18::obj-11" : 				{
-					"parameter_longname" : "live.toggle[75]"
-				}
-,
-				"obj-156::obj-24::obj-42" : 				{
-					"parameter_longname" : "live.text[127]"
-				}
-,
-				"obj-156::obj-39::obj-15" : 				{
-					"parameter_longname" : "live.text[60]"
-				}
-,
-				"obj-66::obj-44::obj-130::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[64]"
-				}
-,
-				"obj-156::obj-1::obj-15" : 				{
-					"parameter_longname" : "live.text[145]"
-				}
-,
-				"obj-156::obj-29::obj-15" : 				{
-					"parameter_longname" : "live.text[118]"
-				}
-,
-				"obj-156::obj-61::obj-42" : 				{
-					"parameter_longname" : "live.text[28]"
-				}
-,
-				"obj-66::obj-44::obj-109::obj-11" : 				{
-					"parameter_longname" : "live.toggle[39]"
+				"obj-66::obj-44::obj-80::obj-11" : 				{
+					"parameter_longname" : "live.toggle[53]"
 				}
 ,
 				"obj-66::obj-44::obj-23::obj-11" : 				{
 					"parameter_longname" : "live.toggle[44]"
 				}
 ,
-				"obj-156::obj-35::obj-1" : 				{
-					"parameter_longname" : "1[81]"
+				"obj-156::obj-23::obj-1" : 				{
+					"parameter_longname" : "1[87]"
 				}
 ,
-				"obj-156::obj-38::obj-38" : 				{
-					"parameter_longname" : "live.text[57]"
+				"obj-156::obj-44::obj-15" : 				{
+					"parameter_longname" : "live.text[116]"
 				}
 ,
-				"obj-66::obj-44::obj-127::obj-11" : 				{
-					"parameter_longname" : "live.toggle[66]"
+				"obj-156::obj-42::obj-38" : 				{
+					"parameter_longname" : "live.text[70]"
 				}
 ,
-				"obj-156::obj-21::obj-1" : 				{
-					"parameter_longname" : "1[88]"
-				}
-,
-				"obj-156::obj-28::obj-42" : 				{
-					"parameter_longname" : "live.text[117]"
-				}
-,
-				"obj-156::obj-71::obj-38" : 				{
-					"parameter_longname" : "live.text[22]"
-				}
-,
-				"obj-66::obj-44::obj-122::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[54]"
-				}
-,
-				"obj-66::obj-44::obj-19::obj-11" : 				{
-					"parameter_longname" : "live.toggle[79]"
-				}
-,
-				"obj-156::obj-34::obj-42" : 				{
-					"parameter_longname" : "live.text[100]"
-				}
-,
-				"obj-156::obj-10::obj-38" : 				{
-					"parameter_longname" : "live.text[52]"
-				}
-,
-				"obj-66::obj-44::obj-125::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[68]"
-				}
-,
-				"obj-156::obj-22::obj-38" : 				{
-					"parameter_longname" : "live.text[133]"
-				}
-,
-				"obj-156::obj-43::obj-38" : 				{
-					"parameter_longname" : "live.text[74]"
-				}
-,
-				"obj-156::obj-47::obj-1" : 				{
-					"parameter_longname" : "1[58]"
-				}
-,
-				"obj-66::obj-44::obj-119::obj-11" : 				{
-					"parameter_longname" : "live.toggle[59]"
-				}
-,
-				"obj-66::obj-44::obj-24::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[45]"
-				}
-,
-				"obj-156::obj-52::obj-1" : 				{
-					"parameter_longname" : "1[65]"
-				}
-,
-				"obj-66::obj-44::obj-9::obj-11" : 				{
-					"parameter_longname" : "live.toggle[70]"
-				}
-,
-				"obj-156::obj-27::obj-38" : 				{
-					"parameter_longname" : "live.text[108]"
-				}
-,
-				"obj-156::obj-42::obj-15" : 				{
-					"parameter_longname" : "live.text[71]"
-				}
-,
-				"obj-156::obj-75::obj-15" : 				{
-					"parameter_longname" : "live.text[17]"
-				}
-,
-				"obj-66::obj-44::obj-117::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[40]"
+				"obj-66::obj-44::obj-128::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[65]"
 				}
 ,
 				"obj-156::obj-33::obj-38" : 				{
@@ -35682,160 +35237,368 @@
 					"parameter_longname" : "live.text[37]"
 				}
 ,
-				"obj-66::obj-44::obj-6::obj-11" : 				{
-					"parameter_longname" : "live.toggle[72]"
+				"obj-66::obj-44::obj-109::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[39]"
 				}
 ,
-				"obj-156::obj-26::obj-38" : 				{
-					"parameter_longname" : "live.text[106]"
+				"obj-66::obj-44::obj-21::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[78]"
 				}
 ,
-				"obj-156::obj-41::obj-1" : 				{
-					"parameter_longname" : "1[71]"
+				"obj-156::obj-22::obj-42" : 				{
+					"parameter_longname" : "live.text[110]"
+				}
+,
+				"obj-156::obj-41::obj-38" : 				{
+					"parameter_longname" : "live.text[66]"
+				}
+,
+				"obj-66::obj-44::obj-125::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[68]"
+				}
+,
+				"obj-156::obj-32::obj-42" : 				{
+					"parameter_longname" : "live.text[122]"
+				}
+,
+				"obj-156::obj-63::obj-15" : 				{
+					"parameter_longname" : "live.text[35]"
+				}
+,
+				"obj-66::obj-44::obj-122::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[54]"
+				}
+,
+				"obj-66::obj-44::obj-24::obj-11" : 				{
+					"parameter_longname" : "live.toggle[45]"
+				}
+,
+				"obj-156::obj-27::obj-38" : 				{
+					"parameter_longname" : "live.text[108]"
+				}
+,
+				"obj-156::obj-40::obj-38" : 				{
+					"parameter_longname" : "live.text[63]"
+				}
+,
+				"obj-156::obj-47::obj-15" : 				{
+					"parameter_longname" : "live.text[20]"
 				}
 ,
 				"obj-156::obj-73::obj-38" : 				{
 					"parameter_longname" : "live.text[14]"
 				}
 ,
-				"obj-156::obj-32::obj-15" : 				{
-					"parameter_longname" : "live.text[96]"
+				"obj-66::obj-44::obj-4::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[69]"
 				}
 ,
-				"obj-156::obj-63::obj-1" : 				{
-					"parameter_longname" : "1[63]"
+				"obj-156::obj-30::obj-1" : 				{
+					"parameter_longname" : "1[77]"
 				}
 ,
-				"obj-66::obj-44::obj-81::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[48]"
+				"obj-156::obj-62::obj-1" : 				{
+					"parameter_longname" : "1[62]"
 				}
 ,
-				"obj-66::obj-44::obj-14::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[74]"
+				"obj-66::obj-44::obj-119::obj-11" : 				{
+					"parameter_longname" : "live.toggle[59]"
 				}
 ,
-				"obj-156::obj-25::obj-1" : 				{
-					"parameter_longname" : "1[83]"
+				"obj-156::obj-26::obj-42" : 				{
+					"parameter_longname" : "live.text[131]"
 				}
 ,
-				"obj-156::obj-39::obj-38" : 				{
-					"parameter_longname" : "live.text[59]"
+				"obj-156::obj-39::obj-1" : 				{
+					"parameter_longname" : "1[69]"
 				}
 ,
-				"obj-156::obj-77::obj-1" : 				{
-					"parameter_longname" : "1[52]"
+				"obj-156::obj-60::obj-38" : 				{
+					"parameter_longname" : "live.text[25]"
 				}
 ,
-				"obj-156::obj-77::obj-38" : 				{
-					"parameter_longname" : "live.text[3]"
+				"obj-156::obj-75::obj-1" : 				{
+					"parameter_longname" : "1[57]"
 				}
 ,
-				"obj-66::obj-44::obj-131::obj-11" : 				{
-					"parameter_longname" : "live.toggle[63]"
+				"obj-66::obj-44::obj-6::obj-11" : 				{
+					"parameter_longname" : "live.toggle[72]"
 				}
 ,
-				"obj-156::obj-29::obj-38" : 				{
-					"parameter_longname" : "live.text[90]"
+				"obj-156::obj-29::obj-1" : 				{
+					"parameter_longname" : "1[76]"
 				}
 ,
-				"obj-156::obj-61::obj-38" : 				{
-					"parameter_longname" : "live.text[29]"
+				"obj-156::obj-61::obj-42" : 				{
+					"parameter_longname" : "live.text[28]"
 				}
 ,
-				"obj-66::obj-44::obj-110::obj-11" : 				{
-					"parameter_longname" : "live.toggle[56]"
+				"obj-66::obj-44::obj-117::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[40]"
 				}
 ,
-				"obj-66::obj-44::obj-12::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[76]"
-				}
-,
-				"obj-156::obj-35::obj-42" : 				{
-					"parameter_longname" : "live.text[102]"
-				}
-,
-				"obj-156::obj-38::obj-15" : 				{
-					"parameter_longname" : "live.text[58]"
-				}
-,
-				"obj-66::obj-44::obj-128::obj-11" : 				{
-					"parameter_longname" : "live.toggle[65]"
-				}
-,
-				"obj-156::obj-21::obj-42" : 				{
-					"parameter_longname" : "live.text[142]"
-				}
-,
-				"obj-156::obj-28::obj-15" : 				{
-					"parameter_longname" : "live.text[89]"
-				}
-,
-				"obj-156::obj-60::obj-42" : 				{
-					"parameter_longname" : "live.text[27]"
-				}
-,
-				"obj-66::obj-44::obj-108::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[49]"
-				}
-,
-				"obj-66::obj-44::obj-21::obj-11" : 				{
-					"parameter_longname" : "live.toggle[78]"
-				}
-,
-				"obj-156::obj-34::obj-1" : 				{
-					"parameter_longname" : "1[80]"
+				"obj-156::obj-24::obj-38" : 				{
+					"parameter_longname" : "live.text[126]"
 				}
 ,
 				"obj-156::obj-37::obj-38" : 				{
 					"parameter_longname" : "live.text[53]"
 				}
 ,
-				"obj-66::obj-44::obj-126::obj-11" : 				{
-					"parameter_longname" : "live.toggle[67]"
+				"obj-156::obj-78::obj-42" : 				{
+					"parameter_longname" : "live.text[6]"
 				}
 ,
-				"obj-156::obj-23::obj-15" : 				{
-					"parameter_longname" : "live.text[139]"
+				"obj-156::obj-77::obj-1" : 				{
+					"parameter_longname" : "1[52]"
 				}
 ,
-				"obj-156::obj-44::obj-38" : 				{
-					"parameter_longname" : "live.text[114]"
+				"obj-66::obj-44::obj-16::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[73]"
 				}
 ,
-				"obj-156::obj-71::obj-15" : 				{
-					"parameter_longname" : "live.text[23]"
+				"obj-156::obj-1::obj-42" : 				{
+					"parameter_longname" : "live.text[144]"
 				}
 ,
-				"obj-66::obj-44::obj-120::obj-11" : 				{
-					"parameter_longname" : "live.toggle[58]"
+				"obj-156::obj-44::obj-1" : 				{
+					"parameter_longname" : "1[74]"
 				}
 ,
-				"obj-66::obj-44::obj-36::obj-11" : 				{
-					"parameter_longname" : "live.toggle[80]"
+				"obj-66::obj-44::obj-131::obj-11" : 				{
+					"parameter_longname" : "live.toggle[63]"
 				}
 ,
-				"obj-156::obj-10::obj-1" : 				{
-					"parameter_longname" : "1[66]"
+				"obj-156::obj-35::obj-1" : 				{
+					"parameter_longname" : "1[81]"
 				}
 ,
-				"obj-66::obj-44::obj-4::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[69]"
+				"obj-156::obj-10::obj-15" : 				{
+					"parameter_longname" : "live.text[50]"
 				}
 ,
-				"obj-156::obj-22::obj-1" : 				{
-					"parameter_longname" : "1[86]"
+				"obj-66::obj-44::obj-81::obj-11" : 				{
+					"parameter_longname" : "live.toggle[48]"
+				}
+,
+				"obj-66::obj-44::obj-12::obj-11" : 				{
+					"parameter_longname" : "live.toggle[76]"
+				}
+,
+				"obj-156::obj-21::obj-38" : 				{
+					"parameter_longname" : "live.text[140]"
+				}
+,
+				"obj-156::obj-43::obj-1" : 				{
+					"parameter_longname" : "1[73]"
+				}
+,
+				"obj-66::obj-44::obj-129::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[41]"
+				}
+,
+				"obj-156::obj-34::obj-38" : 				{
+					"parameter_longname" : "live.text[124]"
+				}
+,
+				"obj-156::obj-52::obj-1" : 				{
+					"parameter_longname" : "1[65]"
+				}
+,
+				"obj-66::obj-44::obj-110::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[56]"
+				}
+,
+				"obj-66::obj-44::obj-22::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[77]"
+				}
+,
+				"obj-156::obj-23::obj-42" : 				{
+					"parameter_longname" : "live.text[137]"
 				}
 ,
 				"obj-156::obj-42::obj-1" : 				{
 					"parameter_longname" : "1[72]"
 				}
 ,
-				"obj-156::obj-75::obj-38" : 				{
-					"parameter_longname" : "live.text[16]"
+				"obj-66::obj-44::obj-126::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[67]"
+				}
+,
+				"obj-156::obj-33::obj-1" : 				{
+					"parameter_longname" : "1[79]"
+				}
+,
+				"obj-156::obj-50::obj-1" : 				{
+					"parameter_longname" : "1[64]"
+				}
+,
+				"obj-66::obj-44::obj-108::obj-11" : 				{
+					"parameter_longname" : "live.toggle[49]"
+				}
+,
+				"obj-66::obj-44::obj-36::obj-11" : 				{
+					"parameter_longname" : "live.toggle[80]"
+				}
+,
+				"obj-156::obj-27::obj-15" : 				{
+					"parameter_longname" : "live.text[109]"
+				}
+,
+				"obj-156::obj-40::obj-15" : 				{
+					"parameter_longname" : "live.text[62]"
+				}
+,
+				"obj-156::obj-72::obj-15" : 				{
+					"parameter_longname" : "live.text[12]"
+				}
+,
+				"obj-156::obj-77::obj-42" : 				{
+					"parameter_longname" : "live.text[1]"
+				}
+,
+				"obj-66::obj-44::obj-124::obj-11" : 				{
+					"parameter_longname" : "live.toggle[42]"
+				}
+,
+				"obj-156::obj-30::obj-15" : 				{
+					"parameter_longname" : "live.text[121]"
+				}
+,
+				"obj-156::obj-62::obj-38" : 				{
+					"parameter_longname" : "live.text[31]"
+				}
+,
+				"obj-66::obj-44::obj-120::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[58]"
+				}
+,
+				"obj-156::obj-26::obj-38" : 				{
+					"parameter_longname" : "live.text[106]"
+				}
+,
+				"obj-156::obj-39::obj-15" : 				{
+					"parameter_longname" : "live.text[60]"
+				}
+,
+				"obj-156::obj-47::obj-38" : 				{
+					"parameter_longname" : "live.text[19]"
+				}
+,
+				"obj-156::obj-75::obj-15" : 				{
+					"parameter_longname" : "live.text[17]"
+				}
+,
+				"obj-66::obj-44::obj-8::obj-11" : 				{
+					"parameter_longname" : "live.toggle[71]"
+				}
+,
+				"obj-156::obj-29::obj-15" : 				{
+					"parameter_longname" : "live.text[118]"
+				}
+,
+				"obj-156::obj-61::obj-15" : 				{
+					"parameter_longname" : "live.text[30]"
 				}
 ,
 				"obj-66::obj-44::obj-118::obj-11" : 				{
 					"parameter_longname" : "live.toggle[60]"
+				}
+,
+				"obj-156::obj-25::obj-15" : 				{
+					"parameter_longname" : "live.text[129]"
+				}
+,
+				"obj-156::obj-38::obj-1" : 				{
+					"parameter_longname" : "1[68]"
+				}
+,
+				"obj-156::obj-20::obj-1" : 				{
+					"parameter_longname" : "1[54]"
+				}
+,
+				"obj-156::obj-78::obj-38" : 				{
+					"parameter_longname" : "live.text[4]"
+				}
+,
+				"obj-66::obj-44::obj-1::obj-11" : 				{
+					"parameter_longname" : "live.toggle[43]"
+				}
+,
+				"obj-156::obj-1::obj-15" : 				{
+					"parameter_longname" : "live.text[145]"
+				}
+,
+				"obj-156::obj-28::obj-1" : 				{
+					"parameter_longname" : "1[75]"
+				}
+,
+				"obj-156::obj-71::obj-1" : 				{
+					"parameter_longname" : "1[59]"
+				}
+,
+				"obj-66::obj-44::obj-115::obj-11" : 				{
+					"parameter_longname" : "live.toggle[62]"
+				}
+,
+				"obj-156::obj-24::obj-42" : 				{
+					"parameter_longname" : "live.text[127]"
+				}
+,
+				"obj-156::obj-37::obj-1" : 				{
+					"parameter_longname" : "1[67]"
+				}
+,
+				"obj-66::obj-44::obj-79::obj-11" : 				{
+					"parameter_longname" : "live.toggle[38]"
+				}
+,
+				"obj-66::obj-44::obj-18::obj-11" : 				{
+					"parameter_longname" : "live.toggle[75]"
+				}
+,
+				"obj-156::obj-21::obj-42" : 				{
+					"parameter_longname" : "live.text[142]"
+				}
+,
+				"obj-156::obj-43::obj-15" : 				{
+					"parameter_longname" : "live.text[113]"
+				}
+,
+				"obj-66::obj-44::obj-130::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[64]"
+				}
+,
+				"obj-156::obj-34::obj-42" : 				{
+					"parameter_longname" : "live.text[100]"
+				}
+,
+				"obj-156::obj-52::obj-15" : 				{
+					"parameter_longname" : "live.text[49]"
+				}
+,
+				"obj-156::obj-60::obj-15" : 				{
+					"parameter_longname" : "live.text[26]"
+				}
+,
+				"obj-66::obj-44::obj-111::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[55]"
+				}
+,
+				"obj-66::obj-44::obj-23::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[44]"
+				}
+,
+				"obj-156::obj-23::obj-38" : 				{
+					"parameter_longname" : "live.text[138]"
+				}
+,
+				"obj-156::obj-42::obj-15" : 				{
+					"parameter_longname" : "live.text[71]"
+				}
+,
+				"obj-66::obj-44::obj-127::obj-11" : 				{
+					"parameter_longname" : "live.toggle[66]"
 				}
 ,
 				"obj-156::obj-33::obj-15" : 				{
@@ -35846,212 +35609,364 @@
 					"parameter_longname" : "live.text[45]"
 				}
 ,
-				"obj-66::obj-44::obj-8::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[71]"
-				}
-,
-				"obj-156::obj-26::obj-42" : 				{
-					"parameter_longname" : "live.text[131]"
-				}
-,
-				"obj-156::obj-41::obj-42" : 				{
-					"parameter_longname" : "live.text[65]"
-				}
-,
-				"obj-156::obj-73::obj-15" : 				{
-					"parameter_longname" : "live.text[15]"
-				}
-,
-				"obj-156::obj-20::obj-42" : 				{
-					"parameter_longname" : "live.text[7]"
-				}
-,
-				"obj-66::obj-44::obj-115::obj-11" : 				{
-					"parameter_longname" : "live.toggle[62]"
-				}
-,
-				"obj-156::obj-32::obj-38" : 				{
-					"parameter_longname" : "live.text[92]"
-				}
-,
-				"obj-156::obj-63::obj-15" : 				{
-					"parameter_longname" : "live.text[35]"
-				}
-,
-				"obj-66::obj-44::obj-79::obj-11" : 				{
-					"parameter_longname" : "live.toggle[38]"
-				}
-,
-				"obj-66::obj-44::obj-16::obj-11" : 				{
-					"parameter_longname" : "live.toggle[73]"
-				}
-,
-				"obj-156::obj-25::obj-42" : 				{
-					"parameter_longname" : "live.text[105]"
-				}
-,
-				"obj-156::obj-40::obj-15" : 				{
-					"parameter_longname" : "live.text[62]"
-				}
-,
-				"obj-156::obj-20::obj-1" : 				{
-					"parameter_longname" : "1[54]"
-				}
-,
-				"obj-66::obj-44::obj-115::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[62]"
-				}
-,
-				"obj-156::obj-30::obj-42" : 				{
-					"parameter_longname" : "live.text[91]"
-				}
-,
-				"obj-156::obj-62::obj-38" : 				{
-					"parameter_longname" : "live.text[31]"
-				}
-,
-				"obj-66::obj-44::obj-111::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[55]"
-				}
-,
-				"obj-66::obj-44::obj-18::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[75]"
-				}
-,
-				"obj-156::obj-24::obj-15" : 				{
-					"parameter_longname" : "live.text[104]"
-				}
-,
-				"obj-156::obj-39::obj-1" : 				{
-					"parameter_longname" : "1[69]"
-				}
-,
-				"obj-66::obj-44::obj-129::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[41]"
-				}
-,
-				"obj-156::obj-1::obj-1" : 				{
-					"parameter_longname" : "1[89]"
-				}
-,
-				"obj-156::obj-29::obj-1" : 				{
-					"parameter_longname" : "1[76]"
-				}
-,
-				"obj-156::obj-61::obj-1" : 				{
-					"parameter_longname" : "1[61]"
-				}
-,
-				"obj-156::obj-72::obj-42" : 				{
-					"parameter_longname" : "live.text[10]"
-				}
-,
-				"obj-66::obj-44::obj-109::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[39]"
-				}
-,
-				"obj-66::obj-44::obj-22::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[77]"
-				}
-,
-				"obj-156::obj-35::obj-38" : 				{
-					"parameter_longname" : "live.text[103]"
-				}
-,
-				"obj-156::obj-37::obj-15" : 				{
-					"parameter_longname" : "live.text[54]"
-				}
-,
-				"obj-156::obj-60::obj-15" : 				{
-					"parameter_longname" : "live.text[26]"
-				}
-,
-				"obj-156::obj-78::obj-38" : 				{
-					"parameter_longname" : "live.text[4]"
-				}
-,
-				"obj-66::obj-44::obj-127::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[66]"
-				}
-,
-				"obj-156::obj-23::obj-38" : 				{
-					"parameter_longname" : "live.text[138]"
-				}
-,
-				"obj-156::obj-44::obj-42" : 				{
-					"parameter_longname" : "live.text[87]"
-				}
-,
-				"obj-156::obj-71::obj-42" : 				{
-					"parameter_longname" : "live.text[24]"
-				}
-,
-				"obj-156::obj-20::obj-38" : 				{
-					"parameter_longname" : "live.text[8]"
-				}
-,
-				"obj-66::obj-44::obj-121::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[57]"
+				"obj-66::obj-44::obj-109::obj-11" : 				{
+					"parameter_longname" : "live.toggle[39]"
 				}
 ,
 				"obj-66::obj-44::obj-19::obj-10" : 				{
 					"parameter_longname" : "speakerLevel[79]"
 				}
 ,
-				"obj-156::obj-10::obj-42" : 				{
-					"parameter_longname" : "live.text[51]"
+				"obj-156::obj-22::obj-1" : 				{
+					"parameter_longname" : "1[86]"
 				}
 ,
-				"obj-156::obj-78::obj-15" : 				{
-					"parameter_longname" : "live.text[5]"
+				"obj-156::obj-41::obj-1" : 				{
+					"parameter_longname" : "1[71]"
 				}
 ,
-				"obj-66::obj-44::obj-124::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[42]"
+				"obj-156::obj-72::obj-42" : 				{
+					"parameter_longname" : "live.text[10]"
 				}
 ,
-				"obj-156::obj-22::obj-42" : 				{
-					"parameter_longname" : "live.text[110]"
+				"obj-66::obj-44::obj-125::obj-11" : 				{
+					"parameter_longname" : "live.toggle[68]"
 				}
 ,
-				"obj-156::obj-43::obj-15" : 				{
-					"parameter_longname" : "live.text[113]"
+				"obj-156::obj-32::obj-1" : 				{
+					"parameter_longname" : "1[78]"
 				}
 ,
-				"obj-156::obj-47::obj-38" : 				{
-					"parameter_longname" : "live.text[19]"
+				"obj-156::obj-63::obj-42" : 				{
+					"parameter_longname" : "live.text[36]"
 				}
 ,
-				"obj-156::obj-20::obj-15" : 				{
-					"parameter_longname" : "live.text[9]"
+				"obj-66::obj-44::obj-121::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[57]"
+				}
+,
+				"obj-66::obj-44::obj-24::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[45]"
+				}
+,
+				"obj-156::obj-27::obj-42" : 				{
+					"parameter_longname" : "live.text[132]"
+				}
+,
+				"obj-156::obj-40::obj-1" : 				{
+					"parameter_longname" : "1[70]"
+				}
+,
+				"obj-156::obj-47::obj-42" : 				{
+					"parameter_longname" : "live.text[21]"
+				}
+,
+				"obj-156::obj-73::obj-15" : 				{
+					"parameter_longname" : "live.text[15]"
+				}
+,
+				"obj-66::obj-44::obj-9::obj-11" : 				{
+					"parameter_longname" : "live.toggle[70]"
+				}
+,
+				"obj-156::obj-30::obj-38" : 				{
+					"parameter_longname" : "live.text[120]"
+				}
+,
+				"obj-156::obj-62::obj-42" : 				{
+					"parameter_longname" : "live.text[33]"
 				}
 ,
 				"obj-66::obj-44::obj-119::obj-10" : 				{
 					"parameter_longname" : "speakerLevel[59]"
 				}
 ,
+				"obj-156::obj-25::obj-1" : 				{
+					"parameter_longname" : "1[83]"
+				}
+,
+				"obj-156::obj-38::obj-15" : 				{
+					"parameter_longname" : "live.text[58]"
+				}
+,
+				"obj-156::obj-73::obj-1" : 				{
+					"parameter_longname" : "1[56]"
+				}
+,
+				"obj-156::obj-77::obj-15" : 				{
+					"parameter_longname" : "live.text[2]"
+				}
+,
+				"obj-66::obj-44::obj-6::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[72]"
+				}
+,
+				"obj-156::obj-28::obj-42" : 				{
+					"parameter_longname" : "live.text[117]"
+				}
+,
+				"obj-156::obj-60::obj-1" : 				{
+					"parameter_longname" : "1[60]"
+				}
+,
+				"obj-66::obj-44::obj-116::obj-11" : 				{
+					"parameter_longname" : "live.toggle[61]"
+				}
+,
+				"obj-156::obj-24::obj-15" : 				{
+					"parameter_longname" : "live.text[104]"
+				}
+,
+				"obj-156::obj-37::obj-15" : 				{
+					"parameter_longname" : "live.text[54]"
+				}
+,
+				"obj-156::obj-20::obj-42" : 				{
+					"parameter_longname" : "live.text[7]"
+				}
+,
+				"obj-66::obj-44::obj-14::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[74]"
+				}
+,
+				"obj-156::obj-1::obj-1" : 				{
+					"parameter_longname" : "1[89]"
+				}
+,
+				"obj-156::obj-44::obj-38" : 				{
+					"parameter_longname" : "live.text[114]"
+				}
+,
+				"obj-66::obj-44::obj-131::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[63]"
+				}
+,
+				"obj-156::obj-35::obj-38" : 				{
+					"parameter_longname" : "live.text[103]"
+				}
+,
+				"obj-156::obj-10::obj-42" : 				{
+					"parameter_longname" : "live.text[51]"
+				}
+,
+				"obj-66::obj-44::obj-80::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[53]"
+				}
+,
+				"obj-66::obj-44::obj-12::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[76]"
+				}
+,
+				"obj-156::obj-21::obj-15" : 				{
+					"parameter_longname" : "live.text[141]"
+				}
+,
+				"obj-156::obj-43::obj-38" : 				{
+					"parameter_longname" : "live.text[74]"
+				}
+,
+				"obj-66::obj-44::obj-128::obj-11" : 				{
+					"parameter_longname" : "live.toggle[65]"
+				}
+,
+				"obj-156::obj-34::obj-1" : 				{
+					"parameter_longname" : "1[80]"
+				}
+,
 				"obj-156::obj-52::obj-38" : 				{
 					"parameter_longname" : "live.text[48]"
 				}
 ,
-				"obj-66::obj-44::obj-9::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[70]"
+				"obj-66::obj-44::obj-110::obj-11" : 				{
+					"parameter_longname" : "live.toggle[56]"
 				}
 ,
-				"obj-156::obj-27::obj-15" : 				{
-					"parameter_longname" : "live.text[109]"
+				"obj-66::obj-44::obj-21::obj-11" : 				{
+					"parameter_longname" : "live.toggle[78]"
+				}
+,
+				"obj-156::obj-22::obj-15" : 				{
+					"parameter_longname" : "live.text[134]"
+				}
+,
+				"obj-156::obj-41::obj-15" : 				{
+					"parameter_longname" : "live.text[69]"
+				}
+,
+				"obj-66::obj-44::obj-126::obj-11" : 				{
+					"parameter_longname" : "live.toggle[67]"
+				}
+,
+				"obj-156::obj-32::obj-15" : 				{
+					"parameter_longname" : "live.text[96]"
+				}
+,
+				"obj-156::obj-63::obj-38" : 				{
+					"parameter_longname" : "live.text[34]"
+				}
+,
+				"obj-66::obj-44::obj-122::obj-11" : 				{
+					"parameter_longname" : "live.toggle[54]"
+				}
+,
+				"obj-66::obj-44::obj-36::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[80]"
+				}
+,
+				"obj-156::obj-27::obj-1" : 				{
+					"parameter_longname" : "1[85]"
+				}
+,
+				"obj-156::obj-40::obj-42" : 				{
+					"parameter_longname" : "live.text[64]"
+				}
+,
+				"obj-156::obj-71::obj-38" : 				{
+					"parameter_longname" : "live.text[22]"
+				}
+,
+				"obj-156::obj-73::obj-42" : 				{
+					"parameter_longname" : "live.text[13]"
+				}
+,
+				"obj-66::obj-44::obj-4::obj-11" : 				{
+					"parameter_longname" : "live.toggle[69]"
+				}
+,
+				"obj-156::obj-30::obj-42" : 				{
+					"parameter_longname" : "live.text[91]"
+				}
+,
+				"obj-156::obj-62::obj-15" : 				{
+					"parameter_longname" : "live.text[32]"
+				}
+,
+				"obj-66::obj-44::obj-120::obj-11" : 				{
+					"parameter_longname" : "live.toggle[58]"
+				}
+,
+				"obj-156::obj-26::obj-1" : 				{
+					"parameter_longname" : "1[84]"
+				}
+,
+				"obj-156::obj-39::obj-42" : 				{
+					"parameter_longname" : "live.text[61]"
+				}
+,
+				"obj-156::obj-71::obj-15" : 				{
+					"parameter_longname" : "live.text[23]"
+				}
+,
+				"obj-156::obj-75::obj-42" : 				{
+					"parameter_longname" : "live.text[18]"
+				}
+,
+				"obj-66::obj-44::obj-8::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[71]"
+				}
+,
+				"obj-156::obj-29::obj-38" : 				{
+					"parameter_longname" : "live.text[90]"
+				}
+,
+				"obj-156::obj-61::obj-1" : 				{
+					"parameter_longname" : "1[61]"
+				}
+,
+				"obj-156::obj-20::obj-15" : 				{
+					"parameter_longname" : "live.text[9]"
+				}
+,
+				"obj-66::obj-44::obj-117::obj-11" : 				{
+					"parameter_longname" : "live.toggle[40]"
+				}
+,
+				"obj-156::obj-25::obj-42" : 				{
+					"parameter_longname" : "live.text[105]"
+				}
+,
+				"obj-156::obj-38::obj-42" : 				{
+					"parameter_longname" : "live.text[56]"
+				}
+,
+				"obj-156::obj-78::obj-1" : 				{
+					"parameter_longname" : "1[53]"
+				}
+,
+				"obj-156::obj-78::obj-15" : 				{
+					"parameter_longname" : "live.text[5]"
+				}
+,
+				"obj-66::obj-44::obj-16::obj-11" : 				{
+					"parameter_longname" : "live.toggle[73]"
+				}
+,
+				"obj-156::obj-28::obj-38" : 				{
+					"parameter_longname" : "live.text[88]"
+				}
+,
+				"obj-156::obj-71::obj-42" : 				{
+					"parameter_longname" : "live.text[24]"
+				}
+,
+				"obj-66::obj-44::obj-115::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[62]"
+				}
+,
+				"obj-156::obj-35::obj-42" : 				{
+					"parameter_longname" : "live.text[102]"
+				}
+,
+				"obj-156::obj-10::obj-38" : 				{
+					"parameter_longname" : "live.text[52]"
+				}
+,
+				"obj-66::obj-44::obj-81::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[48]"
+				}
+,
+				"obj-66::obj-44::obj-18::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[75]"
+				}
+,
+				"obj-156::obj-21::obj-1" : 				{
+					"parameter_longname" : "1[88]"
+				}
+,
+				"obj-156::obj-43::obj-42" : 				{
+					"parameter_longname" : "live.text[73]"
+				}
+,
+				"obj-66::obj-44::obj-129::obj-11" : 				{
+					"parameter_longname" : "live.toggle[41]"
+				}
+,
+				"obj-156::obj-34::obj-15" : 				{
+					"parameter_longname" : "live.text[101]"
+				}
+,
+				"obj-156::obj-52::obj-42" : 				{
+					"parameter_longname" : "live.text[47]"
+				}
+,
+				"obj-66::obj-44::obj-111::obj-11" : 				{
+					"parameter_longname" : "live.toggle[55]"
+				}
+,
+				"obj-66::obj-44::obj-22::obj-11" : 				{
+					"parameter_longname" : "live.toggle[77]"
+				}
+,
+				"obj-156::obj-23::obj-15" : 				{
+					"parameter_longname" : "live.text[139]"
 				}
 ,
 				"obj-156::obj-42::obj-42" : 				{
 					"parameter_longname" : "live.text[72]"
 				}
 ,
-				"obj-156::obj-75::obj-1" : 				{
-					"parameter_longname" : "1[57]"
-				}
-,
-				"obj-66::obj-44::obj-116::obj-10" : 				{
-					"parameter_longname" : "speakerLevel[61]"
+				"obj-66::obj-44::obj-127::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[66]"
 				}
 ,
 				"obj-156::obj-33::obj-42" : 				{
@@ -36062,44 +35977,132 @@
 					"parameter_longname" : "live.text[46]"
 				}
 ,
-				"obj-66::obj-44::obj-1::obj-11" : 				{
-					"parameter_longname" : "live.toggle[43]"
+				"obj-66::obj-44::obj-108::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[49]"
+				}
+,
+				"obj-66::obj-44::obj-19::obj-11" : 				{
+					"parameter_longname" : "live.toggle[79]"
+				}
+,
+				"obj-156::obj-22::obj-38" : 				{
+					"parameter_longname" : "live.text[133]"
+				}
+,
+				"obj-156::obj-41::obj-42" : 				{
+					"parameter_longname" : "live.text[65]"
+				}
+,
+				"obj-156::obj-72::obj-38" : 				{
+					"parameter_longname" : "live.text[11]"
+				}
+,
+				"obj-66::obj-44::obj-124::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[42]"
+				}
+,
+				"obj-156::obj-32::obj-38" : 				{
+					"parameter_longname" : "live.text[92]"
+				}
+,
+				"obj-156::obj-63::obj-1" : 				{
+					"parameter_longname" : "1[63]"
+				}
+,
+				"obj-66::obj-44::obj-121::obj-11" : 				{
+					"parameter_longname" : "live.toggle[57]"
 				}
 ,
 				"obj-156::obj-26::obj-15" : 				{
 					"parameter_longname" : "live.text[107]"
 				}
 ,
-				"obj-156::obj-40::obj-38" : 				{
-					"parameter_longname" : "live.text[63]"
+				"obj-156::obj-39::obj-38" : 				{
+					"parameter_longname" : "live.text[59]"
 				}
 ,
-				"obj-156::obj-72::obj-15" : 				{
-					"parameter_longname" : "live.text[12]"
+				"obj-156::obj-47::obj-1" : 				{
+					"parameter_longname" : "1[58]"
 				}
 ,
-				"obj-156::obj-30::obj-38" : 				{
-					"parameter_longname" : "live.text[120]"
+				"obj-156::obj-75::obj-38" : 				{
+					"parameter_longname" : "live.text[16]"
 				}
 ,
-				"obj-156::obj-62::obj-15" : 				{
-					"parameter_longname" : "live.text[32]"
+				"obj-66::obj-44::obj-9::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[70]"
 				}
 ,
-				"obj-66::obj-44::obj-80::obj-11" : 				{
-					"parameter_longname" : "live.toggle[53]"
+				"obj-156::obj-29::obj-42" : 				{
+					"parameter_longname" : "live.text[119]"
+				}
+,
+				"obj-156::obj-61::obj-38" : 				{
+					"parameter_longname" : "live.text[29]"
+				}
+,
+				"obj-66::obj-44::obj-118::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[60]"
+				}
+,
+				"obj-156::obj-25::obj-38" : 				{
+					"parameter_longname" : "live.text[128]"
+				}
+,
+				"obj-156::obj-38::obj-38" : 				{
+					"parameter_longname" : "live.text[57]"
+				}
+,
+				"obj-156::obj-72::obj-1" : 				{
+					"parameter_longname" : "1[55]"
+				}
+,
+				"obj-156::obj-77::obj-38" : 				{
+					"parameter_longname" : "live.text[3]"
+				}
+,
+				"obj-66::obj-44::obj-1::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[43]"
+				}
+,
+				"obj-156::obj-28::obj-15" : 				{
+					"parameter_longname" : "live.text[89]"
+				}
+,
+				"obj-156::obj-60::obj-42" : 				{
+					"parameter_longname" : "live.text[27]"
+				}
+,
+				"obj-66::obj-44::obj-116::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[61]"
+				}
+,
+				"obj-156::obj-24::obj-1" : 				{
+					"parameter_longname" : "1[82]"
+				}
+,
+				"obj-156::obj-37::obj-42" : 				{
+					"parameter_longname" : "live.text[55]"
+				}
+,
+				"obj-156::obj-20::obj-38" : 				{
+					"parameter_longname" : "live.text[8]"
+				}
+,
+				"obj-66::obj-44::obj-79::obj-10" : 				{
+					"parameter_longname" : "speakerLevel[38]"
 				}
 ,
 				"obj-66::obj-44::obj-14::obj-11" : 				{
 					"parameter_longname" : "live.toggle[74]"
 				}
 ,
-				"obj-156::obj-24::obj-38" : 				{
-					"parameter_longname" : "live.text[126]"
+				"obj-156::obj-1::obj-38" : 				{
+					"parameter_longname" : "live.text[143]"
 				}
 ,
-				"obj-156::obj-39::obj-42" : 				{
-					"parameter_longname" : "live.text[61]"
+				"obj-156::obj-44::obj-42" : 				{
+					"parameter_longname" : "live.text[87]"
 				}
 
 			}
@@ -36258,14 +36261,15 @@
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
-					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
-					"fontface" : [ 0 ],
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"fontname" : [ "Futura Medium" ],
+					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontsize" : [ 10.0 ],
+					"fontface" : [ 0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
@@ -36276,8 +36280,7 @@
 						"autogradient" : 0.0
 					}
 ,
-					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
-					"fontname" : [ "Futura Medium" ],
+					"fontsize" : [ 10.0 ],
 					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,

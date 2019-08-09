@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 67.0, 110.0, 1176.0, 774.0 ],
+		"rect" : [ 239.0, 79.0, 1176.0, 774.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -119,7 +119,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[294]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -148,7 +148,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[293]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -177,7 +177,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[291]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -206,7 +206,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[292]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -273,7 +273,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[239]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -302,7 +302,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[240]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -331,7 +331,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[241]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -360,7 +360,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[233]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -389,7 +389,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[242]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -418,7 +418,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[232]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -447,7 +447,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[238]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -476,7 +476,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "live.text[177]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -513,7 +513,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1190,7 +1190,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1216,7 +1216,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[1]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1242,7 +1242,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[2]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1268,7 +1268,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[3]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1294,7 +1294,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[4]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1320,7 +1320,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[5]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1346,7 +1346,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[6]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1372,7 +1372,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[7]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1398,7 +1398,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[8]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1424,7 +1424,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[9]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1450,7 +1450,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[10]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -1476,7 +1476,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_type" : 2,
 											"parameter_longname" : "obj1[11]",
-											"parameter_mmax" : 1.0
+											"parameter_mmax" : 1
 										}
 
 									}
@@ -2159,7 +2159,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 119.0, 68.0, 698.0, 20.0 ],
-					"text" : "To create a new input router create this object: [ bpatcher inputRouter @args {speakerNumber} {MCU number} ]"
+					"text" : "To create a new input router create this object: [ bpatcher inputRouter @args {speakerNumber}  ]"
 				}
 
 			}

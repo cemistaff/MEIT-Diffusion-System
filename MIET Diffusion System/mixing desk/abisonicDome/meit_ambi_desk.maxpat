@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 4,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 40.0, 164.0, 1180.0, 702.0 ],
+		"rect" : [ 1457.0, 319.0, 1180.0, 702.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -67,7 +67,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1147.9803466796875, 359.0, 49.333328247070312, 164.0 ],
+					"patching_rect" : [ 1154.9803466796875, 451.0, 49.333328247070312, 164.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1037.666404724121094, 298.0, 49.333328247070312, 218.0 ],
 					"varname" : "E1[2]",
@@ -90,7 +90,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1091.313720703125, 359.0, 49.333328247070312, 164.0 ],
+					"patching_rect" : [ 1098.313720703125, 451.0, 49.333328247070312, 164.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 989.333244323730469, 298.0, 49.333328247070312, 218.0 ],
 					"varname" : "S2[2]",
@@ -113,7 +113,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1760.058837890625, 39.0, 49.333328247070312, 164.0 ],
+					"patching_rect" : [ 1042.058837890625, 471.0, 49.333328247070312, 164.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 939.999885559082031, 298.0, 49.333328247070312, 218.0 ],
 					"varname" : "E2[1]",
@@ -136,7 +136,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1710.7254638671875, 39.0, 49.333328247070312, 164.0 ],
+					"patching_rect" : [ 992.7254638671875, 471.0, 49.333328247070312, 164.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 890.666557312011719, 298.0, 49.333328247070312, 218.0 ],
 					"varname" : "E1[1]",
@@ -159,7 +159,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1654.058837890625, 39.0, 49.333328247070312, 164.0 ],
+					"patching_rect" : [ 936.058837890625, 471.0, 49.333328247070312, 164.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 841.333206176757812, 298.0, 49.333328247070312, 218.0 ],
 					"varname" : "S2[1]",
@@ -182,7 +182,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1604.7254638671875, 39.0, 49.333328247070312, 164.0 ],
+					"patching_rect" : [ 886.7254638671875, 471.0, 49.333328247070312, 164.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 792.9998779296875, 298.0, 49.333328247070312, 218.0 ],
 					"varname" : "S1[1]",
@@ -249,7 +249,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 4,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -354,7 +354,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 0,
-											"revision" : 4,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1115,11 +1115,11 @@
 					"presentation_rect" : [ 1018.999832153320312, 85.11767578125, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[44]"
+							"parameter_longname" : "live.text[44]",
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -1143,11 +1143,11 @@
 					"presentation_rect" : [ 1018.999832153320312, 51.11767578125, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[135]"
+							"parameter_longname" : "live.text[135]",
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -1171,11 +1171,11 @@
 					"presentation_rect" : [ 947.999832153320312, 85.11767578125, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[41]"
+							"parameter_longname" : "live.text[41]",
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -1199,11 +1199,11 @@
 					"presentation_rect" : [ 947.999832153320312, 51.11767578125, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[43]"
+							"parameter_longname" : "live.text[43]",
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -1243,11 +1243,11 @@
 					"presentation_rect" : [ 874.333206176757812, 85.11767578125, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[136]"
+							"parameter_longname" : "live.text[136]",
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -1287,11 +1287,11 @@
 					"presentation_rect" : [ 874.333206176757812, 51.11767578125, 69.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[42]"
+							"parameter_longname" : "live.text[42]",
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -1627,12 +1627,12 @@
 				"box" : 				{
 					"fontface" : 1,
 					"id" : "obj-19",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.499991999999999, 116.5, 218.0, 47.0 ],
-					"text" : "To create a new outputSlider create:\n[ bpatcher ouputSlider @args io# mcu# ]"
+					"patching_rect" : [ 48.499991999999999, 116.5, 218.0, 33.0 ],
+					"text" : "To create a new outputSlider create:\n[ bpatcher ouputSlider @args io# ]"
 				}
 
 			}

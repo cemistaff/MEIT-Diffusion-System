@@ -1,6 +1,6 @@
 {
 	"pattrstorage" : 	{
-		"name" : "u959004223",
+		"name" : "u538002082",
 		"slots" : 		{
 			"1" : 			{
 				"id" : 1,
@@ -35,14 +35,15 @@
 					"ERRC" : [ 0.374015748031496 ],
 					"RC" : [ 0.98092125984252 ],
 					"damping" : [ 0.09488188976378 ],
+					"filterMode" : [ 2.0 ],
 					"gridRand" : [ 0.0 ],
 					"randRange" : [ 0.082872928176796, 0.30939226519337 ],
 					"smoothing" : [ 0.001 ],
-					"filterMode" : [ 2.0 ],
+					"wallFilterFreq" : [ 2400.393700787404669 ],
 					"wallFilterMix" : [ 0.748031496062992 ],
 					"wallFilterQ" : [ 0.5 ],
-					"wallFilterFreq" : [ 2400.393700787404669 ],
 					"wobble" : [ 0.0 ],
+					"ERmode" : [ 4 ],
 					"presetName" : [ "Very Large Room" ]
 				}
 
@@ -81,14 +82,15 @@
 					"ERRC" : [ 0.1 ],
 					"RC" : [ 0.999 ],
 					"damping" : [ 0.177165354330709 ],
+					"filterMode" : [ 0.0 ],
 					"gridRand" : [ 0.0 ],
 					"randRange" : [ 0.160220994475138, 0.298342541436464 ],
 					"smoothing" : [ 0.001 ],
-					"filterMode" : [ 0.0 ],
+					"wallFilterFreq" : [ 2713.779527559058806 ],
 					"wallFilterMix" : [ 1.0 ],
 					"wallFilterQ" : [ 0.830708661417322 ],
-					"wallFilterFreq" : [ 2713.779527559058806 ],
 					"wobble" : [ 0.0 ],
+					"ERmode" : [ 1 ],
 					"presetName" : [ "Subtle Hall" ]
 				}
 
@@ -127,14 +129,15 @@
 					"ERRC" : [ 0.9 ],
 					"RC" : [ 0.959669291338583 ],
 					"damping" : [ 0.603543307086615 ],
+					"filterMode" : [  ],
 					"gridRand" : [ 0.0 ],
 					"randRange" : [ 0.0, 0.049723756906077 ],
 					"smoothing" : [ 0.001 ],
-					"filterMode" : [  ],
+					"wallFilterFreq" : [  ],
 					"wallFilterMix" : [  ],
 					"wallFilterQ" : [  ],
-					"wallFilterFreq" : [  ],
 					"wobble" : [  ],
+					"ERmode" : [ 4 ],
 					"presetName" : [ "Slapback Reverb" ]
 				}
 
