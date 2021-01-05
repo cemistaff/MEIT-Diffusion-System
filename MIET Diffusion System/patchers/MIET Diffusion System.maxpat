@@ -490,7 +490,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-20",
@@ -6300,7 +6299,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 144.0, 879.0, 1423.0, 502.0 ],
+										"rect" : [ 57.0, 317.0, 1423.0, 502.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -9370,7 +9369,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 28.0, 19.0, 150.0, 114.0 ],
+													"patching_rect" : [ 28.0, 19.0, 150.0, 117.0 ],
 													"text" : "The MCU specification sends midi notes, channels, and pitchbends to control the faders.  The note values are used as on/off states and the pitchbend message controls the value"
 												}
 
@@ -10125,7 +10124,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 749.0, 527.0, 732.0, 409.0 ],
+						"rect" : [ 749.0, 527.0, 465.0, 409.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -15977,7 +15976,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 92.559585999999996, 606.0, 800.0, 20.0 ],
+									"patching_rect" : [ 92.559585999999996, 606.0, 800.0, 36.0 ],
 									"text" : "mc.dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64",
 									"varname" : "dac"
 								}
@@ -15990,7 +15989,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 113.5, 10.0, 800.0, 20.0 ],
+									"patching_rect" : [ 113.5, 10.0, 800.0, 22.0 ],
 									"text" : "mc.adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48",
 									"varname" : "adc"
 								}
@@ -15999,12 +15998,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-30",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "list" ],
-									"patching_rect" : [ 113.5, 198.0, 100.0, 0.0 ],
+									"patching_rect" : [ 113.5, 198.0, 180.0, 22.0 ],
 									"text" : "mcs.matrix~ 48 48 0. @ramp 10",
 									"varname" : "inputMatrix"
 								}
@@ -16013,12 +16011,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-33",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "list" ],
-									"patching_rect" : [ 113.5, 240.0, 100.0, 0.0 ],
+									"patching_rect" : [ 113.5, 240.0, 180.0, 22.0 ],
 									"text" : "mcs.matrix~ 48 48 0. @ramp 10",
 									"varname" : "outputMatrix"
 								}
@@ -16027,12 +16024,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-34",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "list" ],
-									"patching_rect" : [ 399.833252000000016, 168.0, 100.0, 0.0 ],
+									"patching_rect" : [ 399.833252000000016, 168.0, 183.0, 22.0 ],
 									"text" : "mcs.matrix~ 48 16. 0. @ramp 10",
 									"varname" : "recordingMatrix"
 								}
@@ -26167,7 +26163,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 53.0, 100.0, 50.0, 22.0 ],
-													"text" : "1 0"
+													"text" : "1 3"
 												}
 
 											}
