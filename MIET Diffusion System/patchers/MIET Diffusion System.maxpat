@@ -1526,12 +1526,16 @@
 														"styles" : [ 															{
 																"name" : "Minimal",
 																"default" : 																{
-																	"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+																	"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 																	"fontsize" : [ 10.0 ],
+																	"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+																	"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+																	"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+																	"fontname" : [ "Futura Medium" ],
 																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+																	"fontface" : [ 0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
@@ -1542,11 +1546,7 @@
 																		"proportion" : 0.39,
 																		"autogradient" : 0.0
 																	}
-,
-																	"fontname" : [ "Futura Medium" ],
-																	"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-																	"fontface" : [ 0 ]
+
 																}
 ,
 																"parentstyle" : "",
@@ -2104,12 +2104,16 @@
 						"styles" : [ 							{
 								"name" : "Minimal",
 								"default" : 								{
-									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 									"fontsize" : [ 10.0 ],
+									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+									"fontname" : [ "Futura Medium" ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+									"fontface" : [ 0 ],
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2120,11 +2124,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0.0
 									}
-,
-									"fontname" : [ "Futura Medium" ],
-									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontface" : [ 0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -2935,13 +2935,12 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
-									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 256.0, 179.5, 50.0, 22.0 ],
-									"text" : "0 0.921053"
+									"text" : "46 0."
 								}
 
 							}
@@ -6062,7 +6061,7 @@
 ,
 														"io" : 														{
 															"size" : [ 48, 48 ],
-															"crossFreq" : 50,
+															"crossFreq" : 50.0,
 															"recordingBusses" : 16
 														}
 ,
@@ -10553,7 +10552,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 5.5, 190.0, 80.0, 16.5 ],
 									"rounded" : 0.0,
-									"text" : "37, 38, 39",
+									"text" : "37 38 39",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -10776,7 +10775,7 @@
 ,
 										"io" : 										{
 											"size" : [ 48, 48 ],
-											"crossFreq" : 50,
+											"crossFreq" : 50.0,
 											"recordingBusses" : 16
 										}
 ,
@@ -12150,7 +12149,7 @@
 ,
 														"io" : 														{
 															"size" : [ 48, 48 ],
-															"crossFreq" : 50,
+															"crossFreq" : 50.0,
 															"recordingBusses" : 16
 														}
 ,
@@ -15971,12 +15970,12 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-26",
+									"id" : "obj-14",
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 92.559585999999996, 606.0, 800.0, 36.0 ],
+									"patching_rect" : [ 92.559585999999996, 606.0, 800.0, 20.0 ],
 									"text" : "mc.dac~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64",
 									"varname" : "dac"
 								}
@@ -15984,12 +15983,12 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-29",
+									"id" : "obj-15",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 113.5, 10.0, 800.0, 22.0 ],
+									"patching_rect" : [ 113.5, 10.0, 800.0, 20.0 ],
 									"text" : "mc.adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48",
 									"varname" : "adc"
 								}
@@ -15997,12 +15996,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-30",
+									"id" : "obj-17",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "list" ],
-									"patching_rect" : [ 113.5, 198.0, 180.0, 22.0 ],
+									"patching_rect" : [ 113.5, 198.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 48 48 0. @ramp 10",
 									"varname" : "inputMatrix"
 								}
@@ -16010,12 +16010,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-33",
+									"id" : "obj-20",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "list" ],
-									"patching_rect" : [ 113.5, 240.0, 180.0, 22.0 ],
+									"patching_rect" : [ 113.5, 240.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 48 48 0. @ramp 10",
 									"varname" : "outputMatrix"
 								}
@@ -16023,13 +16024,14 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-34",
+									"id" : "obj-21",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "list" ],
-									"patching_rect" : [ 399.833252000000016, 168.0, 183.0, 22.0 ],
-									"text" : "mcs.matrix~ 48 16. 0. @ramp 10",
+									"patching_rect" : [ 399.833252000000016, 168.0, 100.0, 0.0 ],
+									"text" : "mcs.matrix~ 48 16 0. @ramp 10",
 									"varname" : "recordingMatrix"
 								}
 
@@ -16037,14 +16039,14 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-33", 0 ],
+									"destination" : [ "obj-20", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
+									"destination" : [ "obj-17", 0 ],
 									"order" : 2,
 									"source" : [ "obj-12", 0 ]
 								}
@@ -16052,7 +16054,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-34", 0 ],
+									"destination" : [ "obj-21", 0 ],
 									"order" : 0,
 									"source" : [ "obj-12", 0 ]
 								}
@@ -16068,22 +16070,68 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
+									"destination" : [ "obj-17", 0 ],
 									"source" : [ "obj-129", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-33", 0 ],
+									"destination" : [ "obj-20", 0 ],
 									"source" : [ "obj-134", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-34", 0 ],
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
 									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 0,
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"order" : 1,
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"order" : 0,
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 1 ],
+									"order" : 1,
+									"source" : [ "obj-21", 0 ]
 								}
 
 							}
@@ -16110,52 +16158,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-29", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-33", 0 ],
-									"source" : [ "obj-30", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"order" : 0,
-									"source" : [ "obj-33", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-40", 0 ],
-									"order" : 1,
-									"source" : [ "obj-33", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"order" : 0,
-									"source" : [ "obj-34", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-42", 1 ],
-									"order" : 1,
-									"source" : [ "obj-34", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-64", 0 ],
 									"source" : [ "obj-40", 0 ]
 								}
@@ -16163,7 +16165,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
+									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-42", 0 ]
 								}
 
@@ -16221,12 +16223,16 @@
 						"styles" : [ 							{
 								"name" : "Minimal",
 								"default" : 								{
-									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 									"fontsize" : [ 10.0 ],
+									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+									"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+									"fontname" : [ "Futura Medium" ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+									"fontface" : [ 0 ],
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -16237,11 +16243,7 @@
 										"proportion" : 0.39,
 										"autogradient" : 0.0
 									}
-,
-									"fontname" : [ "Futura Medium" ],
-									"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontface" : [ 0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -22896,12 +22898,16 @@
 										"styles" : [ 											{
 												"name" : "Minimal",
 												"default" : 												{
-													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+													"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 													"fontsize" : [ 10.0 ],
+													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+													"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+													"fontname" : [ "Futura Medium" ],
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+													"fontface" : [ 0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
@@ -22912,11 +22918,7 @@
 														"proportion" : 0.39,
 														"autogradient" : 0.0
 													}
-,
-													"fontname" : [ "Futura Medium" ],
-													"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-													"fontface" : [ 0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -28990,8 +28992,8 @@
 			}
 , 			{
 				"name" : "dictParam.view.js",
-				"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
-				"patcherrelativepath" : "../code",
+				"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc/n4m/dictParam.view",
+				"patcherrelativepath" : "../misc/n4m/dictParam.view",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -29014,12 +29016,16 @@
 		"styles" : [ 			{
 				"name" : "Minimal",
 				"default" : 				{
-					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
 					"fontsize" : [ 10.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
+					"elementcolor" : [ 0.694117647058824, 0.694117647058824, 0.694117647058824, 1.0 ],
+					"fontname" : [ "Futura Medium" ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"editing_bgcolor" : [ 0.956862745098039, 0.956862745098039, 0.956862745098039, 1.0 ],
+					"fontface" : [ 0 ],
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -29030,11 +29036,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0.0
 					}
-,
-					"fontname" : [ "Futura Medium" ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontface" : [ 0 ]
+
 				}
 ,
 				"parentstyle" : "",

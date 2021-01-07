@@ -2,7 +2,7 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3692706618,
+	"modificationdate" : 3692869032,
 	"viewrect" : [ 526.0, 817.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -168,6 +168,29 @@
 			"meshReverbPrests.json" : 			{
 				"kind" : "json",
 				"local" : 1
+			}
+
+		}
+,
+		"other" : 		{
+			"AllRADecoder.dll" : 			{
+				"kind" : "audioplugin",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
+					"projectrelativepath" : "./misc"
+				}
+
+			}
+,
+			"SimpleDecoder.dll" : 			{
+				"kind" : "audioplugin",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
+					"projectrelativepath" : "./misc"
+				}
+
 			}
 
 		}
