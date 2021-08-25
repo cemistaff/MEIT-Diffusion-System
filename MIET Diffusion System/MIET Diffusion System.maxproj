@@ -2,7 +2,6 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3648148370,
 	"viewrect" : [ 526.0, 817.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -14,7 +13,6 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -25,7 +23,7 @@
 				"local" : 1,
 				"toplevel" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -43,24 +41,34 @@
 ,
 			"mc.meshVerbSimplified.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
 			}
 ,
 			"poly.meshVerb.simple.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"mc.meshVerb.spaceMixer.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"poly.meshVerb.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -80,7 +88,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -121,7 +129,7 @@
 				"kind" : "gendsp",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -131,7 +139,7 @@
 				"kind" : "gendsp",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -141,7 +149,7 @@
 				"kind" : "gendsp",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -153,6 +161,29 @@
 			"meshReverbPrests.json" : 			{
 				"kind" : "json",
 				"local" : 1
+			}
+
+		}
+,
+		"other" : 		{
+			"AllRADecoder.dll" : 			{
+				"kind" : "audioplugin",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
+					"projectrelativepath" : "./misc"
+				}
+
+			}
+,
+			"SimpleDecoder.dll" : 			{
+				"kind" : "audioplugin",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
+					"projectrelativepath" : "./misc"
+				}
+
 			}
 
 		}

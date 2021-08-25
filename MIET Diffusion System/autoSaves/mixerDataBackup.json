@@ -52,12 +52,9 @@
 	}
 ,
 	"sub" : 	{
-		"attinuation" : -6.0
 	}
 ,
 	"mixer" : 	{
-		"attinuation" : -6.0,
-		"subList" : [ 37, ",", 38, ",", 39 ]
 	}
 ,
 	"diffusion" : 	{
