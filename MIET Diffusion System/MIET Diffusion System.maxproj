@@ -2,14 +2,24 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3718194206,
-	"viewrect" : [ 1341.0, 469.0, 300.0, 474.0 ],
+	"modificationdate" : 3719401379,
+	"viewrect" : [ 282.0, 197.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
+			"meit.ambisonics.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
+,
 			"cp.wgMesh~.maxhelp" : 			{
 				"kind" : "helpfile",
 				"local" : 1,
@@ -137,6 +147,11 @@
 		}
 ,
 		"code" : 		{
+			"cp.wgMeshGen.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
 			"poly.meshVerb.junctions.simple.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
@@ -192,16 +207,6 @@
 
 			}
 ,
-			"cp.wgMeshGen.js" : 			{
-				"kind" : "javascript",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads/cpDelayNetworks-master/code",
-					"projectrelativepath" : "../../../../Downloads/cpDelayNetworks-master/code"
-				}
-
-			}
-,
 			"cp.delayNetworksUtils.js" : 			{
 				"kind" : "javascript",
 				"local" : 1,
@@ -215,6 +220,11 @@
 		}
 ,
 		"data" : 		{
+			"meshPresets.json" : 			{
+				"kind" : "json",
+				"local" : 1
+			}
+,
 			"meshReverbPrests.json" : 			{
 				"kind" : "json",
 				"local" : 1
