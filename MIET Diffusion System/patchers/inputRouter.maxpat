@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-19",
@@ -44,7 +45,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 131.0, 334.0, 55.0, 22.0 ],
+					"patching_rect" : [ 131.0, 334.0, 95.0, 22.0 ],
 					"text" : "r #0_dial"
 				}
 
@@ -56,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 182.0, 364.0, 79.0, 22.0 ],
+					"patching_rect" : [ 182.0, 364.0, 119.0, 22.0 ],
 					"text" : "value #0_mix"
 				}
 
@@ -68,7 +69,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.0, 466.5, 115.0, 22.0 ],
+					"patching_rect" : [ 126.0, 466.5, 155.0, 22.0 ],
 					"text" : "r #0_routingNumber"
 				}
 
@@ -80,7 +81,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.0, 165.5, 115.0, 22.0 ],
+					"patching_rect" : [ 149.0, 165.5, 155.0, 22.0 ],
 					"text" : "r #0_routingNumber"
 				}
 
@@ -92,7 +93,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 271.0, 165.5, 115.0, 22.0 ],
+					"patching_rect" : [ 271.0, 165.5, 155.0, 22.0 ],
 					"text" : "r #0_routingNumber"
 				}
 
@@ -103,7 +104,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 154.75, 58.0, 117.0, 22.0 ],
+					"patching_rect" : [ 154.75, 58.0, 157.0, 22.0 ],
 					"text" : "s #0_routingNumber"
 				}
 
@@ -163,7 +164,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6.0, 398.0, 113.0, 22.0 ],
+					"patching_rect" : [ 6.0, 398.0, 126.0, 22.0 ],
 					"text" : "r #0_selButton"
 				}
 
@@ -178,8 +179,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -212,6 +213,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
@@ -286,6 +288,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-17",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -333,6 +336,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-7",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -382,6 +386,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-28",
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
@@ -595,12 +600,16 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 27.0, 4.5, 14.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
-							"parameter_shortname" : "live.toggle",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "live.toggle[1]",
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.toggle[137]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle",
+							"parameter_type" : 2
 						}
 
 					}
@@ -611,7 +620,10 @@
 			}
 , 			{
 				"box" : 				{
+					"activeslidercolor" : [ 1.0, 0.71, 0.196, 1.0 ],
+					"appearance" : 2,
 					"id" : "obj-10",
+					"lcdcolor" : [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
 					"maxclass" : "live.numbox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -621,12 +633,20 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 44.0, 4.5, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"lcdcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activeslidercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
+							"parameter_longname" : "speakerLevel[137]",
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "speakerLevel",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 1,
-							"parameter_longname" : "speakerLevel[1]",
-							"parameter_mmax" : 1.0
+							"parameter_unitstyle" : 1
 						}
 
 					}
@@ -642,7 +662,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 265.0, 401.5, 150.0, 33.0 ],
+					"patching_rect" : [ 265.0, 401.5, 150.0, 34.0 ],
 					"text" : "puts the first argument in front of the message"
 				}
 
@@ -654,7 +674,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 177.0, 280.0, 150.0, 60.0 ],
+					"patching_rect" : [ 177.0, 280.0, 150.0, 62.0 ],
 					"text" : "Set changes the data in the numberbox and toggle, but does not output the data"
 				}
 
@@ -677,7 +697,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 309.0, 197.0, 371.0, 33.0 ],
+					"patching_rect" : [ 309.0, 197.0, 371.0, 34.0 ],
 					"text" : "These route messages filter the data by looking for messages that start with the first arguemnt"
 				}
 
@@ -689,7 +709,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 95.0, 88.0, 166.0, 33.0 ],
+					"patching_rect" : [ 95.0, 88.0, 166.0, 34.0 ],
 					"text" : "Set the display as the first arguemnt + 1"
 				}
 
@@ -766,7 +786,7 @@
 					"patching_rect" : [ 23.0, 121.0, 38.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 3.5, 22.0, 18.0 ],
-					"text" : "#1",
+					"text" : "18",
 					"textjustification" : 2
 				}
 
@@ -813,8 +833,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 34.0, 275.0, 38.0, 22.0 ],
-					"text" : ">= 1."
+					"patching_rect" : [ 34.0, 275.0, 29.5, 22.0 ],
+					"text" : "> 0."
 				}
 
 			}
@@ -1043,18 +1063,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-11" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-10" : [ "speakerLevel[1]", "speakerLevel", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
