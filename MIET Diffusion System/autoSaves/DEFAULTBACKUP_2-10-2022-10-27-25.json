@@ -103,7 +103,7 @@
 			"master" : 0
 		}
 ,
-		"outputLevel" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+		"outputLevel" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.075963, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 		"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 		"ambisonicPlayer" : 		{
 			"playback" : 0
@@ -139,14 +139,10 @@
 				"scale" : -2.047244094488186,
 				"volume" : 1.0,
 				"reverbSelect" : 				{
-					"ReverbFile" : 0,
-					"reverbSpace" : 5
+					"ReverbFile" : "01 center.wav",
+					"reverbSpace" : "05 Chapel St. Albans"
 				}
 
-			}
-,
-			"routing" : 			{
-				"0" : 0.0
 			}
 
 		}
@@ -293,8 +289,8 @@
 				"scale" : -2.047244094488186,
 				"volume" : 1.0,
 				"reverbSelect" : 				{
-					"ReverbFile" : 0,
-					"reverbSpace" : 4
+					"ReverbFile" : "01 9m.wav",
+					"reverbSpace" : "03 Early Music Center St. Margrets"
 				}
 
 			}
@@ -443,8 +439,8 @@
 				"scale" : 0.0,
 				"volume" : 1.0,
 				"reverbSelect" : 				{
-					"ReverbFile" : 0,
-					"reverbSpace" : 2
+					"ReverbFile" : "01 9m.wav",
+					"reverbSpace" : "03 Early Music Center St. Margrets"
 				}
 
 			}
@@ -593,8 +589,8 @@
 				"scale" : 0.0,
 				"volume" : 0.3,
 				"reverbSelect" : 				{
-					"ReverbFile" : 0,
-					"reverbSpace" : 3
+					"ReverbFile" : "01 middle.wav",
+					"reverbSpace" : "04 Symphony Hall Usina del Arte "
 				}
 
 			}
@@ -743,8 +739,8 @@
 				"scale" : 0.0,
 				"volume" : 0.3,
 				"reverbSelect" : 				{
-					"ReverbFile" : 0,
-					"reverbSpace" : 5
+					"ReverbFile" : "01 middle.wav",
+					"reverbSpace" : "04 Symphony Hall Usina del Arte "
 				}
 
 			}
