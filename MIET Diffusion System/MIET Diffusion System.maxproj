@@ -2,8 +2,8 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3729773794,
-	"viewrect" : [ 282.0, 197.0, 300.0, 474.0 ],
+	"modificationdate" : 3732790901,
+	"viewrect" : [ 175.0, 184.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,7 +14,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -28,7 +28,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -38,7 +38,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -48,7 +48,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -59,7 +59,7 @@
 				"local" : 1,
 				"toplevel" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -79,7 +79,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -89,7 +89,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -99,7 +99,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -109,7 +109,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -129,7 +129,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -175,7 +175,7 @@
 				"kind" : "gendsp",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -185,7 +185,7 @@
 				"kind" : "gendsp",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -195,7 +195,7 @@
 				"kind" : "gendsp",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -222,16 +222,6 @@
 				"local" : 1
 			}
 ,
-			"_defaultPresetList.json" : 			{
-				"kind" : "json",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/data",
-					"projectrelativepath" : "./data"
-				}
-
-			}
-,
 			"default.json" : 			{
 				"kind" : "json",
 				"local" : 1
@@ -245,20 +235,20 @@
 ,
 		"other" : 		{
 			"AllRADecoder.dll" : 			{
-				"kind" : "audioplugin",
+				"kind" : "file",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
 					"projectrelativepath" : "./misc"
 				}
 
 			}
 ,
 			"SimpleDecoder.dll" : 			{
-				"kind" : "audioplugin",
+				"kind" : "file",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "D:/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
+					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
 					"projectrelativepath" : "./misc"
 				}
 
