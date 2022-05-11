@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -455,8 +455,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -561,8 +561,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2272,7 +2272,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 528.333266999999978, 252.0, 49.333328000000002, 164.0 ],
+					"patching_rect" : [ 528.333266999999978, 279.0, 49.333328000000002, 164.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 508.333251953125, 43.0, 49.333328247070312, 218.0 ],
 					"varname" : "C3",
@@ -2532,7 +2532,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1149.313720703125, 471.0, 219.0001220703125, 167.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1093.66650390625, 263.0, 95.333168029785156, 257.0 ],
+					"presentation_rect" : [ 1080.66650390625, 263.0, 108.333168029785156, 257.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}

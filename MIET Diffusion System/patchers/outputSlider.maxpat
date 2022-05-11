@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -265,8 +265,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -574,8 +574,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -823,8 +823,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -892,8 +892,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -927,7 +927,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-5",
@@ -1239,13 +1238,13 @@
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"bgfillcolor" : 													{
-														"type" : "color",
+														"angle" : 270.0,
+														"autogradient" : 0.0,
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.39,
-														"autogradient" : 0.0
+														"type" : "color"
 													}
 ,
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -1286,13 +1285,13 @@
 												"name" : "max6message",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"type" : "gradient",
+														"angle" : 270.0,
+														"autogradient" : 0,
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 														"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 														"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.39,
-														"autogradient" : 0
+														"type" : "gradient"
 													}
 ,
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1335,8 +1334,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1373,13 +1372,13 @@
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-6",
-													"linecount" : 3,
+													"linecount" : 4,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 421.0, 280.0, 46.0, 62.0 ],
-													"text" : "0 slider 0."
+													"text" : "10 slider 30.485714"
 												}
 
 											}
@@ -1391,7 +1390,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 252.0, 128.5, 68.0, 35.0 ],
-													"text" : "-70."
+													"text" : "-48."
 												}
 
 											}
@@ -1996,8 +1995,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.0, 642.0, 189.0, 22.0 ],
-					"text" : "if $f1 <= 0.000322 then 0 else $f1"
+					"patching_rect" : [ 96.0, 642.0, 187.0, 22.0 ],
+					"text" : "if $f1 <= 0.003981 then 0 else $f1"
 				}
 
 			}
@@ -2045,8 +2044,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2506,7 +2505,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[144]",
+							"parameter_longname" : "live.text[97]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[26]",
 							"parameter_type" : 2
@@ -2546,7 +2545,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[143]",
+							"parameter_longname" : "live.text[99]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[26]",
 							"parameter_type" : 2
@@ -2691,7 +2690,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[145]",
+							"parameter_longname" : "live.text[123]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -2740,7 +2739,7 @@
 					"patching_rect" : [ 280.0, 47.0, 43.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 4.0, 28.0, 20.0 ],
-					"text" : "1"
+					"text" : "11"
 				}
 
 			}
@@ -2783,6 +2782,7 @@
 				"box" : 				{
 					"channels" : 1,
 					"coldcolor" : [ 0.792156862745098, 0.792156862745098, 0.792156862745098, 1.0 ],
+					"display_range" : [ -48.0, 6.0 ],
 					"hotcolor" : [ 0.941176470588235, 0.937254901960784, 0.92156862745098, 1.0 ],
 					"id" : "obj-1",
 					"interval" : 60,
@@ -2799,9 +2799,9 @@
 						"valueof" : 						{
 							"parameter_defer" : 1,
 							"parameter_initial" : [ 0.0 ],
-							"parameter_longname" : "1[89]",
+							"parameter_longname" : "1[79]",
 							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
+							"parameter_mmin" : -48.0,
 							"parameter_shortname" : "1",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -3316,13 +3316,13 @@
 					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0.0,
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 						"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0.0
+						"type" : "color"
 					}
 ,
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -3363,13 +3363,13 @@
 				"name" : "max6message",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "gradient",
+						"angle" : 270.0,
+						"autogradient" : 0,
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 						"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 						"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "gradient"
 					}
 ,
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
