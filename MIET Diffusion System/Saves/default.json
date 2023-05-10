@@ -938,6 +938,7 @@
 		"outputMode" : 1,
 		"ambisonicsOrder" : 5
 	}
+<<<<<<< HEAD
 ,
 <<<<<<< HEAD
 	"Scene7" : 	{
@@ -1692,4 +1693,7 @@
 	}
 
 >>>>>>> 7b5ae745d3b34afff85df7df6d8f58d170e8cb9e
+=======
+
+>>>>>>> parent of faee56a (updates-patrick)
 }

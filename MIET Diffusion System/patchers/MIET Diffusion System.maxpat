@@ -3,8 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
+<<<<<<< HEAD
 			"minor" : 3,
 <<<<<<< HEAD
+=======
+			"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 			"revision" : 2,
 =======
 			"revision" : 1,
@@ -15,10 +19,14 @@
 ,
 		"classnamespace" : "box",
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"rect" : [ 364.0, 176.0, 1649.0, 811.0 ],
 =======
 		"rect" : [ 94.0, 155.0, 1437.0, 713.0 ],
 >>>>>>> 7b5ae745d3b34afff85df7df6d8f58d170e8cb9e
+=======
+		"rect" : [ 158.0, 138.0, 1460.0, 659.0 ],
+>>>>>>> parent of faee56a (updates-patrick)
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -339,8 +347,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -350,7 +362,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 603.0, 536.0, 640.0, 480.0 ],
+						"rect" : [ 706.0, 487.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -380,6 +392,7 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+<<<<<<< HEAD
 <<<<<<< HEAD
 									"id" : "obj-20",
 									"maxclass" : "newobj",
@@ -413,6 +426,8 @@
 							}
 , 							{
 								"box" : 								{
+=======
+>>>>>>> parent of faee56a (updates-patrick)
 									"comment" : "",
 									"id" : "obj-19",
 									"index" : 1,
@@ -420,7 +435,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 291.0, 126.0, 30.0, 30.0 ]
+									"patching_rect" : [ 260.0, 59.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -549,8 +564,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -560,7 +579,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 58.0, 106.0, 640.0, 480.0 ],
+										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -620,7 +639,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 124.0, 105.0, 299.0, 35.0 ],
+													"patching_rect" : [ 60.0, 133.0, 299.0, 36.0 ],
 													"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 1 1 1 1 1 0 1 1 1 1 0 0"
 												}
 
@@ -712,7 +731,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 100.0, 19.0, 68.0, 22.0 ],
+									"patching_rect" : [ 101.0, 37.0, 68.0, 22.0 ],
 									"text" : "adc~ 63 64"
 								}
 
@@ -720,14 +739,14 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-20", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-1", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-20", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -785,13 +804,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"source" : [ "obj-20", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"source" : [ "obj-23", 0 ]
 								}
@@ -832,13 +844,13 @@
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0.0,
+										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "color"
+										"autogradient" : 0.0
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -879,13 +891,13 @@
 								"name" : "max6message",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0,
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"type" : "gradient",
 										"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 										"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "gradient"
+										"autogradient" : 0
 									}
 ,
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -1053,8 +1065,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -1326,8 +1342,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -1424,8 +1444,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -1435,7 +1459,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 914.0, 212.0, 535.0, 827.0 ],
+										"rect" : [ 1304.0, 328.0, 459.0, 583.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -1465,104 +1489,6 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
-													"id" : "obj-48",
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 832.0, 456.0, 29.5, 22.0 ],
-													"text" : "1"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-46",
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 759.0, 450.5, 29.5, 22.0 ],
-													"text" : "1"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-44",
-													"linecount" : 2,
-													"maxclass" : "message",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 238.0, 360.0, 50.0, 35.0 ],
-													"text" : "set 1 1 #0_ir 4"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-42",
-													"maxclass" : "newobj",
-													"numinlets" : 0,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 1021.0, 11.0, 23.0, 22.0 ],
-													"text" : "r n"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-37",
-													"maxclass" : "button",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
-													"parameter_enable" : 0,
-													"patching_rect" : [ 1229.0, 23.0, 24.0, 24.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-31",
-													"maxclass" : "toggle",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "int" ],
-													"parameter_enable" : 0,
-													"patching_rect" : [ 1250.0, 24.0, 24.0, 24.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-29",
-													"maxclass" : "newobj",
-													"numinlets" : 2,
-													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 1229.0, 65.0, 63.0, 22.0 ],
-													"text" : "metro 250"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-7",
-													"maxclass" : "comment",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 430.0, 97.0, 150.0, 20.0 ],
-													"presentation" : 1,
-													"presentation_rect" : [ 346.5, 88.696289000000007, 107.5, 20.0 ],
-													"text" : "Inpulse-controls"
-												}
-
-											}
-, 											{
-												"box" : 												{
 													"id" : "obj-254",
 													"maxclass" : "newobj",
 													"numinlets" : 0,
@@ -1572,8 +1498,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -2169,8 +2099,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -2180,7 +2114,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 84.0, 323.0, 715.0, 616.0 ],
+														"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -2210,23 +2144,11 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-2",
-																	"maxclass" : "message",
-																	"numinlets" : 2,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 207.0, 371.0, 50.0, 35.0 ],
-																	"text" : "inf"
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"id" : "obj-232",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 325.0, 484.0, 117.0, 22.0 ],
+																	"patching_rect" : [ 325.0, 439.0, 117.0, 22.0 ],
 																	"text" : "s revResampleDone"
 																}
 
@@ -2238,7 +2160,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 347.5, 189.5, 113.0, 22.0 ],
+																	"patching_rect" : [ 340.0, 209.5, 113.0, 22.0 ],
 																	"text" : "r revSetBufDefaults"
 																}
 
@@ -2250,7 +2172,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 340.0, 327.0, 113.0, 22.0 ],
+																	"patching_rect" : [ 340.0, 311.0, 113.0, 22.0 ],
 																	"text" : "r revSetBufDefaults"
 																}
 
@@ -2262,7 +2184,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 325.0, 449.5, 54.0, 22.0 ],
+																	"patching_rect" : [ 325.0, 404.5, 54.0, 22.0 ],
 																	"text" : "deferlow"
 																}
 
@@ -2270,11 +2192,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-61",
+																	"linecount" : 2,
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "float", "bang" ],
-																	"patching_rect" : [ 537.0, 246.5, 118.0, 22.0 ],
+																	"patching_rect" : [ 520.25, 237.5, 99.0, 36.0 ],
 																	"text" : "buffer~ #0_ir 0 0 4"
 																}
 
@@ -2310,7 +2233,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "float" ],
-																	"patching_rect" : [ 347.5, 267.5, 29.5, 22.0 ],
+																	"patching_rect" : [ 347.5, 276.5, 29.5, 22.0 ],
 																	"text" : "/ 1."
 																}
 
@@ -2334,7 +2257,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "bang", "bang" ],
-																	"patching_rect" : [ 304.0, 75.5, 32.0, 22.0 ],
+																	"patching_rect" : [ 304.0, 101.5, 32.0, 22.0 ],
 																	"text" : "t b b"
 																}
 
@@ -2346,7 +2269,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
 																	"outlettype" : [ "", "", "" ],
-																	"patching_rect" : [ 392.0, 95.5, 67.0, 22.0 ],
+																	"patching_rect" : [ 358.0, 112.5, 67.0, 22.0 ],
 																	"text" : "getattr size"
 																}
 
@@ -2358,7 +2281,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "float", "bang" ],
-																	"patching_rect" : [ 416.0, 140.5, 92.0, 22.0 ],
+																	"patching_rect" : [ 382.0, 140.5, 92.0, 22.0 ],
 																	"text" : "buffer~ #0_irsrc"
 																}
 
@@ -2370,7 +2293,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
 																	"outlettype" : [ "", "int", "int" ],
-																	"patching_rect" : [ 325.0, 223.5, 61.0, 22.0 ],
+																	"patching_rect" : [ 325.0, 237.5, 61.0, 22.0 ],
 																	"text" : "change 0."
 																}
 
@@ -2406,7 +2329,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 325.0, 364.5, 151.0, 22.0 ],
+																	"patching_rect" : [ 325.0, 340.5, 151.0, 22.0 ],
 																	"text" : "resample #0_ir #0_irsrc $1"
 																}
 
@@ -2418,7 +2341,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "bang" ],
-																	"patching_rect" : [ 325.0, 407.5, 90.0, 22.0 ],
+																	"patching_rect" : [ 325.0, 367.5, 90.0, 22.0 ],
 																	"text" : "bufresample~"
 																}
 
@@ -2445,7 +2368,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "bang" ],
-																	"patching_rect" : [ 304.0, 24.0, 30.0, 30.0 ]
+																	"patching_rect" : [ 304.0, 40.0, 30.0, 30.0 ]
 																}
 
 															}
@@ -2457,7 +2380,7 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 278.0, 520.0, 30.0, 30.0 ]
+																	"patching_rect" : [ 298.0, 521.0, 30.0, 30.0 ]
 																}
 
 															}
@@ -2574,7 +2497,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-46", 0 ],
-																	"midpoints" : [ 326.5, 133.5, 347.0, 133.5, 347.0, 79.5, 401.5, 79.5 ],
+																	"midpoints" : [ 326.5, 133.5, 347.0, 133.5, 347.0, 101.5, 367.5, 101.5 ],
 																	"order" : 0,
 																	"source" : [ "obj-48", 1 ]
 																}
@@ -2583,7 +2506,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-58", 0 ],
-																	"midpoints" : [ 313.5, 172.5, 522.5, 172.5 ],
+																	"midpoints" : [ 313.5, 165.5, 522.5, 165.5 ],
 																	"order" : 0,
 																	"source" : [ "obj-48", 0 ]
 																}
@@ -2591,16 +2514,7 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-2", 1 ],
-																	"order" : 1,
-																	"source" : [ "obj-50", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
 																	"destination" : [ "obj-55", 0 ],
-																	"order" : 0,
 																	"source" : [ "obj-50", 0 ]
 																}
 
@@ -2622,7 +2536,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 1058.5, 132.0, 103.0, 22.0 ],
+													"patching_rect" : [ 1058.5, 96.5, 103.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -2644,8 +2558,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -2655,7 +2573,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
+														"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -2701,7 +2619,7 @@
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 44.5, 362.8125, 79.0, 22.0 ],
+																	"patching_rect" : [ 62.5, 263.8125, 79.0, 22.0 ],
 																	"text" : "s revBufLoad"
 																}
 
@@ -2713,7 +2631,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 186.0, 120.8125, 113.0, 22.0 ],
+																	"patching_rect" : [ 166.0, 160.8125, 113.0, 22.0 ],
 																	"text" : "r revSetBufDefaults"
 																}
 
@@ -2725,7 +2643,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "float" ],
-																	"patching_rect" : [ 144.0, 83.508788999999979, 40.0, 22.0 ],
+																	"patching_rect" : [ 144.0, 116.508788999999979, 40.0, 22.0 ],
 																	"text" : "* 0.15"
 																}
 
@@ -2737,7 +2655,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "bang", "" ],
-																	"patching_rect" : [ 51.0, 252.8125, 29.5, 22.0 ],
+																	"patching_rect" : [ 51.0, 195.8125, 29.5, 22.0 ],
 																	"text" : "t b l"
 																}
 
@@ -2749,7 +2667,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
 																	"outlettype" : [ "", "int", "int" ],
-																	"patching_rect" : [ 50.0, 160.8125, 61.0, 22.0 ],
+																	"patching_rect" : [ 51.0, 132.8125, 61.0, 22.0 ],
 																	"text" : "change 0."
 																}
 
@@ -2773,7 +2691,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "float", "bang" ],
-																	"patching_rect" : [ 83.0, 318.3125, 76.0, 22.0 ],
+																	"patching_rect" : [ 91.0, 234.3125, 76.0, 22.0 ],
 																	"text" : "buffer~ #0_ir"
 																}
 
@@ -2785,7 +2703,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 51.0, 206.8125, 77.0, 22.0 ],
+																	"patching_rect" : [ 51.0, 165.8125, 77.0, 22.0 ],
 																	"text" : "normalize $1"
 																}
 
@@ -2812,7 +2730,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 144.0, 28.0, 30.0, 30.0 ]
+																	"patching_rect" : [ 144.0, 40.0, 30.0, 30.0 ]
 																}
 
 															}
@@ -2890,7 +2808,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 1058.5, 179.25, 106.0, 22.0 ],
+													"patching_rect" : [ 1134.0, 164.0, 106.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -2920,7 +2838,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 583.75, 756.0, 79.0, 22.0 ],
+													"patching_rect" : [ 583.75, 680.0, 79.0, 22.0 ],
 													"text" : "s revBufLoad"
 												}
 
@@ -2943,7 +2861,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 603.0, 720.0, 115.0, 22.0 ],
+													"patching_rect" : [ 603.0, 649.0, 115.0, 22.0 ],
 													"text" : "s revSetBufDefaults"
 												}
 
@@ -2959,8 +2877,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -3113,8 +3035,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -3245,7 +3171,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 94.0, 631.0, 90.0, 22.0 ],
+													"patching_rect" : [ 94.0, 596.0, 90.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -3264,7 +3190,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "float", "bang" ],
-													"patching_rect" : [ 477.0, 581.0, 76.0, 22.0 ],
+													"patching_rect" : [ 482.0, 541.0, 76.0, 22.0 ],
 													"text" : "buffer~ #0_ir"
 												}
 
@@ -3276,7 +3202,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "int" ],
-													"patching_rect" : [ 674.5, 509.0, 29.5, 22.0 ],
+													"patching_rect" : [ 613.5, 494.0, 29.5, 22.0 ],
 													"text" : "+ 1"
 												}
 
@@ -3342,7 +3268,7 @@
 													"parameter_enable" : 1,
 													"patching_rect" : [ 1283.5, 314.0, 92.0, 16.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 74.5, 62.5, 92.0, 16.0 ],
+													"presentation_rect" : [ 79.0, 76.696289000000007, 92.0, 16.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
 															"parameter_enum" : [ "val1", "val2" ],
@@ -3415,7 +3341,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "int", "int" ],
-													"patching_rect" : [ 650.0, 459.5, 29.5, 22.0 ],
+													"patching_rect" : [ 603.0, 463.0, 29.5, 22.0 ],
 													"text" : "t i i"
 												}
 
@@ -3427,7 +3353,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "" ],
-													"patching_rect" : [ 628.75, 502.0, 34.0, 22.0 ],
+													"patching_rect" : [ 552.0, 471.0, 34.0, 22.0 ],
 													"text" : "sel 1"
 												}
 
@@ -3439,7 +3365,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "", "int", "int" ],
-													"patching_rect" : [ 650.0, 432.5, 48.0, 22.0 ],
+													"patching_rect" : [ 603.0, 436.0, 48.0, 22.0 ],
 													"text" : "change"
 												}
 
@@ -3451,7 +3377,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 477.0, 450.5, 52.0, 22.0 ],
+													"patching_rect" : [ 477.0, 438.0, 52.0, 22.0 ],
 													"text" : "gate 2 1"
 												}
 
@@ -3499,7 +3425,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 914.0, 18.0, 79.0, 22.0 ],
+													"patching_rect" : [ 928.0, 35.0, 79.0, 22.0 ],
 													"text" : "r recallScene"
 												}
 
@@ -3647,7 +3573,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 2,
-													"outlettype" : [ "multichannelsignal", "" ],
+													"outlettype" : [ "multichannelsignal", "list" ],
 													"patching_rect" : [ 84.0, 97.0, 114.0, 22.0 ],
 													"text" : "mcs.matrix~ 64 2 0."
 												}
@@ -3708,7 +3634,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 451.0, 127.0, 95.0, 22.0 ],
+													"patching_rect" : [ 451.0, 102.0, 95.0, 22.0 ],
 													"text" : "prepend replace"
 												}
 
@@ -3720,7 +3646,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 4,
 													"outlettype" : [ "dictionary", "", "", "" ],
-													"patching_rect" : [ 451.0, 158.0, 102.0, 22.0 ],
+													"patching_rect" : [ 451.0, 132.0, 102.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"parameter_enable" : 0,
@@ -3815,7 +3741,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 684.0, 676.0, 67.0, 22.0 ],
+													"patching_rect" : [ 684.0, 629.0, 67.0, 22.0 ],
 													"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 													"text" : "thispatcher"
 												}
@@ -3839,7 +3765,7 @@
 													"maxclass" : "panel",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 40.0, 801.0, 26.0, 147.0 ],
+													"patching_rect" : [ 191.0, 806.0, 26.0, 147.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 212.0, 222.0, 7.0, 336.5 ]
 												}
@@ -3854,7 +3780,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 684.0, 637.0, 30.0, 30.0 ]
+													"patching_rect" : [ 684.0, 590.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -3865,7 +3791,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "int" ],
-													"patching_rect" : [ 272.0, 632.0, 22.0, 22.0 ],
+													"patching_rect" : [ 300.0, 636.0, 22.0, 22.0 ],
 													"text" : "t 0"
 												}
 
@@ -3901,7 +3827,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 272.0, 594.0, 32.0, 22.0 ],
+													"patching_rect" : [ 300.0, 598.0, 32.0, 22.0 ],
 													"text" : "gate"
 												}
 
@@ -3938,7 +3864,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 292.0, 680.0, 30.0, 30.0 ]
+													"patching_rect" : [ 300.0, 666.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -4060,10 +3986,10 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1464.75, 153.25, 161.0, 22.0 ],
 													"saved_object_attributes" : 													{
-														"client_rect" : [ 0, 45, 570, 800 ],
+														"client_rect" : [ 100, 100, 500, 600 ],
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0,
-														"storage_rect" : [ 227, 45, 1280, 800 ]
+														"storage_rect" : [ 200, 200, 800, 500 ]
 													}
 ,
 													"text" : "pattrstorage @outputmode 1",
@@ -4557,8 +4483,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -5239,8 +5169,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -5930,7 +5864,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 593.5, 613.5, 38.0, 22.0 ],
+													"patching_rect" : [ 583.5, 590.0, 38.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -6417,7 +6351,7 @@
 													"parameter_enable" : 1,
 													"patching_rect" : [ 243.0, 158.0, 78.0, 48.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 337.5, 160.696289000000007, 54.0, 48.0 ],
+													"presentation_rect" : [ 351.0, 27.696289000000007, 54.0, 48.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
 															"parameter_exponent" : 2.0,
@@ -6467,7 +6401,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "multichannelsignal" ],
-													"patching_rect" : [ 73.0, 664.0, 40.0, 22.0 ],
+													"patching_rect" : [ 73.0, 629.0, 40.0, 22.0 ],
 													"text" : "mc.*~"
 												}
 
@@ -6479,7 +6413,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 4,
 													"outlettype" : [ "int", "float", "int", "int" ],
-													"patching_rect" : [ 1142.5, 23.0, 61.0, 22.0 ],
+													"patching_rect" : [ 1142.5, 49.0, 61.0, 22.0 ],
 													"text" : "dspstate~"
 												}
 
@@ -6505,9 +6439,9 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "float" ],
 													"parameter_enable" : 1,
-													"patching_rect" : [ 1221.0, 119.25, 45.0, 48.0 ],
+													"patching_rect" : [ 1235.5, 114.0, 27.0, 48.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 400.0, 160.696289000000007, 54.0, 48.0 ],
+													"presentation_rect" : [ 351.0, 154.0, 54.0, 48.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
 															"parameter_initial" : [ 1 ],
@@ -6607,8 +6541,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -7283,7 +7221,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 945.0, 223.0, 58.0, 22.0 ],
+													"patching_rect" : [ 945.0, 243.0, 58.0, 22.0 ],
 													"text" : "loadbang"
 												}
 
@@ -7295,7 +7233,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "bang", "", "" ],
-													"patching_rect" : [ 510.0, 502.0, 40.0, 22.0 ],
+													"patching_rect" : [ 500.0, 482.0, 40.0, 22.0 ],
 													"text" : "t b l l"
 												}
 
@@ -7307,7 +7245,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 1142.5, 53.0, 69.0, 22.0 ],
+													"patching_rect" : [ 1142.5, 67.0, 69.0, 22.0 ],
 													"text" : "qmetro 250"
 												}
 
@@ -7321,9 +7259,9 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "float" ],
 													"parameter_enable" : 1,
-													"patching_rect" : [ 1058.5, 24.0, 41.5, 48.0 ],
+													"patching_rect" : [ 1062.5, 39.0, 27.0, 48.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 400.0, 110.696289000000007, 54.0, 48.0 ],
+													"presentation_rect" : [ 351.0, 92.0, 54.0, 48.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
 															"parameter_longname" : "scale",
@@ -7347,7 +7285,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "float", "bang" ],
-													"patching_rect" : [ 520.5, 552.0, 92.0, 22.0 ],
+													"patching_rect" : [ 510.5, 513.0, 92.0, 22.0 ],
 													"text" : "buffer~ #0_irsrc"
 												}
 
@@ -7364,7 +7302,7 @@
 													"parameter_enable" : 1,
 													"patching_rect" : [ 386.5, 366.0, 50.0, 80.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 7.5, 5.0, 50.0, 80.0 ],
+													"presentation_rect" : [ 16.5, 12.696289000000007, 50.0, 80.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
 															"parameter_longname" : "reverb",
@@ -7387,7 +7325,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 266.5, 515.0, 39.0, 22.0 ],
+													"patching_rect" : [ 260.0, 488.0, 39.0, 22.0 ],
 													"text" : "$1 10"
 												}
 
@@ -7399,7 +7337,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "int" ],
-													"patching_rect" : [ 583.75, 668.0, 32.0, 22.0 ],
+													"patching_rect" : [ 583.75, 621.0, 32.0, 22.0 ],
 													"text" : "t b 1"
 												}
 
@@ -7428,7 +7366,7 @@
 													"numinlets" : 5,
 													"numoutlets" : 6,
 													"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-													"patching_rect" : [ 945.0, 374.392577999999958, 271.0, 93.0 ],
+													"patching_rect" : [ 945.0, 313.0, 271.0, 93.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 14.0, 103.0, 321.5, 99.0 ],
 													"ruler" : 0,
@@ -7459,8 +7397,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -7500,128 +7442,12 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-34",
-																	"maxclass" : "comment",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 82.0, 65.0, 150.0, 20.0 ],
-																	"presentation" : 1,
-																	"presentation_rect" : [ 68.0, 55.607421875, 150.0, 20.0 ],
-																	"text" : "This is the buffer selected"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-24",
-																	"maxclass" : "textbutton",
-																	"numinlets" : 1,
-																	"numoutlets" : 3,
-																	"outlettype" : [ "", "", "int" ],
-																	"parameter_enable" : 0,
-																	"patching_rect" : [ 774.0, 525.0, 100.0, 20.0 ],
-																	"presentation" : 1,
-																	"presentation_rect" : [ 293.0, 31.607421875, 72.0, 22.0 ],
-																	"text" : "set"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-23",
-																	"maxclass" : "comment",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 488.0, 550.0, 150.0, 20.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-21",
-																	"maxclass" : "comment",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 513.0, 491.0, 65.0, 20.0 ],
-																	"presentation" : 1,
-																	"presentation_rect" : [ 1.0, 31.607421875, 65.0, 20.0 ],
-																	"text" : "Selection"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-20",
-																	"maxclass" : "comment",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 452.0, 366.0, 40.0, 20.0 ],
-																	"presentation" : 1,
-																	"presentation_rect" : [ 26.0, 1.607421875, 40.0, 20.0 ],
-																	"text" : "Kind: "
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-18",
-																	"maxclass" : "comment",
-																	"numinlets" : 1,
-																	"numoutlets" : 0,
-																	"patching_rect" : [ 292.333333333333314, 31.0, 150.0, 20.0 ],
-																	"presentation" : 1,
-																	"presentation_rect" : [ 293.0, 1.607421875, 73.0, 20.0 ],
-																	"text" : "Reset"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-14",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 611.5, 165.0, 63.0, 22.0 ],
-																	"text" : "tosymbol"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-15",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 611.5, 197.0, 104.0, 22.0 ],
-																	"text" : "prepend replace"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"autopopulate" : 1,
-																	"collection" : "HIRT Impulse Responses",
-																	"id" : "obj-16",
-																	"items" : [ "Huddersfield Town Hall.wav", ",", "Templeworks Holbeck.wav", ",", "Phipps Mono.wav", ",", "St Pauls Mono.wav", ",", "Studio 2.wav", ",", "Clothworkers Leeds Narrow 1-1.wav", ",", "Clothworkers Leeds Narrow 1-2.wav", ",", "Clothworkers Leeds Narrow 2-1.wav", ",", "Clothworkers Leeds Narrow 2-2.wav", ",", "Clothworkers Leeds Wide 1-1.wav", ",", "Clothworkers Leeds Wide 1-2.wav", ",", "Clothworkers Leeds Wide 2-1.wav", ",", "Clothworkers Leeds Wide 2-2.wav", ",", "Huddersfield Town Hall Far 1-1.wav", ",", "Huddersfield Town Hall Far 1-2.wav", ",", "Huddersfield Town Hall Far 2-1.wav", ",", "Huddersfield Town Hall Far 2-2.wav", ",", "Huddersfield Town Hall Near 1-1.wav", ",", "Huddersfield Town Hall Near 1-2.wav", ",", "Huddersfield Town Hall Near 2-1.wav", ",", "Huddersfield Town Hall Near 2-2.wav", ",", "Phipps Far 1-1.wav", ",", "Phipps Far 1-2.wav", ",", "Phipps Far 2-1.wav", ",", "Phipps Far 2-2.wav", ",", "Phipps Near 1-1.wav", ",", "Phipps Near 1-2.wav", ",", "Phipps Near 2-1.wav", ",", "Phipps Near 2-2.wav", ",", "St Pauls 1-1.wav", ",", "St Pauls 1-2.wav", ",", "St Pauls 2-1.wav", ",", "St Pauls 2-2.wav", ",", "York Rymer Auditorium Narrow 1-1.wav", ",", "York Rymer Auditorium Narrow 1-2.wav", ",", "York Rymer Auditorium Narrow 2-1.wav", ",", "York Rymer Auditorium Narrow 2-2.wav", ",", "York Rymer Auditorium Wide 1-1.wav", ",", "York Rymer Auditorium Wide 1-2.wav", ",", "York Rymer Auditorium Wide 2-1.wav", ",", "York Rymer Auditorium Wide 2-2.wav", ",", "Cabinet.wav", ",", "Amplifier.wav", ",", "Bass Head 90s EQ.wav", ",", "Bass Head 90s.wav", ",", "Spring Cheap.wav", ",", "Spring Long.wav", ",", "Spring Mid.wav", ",", "Spring Short.wav", ",", "Tape Machine.wav" ],
-																	"maxclass" : "umenu",
-																	"numinlets" : 1,
-																	"numoutlets" : 3,
-																	"outlettype" : [ "int", "", "" ],
-																	"parameter_enable" : 0,
-																	"patching_rect" : [ 531.0, 132.0, 180.0, 22.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"id" : "obj-98",
 																	"maxclass" : "newobj",
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 345.0, 408.607421875, 108.0, 22.0 ],
+																	"patching_rect" : [ 407.0, 493.0, 108.0, 22.0 ],
 																	"text" : "r forceLoadReverb"
 																}
 
@@ -7633,7 +7459,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 192.0, 779.0, 60.0, 22.0 ],
+																	"patching_rect" : [ 187.0, 725.0, 60.0, 22.0 ],
 																	"text" : "zl.change"
 																}
 
@@ -7647,7 +7473,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "bang" ],
-																	"patching_rect" : [ 42.0, 151.0, 30.0, 30.0 ]
+																	"patching_rect" : [ 44.0, 229.0, 30.0, 30.0 ]
 																}
 
 															}
@@ -7659,9 +7485,9 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "bang" ],
 																	"parameter_enable" : 0,
-																	"patching_rect" : [ 237.0, 16.0, 24.0, 24.0 ],
+																	"patching_rect" : [ 94.0, 141.0, 24.0, 24.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 342.0, -0.392578125, 24.0, 24.0 ]
+																	"presentation_rect" : [ 231.0, 2.607421875, 24.0, 24.0 ]
 																}
 
 															}
@@ -7690,7 +7516,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 270.0, 689.0, 57.0, 22.0 ],
+																	"patching_rect" : [ 265.0, 635.0, 57.0, 22.0 ],
 																	"text" : "tosymbol"
 																}
 
@@ -7702,7 +7528,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
 																	"outlettype" : [ "bang", "", "" ],
-																	"patching_rect" : [ 203.5, 408.607421875, 40.0, 22.0 ],
+																	"patching_rect" : [ 204.0, 408.607421875, 40.0, 22.0 ],
 																	"text" : "t b l l"
 																}
 
@@ -7714,7 +7540,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 4,
 																	"outlettype" : [ "bang", "", "", "clear" ],
-																	"patching_rect" : [ 282.0, 202.607421875, 63.0, 22.0 ],
+																	"patching_rect" : [ 285.0, 211.607421875, 63.0, 22.0 ],
 																	"text" : "t b l l clear"
 																}
 
@@ -7739,7 +7565,7 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 228.0, 818.0, 30.0, 30.0 ]
+																	"patching_rect" : [ 223.0, 764.0, 30.0, 30.0 ]
 																}
 
 															}
@@ -7750,7 +7576,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 176.0, 736.0, 95.0, 22.0 ],
+																	"patching_rect" : [ 171.0, 682.0, 95.0, 22.0 ],
 																	"text" : "prepend replace"
 																}
 
@@ -7762,7 +7588,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "bang", "" ],
-																	"patching_rect" : [ 252.25, 618.607421875, 29.5, 22.0 ],
+																	"patching_rect" : [ 237.0, 564.607421875, 29.5, 22.0 ],
 																	"text" : "t b l"
 																}
 
@@ -7774,7 +7600,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 278.0, 656.607421875, 78.0, 22.0 ],
+																	"patching_rect" : [ 273.0, 602.607421875, 78.0, 22.0 ],
 																	"text" : "sprintf %s%s"
 																}
 
@@ -7798,7 +7624,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 42.0, 408.607421875, 57.0, 22.0 ],
+																	"patching_rect" : [ 125.0, 424.607421875, 57.0, 22.0 ],
 																	"text" : "tosymbol"
 																}
 
@@ -7810,7 +7636,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "int" ],
-																	"patching_rect" : [ 225.0, 510.607421875, 39.0, 22.0 ],
+																	"patching_rect" : [ 225.0, 498.607421875, 39.0, 22.0 ],
 																	"text" : "folder"
 																}
 
@@ -7846,7 +7672,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 40.5, 367.607421875, 81.0, 22.0 ],
+																	"patching_rect" : [ 118.5, 383.607421875, 81.0, 22.0 ],
 																	"text" : "sprintf %s%s/"
 																}
 
@@ -7858,7 +7684,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 292.333333333333314, 330.607421875, 38.0, 22.0 ],
+																	"patching_rect" : [ 308.0, 327.607421875, 38.0, 22.0 ],
 																	"text" : "zl.reg"
 																}
 
@@ -7870,7 +7696,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 285.0, 178.607421875, 57.0, 22.0 ],
+																	"patching_rect" : [ 285.0, 187.607421875, 57.0, 22.0 ],
 																	"text" : "tosymbol"
 																}
 
@@ -7920,7 +7746,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 296.666666666666686, 253.607421875, 113.0, 22.0 ],
+																	"patching_rect" : [ 308.0, 244.607421875, 113.0, 22.0 ],
 																	"text" : "types fold, $1, bang"
 																}
 
@@ -7932,7 +7758,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "int" ],
-																	"patching_rect" : [ 92.0, 212.607421875, 39.0, 22.0 ],
+																	"patching_rect" : [ 169.0, 250.607421875, 39.0, 22.0 ],
 																	"text" : "folder"
 																}
 
@@ -7946,9 +7772,9 @@
 																	"numoutlets" : 3,
 																	"outlettype" : [ "int", "", "" ],
 																	"parameter_enable" : 0,
-																	"patching_rect" : [ 182.0, 572.607421875, 160.0, 22.0 ],
+																	"patching_rect" : [ 182.0, 533.607421875, 100.0, 22.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 68.0, 31.607421875, 223.0, 22.0 ],
+																	"presentation_rect" : [ 4.0, 33.607421875, 223.0, 22.0 ],
 																	"varname" : "ReverbFile"
 																}
 
@@ -7957,10 +7783,14 @@
 																"box" : 																{
 																	"id" : "obj-29",
 <<<<<<< HEAD
+<<<<<<< HEAD
 																	"items" : [ "01 Ascousmonium Arthur Sykes Rymer Auditorium", ",", "02 Auditorium Ron Cooke Hub", ",", "03 Early Music Center St. Margrets", ",", "04 Symphony Hall Usina del Arte ", ",", "05 Chapel St. Albans", ",", "06 Cathedral York Minster", ",", "07 St.Paul" ],
 =======
 																	"items" : "<empty>",
 >>>>>>> 7b5ae745d3b34afff85df7df6d8f58d170e8cb9e
+=======
+																	"items" : [ "01 Ascousmonium Arthur Sykes Rymer Auditorium", ",", "02 Auditorium Ron Cooke Hub", ",", "03 Early Music Center St. Margrets", ",", "04 Symphony Hall Usina del Arte ", ",", "05 Chapel St. Albans", ",", "06 Cathedral York Minster" ],
+>>>>>>> parent of faee56a (updates-patrick)
 																	"maxclass" : "umenu",
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
@@ -7968,7 +7798,7 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 42.0, 286.607421875, 223.0, 22.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 68.0, 1.607421875, 223.0, 22.0 ],
+																	"presentation_rect" : [ 4.0, 3.607421875, 223.0, 22.0 ],
 																	"varname" : "reverbSpace"
 																}
 
@@ -8004,31 +7834,8 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-15", 0 ],
-																	"midpoints" : [ 621.0, 192.0, 621.0, 192.0 ],
-																	"source" : [ "obj-14", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-14", 0 ],
-																	"midpoints" : [ 621.0, 159.5, 621.0, 159.5 ],
-																	"source" : [ "obj-16", 1 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
 																	"destination" : [ "obj-9", 0 ],
 																	"source" : [ "obj-2", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-30", 0 ],
-																	"source" : [ "obj-24", 0 ]
 																}
 
 															}
@@ -8244,13 +8051,13 @@
 																	"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 																	"bgfillcolor" : 																	{
-																		"angle" : 270.0,
-																		"autogradient" : 0.0,
+																		"type" : "color",
 																		"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																		"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																		"angle" : 270.0,
 																		"proportion" : 0.39,
-																		"type" : "color"
+																		"autogradient" : 0.0
 																	}
 ,
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -8291,13 +8098,13 @@
 																"name" : "max6message",
 																"default" : 																{
 																	"bgfillcolor" : 																	{
-																		"angle" : 270.0,
-																		"autogradient" : 0,
-																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																		"type" : "gradient",
 																		"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 																		"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+																		"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																		"angle" : 270.0,
 																		"proportion" : 0.39,
-																		"type" : "gradient"
+																		"autogradient" : 0
 																	}
 ,
 																	"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -8318,9 +8125,9 @@
  ]
 													}
 ,
-													"patching_rect" : [ 510.0, 329.392577999999958, 373.5, 88.607421999999985 ],
+													"patching_rect" : [ 510.0, 333.392577999999958, 262.0, 84.607421999999985 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 7.5, 371.0, 75.0 ],
+													"presentation_rect" : [ 75.5, 12.696289000000007, 260.0, 63.0 ],
 													"varname" : "reverbSelect",
 													"viewvisibility" : 1
 												}
@@ -8333,7 +8140,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "signal", "bang" ],
-													"patching_rect" : [ 266.5, 541.0, 44.0, 22.0 ],
+													"patching_rect" : [ 260.0, 514.0, 44.0, 22.0 ],
 													"text" : "line~ 0"
 												}
 
@@ -8345,7 +8152,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "multichannelsignal" ],
-													"patching_rect" : [ 84.0, 594.0, 40.0, 22.0 ],
+													"patching_rect" : [ 84.0, 559.0, 40.0, 22.0 ],
 													"text" : "mc.*~"
 												}
 
@@ -8356,7 +8163,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 73.0, 715.0, 110.0, 22.0 ],
+													"patching_rect" : [ 73.0, 729.0, 110.0, 22.0 ],
 													"text" : "mc.send~ decoded",
 													"varname" : "ambiPlay"
 												}
@@ -8385,8 +8192,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -8693,7 +8504,7 @@
 													"outlettype" : [ "multichannelsignal" ],
 													"patching_rect" : [ 84.0, 207.0, 110.0, 22.0 ],
 													"saved_object_attributes" : 													{
-														"active" : [ 1 ],
+														"active" : [ 1, 1 ],
 														"center_att_db" : 6.0,
 														"center_curve" : 0.2,
 														"center_size" : 1.0,
@@ -8766,25 +8577,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 520.5, 240.5, 263.0, 69.0 ],
+													"patching_rect" : [ 541.0, 235.5, 263.0, 69.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 14.0, 266.0, 186.0, 79.0 ]
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"angle" : 270.0,
-													"bgcolor" : [ 0.36078431372549, 0.631372549019608, 0.615686274509804, 1.0 ],
-													"id" : "obj-22",
-													"maxclass" : "panel",
-													"mode" : 0,
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 552.0, 42.0, 128.0, 128.0 ],
-													"presentation" : 1,
-													"presentation_rect" : [ 7.5, 88.5, 458.0, 128.0 ],
-													"proportion" : 0.5
 												}
 
 											}
@@ -9582,15 +9377,6 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-3", 0 ],
-													"order" : 1,
-													"source" : [ "obj-24", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-44", 1 ],
-													"order" : 0,
 													"source" : [ "obj-24", 0 ]
 												}
 
@@ -9641,13 +9427,6 @@
 												"patchline" : 												{
 													"destination" : [ "obj-5", 0 ],
 													"source" : [ "obj-3", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-29", 0 ],
-													"source" : [ "obj-31", 0 ]
 												}
 
 											}
@@ -9715,22 +9494,6 @@
 												"patchline" : 												{
 													"destination" : [ "obj-40", 0 ],
 													"source" : [ "obj-47", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-54", 0 ],
-													"order" : 0,
-													"source" : [ "obj-48", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-8", 0 ],
-													"order" : 1,
-													"source" : [ "obj-48", 0 ]
 												}
 
 											}
@@ -9918,13 +9681,13 @@
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0.0,
+														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "color"
+														"autogradient" : 0.0
 													}
 ,
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -9965,13 +9728,13 @@
 												"name" : "max6message",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0,
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"type" : "gradient",
 														"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 														"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "gradient"
+														"autogradient" : 0
 													}
 ,
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -10099,13 +9862,13 @@
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0.0,
+										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "color"
+										"autogradient" : 0.0
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -10309,8 +10072,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -10548,8 +10315,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -10729,8 +10500,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -11163,8 +10938,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -11898,7 +11677,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "multichannelsignal", "" ],
+									"outlettype" : [ "multichannelsignal", "list" ],
 									"patching_rect" : [ 96.0, 250.0, 107.0, 22.0 ],
 									"text" : "mcs.matrix~ 64 48"
 								}
@@ -12163,13 +11942,13 @@
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0.0,
+										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "color"
+										"autogradient" : 0.0
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -12210,13 +11989,13 @@
 								"name" : "max6message",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0,
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"type" : "gradient",
 										"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 										"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "gradient"
+										"autogradient" : 0
 									}
 ,
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -12260,7 +12039,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 2,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -12367,7 +12146,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -13070,7 +12849,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 3,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -13200,7 +12979,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 3,
+																			"minor" : 2,
 																			"revision" : 2,
 																			"architecture" : "x64",
 																			"modernui" : 1
@@ -13440,13 +13219,13 @@
 																					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 																					"bgfillcolor" : 																					{
-																						"angle" : 270.0,
-																						"autogradient" : 0.0,
+																						"type" : "color",
 																						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																						"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 																						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																						"angle" : 270.0,
 																						"proportion" : 0.39,
-																						"type" : "color"
+																						"autogradient" : 0.0
 																					}
 ,
 																					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -14006,13 +13785,13 @@
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0.0,
+														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "color"
+														"autogradient" : 0.0
 													}
 ,
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -14101,8 +13880,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -14498,7 +14281,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "multichannelsignal", "" ],
+									"outlettype" : [ "multichannelsignal", "list" ],
 									"patching_rect" : [ 524.0, 295.0, 168.0, 22.0 ],
 									"text" : "mcs.matrix~ 1 48"
 								}
@@ -14563,8 +14346,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -15047,13 +14834,13 @@
 												"name" : "AudioStatus_Menu",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0,
+														"type" : "color",
 														"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 														"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "color"
+														"autogradient" : 0
 													}
 
 												}
@@ -15065,12 +14852,12 @@
 												"name" : "Audiomix",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"proportion" : 0.39,
-														"type" : "gradient"
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
+														"proportion" : 0.39
 													}
 
 												}
@@ -15113,12 +14900,12 @@
 												"name" : "Default M4L-1",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"proportion" : 0.39,
-														"type" : "gradient"
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
+														"proportion" : 0.39
 													}
 ,
 													"fontface" : [ 1 ],
@@ -15133,12 +14920,12 @@
 												"name" : "Default Max7 Poletti",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"proportion" : 0.39,
-														"type" : "gradient"
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
+														"proportion" : 0.39
 													}
 
 												}
@@ -15161,13 +14948,13 @@
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0.0,
+														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "color"
+														"autogradient" : 0.0
 													}
 ,
 													"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -15238,13 +15025,13 @@
 													"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"bgcolor" : [ 0.752268, 0.752268, 0.752268, 1.0 ],
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0,
+														"type" : "gradient",
 														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 														"color1" : [ 0.851468, 0.851468, 0.851468, 1.0 ],
 														"color2" : [ 0.851468, 0.851468, 0.851468, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "gradient"
+														"autogradient" : 0
 													}
 ,
 													"clearcolor" : [ 0.65098, 0.666667, 0.662745, 0.0 ],
@@ -15264,12 +15051,12 @@
 												"name" : "jbb",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"type" : "gradient",
 														"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"proportion" : 0.39,
-														"type" : "gradient"
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
+														"proportion" : 0.39
 													}
 ,
 													"fontname" : [ "Arial" ],
@@ -15301,21 +15088,15 @@
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
-												"attrui" : 												{
-													"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
-													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
-												}
-,
-												"button" : 												{
-													"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
-													"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
-													"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
-												}
-,
 												"ezadc~" : 												{
 													"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 													"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+												}
+,
+												"attrui" : 												{
+													"bgcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
+													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"ezdac~" : 												{
@@ -15324,9 +15105,10 @@
 													"elementcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 												}
 ,
-												"function" : 												{
-													"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-													"color" : [ 0.0, 0.0, 0.0, 1.0 ]
+												"slider" : 												{
+													"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+													"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
+													"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
 												"multislider" : 												{
@@ -15334,10 +15116,15 @@
 													"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
-												"slider" : 												{
-													"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"color" : [ 0.461105, 0.492646, 0.591878, 1.0 ],
-													"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+												"button" : 												{
+													"bgcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+													"color" : [ 1.0, 0.95051, 0.0, 1.0 ],
+													"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ]
+												}
+,
+												"function" : 												{
+													"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+													"color" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 ,
 												"toggle" : 												{
@@ -15348,13 +15135,13 @@
 ,
 												"message" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0,
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"type" : "gradient",
 														"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 														"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "gradient"
+														"autogradient" : 0
 													}
 ,
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -15362,24 +15149,24 @@
 ,
 												"umenu" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0,
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"type" : "gradient",
 														"color1" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 														"color2" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "gradient"
+														"autogradient" : 0
 													}
 
 												}
 ,
-												"gain~" : 												{
-													"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
+												"kslider" : 												{
+													"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 													"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
-												"kslider" : 												{
-													"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+												"gain~" : 												{
+													"color" : [ 1.0, 0.861448, 0.16921, 1.0 ],
 													"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 												}
 ,
@@ -15583,7 +15370,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"parameter_enable" : 0,
 									"patching_rect" : [ 428.0, 114.0, 150.0, 22.0 ]
 								}
 
@@ -15944,13 +15730,13 @@
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0.0,
+										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "color"
+										"autogradient" : 0.0
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -16298,8 +16084,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -16978,8 +16768,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -17310,8 +17104,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -17416,7 +17214,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 450.0, 149.0, 60.0, 22.0 ],
-									"text" : "0."
+									"text" : "0.769732"
 								}
 
 							}
@@ -17561,8 +17359,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -18076,8 +17878,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -18331,8 +18137,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -19024,8 +18834,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -19110,8 +18924,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -19697,8 +19515,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -20111,8 +19933,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -20185,8 +20011,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -20892,13 +20722,13 @@
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0.0,
+														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "color"
+														"autogradient" : 0.0
 													}
 ,
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -20939,13 +20769,13 @@
 												"name" : "max6message",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0,
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"type" : "gradient",
 														"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 														"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "gradient"
+														"autogradient" : 0
 													}
 ,
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -20988,8 +20818,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -21274,8 +21108,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -21408,8 +21246,12 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
+<<<<<<< HEAD
 																			"minor" : 3,
 <<<<<<< HEAD
+=======
+																			"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 																			"revision" : 2,
 =======
 																			"revision" : 1,
@@ -21936,8 +21778,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -22063,8 +21909,12 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
+<<<<<<< HEAD
 																			"minor" : 3,
 <<<<<<< HEAD
+=======
+																			"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 																			"revision" : 2,
 =======
 																			"revision" : 1,
@@ -22526,8 +22376,12 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
+<<<<<<< HEAD
 																			"minor" : 3,
 <<<<<<< HEAD
+=======
+																			"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 																			"revision" : 2,
 =======
 																			"revision" : 1,
@@ -22820,8 +22674,12 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
+<<<<<<< HEAD
 																			"minor" : 3,
 <<<<<<< HEAD
+=======
+																			"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 																			"revision" : 2,
 =======
 																			"revision" : 1,
@@ -23348,8 +23206,12 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
+<<<<<<< HEAD
 																			"minor" : 3,
 <<<<<<< HEAD
+=======
+																			"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 																			"revision" : 2,
 =======
 																			"revision" : 1,
@@ -25167,8 +25029,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -25268,8 +25134,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -26033,7 +25903,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 2,
-													"outlettype" : [ "multichannelsignal", "" ],
+													"outlettype" : [ "multichannelsignal", "list" ],
 													"patching_rect" : [ 192.5, 596.0, 100.0, 22.0 ],
 													"text" : "mcs.matrix~ 1 64"
 												}
@@ -27403,13 +27273,13 @@
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0.0,
+														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "color"
+														"autogradient" : 0.0
 													}
 ,
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -28213,8 +28083,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -28898,8 +28772,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -29306,13 +29184,13 @@
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0.0,
+														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "color"
+														"autogradient" : 0.0
 													}
 ,
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -29354,8 +29232,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -29933,8 +29815,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -30883,8 +30769,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -31226,8 +31116,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -31551,8 +31445,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -31787,8 +31685,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -31861,8 +31763,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -32350,8 +32256,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -32573,8 +32483,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -33017,8 +32931,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -33283,8 +33201,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -33649,7 +33571,7 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-15",
+									"id" : "obj-29",
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -33662,7 +33584,7 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-17",
+									"id" : "obj-30",
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -33677,7 +33599,11 @@
 , 							{
 								"box" : 								{
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"id" : "obj-18",
+=======
+									"id" : "obj-33",
+>>>>>>> parent of faee56a (updates-patrick)
 									"linecount" : 2,
 =======
 									"id" : "obj-33",
@@ -33685,8 +33611,12 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
+<<<<<<< HEAD
 									"outlettype" : [ "multichannelsignal", "" ],
 <<<<<<< HEAD
+=======
+									"outlettype" : [ "multichannelsignal", "list" ],
+>>>>>>> parent of faee56a (updates-patrick)
 									"patching_rect" : [ 113.5, 198.0, 100.0, 0.0 ],
 =======
 									"patching_rect" : [ 113.5, 198.0, 180.0, 22.0 ],
@@ -33699,7 +33629,11 @@
 , 							{
 								"box" : 								{
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"id" : "obj-21",
+=======
+									"id" : "obj-34",
+>>>>>>> parent of faee56a (updates-patrick)
 									"linecount" : 2,
 =======
 									"id" : "obj-34",
@@ -33707,8 +33641,12 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
+<<<<<<< HEAD
 									"outlettype" : [ "multichannelsignal", "" ],
 <<<<<<< HEAD
+=======
+									"outlettype" : [ "multichannelsignal", "list" ],
+>>>>>>> parent of faee56a (updates-patrick)
 									"patching_rect" : [ 113.5, 240.0, 100.0, 0.0 ],
 =======
 									"patching_rect" : [ 113.5, 240.0, 180.0, 22.0 ],
@@ -33721,7 +33659,11 @@
 , 							{
 								"box" : 								{
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"id" : "obj-22",
+=======
+									"id" : "obj-37",
+>>>>>>> parent of faee56a (updates-patrick)
 									"linecount" : 2,
 =======
 									"id" : "obj-37",
@@ -33729,8 +33671,12 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
+<<<<<<< HEAD
 									"outlettype" : [ "multichannelsignal", "" ],
 <<<<<<< HEAD
+=======
+									"outlettype" : [ "multichannelsignal", "list" ],
+>>>>>>> parent of faee56a (updates-patrick)
 									"patching_rect" : [ 399.833252000000016, 168.0, 100.0, 0.0 ],
 =======
 									"patching_rect" : [ 399.833252000000016, 168.0, 180.0, 22.0 ],
@@ -33743,23 +33689,15 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
+									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
+									"destination" : [ "obj-33", 0 ],
 									"order" : 3,
-									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"order" : 0,
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -33774,6 +33712,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-37", 0 ],
+									"order" : 0,
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
 									"order" : 1,
 									"source" : [ "obj-12", 0 ]
@@ -33782,29 +33728,22 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
+									"destination" : [ "obj-33", 0 ],
 									"source" : [ "obj-129", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
+									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-134", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
+									"destination" : [ "obj-37", 0 ],
 									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-17", 0 ]
 								}
 
 							}
@@ -33812,45 +33751,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-44", 0 ],
 									"source" : [ "obj-171", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"source" : [ "obj-18", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"order" : 0,
-									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-40", 0 ],
-									"order" : 1,
-									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"order" : 0,
-									"source" : [ "obj-22", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-42", 1 ],
-									"order" : 1,
-									"source" : [ "obj-22", 0 ]
 								}
 
 							}
@@ -33877,14 +33777,60 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"source" : [ "obj-33", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 0,
+									"source" : [ "obj-34", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"order" : 1,
+									"source" : [ "obj-34", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
 									"source" : [ "obj-35", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
+									"destination" : [ "obj-2", 0 ],
+									"order" : 0,
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 1 ],
+									"order" : 1,
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -34024,7 +33970,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-29", 0 ],
 									"source" : [ "obj-66", 0 ]
 								}
 
@@ -34071,13 +34017,13 @@
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0.0,
+										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "color"
+										"autogradient" : 0.0
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -34147,7 +34093,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
+							"minor" : 2,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -34230,7 +34176,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 3,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -35086,7 +35032,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 248.5, 181.5, 189.0, 301.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.264705538749695, 113.000007629394531, 1206.134220242500305, 573.4210205078125 ],
+					"presentation_rect" : [ 1.264705538749695, 113.000007629394531, 1202.4656982421875, 536.4210205078125 ],
 					"viewvisibility" : 1
 				}
 
@@ -35110,8 +35056,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -35122,10 +35072,14 @@
 ,
 						"classnamespace" : "box",
 <<<<<<< HEAD
+<<<<<<< HEAD
 						"rect" : [ 467.0, 112.0, 1375.0, 890.0 ],
 =======
 						"rect" : [ 1749.0, 137.0, 1273.0, 1096.0 ],
 >>>>>>> 7b5ae745d3b34afff85df7df6d8f58d170e8cb9e
+=======
+						"rect" : [ 467.0, 112.0, 1249.0, 829.0 ],
+>>>>>>> parent of faee56a (updates-patrick)
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -36156,8 +36110,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -36205,8 +36163,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -36510,7 +36472,7 @@
  ]
 													}
 ,
-													"patching_rect" : [ 159.5, 273.0, 95.0, 22.0 ],
+													"patching_rect" : [ 158.5, 229.0, 95.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"description" : "",
 														"digest" : "",
@@ -36541,7 +36503,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 54.5, 280.0, 99.0, 22.0 ],
+													"patching_rect" : [ 50.0, 229.0, 99.0, 22.0 ],
 													"text" : "write default.json"
 												}
 
@@ -36603,7 +36565,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 50.0, 400.0, 30.0, 30.0 ]
+													"patching_rect" : [ 50.0, 311.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -36850,8 +36812,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -37148,8 +37114,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -37548,8 +37518,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -37657,8 +37631,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -37898,8 +37876,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -38536,8 +38518,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -38776,12 +38762,12 @@
 																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -38870,7 +38856,7 @@
 																"master" : 0
 															}
 ,
-															"outputLevel" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+															"outputLevel" : [ 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0, 0.0, 0.0, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
 															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 															"ambisonicPlayer" : 															{
 																"playback" : 0
@@ -38891,6 +38877,7 @@
 																	"inputPk2Gain" : 0.0,
 																	"inputPk3Freq" : 4000.0,
 																	"inputPk3Gain" : -0.944881889763778,
+																	"live.text" : 1.0,
 																	"outputHpFreq" : 15000.0,
 																	"outputHpGain" : -24.0,
 																	"outputLpFreq" : 269.685039370078016,
@@ -38917,7 +38904,8 @@
 																}
 
 															}
-
+,
+															"reverbSettings:roomMicsState" : 1
 														}
 ,
 														"Scene2" : 														{
@@ -39705,6 +39693,7 @@
 															"outputMode" : 1,
 															"ambisonicsOrder" : 5
 														}
+<<<<<<< HEAD
 ,
 														"Scene8" : 														{
 															"inputRouting" : 															{
@@ -40652,6 +40641,8 @@
 															}
 
 														}
+=======
+>>>>>>> parent of faee56a (updates-patrick)
 
 													}
 ,
@@ -40890,8 +40881,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -41132,8 +41127,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -41597,8 +41596,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -42038,8 +42041,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -43213,13 +43220,13 @@
 													"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0.0,
+														"type" : "color",
 														"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "color"
+														"autogradient" : 0.0
 													}
 ,
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -43260,13 +43267,13 @@
 												"name" : "max6message",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"angle" : 270.0,
-														"autogradient" : 0,
-														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"type" : "gradient",
 														"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 														"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+														"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
 														"proportion" : 0.39,
-														"type" : "gradient"
+														"autogradient" : 0
 													}
 ,
 													"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -43356,8 +43363,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -44205,12 +44216,12 @@
 												"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -44299,7 +44310,7 @@
 												"master" : 0
 											}
 ,
-											"outputLevel" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+											"outputLevel" : [ 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0, 0.0, 0.0, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
 											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 											"ambisonicPlayer" : 											{
 												"playback" : 0
@@ -44320,6 +44331,7 @@
 													"inputPk2Gain" : 0.0,
 													"inputPk3Freq" : 4000.0,
 													"inputPk3Gain" : -0.944881889763778,
+													"live.text" : 1.0,
 													"outputHpFreq" : 15000.0,
 													"outputHpGain" : -24.0,
 													"outputLpFreq" : 269.685039370078016,
@@ -44346,7 +44358,8 @@
 												}
 
 											}
-
+,
+											"reverbSettings:roomMicsState" : 1
 										}
 ,
 										"Scene2" : 										{
@@ -45134,6 +45147,7 @@
 											"outputMode" : 1,
 											"ambisonicsOrder" : 5
 										}
+<<<<<<< HEAD
 ,
 										"Scene8" : 										{
 											"inputRouting" : 											{
@@ -46081,6 +46095,8 @@
 											}
 
 										}
+=======
+>>>>>>> parent of faee56a (updates-patrick)
 
 									}
 ,
@@ -46154,7 +46170,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 44.5, 29.0, 142.0, 19.0 ],
 									"rounded" : 0.0,
-									"text" : "Stero_(videochan25_26)",
+									"text" : "Default",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "sceneName",
 									"wordwrap" : 0
@@ -46177,10 +46193,14 @@
 									"fontsize" : 10.0,
 									"id" : "obj-33",
 <<<<<<< HEAD
+<<<<<<< HEAD
 									"items" : [ "1.)", "Default", ",", "2.)", "IR Reverb Small Space", ",", "3.)", "IR Reverb Medium Space", ",", "4.)", "IR Reverb Large Hall", ",", "5.)", "IR Reverb Cathedal", ",", "6.)", "Ambisonics 5th Order", ",", "7.)", "SPAT37.2-one_to_one", ",", "8.)", "Stero_(videochan25_26)" ],
 =======
 									"items" : [ "1.)", "Default", ",", "2.)", "IR Reverb Small Space", ",", "3.)", "IR Reverb Medium Space", ",", "4.)", "IR Reverb Large Hall", ",", "5.)", "IR Reverb Cathedal", ",", "6.)", "Ambisonics 5th Order", ",", "7.)", "Stereo Playback from Perf Cpu", ",", "8.)", "8Ch Stereo Pairs from Perf CPU", ",", "9.)", "8Ch Compass Point from Perf CPU", ",", "10.)", "Music Now (Teaching Cart)" ],
 >>>>>>> 7b5ae745d3b34afff85df7df6d8f58d170e8cb9e
+=======
+									"items" : [ "1.)", "Default", ",", "2.)", "IR Reverb Small Space", ",", "3.)", "IR Reverb Medium Space", ",", "4.)", "IR Reverb Large Hall", ",", "5.)", "IR Reverb Cathedal", ",", "6.)", "Ambisonics 5th Order" ],
+>>>>>>> parent of faee56a (updates-patrick)
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -46798,8 +46818,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
+<<<<<<< HEAD
 							"minor" : 3,
 <<<<<<< HEAD
+=======
+							"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 							"revision" : 2,
 =======
 							"revision" : 1,
@@ -47202,8 +47226,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -47252,8 +47280,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -47450,8 +47482,12 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
+<<<<<<< HEAD
 															"minor" : 3,
 <<<<<<< HEAD
+=======
+															"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 															"revision" : 2,
 =======
 															"revision" : 1,
@@ -48053,8 +48089,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -48514,8 +48554,12 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
+<<<<<<< HEAD
 											"minor" : 3,
 <<<<<<< HEAD
+=======
+											"minor" : 2,
+>>>>>>> parent of faee56a (updates-patrick)
 											"revision" : 2,
 =======
 											"revision" : 1,
@@ -48706,10 +48750,14 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 53.0, 100.0, 50.0, 22.0 ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 													"text" : "0 16"
 =======
 													"text" : "1 16"
 >>>>>>> 7b5ae745d3b34afff85df7df6d8f58d170e8cb9e
+=======
+													"text" : "0 13"
+>>>>>>> parent of faee56a (updates-patrick)
 												}
 
 											}
@@ -49640,13 +49688,13 @@
 									"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0.0,
+										"type" : "color",
 										"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "color"
+										"autogradient" : 0.0
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -49687,13 +49735,13 @@
 								"name" : "max6message",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"angle" : 270.0,
-										"autogradient" : 0,
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"type" : "gradient",
 										"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 										"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
 										"proportion" : 0.39,
-										"type" : "gradient"
+										"autogradient" : 0
 									}
 ,
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -51889,13 +51937,13 @@
 					"accentcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgcolor" : [ 0.999999, 0.999974, 0.999991, 1.0 ],
 					"bgfillcolor" : 					{
-						"angle" : 270.0,
-						"autogradient" : 0.0,
+						"type" : "color",
 						"color" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 						"color1" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
 						"proportion" : 0.39,
-						"type" : "color"
+						"autogradient" : 0.0
 					}
 ,
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -51936,13 +51984,13 @@
 				"name" : "max6message",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"angle" : 270.0,
-						"autogradient" : 0,
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"type" : "gradient",
 						"color1" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 						"color2" : [ 0.788235, 0.788235, 0.788235, 1.0 ],
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
 						"proportion" : 0.39,
-						"type" : "gradient"
+						"autogradient" : 0
 					}
 ,
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -51961,7 +52009,7 @@
 				"multi" : 0
 			}
  ],
-		"bgcolor" : [ 1.0, 0.734694, 0.747904, 1.0 ]
+		"bgcolor" : [ 0.755102, 1.0, 0.996951, 1.0 ]
 	}
 
 }
