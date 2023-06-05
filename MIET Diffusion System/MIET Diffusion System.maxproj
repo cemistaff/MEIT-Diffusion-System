@@ -2,7 +2,7 @@
 	"name" : "MIET Diffusion System",
 	"version" : 1,
 	"creationdate" : 3620899795,
-	"modificationdate" : 3732790901,
+	"modificationdate" : 3768838821,
 	"viewrect" : [ 175.0, 184.0, 300.0, 474.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -14,21 +14,17 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
-			}
-,
-			"cp.wgMesh~.maxhelp" : 			{
-				"kind" : "helpfile"
 			}
 ,
 			"diffusionRecorder.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -38,17 +34,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
-			}
-,
-			"_poly.meshReverb.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -59,7 +45,7 @@
 				"local" : 1,
 				"toplevel" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -79,7 +65,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -89,7 +75,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -99,7 +85,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -109,7 +95,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -129,7 +115,7 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 					"projectrelativepath" : "./patchers"
 				}
 
@@ -151,8 +137,8 @@
 		}
 ,
 		"code" : 		{
-			"cp.wgMeshGen.js" : 			{
-				"kind" : "javascript",
+			"0df.2pole.gendsp" : 			{
+				"kind" : "gendsp",
 				"local" : 1
 			}
 ,
@@ -161,9 +147,19 @@
 				"local" : 1
 			}
 ,
-			"0df.2pole.gendsp" : 			{
+			"poly.meshVerb.junctions.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
+			}
+,
+			"cp.wgMeshGen.js" : 			{
+				"kind" : "javascript",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 ,
 			"multitap.gendsp" : 			{
@@ -175,17 +171,7 @@
 				"kind" : "gendsp",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
-					"projectrelativepath" : "./code"
-				}
-
-			}
-,
-			"poly.meshVerb.junctions.gendsp" : 			{
-				"kind" : "gendsp",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/code",
 					"projectrelativepath" : "./code"
 				}
 
@@ -195,18 +181,28 @@
 				"kind" : "gendsp",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/code",
 					"projectrelativepath" : "./code"
 				}
 
 			}
 ,
 			"cp.wgGen.js" : 			{
-				"kind" : "javascript"
+				"kind" : "javascript",
+				"singleton" : 				{
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"projectrelativepath" : "./code"
+				}
+
 			}
 ,
 			"cp.delayNetworksUtils.js" : 			{
-				"kind" : "javascript"
+				"kind" : "javascript",
+				"singleton" : 				{
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/code",
+					"projectrelativepath" : "./code"
+				}
+
 			}
 
 		}
@@ -238,7 +234,7 @@
 				"kind" : "file",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/misc",
 					"projectrelativepath" : "./misc"
 				}
 
@@ -248,7 +244,7 @@
 				"kind" : "file",
 				"local" : 1,
 				"singleton" : 				{
-					"bootpath" : "~/Documents/GitHub/MEIT-Diffusion-System/MIET Diffusion System/misc",
+					"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/misc",
 					"projectrelativepath" : "./misc"
 				}
 
@@ -272,5 +268,6 @@
 	"devpathtype" : 0,
 	"devpath" : ".",
 	"sortmode" : 0,
-	"viewmode" : 0
+	"viewmode" : 0,
+	"includepackages" : 0
 }
