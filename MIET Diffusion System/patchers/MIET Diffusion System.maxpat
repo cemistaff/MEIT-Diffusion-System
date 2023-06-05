@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 53.0, 1432.0, 811.0 ],
+		"rect" : [ 71.0, 65.0, 1492.0, 824.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -567,7 +567,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 423.0, 272.0, 1081.0, 723.0 ],
+										"rect" : [ 771.0, 197.0, 738.0, 767.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -601,7 +601,7 @@
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 1004.0, 173.0, 32.0, 22.0 ],
+													"patching_rect" : [ 1025.166666666666515, 169.0, 32.0, 22.0 ],
 													"text" : "print"
 												}
 
@@ -2807,7 +2807,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 451.0, 95.107422000000042, 29.5, 22.0 ],
+													"patching_rect" : [ 451.0, 115.0, 29.5, 22.0 ],
 													"text" : "join"
 												}
 
@@ -2831,7 +2831,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 451.0, 62.0, 189.0, 22.0 ],
+													"patching_rect" : [ 451.0, 69.107422000000042, 189.0, 22.0 ],
 													"text" : "sprintf reverbSettings::routing::%d"
 												}
 
@@ -2855,7 +2855,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 451.0, 127.0, 95.0, 22.0 ],
+													"patching_rect" : [ 451.0, 142.0, 95.0, 22.0 ],
 													"text" : "prepend replace"
 												}
 
@@ -2867,7 +2867,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 4,
 													"outlettype" : [ "dictionary", "", "", "" ],
-													"patching_rect" : [ 451.0, 158.0, 102.0, 22.0 ],
+													"patching_rect" : [ 451.0, 173.0, 102.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
 														"parameter_enable" : 0,
@@ -7496,7 +7496,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 23.0, 551.0, 110.0, 22.0 ],
+													"patching_rect" : [ 28.5, 543.0, 110.0, 22.0 ],
 													"text" : "r speakerPosiitions"
 												}
 
@@ -16118,7 +16118,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 256.0, 179.5, 50.0, 22.0 ],
-									"text" : "46 0."
+									"text" : "47 0."
 								}
 
 							}
@@ -24106,7 +24106,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 617.0, 388.0, 86.0, 32.0 ],
+					"patching_rect" : [ 627.5, 524.5, 86.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 156.0, 57.0, 86.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
@@ -24139,7 +24139,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 470.0, 388.0, 142.0, 33.0 ],
+					"patching_rect" : [ 480.5, 524.5, 142.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 9.5, 57.0, 142.0, 33.0 ],
 					"text" : "CPU usage:",
@@ -24154,7 +24154,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 617.0, 321.0, 128.0, 22.0 ],
+					"patching_rect" : [ 632.0, 451.3214111328125, 128.0, 22.0 ],
 					"text" : "qmetro 100 @active 1"
 				}
 
@@ -24166,7 +24166,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 617.0, 349.0, 79.0, 22.0 ],
+					"patching_rect" : [ 627.5, 485.5, 79.0, 22.0 ],
 					"text" : "adstatus cpu"
 				}
 
@@ -33174,7 +33174,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -65.0, 91.0, 1375.0, 890.0 ],
+						"rect" : [ 34.0, 91.0, 1375.0, 890.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -35741,7 +35741,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 887.0, 694.0, 640.0, 480.0 ],
+										"rect" : [ 872.0, 299.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -36109,7 +36109,15 @@
 																}
 ,
 																"routing" : 																{
-																	"0" : 0.0
+																	"0" : 0.0,
+																	"1" : 0.0,
+																	"2" : 0.0,
+																	"3" : 0.0,
+																	"4" : 0.0,
+																	"5" : 0.0,
+																	"6" : 0.0,
+																	"7" : 0.0,
+																	"8" : 0.0
 																}
 
 															}
@@ -36263,9 +36271,23 @@
 																	}
 
 																}
+,
+																"routing" : 																{
+																	"0" : 0.0,
+																	"1" : 0.0,
+																	"2" : 0.0,
+																	"3" : 0.0,
+																	"4" : 0.0,
+																	"5" : 0.0,
+																	"6" : 0.0,
+																	"7" : 0.0,
+																	"8" : 0.0
+																}
 
 															}
-
+,
+															"reverbSettings:roomMicsState" : 1,
+															"diffusionMode" : "sequencial"
 														}
 ,
 														"Scene3" : 														{
@@ -36413,9 +36435,23 @@
 																	}
 
 																}
+,
+																"routing" : 																{
+																	"0" : 0.0,
+																	"1" : 0.0,
+																	"2" : 0.0,
+																	"3" : 0.0,
+																	"4" : 0.0,
+																	"5" : 0.0,
+																	"6" : 0.0,
+																	"7" : 0.0,
+																	"8" : 0.0
+																}
 
 															}
-
+,
+															"reverbSettings:roomMicsState" : 1,
+															"diffusionMode" : "sequencial"
 														}
 ,
 														"Scene4" : 														{
@@ -36563,9 +36599,23 @@
 																	}
 
 																}
+,
+																"routing" : 																{
+																	"0" : 0.0,
+																	"1" : 0.0,
+																	"2" : 0.0,
+																	"3" : 0.0,
+																	"4" : 0.0,
+																	"5" : 0.0,
+																	"6" : 0.0,
+																	"7" : 0.0,
+																	"8" : 0.0
+																}
 
 															}
-
+,
+															"reverbSettings:roomMicsState" : 1,
+															"diffusionMode" : "sequencial"
 														}
 ,
 														"Scene5" : 														{
@@ -36713,9 +36763,23 @@
 																	}
 
 																}
+,
+																"routing" : 																{
+																	"0" : 0.0,
+																	"1" : 0.0,
+																	"2" : 0.0,
+																	"3" : 0.0,
+																	"4" : 0.0,
+																	"5" : 0.0,
+																	"6" : 0.0,
+																	"7" : 0.0,
+																	"8" : 0.0
+																}
 
 															}
-
+,
+															"reverbSettings:roomMicsState" : 1,
+															"diffusionMode" : "sequencial"
 														}
 ,
 														"Scene7" : 														{
@@ -37083,9 +37147,22 @@
 																	}
 
 																}
+,
+																"routing" : 																{
+																	"0" : 0.0,
+																	"1" : 0.0,
+																	"2" : 0.0,
+																	"3" : 0.0,
+																	"4" : 0.0,
+																	"5" : 0.0,
+																	"6" : 0.0,
+																	"7" : 0.0,
+																	"8" : 0.0
+																}
 
 															}
-
+,
+															"diffusionMode" : "sequencial"
 														}
 ,
 														"Scene9" : 														{
@@ -37267,9 +37344,22 @@
 																	}
 
 																}
+,
+																"routing" : 																{
+																	"0" : 0.0,
+																	"1" : 0.0,
+																	"2" : 0.0,
+																	"3" : 0.0,
+																	"4" : 0.0,
+																	"5" : 0.0,
+																	"6" : 0.0,
+																	"7" : 0.0,
+																	"8" : 0.0
+																}
 
 															}
-
+,
+															"diffusionMode" : "sequencial"
 														}
 
 													}
@@ -40767,7 +40857,15 @@
 												}
 ,
 												"routing" : 												{
-													"0" : 0.0
+													"0" : 0.0,
+													"1" : 0.0,
+													"2" : 0.0,
+													"3" : 0.0,
+													"4" : 0.0,
+													"5" : 0.0,
+													"6" : 0.0,
+													"7" : 0.0,
+													"8" : 0.0
 												}
 
 											}
@@ -40921,9 +41019,23 @@
 													}
 
 												}
+,
+												"routing" : 												{
+													"0" : 0.0,
+													"1" : 0.0,
+													"2" : 0.0,
+													"3" : 0.0,
+													"4" : 0.0,
+													"5" : 0.0,
+													"6" : 0.0,
+													"7" : 0.0,
+													"8" : 0.0
+												}
 
 											}
-
+,
+											"reverbSettings:roomMicsState" : 1,
+											"diffusionMode" : "sequencial"
 										}
 ,
 										"Scene3" : 										{
@@ -41071,9 +41183,23 @@
 													}
 
 												}
+,
+												"routing" : 												{
+													"0" : 0.0,
+													"1" : 0.0,
+													"2" : 0.0,
+													"3" : 0.0,
+													"4" : 0.0,
+													"5" : 0.0,
+													"6" : 0.0,
+													"7" : 0.0,
+													"8" : 0.0
+												}
 
 											}
-
+,
+											"reverbSettings:roomMicsState" : 1,
+											"diffusionMode" : "sequencial"
 										}
 ,
 										"Scene4" : 										{
@@ -41221,9 +41347,23 @@
 													}
 
 												}
+,
+												"routing" : 												{
+													"0" : 0.0,
+													"1" : 0.0,
+													"2" : 0.0,
+													"3" : 0.0,
+													"4" : 0.0,
+													"5" : 0.0,
+													"6" : 0.0,
+													"7" : 0.0,
+													"8" : 0.0
+												}
 
 											}
-
+,
+											"reverbSettings:roomMicsState" : 1,
+											"diffusionMode" : "sequencial"
 										}
 ,
 										"Scene5" : 										{
@@ -41371,9 +41511,23 @@
 													}
 
 												}
+,
+												"routing" : 												{
+													"0" : 0.0,
+													"1" : 0.0,
+													"2" : 0.0,
+													"3" : 0.0,
+													"4" : 0.0,
+													"5" : 0.0,
+													"6" : 0.0,
+													"7" : 0.0,
+													"8" : 0.0
+												}
 
 											}
-
+,
+											"reverbSettings:roomMicsState" : 1,
+											"diffusionMode" : "sequencial"
 										}
 ,
 										"Scene7" : 										{
@@ -41741,9 +41895,22 @@
 													}
 
 												}
+,
+												"routing" : 												{
+													"0" : 0.0,
+													"1" : 0.0,
+													"2" : 0.0,
+													"3" : 0.0,
+													"4" : 0.0,
+													"5" : 0.0,
+													"6" : 0.0,
+													"7" : 0.0,
+													"8" : 0.0
+												}
 
 											}
-
+,
+											"diffusionMode" : "sequencial"
 										}
 ,
 										"Scene9" : 										{
@@ -41925,9 +42092,22 @@
 													}
 
 												}
+,
+												"routing" : 												{
+													"0" : 0.0,
+													"1" : 0.0,
+													"2" : 0.0,
+													"3" : 0.0,
+													"4" : 0.0,
+													"5" : 0.0,
+													"6" : 0.0,
+													"7" : 0.0,
+													"8" : 0.0
+												}
 
 											}
-
+,
+											"diffusionMode" : "sequencial"
 										}
 
 									}
@@ -42813,7 +42993,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 563.0, 198.0, 1142.0, 721.0 ],
+						"rect" : [ 201.0, 64.0, 1142.0, 721.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -42843,6 +43023,24 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 4,
+									"outlettype" : [ "dictionary", "", "", "" ],
+									"patching_rect" : [ 770.0, 662.0, 51.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0
+									}
+,
+									"text" : "dict aaa"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-45",
 									"maxclass" : "button",
 									"numinlets" : 1,
@@ -42860,7 +43058,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 609.666666666666629, 652.0, 55.0, 22.0 ],
+									"patching_rect" : [ 609.666666666666629, 679.0, 55.0, 22.0 ],
 									"text" : "zl.slice 1"
 								}
 
@@ -42872,7 +43070,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 592.0, 592.0, 73.0, 22.0 ],
+									"patching_rect" : [ 592.0, 601.0, 73.0, 22.0 ],
 									"text" : "prepend get"
 								}
 
@@ -42884,7 +43082,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 565.0, 620.0, 153.0, 22.0 ],
+									"patching_rect" : [ 565.0, 647.0, 153.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0,
@@ -42914,7 +43112,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 592.0, 562.0, 189.0, 22.0 ],
+									"patching_rect" : [ 592.0, 572.0, 189.0, 22.0 ],
 									"text" : "sprintf reverbSettings::routing::%d"
 								}
 
@@ -42925,7 +43123,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 198.0, 580.0, 76.0, 22.0 ],
+									"patching_rect" : [ 186.0, 621.0, 76.0, 22.0 ],
 									"text" : "s revRouting"
 								}
 
@@ -42949,7 +43147,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 161.183838000000009, 523.0, 100.0, 22.0 ],
+									"patching_rect" : [ 186.0, 500.0, 100.0, 22.0 ],
 									"text" : "r inputChanelSet"
 								}
 
@@ -42961,7 +43159,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 446.0, 493.0, 41.0, 22.0 ],
+									"patching_rect" : [ 442.0, 486.0, 41.0, 22.0 ],
 									"text" : "set $1"
 								}
 
@@ -42987,7 +43185,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "float" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 500.0, 523.0, 44.0, 15.0 ],
+									"patching_rect" : [ 513.0, 523.0, 44.0, 15.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 474.0, 14.0, 44.0, 15.0 ],
 									"saved_attribute_attributes" : 									{
@@ -43013,7 +43211,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 446.0, 523.0, 44.0, 15.0 ],
+									"patching_rect" : [ 434.75, 523.0, 44.0, 15.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 420.0, 14.0, 44.0, 15.0 ],
 									"saved_attribute_attributes" : 									{
@@ -44490,7 +44688,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 53.0, 100.0, 50.0, 22.0 ],
-													"text" : "0 0"
+													"text" : "1 20"
 												}
 
 											}
@@ -45368,7 +45566,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"order" : 0,
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
+									"order" : 1,
 									"source" : [ "obj-37", 0 ]
 								}
 
