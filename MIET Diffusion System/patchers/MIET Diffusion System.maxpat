@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 101.0, 218.0, 1436.0, 822.0 ],
+		"rect" : [ 0.0, 53.0, 1533.0, 843.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -26,7 +26,7 @@
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
 		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 15,
+		"toolbars_unpinned_last_save" : 3,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -59,6 +59,7 @@
 								"filename" : "cello-f2.aif",
 								"filekind" : "audiofile",
 								"id" : "u160009492",
+								"selection" : [ 0.547368421052632, 0.715789473684211 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -1313,7 +1314,7 @@
 												"box" : 												{
 													"data" : 													{
 														"Scene1" : 														{
-															"name" : "Default",
+															"name" : "default",
 															"inputRouting" : 															{
 																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -1339,8 +1340,8 @@
 																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"24" : [ 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"25" : [ 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -1448,20 +1449,20 @@
 																		"filetype" : "C74Snapshot",
 																		"version" : 2,
 																		"minorversion" : 0,
-																		"name" : "Neoverb",
-																		"origin" : "Neoverb.vst3",
+																		"name" : "Stratus3D",
+																		"origin" : "Stratus3D.vst3info",
 																		"type" : "VST3",
 																		"subtype" : "AudioEffect",
 																		"embed" : 1,
 																		"snapshot" : 																		{
-																			"pluginname" : "Neoverb.vst3",
-																			"plugindisplayname" : "Neoverb",
-																			"pluginsavedname" : "/Library/Audio/Plug-Ins/VST3/Neoverb.vst3",
-																			"pluginsaveduniqueid" : 0,
+																			"pluginname" : "Stratus3D.vst3info",
+																			"plugindisplayname" : "Stratus3D",
+																			"pluginsavedname" : "C74_VST3:/Stratus3D",
+																			"pluginsaveduniqueid" : -952463768,
 																			"version" : 1,
 																			"isbank" : 0,
 																			"isbase64" : 1,
-																			"blob" : "5832.VMjLg7qE...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HSLzPiK1YkSn4hKt3hKt3RUH4hKtX2RH4hKlcTayICMVU2bM4jUhciL40lPBshc4nmQCIURRMVVAEyQ2.Cax4VVvElXzI2bKEyQXIWVoAiQYkzUIQCayjkc2LVYuImXrcmU2ojUTgmd3vjKJgTQAY0cQcSaHsRYzkzXvQSciYjPmoELKwDRQciTBokXB8TT5IDNOA0JVUyYSsRSxHmV2UyP5AWcxnFQ0YmKjoGbVsBNWsxZxbGNWQWdg8DNlMFZDIyRFU2MmMSRQQ1SyTzMyzzYiIjUEYjZqfyb4kTcggkaqTlXZkWY3shQx7jU2z1JzUVYwIyUwQ1RogFQAkjaQEEZXEEd13DQ2f0YEMmcA8FLoU1J0z1J3sRN0XWayTGSTIVTWsRR4gyT4TCNLcyUzUVUyLTYyPWVkgSRwH2QzsRNUUlSyT1byDmQ4Y2UNYlbyDGN0DSaqb1YIUVV4LVbZUkKmUlcOcSPz8TMwrTYOMSL4olM1vTQqTCQ3nWY1MDaHwFZFc2PDkia1bCZ3PlcksRcxLTSYUlYuciLjk0bz7DVpsBdGgiPzA0L3Lib3vDMsUlYGUyQ3MkS1gTXmMmR3LSNKcCMqMCdiIlTpQUQjY1YyAScHIzJmgTMmY0ZjYWcxDlV3IWZ4Aibyk1TIYTL2ITY2oFQ2oWPkkCb181RKkmP3L2UFIlamYzUnETN4j0YH81cEoTVr4xZiMWZJICSkslQqjmRyTkMXQ0Zmc2bxPVVqHSdvoUcwcSXywlL4ECVtEzcFUlSv.WYxj2apQmd4MlX1gySxfkauE1UvYiYjYEN2UTVV8jShkkdDc2cmk1bGkVdwTSaYMDVwkSZGMFUhwTajQlQyrDaKgyUFUldiYDLOoELtYWaEEUZWgTQuE0RsUFVvD0YCkWPGIWS0cVSWsTcwgESqXVNN4zP38jb0giTZsxJQUGLnkUdYUCdlUzRSAUYlYSQTYUMJESVQQ1Ljk1X4EDVYQzSn8zQi0FRJYkSqckUhojd4Lmb5IWaCsBaoM2QG4zU2kVYRQmRisFRQQzXBoWTic0blczQoECSv4FYhsRRKgCMIoDSQUEVDAyMHImLy.WQM8jbz7DcsUmYGcVMEUiM1rFcyTTZFYjQmYzRIAyUlUCdCwFZ4PkK0vlcGUlbyfjPzbWUkgmbxXGb3I2ax7FdWEzPMIkckIzXQ41JToWSjkWQtsRd2LyJ1DkLvYFUYUiQKIDZ3H0M4b1U3AWY4D2a0DSS13jU1.GdV4xUrg2RRY0bQIEQkIDVLk0Q3k1ZvHUSOwDSYYEbGslSIkzMI8zamUEdwf0PnYSM0oFMygkMnMWUUg2ZCoWbq8FVJszTRsjZ3YWVkk0TYgEa4EVd3shKpQVVlwDNhkTbwMkMBgiLVYybzMiaCQSRyoWbwf2L2.GcXsxc1s1TCQDdtfzXpQDdkwzXjcySsE0T3Pmao81TrgFT4nkcMk0aCsFasIkMtkGTYgEY2EVN3QiaxQjZVUlVPU1RM4VLDQWYJoFdpUkT2nFLL0VXrU0PSolQJ8zS0TjKDoWRvoUbqjWREYmLmwFNME0aM0DbvcyZzYlRvgCduYUZ3wTLOcCMSIEUFgmQWICQvsDaPIGRvoUcsMDUyUzZQkEc3IDaxQGROoWbUQSPpITLwnzZFgEVPIVXx4RSH4zcg4zSQwzX3nFQRkybNk2M0LFZEc0cBszJ5gGQuElMMkjdjIDbxIWY5AmMEkzUzfCd2c0S2YlUZciMNICbHIVVxn1MxIzcAcVcvHWbFg0LJMScTIiMrE0Y2kzP4jiTYECTqTSRzvlL5c2SYIlakgkUmYlYPUibm41YQgVc0QEQLE0PUYWXlUUUBM2YIgkasIiK401S4nFVvgTRtf2YoQ2XOUWbi8FbqMiRyDUP34VNwU2XogEQlwTL3EEaF0TMRMkPzQlcAMTb0IFTuETbPIVXgIGN0TSQxkjUVQzTgYSMlgTPxgWSBo1ZgQDRJICR1cEcY4hUzvVPpsVXFAEUzkkKkQCaIg0ZgwFTVQWVBEEMrkzMqEFU1ojLtAkUzE0YtIVZBUFMFMjb30jQpsVXLgjRxfkcWQWVAYEMrUjZqElUPQEcYETYzvVSXsVXw.kUzk0PQQCaMcyZg4jYUQGMtjEMrMDQqElS1cEczHjUzv1RpsVXzAEUzQiPYQiUJc1ciw1QzI2LGkTYvblZTASU4ACUqkUPLUDQr4hcvgybz0jUDMlPj41RwHWLNwFSWMzUGElbEwVTyIVbA0VM2Y2MhIzbMACZZg1azYDULcFVtUyPmIVXDclaYUSL2zDYFUVTukFRhIDQkoUNQY2L0TSLVkySxcVRvnmUvXUQiElRmEESmMWRBEiRMIzLTokV37VcX4FYRcTXSYjdTckc2PCcx0TYsYELvPlSh8lVqAGRQMUaTAidIUUSiI0ZZ4la33zaZEVd3UCUUY0ToQUUQMiYmc2USkFUvnGRUAiYwwlQuo0UNElVpoDTq0TYSkFUvnGRUAiYwwlQuo0UNElVpAGaF8FbFgTL5gTUUQjStnjLZokZvoUTFY1Zg0TSRUELPI2aQAGbHIlKTQGL5gTUvfFStrjLZokZvA2YXMUZTUUTy3hahE2aQAGbFUUSMIELOQiQugGdu0zZnMWSx0DSMMlXxIWRtHWTvImVgkmZFEDQvoFUWg1bgMmVwrDRZ0VL5kTUMMlTUMUaTAidIUEbPQjbUc0JE81TvQmUxQVci4lKJ8DZ3.UU0k0YQsTZ1rjUTciUCEUN2Q0YrcFawvFdXgmaowFaLcEL3fFa2ECLzDyQA4jStkULrEUSHQGQFwVTM0DRF4DbFUiSCQ2UGQSYvQFb5M1JCMWTLAmRUUmZDcWTic0ZHoTYWY0b0M1MrIjYvkWa1n2aSsRckE0MyMTNsAGZwTzY2kTZWUDSYQkZtUmcsckV0UyZjUDUUsxTzDDbuUSZB8VT2sFS3.iKmkkUEMzLQkSb4PkYt.0bSMCclAiL1DVYgkUMR0FcvkWLTU0SsYCdxTSYvE2SIYVSkkWLToVMxgSTzb1Mv.0coMSLrQDaCc2ZmkjSwXkSrQjbvc2QxLjbogyPKUlKIUUNtYiSwoERgYTduoTT3IyPuUCM4kEYwUSVE0FNvcGYq.mSPE2bwkUMFUlK4ETX0fkVncWUSEFYCISdGgVNgEicUUVN2TDdDsjQ30lZDYUMMYiYRczbtoUMzIlaucmMYsVPMACS2gFMXYVSIozJQAyJzoGbgsRLvU1JQIyY0ETPRICZR0VS0bmSwPmUxM1YxbzP1fGNSISbAAST24lUYU1L3EFV0.URNwTXWUkLWMTLqASSukybzXlRLElU4LGLGUkL0HkStXFTJYidiAENoc1SxrjRL4jSikVT2LSc1kmbvslaLYSQ0nTXBIDcMEiPgYmZvjGZygEcpoUQhEUamETStMWSuYESBkGZ2gEQgwFNQYFU3LyP34VSogkThIFRFwVLXk0MZkFbq4lMzoFboYyUPACNqHVd4clYLEkPIcETMEEZyA0ToICUXYiVDIlSqAERsciYp8TSscCTvL1aHk0T4kzSTszZGI2TVgUctHTdpUjZtIjLpUjZ18lLpUjbgk1aV4jUrkkMtTFVJMWMQESNCYELSEiPDYSLLI2aMcGL5YWUVombwMzb4nFbG0lS5ECUxslX3QkUC41ZKAyclAWMjYid4fDNTkidEESdmsTdSAmV3j1T1n1MqDSYMUjRSUkMT0zZ1QUQwbzQvfSd3jUdREGZTEzLMsRa4ozLUYSXOwzJJkyJKwjVkckQE4xXzo2ckgibyTDUwkGdYsRNYsRYHMERGolP77RRC8Vav8lak4Fc9vSREQVZzMzatQmbuwFakImOxDCMz3hcV4DZt3hKt3hKtTERt3hK1sDRt3hYG01bxPiU0MWSNYkX2HSdsIjPqXWN5YzPRkjTikUPwbzMvvlbtkEbgIFcxM2RwbDVxkUZvXTVIcURzv1LYY2MiU1axIFa2Y0cJYEU3oGNL4hRHUTPVcWT2zFRqTFcIMFbzT2XFIzYZAyRLgTT2HkPZIlPOEkdBgySPshU0b1TqzjLxo0c0LjdvUmLpQTc14BY5AmUqfyUqrlL2gyUzkWXOgiYigFQxrjQ0cyYyjTTj8zLEcyLMc1XBYUQFo1J3LWdIUWXX41JkIlV4UFdqXjLOY0MssBckUVbxbUbjsTZnQTPI4VTQgFVQgmMNQzMXcVQyYWPuASZksRMssBdqjSM101L0wDUhE0UqjTd3LUN0fCS2bEckU0LCU1LzkUY3jTLxcDcqjSUk4zLkM2LwYTd1ckSlI2LwgSMwz1JmcVRkkUNiEmVU4xYkY2S2DDcOUSLKU1SyDSdpYiMLUzJ0PDN5UlcCwFRrglQ2MDQ43lM2fFNjYWYqTmLC0TVkY1a2HCYYMGMOgkZqf2Q3HDcPMCNyHGNLQSakY1Q0bDdS4jcHE1YyoDNyjyR2PyZyf2XhIkZTUDYlc1bvTGRBsxYHUyYVsFY1UmLgoEdxkVdvH2boMURFEycBU1cpQzc5ETY4.mcuszR4IDNyckQh41YFcEZAkSNYcFRucWQJkEatr1XyklRxvTYqYzJ4ozLUYCVTs1Y2MmLjk0JxjGbZUWb2D1brISdwfkaAcmQk4DLvUlL48lZzoWdiIlc37jLX41agcEb1XFYVgycEkkUO4jXYoGQ2c2YoM2QokWL0zVVCgUb4j1QiQkXL0FYjYzLKw1R3bkQko2XFAySZAia10VQQk1UHUzaQsTakgELQc1P4EzQx0Tcm0zUKUWbXwzJlkiSNMDdOIWc3HkVqrRT0ACZYkWV0fmYEszTPUlY1TDUVUiRwjUTjMCYoMVdAgUVD8DZOczXsgjRV4zZWYkXJoWNyImdx01PqvVZyczQNc0coUlTzozXqgTTDMlP5E0XWMmYGcTZwvDbtQlXqjzR3PSRJwTTUgEQvbCRxIyLvUTSOIGMOQWa0Y1QmUSQ0XiMqQ2LEklQFYzYFsTRvbkY0f2PrgVNT4RMrY2QkI2LHIDM2UUY3ImL1AGdx8lLug2UAMTSRYWYBMVTtsBU50DY4Ujaqj2MyrhMQICblQUV0XzRBgFNRcSNmcEdvUVNw8VMwzjMNYkMvgmUtbEa3sjTVMWTRQTYBgESYcDdosFLR0zSLwTVVA2Qq4TRIcSRO81YUgWLXMDZ1TScpQybXYCZyUUU3s1P5E2ZugkRKMkTKoFd1kUYYMUVXwVdgkGdq3hZjkkYLgiXIEWbSYiP3HiU1LGcy31Pzjzb5EWL3MyMvQGVqbmcqM0PDgmKHMlZDgWYLMFY27TaQMENz4VZuMEanAUNZYWSY81PqwVaRYia4AUVXQ1cgkCdz3lbDolUkoETksTStECQzUlRpgmZUI0MpACSsEFaUMzTpYjRO8TME4BQ5kDbZE2J4kTQ1IyYrgSSQ8VSMAGb2rFcloDb3f2aVkFdLEyS2PyTRQkQ3YzUxPDbKwFTxgDbZUWaCQ0bEsVTYQGdBwlbzgzS5EWUzDjZBESLJslQXgEThElbtzDRNcWXN8TTLMFNpQjT4LmS4cSMigVQWcmPKshd3QzagYSSIoGYBAmbxUldvYSQIcEM3f2cW8zclYkV2XiSx.GRhkkLpcibBcWPmUGLxEmQXMiRyTGUxXCaQc1cIMTN4HUVw.0J0jDMrIid28TVh4VYXY0YlYFT0H2YtcVTnUWcTQDSQMTU1ElYUUkPycVRX4Vax3Rds8TNpgEbHkjK3cVZzM1S0E2XuA2ZynzLQEDdtkSb0MVZXQjYLECdQwlQMUiTSIDcjYWPCEWchA0aAEGThEVXxgSM0TjbIYkUDMUX1TiYHEjb30jPpsVXDgjRxfjcWQWVtXEMrEjZqElQPQEcY4RYzvVRXsVXrAkUzkkPQQCaIcyZgQkcJIiaPYEcQclahklPkQiQCIGdMYjZqEFSHojLXY2UzkUPVQCaEo1ZgYETTQWVAUFMr0DVqEVLPYEcYMTTzvVS2rVXNYVUzQiKYQCaCQzZg4jcWQGMBYEMrsjZqEFcPQEczHTVzXkRmc2XrcDcxMyQIUFLmoFUvTUdvP0ZYEDSEQDatXGb3LGcMYEQiIDYtsTLxEiSrwzUCc0QgIWQrE0bhEWPsUyc1ciXBMWSvflVn8FcFQESmgka0LzYhEFQm4VV0DyMMQlQkE0aogjXBQTYZkST1MSM0DiU47jbmkDL5YELVUzXgozYQwzYykjPwnTSBMCUZoENuUGVtQlTGE1TFoGUWY2MzPmbMUVaVACLj4jXuo0ZvgTTS0FUvnWRU0zXRslVt4FNN8lVgkGd0PUUVMUZTUUTyX1Y2c0ToQEL5gTUvXVbrYzaZckSgokZJA0ZMU1ToQEL5gTUvXVbrYzaZckSgokZvwlQuAmQHEidHUUUD4jKJIiVZoFbZEkQlsVXM0jTUACTx8VTvAGRh4BUzAidHUELnwjKKIiVZoFbvcFVSkFUUE0Lt3lXw8VTvAmQU0TSRAySzXza3g2aMsFZy0jbMwTSiIlbxkjKxEEbxoUX4olQAQDbpQ0UnMWXyoULKgjVsEidIUUSiIUUS0FUvnWRUAGTDIWUWsRQuMEbzYkbjU2Xt4hROgFNPUUcYcVTKklMKYEU2X0PQkycTcFamwVLrgGV34VZrwFSWACNnw1cw.CMwbTPN4jaYECaQ0DRzQjQrEUSMgjQNAmQ03zPzc0QzTFbjAmdisxPyEESvoTU0oFQ2E0XWsFRJU1UVMWcicCaBYFb40lM581TqTWYQcybCkSavgVLEc1cIk1UEwTVTola0YWaWoUc0rFYEQUUqLEMAA2a0jlPuE0cqwDNv3xYYYUQCMST4DWNTYlKPM2TyPmYvHiMgUVXYUiTsQGb4ECUU8Ta1fmL0TFbw8TRl0TY4ECUpUib3DEMmcCLPcWZyDCaDw1P2s1YI4TLV4DaDIGb2cjLCIWZ3LzRk4RRUkia13TbZgTXFk2aJEEdxLza0PSdYQVb0jUQsgCb2Q1Jv4DTwMWbYUiQk4RdAEVMXoEZ2U0TgQ1Pxj2QnkSXwXWUkkyMEgGQKYDdsoFQVUSS1XlTGMmaZUCch41a2YSVqETSvvzcnQCVl0TRJsRTvrBc5AWXqDCbksRTxbVcAEjTxflTs0TM24TLzYkbiclLGMjM3gyTxDWPvD0ctYUVkMCdggUMPkjSLE1UUIyUCEyZvzza4LGMloDSgYUNyAyQUISMR4jKlAkR1n2XPgSZm8jLKoDSN4zXoE0MyTmc4IGbq4FS1TTMJElPBQWSwHTX1oFL4g1bXQmZZUjXQ01YA0jay0zaVwjP4g1cXQTXrgSTlQENyLDdt0TZXIkXhgjQrECVYciVoA2ZtYCcpAWZ1bETvfyJhkWdmYFSQITRWAUSQg1bPMUZxPEV1nEQh4zZPgTa2XlZO0Ta2.ELi8FRYMUdI8DUKs1QxMkUXUmKBkmZEolaBIiZEolcuIiZEIWXo8lUNYEaYYiKkgkRyUSTwjyPVAyTwHDQ1DCSx8VS2Aid1UkU5IWbCMWNpA2Qs4jdwPkbqIFdTY0Pts1RvbmYvUCY1nWNHgCU4nWQwj2YKk2TvoENoMkMpcyJwTVSEozTUYCUMslcTUTLGcDL3jGNYkmTwgFUAMSSqzVdJMSU1D1SLshR4rxRLoUYWYTQtLFc5cWY3H2LEQUb4gWVqjSVqTFRSgzQpIDOujTQjkFcC8lazI2arwVYx4COuX0TTMCTrU2Yo41TzEFck4C."
+																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlUUcMYEVxEjPRc1cFElYHMDRtMCUXgWRWojKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKqbia1ACLC4hKtLySt3hKt3hKt3hKtXFRngjVO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKOojX3jiaYwVV1jlMwLWdOUDcjoWN1ASZBcyTs4zX38DMv.UVqnWd4kmMCwDQwY2S2ASZnkCVxg0c2LUdLkmbOQ2Ygg0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMocGZEk2SzLyLtkidLkGS1j1cnUTdOQyLy3VNt3hKt3hKt3hKt3hKt3hYqXFTHQzMC4hKtj2St3hKlsBUUUUU1LjKt3xLOEGbvAWNt3hKtjSdLkGSx7jKt3hKtfzRpUzLC4hKtf0S0YCc1jiKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKPM0ZQYkVv.iQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYUUWSVgkbA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRWkULUwlXn0TUYIWUwfkdAYlS3UEaisVRsg0TAcEVoUkQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3hKtHTZB4hKF4hKt3BTHwFTt3hKt3BTlkDSJ4hKX4hKt3hKt3hKPEjKt3hKt.ERrAkKt3hKtvDczPFRt3BVt3BTt3hKt3hKt3hKtXlKt3hKt3hKt3hKt3hZgEVPtfkKt3hKtbFVBEjKt3hKtzlUzMWQtXVPt3hKt3hKt3RRt3hKtHjKt3hKt3hKt3BSt3hKt3hKt3hKt3hKl4VVB4BVt3hKB4hKt3hKt3hKt3hKPQ2bE4hYA4hKt3BQnkDQt3hKt3haWQSLV4hKF4hKlYEZ1bVRp4hKt3BRt3hKt3hKt3hK14hKt3hKt3hKt3hKt3BZrkjKlEjKtPjKt3hKt3hKt3hKt3RQoIjKtXjKtvjKt3hKt3hKt3hKt3hYtkkPtfkKt3hKtbFVBEjKt3hKtfESnwVRtXVPt3BQt3hKt3BQt3hK14hKt3hKt3hKt3BSt3hKt3hKt3hKt3hKDgVRD4hKt3hKtXzYXITPt3hKt3hKt3hKt3hKt3hKtHkKwICYqTlKtX2XV41LtLyJG4hKL4hKt3hKt3hKt3hKtXlaYIjKX4hKt3hKmgkPA4hKt3hKxUDZrkjKlEjKt3hKt3hKtPjKt3hct3hKt3hKt3hKtvjKt3hKt3hKt3hKt3BQnkDQt3hKt3hKFcFVBEjKt3hKt3hKt3hKt3hKt3hYS4RbxP1Jk4hK1MlUtMiKyrxQt3hcVUjRN4RNqDjKt3hKA4hKm4BTso0JqrxPt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hXqTlKt3hSt3hKt3hKt3hKtDUa4USTvsRPt3BThckRC4hKX4hKt3hKt3hKt3hKt3hKCkUP2fEbqDjKt.UUtDmLjsRYt3hKTMycGITPt3hKtXmUEojStjyJA4hK1AkUt7Da0TlKt3hKt3hKt3hKt3hKtDUa4USTvsRPt3hKt3hKt3hKt3hKPk0aSEjRA4hKt3hKTUCUlIkKt3hKtXmbw.0Pt3BVt3hK1IWa34hKtXjKt3RTigVMD4hYA4hKt3hKt3hKt3hKt3BSpUjco8VNG4hKtHVPxQlM3rRPt3RQrcTYHQjKt3hKP4hKt3hKt3hKt3hKCkUP2fEbqDjKtXmUtDmLjsRYt3hKLEWS54hKtXjKt3hKt3hKt3hKt3hKtb1ZgEVPtfkKt3RM4o2cK8VNG4hKtjmVC0jKtXVPt3BTq8zPMEjKX4hKt3xS1gjPA4hKt3hYKMmPqAkKt3hKt3xYzT0Qt3BVt3hK2Tjc0LmLqbjKtXGdCwDZP4hKt3hKlgkKwICYqTlKtXmdBQyQBEjKt3hKtTWLtzjKtXVPt3hKt3hKt3hKt3hKt.kQ1UybxrxQt3BR0bFNmAkKt3hKt3lQScTcpUSYt3hKtgEYvDjKtXjKt3hKt3hKt3hKt3hKyHUbPkDQt3hKt3hKHYWMyIyJG4hKtjjPxQlM3rRPt3BTgI0RVIjKX4hKtvTbMomKt3hQt3hKxEjbjYCNqDjKtPTYqfFRD4hKt3hKmYjc0LmLqbjKt3haocmZP4hKt3hKB4hKt3hKt3hKt3hdW0jdt3hKF4hKH4hKZ4DQ4rRPt3hKt3hKt3hKt3hKtn1Q1UybqrxJqrRZ4vzX2HEbqDjKt.UXRsjUB4BVt3hKl4jQSITPt3hKt3BRBIGY1fyJA4hK1IWLPMjKtfkKt3hYNYzTBEjKt3hKtj2b4gjKtXVPt3BTk4RbxP1Jk4hKlgGU5cjPA4hKt3hK3DjbjYCNqDjKtLGcPUFRD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RMXwTRD4hKt3hK5cUS54hKtXjKt3haocmZP4hKt3hKtjGYJMjKtfkKt3hZGYWMyIyJG4hK1gyP3bFTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtk1cpAkKt3hKtXmbw.0Pt3BVt3hKl4jQSITPt3hKt3BS17FSt3hYA4hKPUlKwICYqTlKt3hLOo2QBEjKt3hKtHjPxQlM3rRPt3hPkcCYHQjKt3hKtLjKyLCZgUTb3ckPtk1cpAkKt3hKt3BNpU0Tt3BVt3hKLc2blAkKtXjKt3hKt3hKt3hKt3hK1IlMLIjKtfkKt3BVHYWMyIyJG4hKHcyc1bFTt3hKt3hYz0zbt3hKX4hKt3hKt3hKt3hKt3hK5MkUMEjKlEjKtHjKt3hKt3hKt3hKhQ1UmAkKtXjKtfjKt3hKt3hKt3hKtblKwICYqTlKt3hYHYWMyIyJG4hKtTSL5IjKtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY4vzX2HEbqDjKt.UX13hPA4BVt3hYt3hKt3hKt3hKt3BRBIGY1fyJA4hK1klLHQjKtfkKt3hbXYWMyIyJG4hKPM0UyUCTt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BSt3hKt3hKt3hKt31SScTcpUSYt3hYt3haz.0LqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3lR1UybxrxQt3hY1s1MmAkKt3hKtfzbX4xSrUSYt3hK43VQ1k1a4bjKtXlKt3hKt3hKt3hKt3hYgEVPtfkKt3hKtbFVBEjKt3hKtTlSzMWQtXVPt3hKt3hKt3RRt3hKt3hKmgkPA4hKt3hYiQmMmUjKlEjKtDjKt3hKt3hKt3hKwLCcGYkKtXjKtXlKt3hKt3hKt3hKlQmKwICYqTlKtXGdh41LtLyJG4hKt3hKt3hKt3hKt3hKt3hKlIjKX4hKtDCMzcjUt3hQt3hKtnFRrAkKt3hKt3hKt3BVA4BVt3hKt3hKtfkKtXjKt3hKt3hKD4hYUUCUnAURt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 																		}
 
 																	}
@@ -1495,8 +1496,8 @@
 																"mic_routing21" : 0,
 																"mic_routing22" : 0,
 																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
+																"mic_routing24" : 0.0,
+																"mic_routing25" : 0.0,
 																"mic_routing26" : 0,
 																"mic_routing27" : 0,
 																"mic_routing28" : 0,
@@ -1537,387 +1538,14 @@
 																"mic_routing63" : 0
 															}
 ,
-															"outputLevel" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.921053, 0.921053, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 															"ambisonicPlayer" : 															{
 																"playback" : 0
 															}
 ,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene2" : 														{
-															"name" : "Apple Transfigured",
-															"inputRouting" : 															{
-																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0,
-																"mic_routing1" : 0,
-																"mic_routing2" : 0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-
-														}
-,
-														"Scene3" : 														{
-															"name" : "Apple Snorting",
-															"inputRouting" : 															{
-																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0,
-																"mic_routing1" : 0,
-																"mic_routing2" : 0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-
+															"reverbSettings:roomMicsState" : 1,
+															"0" : 0.0
 														}
 
 													}
@@ -2606,7 +2234,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 122.916707333333306, 467.0, 77.0, 22.0 ],
 													"saved_object_attributes" : 													{
-														"filename" : "dictorder.js",
+														"filename" : "dictorder",
 														"parameter_enable" : 0
 													}
 ,
@@ -6053,7 +5681,7 @@
 												"box" : 												{
 													"data" : 													{
 														"Scene1" : 														{
-															"name" : "Default",
+															"name" : "default",
 															"inputRouting" : 															{
 																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -6079,8 +5707,8 @@
 																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"24" : [ 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"25" : [ 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -6188,20 +5816,20 @@
 																		"filetype" : "C74Snapshot",
 																		"version" : 2,
 																		"minorversion" : 0,
-																		"name" : "Neoverb",
-																		"origin" : "Neoverb.vst3",
+																		"name" : "Stratus3D",
+																		"origin" : "Stratus3D.vst3info",
 																		"type" : "VST3",
 																		"subtype" : "AudioEffect",
 																		"embed" : 1,
 																		"snapshot" : 																		{
-																			"pluginname" : "Neoverb.vst3",
-																			"plugindisplayname" : "Neoverb",
-																			"pluginsavedname" : "/Library/Audio/Plug-Ins/VST3/Neoverb.vst3",
-																			"pluginsaveduniqueid" : 0,
+																			"pluginname" : "Stratus3D.vst3info",
+																			"plugindisplayname" : "Stratus3D",
+																			"pluginsavedname" : "C74_VST3:/Stratus3D",
+																			"pluginsaveduniqueid" : -952463768,
 																			"version" : 1,
 																			"isbank" : 0,
 																			"isbase64" : 1,
-																			"blob" : "5832.VMjLg7qE...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HSLzPiK1YkSn4hKt3hKt3RUH4hKtX2RH4hKlcTayICMVU2bM4jUhciL40lPBshc4nmQCIURRMVVAEyQ2.Cax4VVvElXzI2bKEyQXIWVoAiQYkzUIQCayjkc2LVYuImXrcmU2ojUTgmd3vjKJgTQAY0cQcSaHsRYzkzXvQSciYjPmoELKwDRQciTBokXB8TT5IDNOA0JVUyYSsRSxHmV2UyP5AWcxnFQ0YmKjoGbVsBNWsxZxbGNWQWdg8DNlMFZDIyRFU2MmMSRQQ1SyTzMyzzYiIjUEYjZqfyb4kTcggkaqTlXZkWY3shQx7jU2z1JzUVYwIyUwQ1RogFQAkjaQEEZXEEd13DQ2f0YEMmcA8FLoU1J0z1J3sRN0XWayTGSTIVTWsRR4gyT4TCNLcyUzUVUyLTYyPWVkgSRwH2QzsRNUUlSyT1byDmQ4Y2UNYlbyDGN0DSaqb1YIUVV4LVbZUkKmUlcOcSPz8TMwrTYOMSL4olM1vTQqTCQ3nWY1MDaHwFZFc2PDkia1bCZ3PlcksRcxLTSYUlYuciLjk0bz7DVpsBdGgiPzA0L3Lib3vDMsUlYGUyQ3MkS1gTXmMmR3LSNKcCMqMCdiIlTpQUQjY1YyAScHIzJmgTMmY0ZjYWcxDlV3IWZ4Aibyk1TIYTL2ITY2oFQ2oWPkkCb181RKkmP3L2UFIlamYzUnETN4j0YH81cEoTVr4xZiMWZJICSkslQqjmRyTkMXQ0Zmc2bxPVVqHSdvoUcwcSXywlL4ECVtEzcFUlSv.WYxj2apQmd4MlX1gySxfkauE1UvYiYjYEN2UTVV8jShkkdDc2cmk1bGkVdwTSaYMDVwkSZGMFUhwTajQlQyrDaKgyUFUldiYDLOoELtYWaEEUZWgTQuE0RsUFVvD0YCkWPGIWS0cVSWsTcwgESqXVNN4zP38jb0giTZsxJQUGLnkUdYUCdlUzRSAUYlYSQTYUMJESVQQ1Ljk1X4EDVYQzSn8zQi0FRJYkSqckUhojd4Lmb5IWaCsBaoM2QG4zU2kVYRQmRisFRQQzXBoWTic0blczQoECSv4FYhsRRKgCMIoDSQUEVDAyMHImLy.WQM8jbz7DcsUmYGcVMEUiM1rFcyTTZFYjQmYzRIAyUlUCdCwFZ4PkK0vlcGUlbyfjPzbWUkgmbxXGb3I2ax7FdWEzPMIkckIzXQ41JToWSjkWQtsRd2LyJ1DkLvYFUYUiQKIDZ3H0M4b1U3AWY4D2a0DSS13jU1.GdV4xUrg2RRY0bQIEQkIDVLk0Q3k1ZvHUSOwDSYYEbGslSIkzMI8zamUEdwf0PnYSM0oFMygkMnMWUUg2ZCoWbq8FVJszTRsjZ3YWVkk0TYgEa4EVd3shKpQVVlwDNhkTbwMkMBgiLVYybzMiaCQSRyoWbwf2L2.GcXsxc1s1TCQDdtfzXpQDdkwzXjcySsE0T3Pmao81TrgFT4nkcMk0aCsFasIkMtkGTYgEY2EVN3QiaxQjZVUlVPU1RM4VLDQWYJoFdpUkT2nFLL0VXrU0PSolQJ8zS0TjKDoWRvoUbqjWREYmLmwFNME0aM0DbvcyZzYlRvgCduYUZ3wTLOcCMSIEUFgmQWICQvsDaPIGRvoUcsMDUyUzZQkEc3IDaxQGROoWbUQSPpITLwnzZFgEVPIVXx4RSH4zcg4zSQwzX3nFQRkybNk2M0LFZEc0cBszJ5gGQuElMMkjdjIDbxIWY5AmMEkzUzfCd2c0S2YlUZciMNICbHIVVxn1MxIzcAcVcvHWbFg0LJMScTIiMrE0Y2kzP4jiTYECTqTSRzvlL5c2SYIlakgkUmYlYPUibm41YQgVc0QEQLE0PUYWXlUUUBM2YIgkasIiK401S4nFVvgTRtf2YoQ2XOUWbi8FbqMiRyDUP34VNwU2XogEQlwTL3EEaF0TMRMkPzQlcAMTb0IFTuETbPIVXgIGN0TSQxkjUVQzTgYSMlgTPxgWSBo1ZgQDRJICR1cEcY4hUzvVPpsVXFAEUzkkKkQCaIg0ZgwFTVQWVBEEMrkzMqEFU1ojLtAkUzE0YtIVZBUFMFMjb30jQpsVXLgjRxfkcWQWVAYEMrUjZqElUPQEcYETYzvVSXsVXw.kUzk0PQQCaMcyZg4jYUQGMtjEMrMDQqElS1cEczHjUzv1RpsVXzAEUzQiPYQiUJc1ciw1QzI2LGkTYvblZTASU4ACUqkUPLUDQr4hcvgybz0jUDMlPj41RwHWLNwFSWMzUGElbEwVTyIVbA0VM2Y2MhIzbMACZZg1azYDULcFVtUyPmIVXDclaYUSL2zDYFUVTukFRhIDQkoUNQY2L0TSLVkySxcVRvnmUvXUQiElRmEESmMWRBEiRMIzLTokV37VcX4FYRcTXSYjdTckc2PCcx0TYsYELvPlSh8lVqAGRQMUaTAidIUUSiI0ZZ4la33zaZEVd3UCUUY0ToQUUQMiYmc2USkFUvnGRUAiYwwlQuo0UNElVpoDTq0TYSkFUvnGRUAiYwwlQuo0UNElVpAGaF8FbFgTL5gTUUQjStnjLZokZvoUTFY1Zg0TSRUELPI2aQAGbHIlKTQGL5gTUvfFStrjLZokZvA2YXMUZTUUTy3hahE2aQAGbFUUSMIELOQiQugGdu0zZnMWSx0DSMMlXxIWRtHWTvImVgkmZFEDQvoFUWg1bgMmVwrDRZ0VL5kTUMMlTUMUaTAidIUEbPQjbUc0JE81TvQmUxQVci4lKJ8DZ3.UU0k0YQsTZ1rjUTciUCEUN2Q0YrcFawvFdXgmaowFaLcEL3fFa2ECLzDyQA4jStkULrEUSHQGQFwVTM0DRF4DbFUiSCQ2UGQSYvQFb5M1JCMWTLAmRUUmZDcWTic0ZHoTYWY0b0M1MrIjYvkWa1n2aSsRckE0MyMTNsAGZwTzY2kTZWUDSYQkZtUmcsckV0UyZjUDUUsxTzDDbuUSZB8VT2sFS3.iKmkkUEMzLQkSb4PkYt.0bSMCclAiL1DVYgkUMR0FcvkWLTU0SsYCdxTSYvE2SIYVSkkWLToVMxgSTzb1Mv.0coMSLrQDaCc2ZmkjSwXkSrQjbvc2QxLjbogyPKUlKIUUNtYiSwoERgYTduoTT3IyPuUCM4kEYwUSVE0FNvcGYq.mSPE2bwkUMFUlK4ETX0fkVncWUSEFYCISdGgVNgEicUUVN2TDdDsjQ30lZDYUMMYiYRczbtoUMzIlaucmMYsVPMACS2gFMXYVSIozJQAyJzoGbgsRLvU1JQIyY0ETPRICZR0VS0bmSwPmUxM1YxbzP1fGNSISbAAST24lUYU1L3EFV0.URNwTXWUkLWMTLqASSukybzXlRLElU4LGLGUkL0HkStXFTJYidiAENoc1SxrjRL4jSikVT2LSc1kmbvslaLYSQ0nTXBIDcMEiPgYmZvjGZygEcpoUQhEUamETStMWSuYESBkGZ2gEQgwFNQYFU3LyP34VSogkThIFRFwVLXk0MZkFbq4lMzoFboYyUPACNqHVd4clYLEkPIcETMEEZyA0ToICUXYiVDIlSqAERsciYp8TSscCTvL1aHk0T4kzSTszZGI2TVgUctHTdpUjZtIjLpUjZ18lLpUjbgk1aV4jUrkkMtTFVJMWMQESNCYELSEiPDYSLLI2aMcGL5YWUVombwMzb4nFbG0lS5ECUxslX3QkUC41ZKAyclAWMjYid4fDNTkidEESdmsTdSAmV3j1T1n1MqDSYMUjRSUkMT0zZ1QUQwbzQvfSd3jUdREGZTEzLMsRa4ozLUYSXOwzJJkyJKwjVkckQE4xXzo2ckgibyTDUwkGdYsRNYsRYHMERGolP77RRC8Vav8lak4Fc9vSREQVZzMzatQmbuwFakImOxDCMz3hcV4DZt3hKt3hKtTERt3hK1sDRt3hYG01bxPiU0MWSNYkX2HSdsIjPqXWN5YzPRkjTikUPwbzMvvlbtkEbgIFcxM2RwbDVxkUZvXTVIcURzv1LYY2MiU1axIFa2Y0cJYEU3oGNL4hRHUTPVcWT2zFRqTFcIMFbzT2XFIzYZAyRLgTT2HkPZIlPOEkdBgySPshU0b1TqzjLxo0c0LjdvUmLpQTc14BY5AmUqfyUqrlL2gyUzkWXOgiYigFQxrjQ0cyYyjTTj8zLEcyLMc1XBYUQFo1J3LWdIUWXX41JkIlV4UFdqXjLOY0MssBckUVbxbUbjsTZnQTPI4VTQgFVQgmMNQzMXcVQyYWPuASZksRMssBdqjSM101L0wDUhE0UqjTd3LUN0fCS2bEckU0LCU1LzkUY3jTLxcDcqjSUk4zLkM2LwYTd1ckSlI2LwgSMwz1JmcVRkkUNiEmVU4xYkY2S2DDcOUSLKU1SyDSdpYiMLUzJ0PDN5UlcCwFRrglQ2MDQ43lM2fFNjYWYqTmLC0TVkY1a2HCYYMGMOgkZqf2Q3HDcPMCNyHGNLQSakY1Q0bDdS4jcHE1YyoDNyjyR2PyZyf2XhIkZTUDYlc1bvTGRBsxYHUyYVsFY1UmLgoEdxkVdvH2boMURFEycBU1cpQzc5ETY4.mcuszR4IDNyckQh41YFcEZAkSNYcFRucWQJkEatr1XyklRxvTYqYzJ4ozLUYCVTs1Y2MmLjk0JxjGbZUWb2D1brISdwfkaAcmQk4DLvUlL48lZzoWdiIlc37jLX41agcEb1XFYVgycEkkUO4jXYoGQ2c2YoM2QokWL0zVVCgUb4j1QiQkXL0FYjYzLKw1R3bkQko2XFAySZAia10VQQk1UHUzaQsTakgELQc1P4EzQx0Tcm0zUKUWbXwzJlkiSNMDdOIWc3HkVqrRT0ACZYkWV0fmYEszTPUlY1TDUVUiRwjUTjMCYoMVdAgUVD8DZOczXsgjRV4zZWYkXJoWNyImdx01PqvVZyczQNc0coUlTzozXqgTTDMlP5E0XWMmYGcTZwvDbtQlXqjzR3PSRJwTTUgEQvbCRxIyLvUTSOIGMOQWa0Y1QmUSQ0XiMqQ2LEklQFYzYFsTRvbkY0f2PrgVNT4RMrY2QkI2LHIDM2UUY3ImL1AGdx8lLug2UAMTSRYWYBMVTtsBU50DY4Ujaqj2MyrhMQICblQUV0XzRBgFNRcSNmcEdvUVNw8VMwzjMNYkMvgmUtbEa3sjTVMWTRQTYBgESYcDdosFLR0zSLwTVVA2Qq4TRIcSRO81YUgWLXMDZ1TScpQybXYCZyUUU3s1P5E2ZugkRKMkTKoFd1kUYYMUVXwVdgkGdq3hZjkkYLgiXIEWbSYiP3HiU1LGcy31Pzjzb5EWL3MyMvQGVqbmcqM0PDgmKHMlZDgWYLMFY27TaQMENz4VZuMEanAUNZYWSY81PqwVaRYia4AUVXQ1cgkCdz3lbDolUkoETksTStECQzUlRpgmZUI0MpACSsEFaUMzTpYjRO8TME4BQ5kDbZE2J4kTQ1IyYrgSSQ8VSMAGb2rFcloDb3f2aVkFdLEyS2PyTRQkQ3YzUxPDbKwFTxgDbZUWaCQ0bEsVTYQGdBwlbzgzS5EWUzDjZBESLJslQXgEThElbtzDRNcWXN8TTLMFNpQjT4LmS4cSMigVQWcmPKshd3QzagYSSIoGYBAmbxUldvYSQIcEM3f2cW8zclYkV2XiSx.GRhkkLpcibBcWPmUGLxEmQXMiRyTGUxXCaQc1cIMTN4HUVw.0J0jDMrIid28TVh4VYXY0YlYFT0H2YtcVTnUWcTQDSQMTU1ElYUUkPycVRX4Vax3Rds8TNpgEbHkjK3cVZzM1S0E2XuA2ZynzLQEDdtkSb0MVZXQjYLECdQwlQMUiTSIDcjYWPCEWchA0aAEGThEVXxgSM0TjbIYkUDMUX1TiYHEjb30jPpsVXDgjRxfjcWQWVtXEMrEjZqElQPQEcY4RYzvVRXsVXrAkUzkkPQQCaIcyZgQkcJIiaPYEcQclahklPkQiQCIGdMYjZqEFSHojLXY2UzkUPVQCaEo1ZgYETTQWVAUFMr0DVqEVLPYEcYMTTzvVS2rVXNYVUzQiKYQCaCQzZg4jcWQGMBYEMrsjZqEFcPQEczHTVzXkRmc2XrcDcxMyQIUFLmoFUvTUdvP0ZYEDSEQDatXGb3LGcMYEQiIDYtsTLxEiSrwzUCc0QgIWQrE0bhEWPsUyc1ciXBMWSvflVn8FcFQESmgka0LzYhEFQm4VV0DyMMQlQkE0aogjXBQTYZkST1MSM0DiU47jbmkDL5YELVUzXgozYQwzYykjPwnTSBMCUZoENuUGVtQlTGE1TFoGUWY2MzPmbMUVaVACLj4jXuo0ZvgTTS0FUvnWRU0zXRslVt4FNN8lVgkGd0PUUVMUZTUUTyX1Y2c0ToQEL5gTUvXVbrYzaZckSgokZJA0ZMU1ToQEL5gTUvXVbrYzaZckSgokZvwlQuAmQHEidHUUUD4jKJIiVZoFbZEkQlsVXM0jTUACTx8VTvAGRh4BUzAidHUELnwjKKIiVZoFbvcFVSkFUUE0Lt3lXw8VTvAmQU0TSRAySzXza3g2aMsFZy0jbMwTSiIlbxkjKxEEbxoUX4olQAQDbpQ0UnMWXyoULKgjVsEidIUUSiIUUS0FUvnWRUAGTDIWUWsRQuMEbzYkbjU2Xt4hROgFNPUUcYcVTKklMKYEU2X0PQkycTcFamwVLrgGV34VZrwFSWACNnw1cw.CMwbTPN4jaYECaQ0DRzQjQrEUSMgjQNAmQ03zPzc0QzTFbjAmdisxPyEESvoTU0oFQ2E0XWsFRJU1UVMWcicCaBYFb40lM581TqTWYQcybCkSavgVLEc1cIk1UEwTVTola0YWaWoUc0rFYEQUUqLEMAA2a0jlPuE0cqwDNv3xYYYUQCMST4DWNTYlKPM2TyPmYvHiMgUVXYUiTsQGb4ECUU8Ta1fmL0TFbw8TRl0TY4ECUpUib3DEMmcCLPcWZyDCaDw1P2s1YI4TLV4DaDIGb2cjLCIWZ3LzRk4RRUkia13TbZgTXFk2aJEEdxLza0PSdYQVb0jUQsgCb2Q1Jv4DTwMWbYUiQk4RdAEVMXoEZ2U0TgQ1Pxj2QnkSXwXWUkkyMEgGQKYDdsoFQVUSS1XlTGMmaZUCch41a2YSVqETSvvzcnQCVl0TRJsRTvrBc5AWXqDCbksRTxbVcAEjTxflTs0TM24TLzYkbiclLGMjM3gyTxDWPvD0ctYUVkMCdggUMPkjSLE1UUIyUCEyZvzza4LGMloDSgYUNyAyQUISMR4jKlAkR1n2XPgSZm8jLKoDSN4zXoE0MyTmc4IGbq4FS1TTMJElPBQWSwHTX1oFL4g1bXQmZZUjXQ01YA0jay0zaVwjP4g1cXQTXrgSTlQENyLDdt0TZXIkXhgjQrECVYciVoA2ZtYCcpAWZ1bETvfyJhkWdmYFSQITRWAUSQg1bPMUZxPEV1nEQh4zZPgTa2XlZO0Ta2.ELi8FRYMUdI8DUKs1QxMkUXUmKBkmZEolaBIiZEolcuIiZEIWXo8lUNYEaYYiKkgkRyUSTwjyPVAyTwHDQ1DCSx8VS2Aid1UkU5IWbCMWNpA2Qs4jdwPkbqIFdTY0Pts1RvbmYvUCY1nWNHgCU4nWQwj2YKk2TvoENoMkMpcyJwTVSEozTUYCUMslcTUTLGcDL3jGNYkmTwgFUAMSSqzVdJMSU1D1SLshR4rxRLoUYWYTQtLFc5cWY3H2LEQUb4gWVqjSVqTFRSgzQpIDOujTQjkFcC8lazI2arwVYx4COuX0TTMCTrU2Yo41TzEFck4C."
+																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlUUcMYEVxEjPRc1cFElYHMDRtMCUXgWRWojKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKqbia1ACLC4hKtLySt3hKt3hKt3hKtXFRngjVO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKOojX3jiaYwVV1jlMwLWdOUDcjoWN1ASZBcyTs4zX38DMv.UVqnWd4kmMCwDQwY2S2ASZnkCVxg0c2LUdLkmbOQ2Ygg0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMocGZEk2SzLyLtkidLkGS1j1cnUTdOQyLy3VNt3hKt3hKt3hKt3hKt3hYqXFTHQzMC4hKtj2St3hKlsBUUUUU1LjKt3xLOEGbvAWNt3hKtjSdLkGSx7jKt3hKtfzRpUzLC4hKtf0S0YCc1jiKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKPM0ZQYkVv.iQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYUUWSVgkbA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRWkULUwlXn0TUYIWUwfkdAYlS3UEaisVRsg0TAcEVoUkQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3hKtHTZB4hKF4hKt3BTHwFTt3hKt3BTlkDSJ4hKX4hKt3hKt3hKPEjKt3hKt.ERrAkKt3hKtvDczPFRt3BVt3BTt3hKt3hKt3hKtXlKt3hKt3hKt3hKt3hZgEVPtfkKt3hKtbFVBEjKt3hKtzlUzMWQtXVPt3hKt3hKt3RRt3hKtHjKt3hKt3hKt3BSt3hKt3hKt3hKt3hKl4VVB4BVt3hKB4hKt3hKt3hKt3hKPQ2bE4hYA4hKt3BQnkDQt3hKt3haWQSLV4hKF4hKlYEZ1bVRp4hKt3BRt3hKt3hKt3hK14hKt3hKt3hKt3hKt3BZrkjKlEjKtPjKt3hKt3hKt3hKt3RQoIjKtXjKtvjKt3hKt3hKt3hKt3hYtkkPtfkKt3hKtbFVBEjKt3hKtfESnwVRtXVPt3BQt3hKt3BQt3hK14hKt3hKt3hKt3BSt3hKt3hKt3hKt3hKDgVRD4hKt3hKtXzYXITPt3hKt3hKt3hKt3hKt3hKtHkKwICYqTlKtX2XV41LtLyJG4hKL4hKt3hKt3hKt3hKtXlaYIjKX4hKt3hKmgkPA4hKt3hKxUDZrkjKlEjKt3hKt3hKtPjKt3hct3hKt3hKt3hKtvjKt3hKt3hKt3hKt3BQnkDQt3hKt3hKFcFVBEjKt3hKt3hKt3hKt3hKt3hYS4RbxP1Jk4hK1MlUtMiKyrxQt3hcVUjRN4RNqDjKt3hKA4hKm4BTso0JqrxPt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hXqTlKt3hSt3hKt3hKt3hKtDUa4USTvsRPt3BThckRC4hKX4hKt3hKt3hKt3hKt3hKCkUP2fEbqDjKt.UUtDmLjsRYt3hKTMycGITPt3hKtXmUEojStjyJA4hK1AkUt7Da0TlKt3hKt3hKt3hKt3hKtDUa4USTvsRPt3hKt3hKt3hKt3hKPk0aSEjRA4hKt3hKTUCUlIkKt3hKtXmbw.0Pt3BVt3hK1IWa34hKtXjKt3RTigVMD4hYA4hKt3hKt3hKt3hKt3BSpUjco8VNG4hKtHVPxQlM3rRPt3RQrcTYHQjKt3hKP4hKt3hKt3hKt3hKCkUP2fEbqDjKtXmUtDmLjsRYt3hKLEWS54hKtXjKt3hKt3hKt3hKt3hKtb1ZgEVPtfkKt3RM4o2cK8VNG4hKtjmVC0jKtXVPt3BTq8zPMEjKX4hKt3xS1gjPA4hKt3hYKMmPqAkKt3hKt3xYzT0Qt3BVt3hK2Tjc0LmLqbjKtXGdCwDZP4hKt3hKlgkKwICYqTlKtXmdBQyQBEjKt3hKtTWLtzjKtXVPt3hKt3hKt3hKt3hKt.kQ1UybxrxQt3BR0bFNmAkKt3hKt3lQScTcpUSYt3hKtgEYvDjKtXjKt3hKt3hKt3hKt3hKyHUbPkDQt3hKt3hKHYWMyIyJG4hKtjjPxQlM3rRPt3BTgI0RVIjKX4hKtvTbMomKt3hQt3hKxEjbjYCNqDjKtPTYqfFRD4hKt3hKmYjc0LmLqbjKt3haocmZP4hKt3hKB4hKt3hKt3hKt3hdW0jdt3hKF4hKH4hKZ4DQ4rRPt3hKt3hKt3hKt3hKtn1Q1UybqrxJqrRZ4vzX2HEbqDjKt.UXRsjUB4BVt3hKl4jQSITPt3hKt3BRBIGY1fyJA4hK1IWLPMjKtfkKt3hYNYzTBEjKt3hKtj2b4gjKtXVPt3BTk4RbxP1Jk4hKlgGU5cjPA4hKt3hK3DjbjYCNqDjKtLGcPUFRD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RMXwTRD4hKt3hK5cUS54hKtXjKt3haocmZP4hKt3hKtjGYJMjKtfkKt3hZGYWMyIyJG4hK1gyP3bFTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtk1cpAkKt3hKtXmbw.0Pt3BVt3hKl4jQSITPt3hKt3BS17FSt3hYA4hKPUlKwICYqTlKt3hLOo2QBEjKt3hKtHjPxQlM3rRPt3hPkcCYHQjKt3hKtLjKyLCZgUTb3ckPtk1cpAkKt3hKt3BNpU0Tt3BVt3hKLc2blAkKtXjKt3hKt3hKt3hKt3hK1IlMLIjKtfkKt3BVHYWMyIyJG4hKHcyc1bFTt3hKt3hYz0zbt3hKX4hKt3hKt3hKt3hKt3hK5MkUMEjKlEjKtHjKt3hKt3hKt3hKhQ1UmAkKtXjKtfjKt3hKt3hKt3hKtblKwICYqTlKt3hYHYWMyIyJG4hKtTSL5IjKtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY4vzX2HEbqDjKt.UX13hPA4BVt3hYt3hKt3hKt3hKt3BRBIGY1fyJA4hK1klLHQjKtfkKt3hbXYWMyIyJG4hKPM0UyUCTt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BSt3hKt3hKt3hKt31SScTcpUSYt3hYt3haz.0LqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3lR1UybxrxQt3hY1s1MmAkKt3hKtfzbX4xSrUSYt3hK43VQ1k1a4bjKtXlKt3hKt3hKt3hKt3hYgEVPtfkKt3hKtbFVBEjKt3hKtTlSzMWQtXVPt3hKt3hKt3RRt3hKt3hKmgkPA4hKt3hYiQmMmUjKlEjKtDjKt3hKt3hKt3hKwLCcGYkKtXjKtXlKt3hKt3hKt3hKlQmKwICYqTlKtXGdh41LtLyJG4hKt3hKt3hKt3hKt3hKt3hKlIjKX4hKtDCMzcjUt3hQt3hKtnFRrAkKt3hKt3hKt3BVA4BVt3hKt3hKtfkKtXjKt3hKt3hKD4hYUUCUnAURt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 																		}
 
 																	}
@@ -6235,8 +5863,8 @@
 																"mic_routing21" : 0,
 																"mic_routing22" : 0,
 																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
+																"mic_routing24" : 0.0,
+																"mic_routing25" : 0.0,
 																"mic_routing26" : 0,
 																"mic_routing27" : 0,
 																"mic_routing28" : 0,
@@ -6277,387 +5905,14 @@
 																"mic_routing63" : 0
 															}
 ,
-															"outputLevel" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.921053, 0.921053, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 															"ambisonicPlayer" : 															{
 																"playback" : 0
 															}
 ,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene2" : 														{
-															"name" : "Apple Transfigured",
-															"inputRouting" : 															{
-																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0,
-																"mic_routing1" : 0,
-																"mic_routing2" : 0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-
-														}
-,
-														"Scene3" : 														{
-															"name" : "Apple Snorting",
-															"inputRouting" : 															{
-																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0,
-																"mic_routing1" : 0,
-																"mic_routing2" : 0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-
+															"reverbSettings:roomMicsState" : 1,
+															"0" : 0.0
 														}
 
 													}
@@ -10195,7 +9450,7 @@
 								"box" : 								{
 									"data" : 									{
 										"Scene1" : 										{
-											"name" : "Default",
+											"name" : "default",
 											"inputRouting" : 											{
 												"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -10221,8 +9476,8 @@
 												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"24" : [ 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"25" : [ 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -10330,20 +9585,20 @@
 														"filetype" : "C74Snapshot",
 														"version" : 2,
 														"minorversion" : 0,
-														"name" : "Neoverb",
-														"origin" : "Neoverb.vst3",
+														"name" : "Stratus3D",
+														"origin" : "Stratus3D.vst3info",
 														"type" : "VST3",
 														"subtype" : "AudioEffect",
 														"embed" : 1,
 														"snapshot" : 														{
-															"pluginname" : "Neoverb.vst3",
-															"plugindisplayname" : "Neoverb",
-															"pluginsavedname" : "/Library/Audio/Plug-Ins/VST3/Neoverb.vst3",
-															"pluginsaveduniqueid" : 0,
+															"pluginname" : "Stratus3D.vst3info",
+															"plugindisplayname" : "Stratus3D",
+															"pluginsavedname" : "C74_VST3:/Stratus3D",
+															"pluginsaveduniqueid" : -952463768,
 															"version" : 1,
 															"isbank" : 0,
 															"isbase64" : 1,
-															"blob" : "5832.VMjLg7qE...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HSLzPiK1YkSn4hKt3hKt3RUH4hKtX2RH4hKlcTayICMVU2bM4jUhciL40lPBshc4nmQCIURRMVVAEyQ2.Cax4VVvElXzI2bKEyQXIWVoAiQYkzUIQCayjkc2LVYuImXrcmU2ojUTgmd3vjKJgTQAY0cQcSaHsRYzkzXvQSciYjPmoELKwDRQciTBokXB8TT5IDNOA0JVUyYSsRSxHmV2UyP5AWcxnFQ0YmKjoGbVsBNWsxZxbGNWQWdg8DNlMFZDIyRFU2MmMSRQQ1SyTzMyzzYiIjUEYjZqfyb4kTcggkaqTlXZkWY3shQx7jU2z1JzUVYwIyUwQ1RogFQAkjaQEEZXEEd13DQ2f0YEMmcA8FLoU1J0z1J3sRN0XWayTGSTIVTWsRR4gyT4TCNLcyUzUVUyLTYyPWVkgSRwH2QzsRNUUlSyT1byDmQ4Y2UNYlbyDGN0DSaqb1YIUVV4LVbZUkKmUlcOcSPz8TMwrTYOMSL4olM1vTQqTCQ3nWY1MDaHwFZFc2PDkia1bCZ3PlcksRcxLTSYUlYuciLjk0bz7DVpsBdGgiPzA0L3Lib3vDMsUlYGUyQ3MkS1gTXmMmR3LSNKcCMqMCdiIlTpQUQjY1YyAScHIzJmgTMmY0ZjYWcxDlV3IWZ4Aibyk1TIYTL2ITY2oFQ2oWPkkCb181RKkmP3L2UFIlamYzUnETN4j0YH81cEoTVr4xZiMWZJICSkslQqjmRyTkMXQ0Zmc2bxPVVqHSdvoUcwcSXywlL4ECVtEzcFUlSv.WYxj2apQmd4MlX1gySxfkauE1UvYiYjYEN2UTVV8jShkkdDc2cmk1bGkVdwTSaYMDVwkSZGMFUhwTajQlQyrDaKgyUFUldiYDLOoELtYWaEEUZWgTQuE0RsUFVvD0YCkWPGIWS0cVSWsTcwgESqXVNN4zP38jb0giTZsxJQUGLnkUdYUCdlUzRSAUYlYSQTYUMJESVQQ1Ljk1X4EDVYQzSn8zQi0FRJYkSqckUhojd4Lmb5IWaCsBaoM2QG4zU2kVYRQmRisFRQQzXBoWTic0blczQoECSv4FYhsRRKgCMIoDSQUEVDAyMHImLy.WQM8jbz7DcsUmYGcVMEUiM1rFcyTTZFYjQmYzRIAyUlUCdCwFZ4PkK0vlcGUlbyfjPzbWUkgmbxXGb3I2ax7FdWEzPMIkckIzXQ41JToWSjkWQtsRd2LyJ1DkLvYFUYUiQKIDZ3H0M4b1U3AWY4D2a0DSS13jU1.GdV4xUrg2RRY0bQIEQkIDVLk0Q3k1ZvHUSOwDSYYEbGslSIkzMI8zamUEdwf0PnYSM0oFMygkMnMWUUg2ZCoWbq8FVJszTRsjZ3YWVkk0TYgEa4EVd3shKpQVVlwDNhkTbwMkMBgiLVYybzMiaCQSRyoWbwf2L2.GcXsxc1s1TCQDdtfzXpQDdkwzXjcySsE0T3Pmao81TrgFT4nkcMk0aCsFasIkMtkGTYgEY2EVN3QiaxQjZVUlVPU1RM4VLDQWYJoFdpUkT2nFLL0VXrU0PSolQJ8zS0TjKDoWRvoUbqjWREYmLmwFNME0aM0DbvcyZzYlRvgCduYUZ3wTLOcCMSIEUFgmQWICQvsDaPIGRvoUcsMDUyUzZQkEc3IDaxQGROoWbUQSPpITLwnzZFgEVPIVXx4RSH4zcg4zSQwzX3nFQRkybNk2M0LFZEc0cBszJ5gGQuElMMkjdjIDbxIWY5AmMEkzUzfCd2c0S2YlUZciMNICbHIVVxn1MxIzcAcVcvHWbFg0LJMScTIiMrE0Y2kzP4jiTYECTqTSRzvlL5c2SYIlakgkUmYlYPUibm41YQgVc0QEQLE0PUYWXlUUUBM2YIgkasIiK401S4nFVvgTRtf2YoQ2XOUWbi8FbqMiRyDUP34VNwU2XogEQlwTL3EEaF0TMRMkPzQlcAMTb0IFTuETbPIVXgIGN0TSQxkjUVQzTgYSMlgTPxgWSBo1ZgQDRJICR1cEcY4hUzvVPpsVXFAEUzkkKkQCaIg0ZgwFTVQWVBEEMrkzMqEFU1ojLtAkUzE0YtIVZBUFMFMjb30jQpsVXLgjRxfkcWQWVAYEMrUjZqElUPQEcYETYzvVSXsVXw.kUzk0PQQCaMcyZg4jYUQGMtjEMrMDQqElS1cEczHjUzv1RpsVXzAEUzQiPYQiUJc1ciw1QzI2LGkTYvblZTASU4ACUqkUPLUDQr4hcvgybz0jUDMlPj41RwHWLNwFSWMzUGElbEwVTyIVbA0VM2Y2MhIzbMACZZg1azYDULcFVtUyPmIVXDclaYUSL2zDYFUVTukFRhIDQkoUNQY2L0TSLVkySxcVRvnmUvXUQiElRmEESmMWRBEiRMIzLTokV37VcX4FYRcTXSYjdTckc2PCcx0TYsYELvPlSh8lVqAGRQMUaTAidIUUSiI0ZZ4la33zaZEVd3UCUUY0ToQUUQMiYmc2USkFUvnGRUAiYwwlQuo0UNElVpoDTq0TYSkFUvnGRUAiYwwlQuo0UNElVpAGaF8FbFgTL5gTUUQjStnjLZokZvoUTFY1Zg0TSRUELPI2aQAGbHIlKTQGL5gTUvfFStrjLZokZvA2YXMUZTUUTy3hahE2aQAGbFUUSMIELOQiQugGdu0zZnMWSx0DSMMlXxIWRtHWTvImVgkmZFEDQvoFUWg1bgMmVwrDRZ0VL5kTUMMlTUMUaTAidIUEbPQjbUc0JE81TvQmUxQVci4lKJ8DZ3.UU0k0YQsTZ1rjUTciUCEUN2Q0YrcFawvFdXgmaowFaLcEL3fFa2ECLzDyQA4jStkULrEUSHQGQFwVTM0DRF4DbFUiSCQ2UGQSYvQFb5M1JCMWTLAmRUUmZDcWTic0ZHoTYWY0b0M1MrIjYvkWa1n2aSsRckE0MyMTNsAGZwTzY2kTZWUDSYQkZtUmcsckV0UyZjUDUUsxTzDDbuUSZB8VT2sFS3.iKmkkUEMzLQkSb4PkYt.0bSMCclAiL1DVYgkUMR0FcvkWLTU0SsYCdxTSYvE2SIYVSkkWLToVMxgSTzb1Mv.0coMSLrQDaCc2ZmkjSwXkSrQjbvc2QxLjbogyPKUlKIUUNtYiSwoERgYTduoTT3IyPuUCM4kEYwUSVE0FNvcGYq.mSPE2bwkUMFUlK4ETX0fkVncWUSEFYCISdGgVNgEicUUVN2TDdDsjQ30lZDYUMMYiYRczbtoUMzIlaucmMYsVPMACS2gFMXYVSIozJQAyJzoGbgsRLvU1JQIyY0ETPRICZR0VS0bmSwPmUxM1YxbzP1fGNSISbAAST24lUYU1L3EFV0.URNwTXWUkLWMTLqASSukybzXlRLElU4LGLGUkL0HkStXFTJYidiAENoc1SxrjRL4jSikVT2LSc1kmbvslaLYSQ0nTXBIDcMEiPgYmZvjGZygEcpoUQhEUamETStMWSuYESBkGZ2gEQgwFNQYFU3LyP34VSogkThIFRFwVLXk0MZkFbq4lMzoFboYyUPACNqHVd4clYLEkPIcETMEEZyA0ToICUXYiVDIlSqAERsciYp8TSscCTvL1aHk0T4kzSTszZGI2TVgUctHTdpUjZtIjLpUjZ18lLpUjbgk1aV4jUrkkMtTFVJMWMQESNCYELSEiPDYSLLI2aMcGL5YWUVombwMzb4nFbG0lS5ECUxslX3QkUC41ZKAyclAWMjYid4fDNTkidEESdmsTdSAmV3j1T1n1MqDSYMUjRSUkMT0zZ1QUQwbzQvfSd3jUdREGZTEzLMsRa4ozLUYSXOwzJJkyJKwjVkckQE4xXzo2ckgibyTDUwkGdYsRNYsRYHMERGolP77RRC8Vav8lak4Fc9vSREQVZzMzatQmbuwFakImOxDCMz3hcV4DZt3hKt3hKtTERt3hK1sDRt3hYG01bxPiU0MWSNYkX2HSdsIjPqXWN5YzPRkjTikUPwbzMvvlbtkEbgIFcxM2RwbDVxkUZvXTVIcURzv1LYY2MiU1axIFa2Y0cJYEU3oGNL4hRHUTPVcWT2zFRqTFcIMFbzT2XFIzYZAyRLgTT2HkPZIlPOEkdBgySPshU0b1TqzjLxo0c0LjdvUmLpQTc14BY5AmUqfyUqrlL2gyUzkWXOgiYigFQxrjQ0cyYyjTTj8zLEcyLMc1XBYUQFo1J3LWdIUWXX41JkIlV4UFdqXjLOY0MssBckUVbxbUbjsTZnQTPI4VTQgFVQgmMNQzMXcVQyYWPuASZksRMssBdqjSM101L0wDUhE0UqjTd3LUN0fCS2bEckU0LCU1LzkUY3jTLxcDcqjSUk4zLkM2LwYTd1ckSlI2LwgSMwz1JmcVRkkUNiEmVU4xYkY2S2DDcOUSLKU1SyDSdpYiMLUzJ0PDN5UlcCwFRrglQ2MDQ43lM2fFNjYWYqTmLC0TVkY1a2HCYYMGMOgkZqf2Q3HDcPMCNyHGNLQSakY1Q0bDdS4jcHE1YyoDNyjyR2PyZyf2XhIkZTUDYlc1bvTGRBsxYHUyYVsFY1UmLgoEdxkVdvH2boMURFEycBU1cpQzc5ETY4.mcuszR4IDNyckQh41YFcEZAkSNYcFRucWQJkEatr1XyklRxvTYqYzJ4ozLUYCVTs1Y2MmLjk0JxjGbZUWb2D1brISdwfkaAcmQk4DLvUlL48lZzoWdiIlc37jLX41agcEb1XFYVgycEkkUO4jXYoGQ2c2YoM2QokWL0zVVCgUb4j1QiQkXL0FYjYzLKw1R3bkQko2XFAySZAia10VQQk1UHUzaQsTakgELQc1P4EzQx0Tcm0zUKUWbXwzJlkiSNMDdOIWc3HkVqrRT0ACZYkWV0fmYEszTPUlY1TDUVUiRwjUTjMCYoMVdAgUVD8DZOczXsgjRV4zZWYkXJoWNyImdx01PqvVZyczQNc0coUlTzozXqgTTDMlP5E0XWMmYGcTZwvDbtQlXqjzR3PSRJwTTUgEQvbCRxIyLvUTSOIGMOQWa0Y1QmUSQ0XiMqQ2LEklQFYzYFsTRvbkY0f2PrgVNT4RMrY2QkI2LHIDM2UUY3ImL1AGdx8lLug2UAMTSRYWYBMVTtsBU50DY4Ujaqj2MyrhMQICblQUV0XzRBgFNRcSNmcEdvUVNw8VMwzjMNYkMvgmUtbEa3sjTVMWTRQTYBgESYcDdosFLR0zSLwTVVA2Qq4TRIcSRO81YUgWLXMDZ1TScpQybXYCZyUUU3s1P5E2ZugkRKMkTKoFd1kUYYMUVXwVdgkGdq3hZjkkYLgiXIEWbSYiP3HiU1LGcy31Pzjzb5EWL3MyMvQGVqbmcqM0PDgmKHMlZDgWYLMFY27TaQMENz4VZuMEanAUNZYWSY81PqwVaRYia4AUVXQ1cgkCdz3lbDolUkoETksTStECQzUlRpgmZUI0MpACSsEFaUMzTpYjRO8TME4BQ5kDbZE2J4kTQ1IyYrgSSQ8VSMAGb2rFcloDb3f2aVkFdLEyS2PyTRQkQ3YzUxPDbKwFTxgDbZUWaCQ0bEsVTYQGdBwlbzgzS5EWUzDjZBESLJslQXgEThElbtzDRNcWXN8TTLMFNpQjT4LmS4cSMigVQWcmPKshd3QzagYSSIoGYBAmbxUldvYSQIcEM3f2cW8zclYkV2XiSx.GRhkkLpcibBcWPmUGLxEmQXMiRyTGUxXCaQc1cIMTN4HUVw.0J0jDMrIid28TVh4VYXY0YlYFT0H2YtcVTnUWcTQDSQMTU1ElYUUkPycVRX4Vax3Rds8TNpgEbHkjK3cVZzM1S0E2XuA2ZynzLQEDdtkSb0MVZXQjYLECdQwlQMUiTSIDcjYWPCEWchA0aAEGThEVXxgSM0TjbIYkUDMUX1TiYHEjb30jPpsVXDgjRxfjcWQWVtXEMrEjZqElQPQEcY4RYzvVRXsVXrAkUzkkPQQCaIcyZgQkcJIiaPYEcQclahklPkQiQCIGdMYjZqEFSHojLXY2UzkUPVQCaEo1ZgYETTQWVAUFMr0DVqEVLPYEcYMTTzvVS2rVXNYVUzQiKYQCaCQzZg4jcWQGMBYEMrsjZqEFcPQEczHTVzXkRmc2XrcDcxMyQIUFLmoFUvTUdvP0ZYEDSEQDatXGb3LGcMYEQiIDYtsTLxEiSrwzUCc0QgIWQrE0bhEWPsUyc1ciXBMWSvflVn8FcFQESmgka0LzYhEFQm4VV0DyMMQlQkE0aogjXBQTYZkST1MSM0DiU47jbmkDL5YELVUzXgozYQwzYykjPwnTSBMCUZoENuUGVtQlTGE1TFoGUWY2MzPmbMUVaVACLj4jXuo0ZvgTTS0FUvnWRU0zXRslVt4FNN8lVgkGd0PUUVMUZTUUTyX1Y2c0ToQEL5gTUvXVbrYzaZckSgokZJA0ZMU1ToQEL5gTUvXVbrYzaZckSgokZvwlQuAmQHEidHUUUD4jKJIiVZoFbZEkQlsVXM0jTUACTx8VTvAGRh4BUzAidHUELnwjKKIiVZoFbvcFVSkFUUE0Lt3lXw8VTvAmQU0TSRAySzXza3g2aMsFZy0jbMwTSiIlbxkjKxEEbxoUX4olQAQDbpQ0UnMWXyoULKgjVsEidIUUSiIUUS0FUvnWRUAGTDIWUWsRQuMEbzYkbjU2Xt4hROgFNPUUcYcVTKklMKYEU2X0PQkycTcFamwVLrgGV34VZrwFSWACNnw1cw.CMwbTPN4jaYECaQ0DRzQjQrEUSMgjQNAmQ03zPzc0QzTFbjAmdisxPyEESvoTU0oFQ2E0XWsFRJU1UVMWcicCaBYFb40lM581TqTWYQcybCkSavgVLEc1cIk1UEwTVTola0YWaWoUc0rFYEQUUqLEMAA2a0jlPuE0cqwDNv3xYYYUQCMST4DWNTYlKPM2TyPmYvHiMgUVXYUiTsQGb4ECUU8Ta1fmL0TFbw8TRl0TY4ECUpUib3DEMmcCLPcWZyDCaDw1P2s1YI4TLV4DaDIGb2cjLCIWZ3LzRk4RRUkia13TbZgTXFk2aJEEdxLza0PSdYQVb0jUQsgCb2Q1Jv4DTwMWbYUiQk4RdAEVMXoEZ2U0TgQ1Pxj2QnkSXwXWUkkyMEgGQKYDdsoFQVUSS1XlTGMmaZUCch41a2YSVqETSvvzcnQCVl0TRJsRTvrBc5AWXqDCbksRTxbVcAEjTxflTs0TM24TLzYkbiclLGMjM3gyTxDWPvD0ctYUVkMCdggUMPkjSLE1UUIyUCEyZvzza4LGMloDSgYUNyAyQUISMR4jKlAkR1n2XPgSZm8jLKoDSN4zXoE0MyTmc4IGbq4FS1TTMJElPBQWSwHTX1oFL4g1bXQmZZUjXQ01YA0jay0zaVwjP4g1cXQTXrgSTlQENyLDdt0TZXIkXhgjQrECVYciVoA2ZtYCcpAWZ1bETvfyJhkWdmYFSQITRWAUSQg1bPMUZxPEV1nEQh4zZPgTa2XlZO0Ta2.ELi8FRYMUdI8DUKs1QxMkUXUmKBkmZEolaBIiZEolcuIiZEIWXo8lUNYEaYYiKkgkRyUSTwjyPVAyTwHDQ1DCSx8VS2Aid1UkU5IWbCMWNpA2Qs4jdwPkbqIFdTY0Pts1RvbmYvUCY1nWNHgCU4nWQwj2YKk2TvoENoMkMpcyJwTVSEozTUYCUMslcTUTLGcDL3jGNYkmTwgFUAMSSqzVdJMSU1D1SLshR4rxRLoUYWYTQtLFc5cWY3H2LEQUb4gWVqjSVqTFRSgzQpIDOujTQjkFcC8lazI2arwVYx4COuX0TTMCTrU2Yo41TzEFck4C."
+															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlUUcMYEVxEjPRc1cFElYHMDRtMCUXgWRWojKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKqbia1ACLC4hKtLySt3hKt3hKt3hKtXFRngjVO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKOojX3jiaYwVV1jlMwLWdOUDcjoWN1ASZBcyTs4zX38DMv.UVqnWd4kmMCwDQwY2S2ASZnkCVxg0c2LUdLkmbOQ2Ygg0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMocGZEk2SzLyLtkidLkGS1j1cnUTdOQyLy3VNt3hKt3hKt3hKt3hKt3hYqXFTHQzMC4hKtj2St3hKlsBUUUUU1LjKt3xLOEGbvAWNt3hKtjSdLkGSx7jKt3hKtfzRpUzLC4hKtf0S0YCc1jiKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKPM0ZQYkVv.iQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYUUWSVgkbA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRWkULUwlXn0TUYIWUwfkdAYlS3UEaisVRsg0TAcEVoUkQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3hKtHTZB4hKF4hKt3BTHwFTt3hKt3BTlkDSJ4hKX4hKt3hKt3hKPEjKt3hKt.ERrAkKt3hKtvDczPFRt3BVt3BTt3hKt3hKt3hKtXlKt3hKt3hKt3hKt3hZgEVPtfkKt3hKtbFVBEjKt3hKtzlUzMWQtXVPt3hKt3hKt3RRt3hKtHjKt3hKt3hKt3BSt3hKt3hKt3hKt3hKl4VVB4BVt3hKB4hKt3hKt3hKt3hKPQ2bE4hYA4hKt3BQnkDQt3hKt3haWQSLV4hKF4hKlYEZ1bVRp4hKt3BRt3hKt3hKt3hK14hKt3hKt3hKt3hKt3BZrkjKlEjKtPjKt3hKt3hKt3hKt3RQoIjKtXjKtvjKt3hKt3hKt3hKt3hYtkkPtfkKt3hKtbFVBEjKt3hKtfESnwVRtXVPt3BQt3hKt3BQt3hK14hKt3hKt3hKt3BSt3hKt3hKt3hKt3hKDgVRD4hKt3hKtXzYXITPt3hKt3hKt3hKt3hKt3hKtHkKwICYqTlKtX2XV41LtLyJG4hKL4hKt3hKt3hKt3hKtXlaYIjKX4hKt3hKmgkPA4hKt3hKxUDZrkjKlEjKt3hKt3hKtPjKt3hct3hKt3hKt3hKtvjKt3hKt3hKt3hKt3BQnkDQt3hKt3hKFcFVBEjKt3hKt3hKt3hKt3hKt3hYS4RbxP1Jk4hK1MlUtMiKyrxQt3hcVUjRN4RNqDjKt3hKA4hKm4BTso0JqrxPt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hXqTlKt3hSt3hKt3hKt3hKtDUa4USTvsRPt3BThckRC4hKX4hKt3hKt3hKt3hKt3hKCkUP2fEbqDjKt.UUtDmLjsRYt3hKTMycGITPt3hKtXmUEojStjyJA4hK1AkUt7Da0TlKt3hKt3hKt3hKt3hKtDUa4USTvsRPt3hKt3hKt3hKt3hKPk0aSEjRA4hKt3hKTUCUlIkKt3hKtXmbw.0Pt3BVt3hK1IWa34hKtXjKt3RTigVMD4hYA4hKt3hKt3hKt3hKt3BSpUjco8VNG4hKtHVPxQlM3rRPt3RQrcTYHQjKt3hKP4hKt3hKt3hKt3hKCkUP2fEbqDjKtXmUtDmLjsRYt3hKLEWS54hKtXjKt3hKt3hKt3hKt3hKtb1ZgEVPtfkKt3RM4o2cK8VNG4hKtjmVC0jKtXVPt3BTq8zPMEjKX4hKt3xS1gjPA4hKt3hYKMmPqAkKt3hKt3xYzT0Qt3BVt3hK2Tjc0LmLqbjKtXGdCwDZP4hKt3hKlgkKwICYqTlKtXmdBQyQBEjKt3hKtTWLtzjKtXVPt3hKt3hKt3hKt3hKt.kQ1UybxrxQt3BR0bFNmAkKt3hKt3lQScTcpUSYt3hKtgEYvDjKtXjKt3hKt3hKt3hKt3hKyHUbPkDQt3hKt3hKHYWMyIyJG4hKtjjPxQlM3rRPt3BTgI0RVIjKX4hKtvTbMomKt3hQt3hKxEjbjYCNqDjKtPTYqfFRD4hKt3hKmYjc0LmLqbjKt3haocmZP4hKt3hKB4hKt3hKt3hKt3hdW0jdt3hKF4hKH4hKZ4DQ4rRPt3hKt3hKt3hKt3hKtn1Q1UybqrxJqrRZ4vzX2HEbqDjKt.UXRsjUB4BVt3hKl4jQSITPt3hKt3BRBIGY1fyJA4hK1IWLPMjKtfkKt3hYNYzTBEjKt3hKtj2b4gjKtXVPt3BTk4RbxP1Jk4hKlgGU5cjPA4hKt3hK3DjbjYCNqDjKtLGcPUFRD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RMXwTRD4hKt3hK5cUS54hKtXjKt3haocmZP4hKt3hKtjGYJMjKtfkKt3hZGYWMyIyJG4hK1gyP3bFTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtk1cpAkKt3hKtXmbw.0Pt3BVt3hKl4jQSITPt3hKt3BS17FSt3hYA4hKPUlKwICYqTlKt3hLOo2QBEjKt3hKtHjPxQlM3rRPt3hPkcCYHQjKt3hKtLjKyLCZgUTb3ckPtk1cpAkKt3hKt3BNpU0Tt3BVt3hKLc2blAkKtXjKt3hKt3hKt3hKt3hK1IlMLIjKtfkKt3BVHYWMyIyJG4hKHcyc1bFTt3hKt3hYz0zbt3hKX4hKt3hKt3hKt3hKt3hK5MkUMEjKlEjKtHjKt3hKt3hKt3hKhQ1UmAkKtXjKtfjKt3hKt3hKt3hKtblKwICYqTlKt3hYHYWMyIyJG4hKtTSL5IjKtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY4vzX2HEbqDjKt.UX13hPA4BVt3hYt3hKt3hKt3hKt3BRBIGY1fyJA4hK1klLHQjKtfkKt3hbXYWMyIyJG4hKPM0UyUCTt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BSt3hKt3hKt3hKt31SScTcpUSYt3hYt3haz.0LqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3lR1UybxrxQt3hY1s1MmAkKt3hKtfzbX4xSrUSYt3hK43VQ1k1a4bjKtXlKt3hKt3hKt3hKt3hYgEVPtfkKt3hKtbFVBEjKt3hKtTlSzMWQtXVPt3hKt3hKt3RRt3hKt3hKmgkPA4hKt3hYiQmMmUjKlEjKtDjKt3hKt3hKt3hKwLCcGYkKtXjKtXlKt3hKt3hKt3hKlQmKwICYqTlKtXGdh41LtLyJG4hKt3hKt3hKt3hKt3hKt3hKlIjKX4hKtDCMzcjUt3hQt3hKtnFRrAkKt3hKt3hKt3BVA4BVt3hKt3hKtfkKtXjKt3hKt3hKD4hYUUCUnAURt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 														}
 
 													}
@@ -10377,8 +9632,8 @@
 												"mic_routing21" : 0,
 												"mic_routing22" : 0,
 												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
+												"mic_routing24" : 0.0,
+												"mic_routing25" : 0.0,
 												"mic_routing26" : 0,
 												"mic_routing27" : 0,
 												"mic_routing28" : 0,
@@ -10419,387 +9674,14 @@
 												"mic_routing63" : 0
 											}
 ,
-											"outputLevel" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.921053, 0.921053, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 											"ambisonicPlayer" : 											{
 												"playback" : 0
 											}
 ,
-											"reverbSettings:roomMicsState" : 1
-										}
-,
-										"Scene2" : 										{
-											"name" : "Apple Transfigured",
-											"inputRouting" : 											{
-												"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0,
-												"mic_routing1" : 0,
-												"mic_routing2" : 0,
-												"mic_routing3" : 0,
-												"mic_routing4" : 0,
-												"mic_routing5" : 0,
-												"mic_routing6" : 0,
-												"mic_routing7" : 0,
-												"mic_routing8" : 0,
-												"mic_routing9" : 0,
-												"mic_routing10" : 0,
-												"mic_routing11" : 0,
-												"mic_routing12" : 0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0,
-												"mic_routing16" : 0,
-												"mic_routing17" : 0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0,
-												"mic_routing39" : 0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-
-										}
-,
-										"Scene3" : 										{
-											"name" : "Apple Snorting",
-											"inputRouting" : 											{
-												"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0,
-												"mic_routing1" : 0,
-												"mic_routing2" : 0,
-												"mic_routing3" : 0,
-												"mic_routing4" : 0,
-												"mic_routing5" : 0,
-												"mic_routing6" : 0,
-												"mic_routing7" : 0,
-												"mic_routing8" : 0,
-												"mic_routing9" : 0,
-												"mic_routing10" : 0,
-												"mic_routing11" : 0,
-												"mic_routing12" : 0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0,
-												"mic_routing16" : 0,
-												"mic_routing17" : 0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0,
-												"mic_routing39" : 0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-
+											"reverbSettings:roomMicsState" : 1,
+											"0" : 0.0
 										}
 
 									}
@@ -10874,7 +9756,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 371.25, 40.0, 189.0, 25.0 ],
 									"rounded" : 0.0,
-									"text" : "Apple Snorting",
+									"text" : "default",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "sceneName",
 									"wordwrap" : 0
@@ -10896,7 +9778,7 @@
 									"fontface" : 1,
 									"fontsize" : 16.0,
 									"id" : "obj-33",
-									"items" : [ "1.)", "Default", ",", "2.)", "Apple Transfigured", ",", "3.)", "Apple Snorting" ],
+									"items" : [ "1.)", "default" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -11951,17 +10833,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-85",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 168.0, 21.0, 73.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -12487,7 +11358,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 765.0, 158.0, 850.0, 858.0 ],
+										"rect" : [ 1246.0, 570.0, 431.0, 467.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -12586,20 +11457,20 @@
 															"filetype" : "C74Snapshot",
 															"version" : 2,
 															"minorversion" : 0,
-															"name" : "Neoverb",
-															"origin" : "Neoverb.vst3",
+															"name" : "Stratus3D",
+															"origin" : "Stratus3D.vst3info",
 															"type" : "VST3",
 															"subtype" : "AudioEffect",
 															"embed" : 1,
 															"snapshot" : 															{
-																"pluginname" : "Neoverb.vst3",
-																"plugindisplayname" : "Neoverb",
-																"pluginsavedname" : "/Library/Audio/Plug-Ins/VST3/Neoverb.vst3",
-																"pluginsaveduniqueid" : 0,
+																"pluginname" : "Stratus3D.vst3info",
+																"plugindisplayname" : "Stratus3D",
+																"pluginsavedname" : "C74_VST3:/Stratus3D",
+																"pluginsaveduniqueid" : -952463768,
 																"version" : 1,
 																"isbank" : 0,
 																"isbase64" : 1,
-																"blob" : "5832.VMjLg7qE...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HSLzPiK1YkSn4hKt3hKt3RUH4hKtX2RH4hKlcTayICMVU2bM4jUhciL40lPBshc4nmQCIURRMVVAEyQ2.Cax4VVvElXzI2bKEyQXIWVoAiQYkzUIQCayjkc2LVYuImXrcmU2ojUTgmd3vjKJgTQAY0cQcSaHsRYzkzXvQSciYjPmoELKwDRQciTBokXB8TT5IDNOA0JVUyYSsRSxHmV2UyP5AWcxnFQ0YmKjoGbVsBNWsxZxbGNWQWdg8DNlMFZDIyRFU2MmMSRQQ1SyTzMyzzYiIjUEYjZqfyb4kTcggkaqTlXZkWY3shQx7jU2z1JzUVYwIyUwQ1RogFQAkjaQEEZXEEd13DQ2f0YEMmcA8FLoU1J0z1J3sRN0XWayTGSTIVTWsRR4gyT4TCNLcyUzUVUyLTYyPWVkgSRwH2QzsRNUUlSyT1byDmQ4Y2UNYlbyDGN0DSaqb1YIUVV4LVbZUkKmUlcOcSPz8TMwrTYOMSL4olM1vTQqTCQ3nWY1MDaHwFZFc2PDkia1bCZ3PlcksRcxLTSYUlYuciLjk0bz7DVpsBdGgiPzA0L3Lib3vDMsUlYGUyQ3MkS1gTXmMmR3LSNKcCMqMCdiIlTpQUQjY1YyAScHIzJmgTMmY0ZjYWcxDlV3IWZ4Aibyk1TIYTL2ITY2oFQ2oWPkkCb181RKkmP3L2UFIlamYzUnETN4j0YH81cEoTVr4xZiMWZJICSkslQqjmRyTkMXQ0Zmc2bxPVVqHSdvoUcwcSXywlL4ECVtEzcFUlSv.WYxj2apQmd4MlX1gySxfkauE1UvYiYjYEN2UTVV8jShkkdDc2cmk1bGkVdwTSaYMDVwkSZGMFUhwTajQlQyrDaKgyUFUldiYDLOoELtYWaEEUZWgTQuE0RsUFVvD0YCkWPGIWS0cVSWsTcwgESqXVNN4zP38jb0giTZsxJQUGLnkUdYUCdlUzRSAUYlYSQTYUMJESVQQ1Ljk1X4EDVYQzSn8zQi0FRJYkSqckUhojd4Lmb5IWaCsBaoM2QG4zU2kVYRQmRisFRQQzXBoWTic0blczQoECSv4FYhsRRKgCMIoDSQUEVDAyMHImLy.WQM8jbz7DcsUmYGcVMEUiM1rFcyTTZFYjQmYzRIAyUlUCdCwFZ4PkK0vlcGUlbyfjPzbWUkgmbxXGb3I2ax7FdWEzPMIkckIzXQ41JToWSjkWQtsRd2LyJ1DkLvYFUYUiQKIDZ3H0M4b1U3AWY4D2a0DSS13jU1.GdV4xUrg2RRY0bQIEQkIDVLk0Q3k1ZvHUSOwDSYYEbGslSIkzMI8zamUEdwf0PnYSM0oFMygkMnMWUUg2ZCoWbq8FVJszTRsjZ3YWVkk0TYgEa4EVd3shKpQVVlwDNhkTbwMkMBgiLVYybzMiaCQSRyoWbwf2L2.GcXsxc1s1TCQDdtfzXpQDdkwzXjcySsE0T3Pmao81TrgFT4nkcMk0aCsFasIkMtkGTYgEY2EVN3QiaxQjZVUlVPU1RM4VLDQWYJoFdpUkT2nFLL0VXrU0PSolQJ8zS0TjKDoWRvoUbqjWREYmLmwFNME0aM0DbvcyZzYlRvgCduYUZ3wTLOcCMSIEUFgmQWICQvsDaPIGRvoUcsMDUyUzZQkEc3IDaxQGROoWbUQSPpITLwnzZFgEVPIVXx4RSH4zcg4zSQwzX3nFQRkybNk2M0LFZEc0cBszJ5gGQuElMMkjdjIDbxIWY5AmMEkzUzfCd2c0S2YlUZciMNICbHIVVxn1MxIzcAcVcvHWbFg0LJMScTIiMrE0Y2kzP4jiTYECTqTSRzvlL5c2SYIlakgkUmYlYPUibm41YQgVc0QEQLE0PUYWXlUUUBM2YIgkasIiK401S4nFVvgTRtf2YoQ2XOUWbi8FbqMiRyDUP34VNwU2XogEQlwTL3EEaF0TMRMkPzQlcAMTb0IFTuETbPIVXgIGN0TSQxkjUVQzTgYSMlgTPxgWSBo1ZgQDRJICR1cEcY4hUzvVPpsVXFAEUzkkKkQCaIg0ZgwFTVQWVBEEMrkzMqEFU1ojLtAkUzE0YtIVZBUFMFMjb30jQpsVXLgjRxfkcWQWVAYEMrUjZqElUPQEcYETYzvVSXsVXw.kUzk0PQQCaMcyZg4jYUQGMtjEMrMDQqElS1cEczHjUzv1RpsVXzAEUzQiPYQiUJc1ciw1QzI2LGkTYvblZTASU4ACUqkUPLUDQr4hcvgybz0jUDMlPj41RwHWLNwFSWMzUGElbEwVTyIVbA0VM2Y2MhIzbMACZZg1azYDULcFVtUyPmIVXDclaYUSL2zDYFUVTukFRhIDQkoUNQY2L0TSLVkySxcVRvnmUvXUQiElRmEESmMWRBEiRMIzLTokV37VcX4FYRcTXSYjdTckc2PCcx0TYsYELvPlSh8lVqAGRQMUaTAidIUUSiI0ZZ4la33zaZEVd3UCUUY0ToQUUQMiYmc2USkFUvnGRUAiYwwlQuo0UNElVpoDTq0TYSkFUvnGRUAiYwwlQuo0UNElVpAGaF8FbFgTL5gTUUQjStnjLZokZvoUTFY1Zg0TSRUELPI2aQAGbHIlKTQGL5gTUvfFStrjLZokZvA2YXMUZTUUTy3hahE2aQAGbFUUSMIELOQiQugGdu0zZnMWSx0DSMMlXxIWRtHWTvImVgkmZFEDQvoFUWg1bgMmVwrDRZ0VL5kTUMMlTUMUaTAidIUEbPQjbUc0JE81TvQmUxQVci4lKJ8DZ3.UU0k0YQsTZ1rjUTciUCEUN2Q0YrcFawvFdXgmaowFaLcEL3fFa2ECLzDyQA4jStkULrEUSHQGQFwVTM0DRF4DbFUiSCQ2UGQSYvQFb5M1JCMWTLAmRUUmZDcWTic0ZHoTYWY0b0M1MrIjYvkWa1n2aSsRckE0MyMTNsAGZwTzY2kTZWUDSYQkZtUmcsckV0UyZjUDUUsxTzDDbuUSZB8VT2sFS3.iKmkkUEMzLQkSb4PkYt.0bSMCclAiL1DVYgkUMR0FcvkWLTU0SsYCdxTSYvE2SIYVSkkWLToVMxgSTzb1Mv.0coMSLrQDaCc2ZmkjSwXkSrQjbvc2QxLjbogyPKUlKIUUNtYiSwoERgYTduoTT3IyPuUCM4kEYwUSVE0FNvcGYq.mSPE2bwkUMFUlK4ETX0fkVncWUSEFYCISdGgVNgEicUUVN2TDdDsjQ30lZDYUMMYiYRczbtoUMzIlaucmMYsVPMACS2gFMXYVSIozJQAyJzoGbgsRLvU1JQIyY0ETPRICZR0VS0bmSwPmUxM1YxbzP1fGNSISbAAST24lUYU1L3EFV0.URNwTXWUkLWMTLqASSukybzXlRLElU4LGLGUkL0HkStXFTJYidiAENoc1SxrjRL4jSikVT2LSc1kmbvslaLYSQ0nTXBIDcMEiPgYmZvjGZygEcpoUQhEUamETStMWSuYESBkGZ2gEQgwFNQYFU3LyP34VSogkThIFRFwVLXk0MZkFbq4lMzoFboYyUPACNqHVd4clYLEkPIcETMEEZyA0ToICUXYiVDIlSqAERsciYp8TSscCTvL1aHk0T4kzSTszZGI2TVgUctHTdpUjZtIjLpUjZ18lLpUjbgk1aV4jUrkkMtTFVJMWMQESNCYELSEiPDYSLLI2aMcGL5YWUVombwMzb4nFbG0lS5ECUxslX3QkUC41ZKAyclAWMjYid4fDNTkidEESdmsTdSAmV3j1T1n1MqDSYMUjRSUkMT0zZ1QUQwbzQvfSd3jUdREGZTEzLMsRa4ozLUYSXOwzJJkyJKwjVkckQE4xXzo2ckgibyTDUwkGdYsRNYsRYHMERGolP77RRC8Vav8lak4Fc9vSREQVZzMzatQmbuwFakImOxDCMz3hcV4DZt3hKt3hKtTERt3hK1sDRt3hYG01bxPiU0MWSNYkX2HSdsIjPqXWN5YzPRkjTikUPwbzMvvlbtkEbgIFcxM2RwbDVxkUZvXTVIcURzv1LYY2MiU1axIFa2Y0cJYEU3oGNL4hRHUTPVcWT2zFRqTFcIMFbzT2XFIzYZAyRLgTT2HkPZIlPOEkdBgySPshU0b1TqzjLxo0c0LjdvUmLpQTc14BY5AmUqfyUqrlL2gyUzkWXOgiYigFQxrjQ0cyYyjTTj8zLEcyLMc1XBYUQFo1J3LWdIUWXX41JkIlV4UFdqXjLOY0MssBckUVbxbUbjsTZnQTPI4VTQgFVQgmMNQzMXcVQyYWPuASZksRMssBdqjSM101L0wDUhE0UqjTd3LUN0fCS2bEckU0LCU1LzkUY3jTLxcDcqjSUk4zLkM2LwYTd1ckSlI2LwgSMwz1JmcVRkkUNiEmVU4xYkY2S2DDcOUSLKU1SyDSdpYiMLUzJ0PDN5UlcCwFRrglQ2MDQ43lM2fFNjYWYqTmLC0TVkY1a2HCYYMGMOgkZqf2Q3HDcPMCNyHGNLQSakY1Q0bDdS4jcHE1YyoDNyjyR2PyZyf2XhIkZTUDYlc1bvTGRBsxYHUyYVsFY1UmLgoEdxkVdvH2boMURFEycBU1cpQzc5ETY4.mcuszR4IDNyckQh41YFcEZAkSNYcFRucWQJkEatr1XyklRxvTYqYzJ4ozLUYCVTs1Y2MmLjk0JxjGbZUWb2D1brISdwfkaAcmQk4DLvUlL48lZzoWdiIlc37jLX41agcEb1XFYVgycEkkUO4jXYoGQ2c2YoM2QokWL0zVVCgUb4j1QiQkXL0FYjYzLKw1R3bkQko2XFAySZAia10VQQk1UHUzaQsTakgELQc1P4EzQx0Tcm0zUKUWbXwzJlkiSNMDdOIWc3HkVqrRT0ACZYkWV0fmYEszTPUlY1TDUVUiRwjUTjMCYoMVdAgUVD8DZOczXsgjRV4zZWYkXJoWNyImdx01PqvVZyczQNc0coUlTzozXqgTTDMlP5E0XWMmYGcTZwvDbtQlXqjzR3PSRJwTTUgEQvbCRxIyLvUTSOIGMOQWa0Y1QmUSQ0XiMqQ2LEklQFYzYFsTRvbkY0f2PrgVNT4RMrY2QkI2LHIDM2UUY3ImL1AGdx8lLug2UAMTSRYWYBMVTtsBU50DY4Ujaqj2MyrhMQICblQUV0XzRBgFNRcSNmcEdvUVNw8VMwzjMNYkMvgmUtbEa3sjTVMWTRQTYBgESYcDdosFLR0zSLwTVVA2Qq4TRIcSRO81YUgWLXMDZ1TScpQybXYCZyUUU3s1P5E2ZugkRKMkTKoFd1kUYYMUVXwVdgkGdq3hZjkkYLgiXIEWbSYiP3HiU1LGcy31Pzjzb5EWL3MyMvQGVqbmcqM0PDgmKHMlZDgWYLMFY27TaQMENz4VZuMEanAUNZYWSY81PqwVaRYia4AUVXQ1cgkCdz3lbDolUkoETksTStECQzUlRpgmZUI0MpACSsEFaUMzTpYjRO8TME4BQ5kDbZE2J4kTQ1IyYrgSSQ8VSMAGb2rFcloDb3f2aVkFdLEyS2PyTRQkQ3YzUxPDbKwFTxgDbZUWaCQ0bEsVTYQGdBwlbzgzS5EWUzDjZBESLJslQXgEThElbtzDRNcWXN8TTLMFNpQjT4LmS4cSMigVQWcmPKshd3QzagYSSIoGYBAmbxUldvYSQIcEM3f2cW8zclYkV2XiSx.GRhkkLpcibBcWPmUGLxEmQXMiRyTGUxXCaQc1cIMTN4HUVw.0J0jDMrIid28TVh4VYXY0YlYFT0H2YtcVTnUWcTQDSQMTU1ElYUUkPycVRX4Vax3Rds8TNpgEbHkjK3cVZzM1S0E2XuA2ZynzLQEDdtkSb0MVZXQjYLECdQwlQMUiTSIDcjYWPCEWchA0aAEGThEVXxgSM0TjbIYkUDMUX1TiYHEjb30jPpsVXDgjRxfjcWQWVtXEMrEjZqElQPQEcY4RYzvVRXsVXrAkUzkkPQQCaIcyZgQkcJIiaPYEcQclahklPkQiQCIGdMYjZqEFSHojLXY2UzkUPVQCaEo1ZgYETTQWVAUFMr0DVqEVLPYEcYMTTzvVS2rVXNYVUzQiKYQCaCQzZg4jcWQGMBYEMrsjZqEFcPQEczHTVzXkRmc2XrcDcxMyQIUFLmoFUvTUdvP0ZYEDSEQDatXGb3LGcMYEQiIDYtsTLxEiSrwzUCc0QgIWQrE0bhEWPsUyc1ciXBMWSvflVn8FcFQESmgka0LzYhEFQm4VV0DyMMQlQkE0aogjXBQTYZkST1MSM0DiU47jbmkDL5YELVUzXgozYQwzYykjPwnTSBMCUZoENuUGVtQlTGE1TFoGUWY2MzPmbMUVaVACLj4jXuo0ZvgTTS0FUvnWRU0zXRslVt4FNN8lVgkGd0PUUVMUZTUUTyX1Y2c0ToQEL5gTUvXVbrYzaZckSgokZJA0ZMU1ToQEL5gTUvXVbrYzaZckSgokZvwlQuAmQHEidHUUUD4jKJIiVZoFbZEkQlsVXM0jTUACTx8VTvAGRh4BUzAidHUELnwjKKIiVZoFbvcFVSkFUUE0Lt3lXw8VTvAmQU0TSRAySzXza3g2aMsFZy0jbMwTSiIlbxkjKxEEbxoUX4olQAQDbpQ0UnMWXyoULKgjVsEidIUUSiIUUS0FUvnWRUAGTDIWUWsRQuMEbzYkbjU2Xt4hROgFNPUUcYcVTKklMKYEU2X0PQkycTcFamwVLrgGV34VZrwFSWACNnw1cw.CMwbTPN4jaYECaQ0DRzQjQrEUSMgjQNAmQ03zPzc0QzTFbjAmdisxPyEESvoTU0oFQ2E0XWsFRJU1UVMWcicCaBYFb40lM581TqTWYQcybCkSavgVLEc1cIk1UEwTVTola0YWaWoUc0rFYEQUUqLEMAA2a0jlPuE0cqwDNv3xYYYUQCMST4DWNTYlKPM2TyPmYvHiMgUVXYUiTsQGb4ECUU8Ta1fmL0TFbw8TRl0TY4ECUpUib3DEMmcCLPcWZyDCaDw1P2s1YI4TLV4DaDIGb2cjLCIWZ3LzRk4RRUkia13TbZgTXFk2aJEEdxLza0PSdYQVb0jUQsgCb2Q1Jv4DTwMWbYUiQk4RdAEVMXoEZ2U0TgQ1Pxj2QnkSXwXWUkkyMEgGQKYDdsoFQVUSS1XlTGMmaZUCch41a2YSVqETSvvzcnQCVl0TRJsRTvrBc5AWXqDCbksRTxbVcAEjTxflTs0TM24TLzYkbiclLGMjM3gyTxDWPvD0ctYUVkMCdggUMPkjSLE1UUIyUCEyZvzza4LGMloDSgYUNyAyQUISMR4jKlAkR1n2XPgSZm8jLKoDSN4zXoE0MyTmc4IGbq4FS1TTMJElPBQWSwHTX1oFL4g1bXQmZZUjXQ01YA0jay0zaVwjP4g1cXQTXrgSTlQENyLDdt0TZXIkXhgjQrECVYciVoA2ZtYCcpAWZ1bETvfyJhkWdmYFSQITRWAUSQg1bPMUZxPEV1nEQh4zZPgTa2XlZO0Ta2.ELi8FRYMUdI8DUKs1QxMkUXUmKBkmZEolaBIiZEolcuIiZEIWXo8lUNYEaYYiKkgkRyUSTwjyPVAyTwHDQ1DCSx8VS2Aid1UkU5IWbCMWNpA2Qs4jdwPkbqIFdTY0Pts1RvbmYvUCY1nWNHgCU4nWQwj2YKk2TvoENoMkMpcyJwTVSEozTUYCUMslcTUTLGcDL3jGNYkmTwgFUAMSSqzVdJMSU1D1SLshR4rxRLoUYWYTQtLFc5cWY3H2LEQUb4gWVqjSVqTFRSgzQpIDOujTQjkFcC8lazI2arwVYx4COuX0TTMCTrU2Yo41TzEFck4C."
+																"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlUUcMYEVxEjPRc1cFElYHMDRtMCUXgWRWojKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKqbia1ACLC4hKtLySt3hKt3hKt3hKtXFRngjVO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKOojX3jiaYwVV1jlMwLWdOUDcjoWN1ASZBcyTs4zX38DMv.UVqnWd4kmMCwDQwY2S2ASZnkCVxg0c2LUdLkmbOQ2Ygg0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMocGZEk2SzLyLtkidLkGS1j1cnUTdOQyLy3VNt3hKt3hKt3hKt3hKt3hYqXFTHQzMC4hKtj2St3hKlsBUUUUU1LjKt3xLOEGbvAWNt3hKtjSdLkGSx7jKt3hKtfzRpUzLC4hKtf0S0YCc1jiKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKPM0ZQYkVv.iQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYUUWSVgkbA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRWkULUwlXn0TUYIWUwfkdAYlS3UEaisVRsg0TAcEVoUkQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3hKtHTZB4hKF4hKt3BTHwFTt3hKt3BTlkDSJ4hKX4hKt3hKt3hKPEjKt3hKt.ERrAkKt3hKtvDczPFRt3BVt3BTt3hKt3hKt3hKtXlKt3hKt3hKt3hKt3hZgEVPtfkKt3hKtbFVBEjKt3hKtzlUzMWQtXVPt3hKt3hKt3RRt3hKtHjKt3hKt3hKt3BSt3hKt3hKt3hKt3hKl4VVB4BVt3hKB4hKt3hKt3hKt3hKPQ2bE4hYA4hKt3BQnkDQt3hKt3haWQSLV4hKF4hKlYEZ1bVRp4hKt3BRt3hKt3hKt3hK14hKt3hKt3hKt3hKt3BZrkjKlEjKtPjKt3hKt3hKt3hKt3RQoIjKtXjKtvjKt3hKt3hKt3hKt3hYtkkPtfkKt3hKtbFVBEjKt3hKtfESnwVRtXVPt3BQt3hKt3BQt3hK14hKt3hKt3hKt3BSt3hKt3hKt3hKt3hKDgVRD4hKt3hKtXzYXITPt3hKt3hKt3hKt3hKt3hKtHkKwICYqTlKtX2XV41LtLyJG4hKL4hKt3hKt3hKt3hKtXlaYIjKX4hKt3hKmgkPA4hKt3hKxUDZrkjKlEjKt3hKt3hKtPjKt3hct3hKt3hKt3hKtvjKt3hKt3hKt3hKt3BQnkDQt3hKt3hKFcFVBEjKt3hKt3hKt3hKt3hKt3hYS4RbxP1Jk4hK1MlUtMiKyrxQt3hcVUjRN4RNqDjKt3hKA4hKm4BTso0JqrxPt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hXqTlKt3hSt3hKt3hKt3hKtDUa4USTvsRPt3BThckRC4hKX4hKt3hKt3hKt3hKt3hKCkUP2fEbqDjKt.UUtDmLjsRYt3hKTMycGITPt3hKtXmUEojStjyJA4hK1AkUt7Da0TlKt3hKt3hKt3hKt3hKtDUa4USTvsRPt3hKt3hKt3hKt3hKPk0aSEjRA4hKt3hKTUCUlIkKt3hKtXmbw.0Pt3BVt3hK1IWa34hKtXjKt3RTigVMD4hYA4hKt3hKt3hKt3hKt3BSpUjco8VNG4hKtHVPxQlM3rRPt3RQrcTYHQjKt3hKP4hKt3hKt3hKt3hKCkUP2fEbqDjKtXmUtDmLjsRYt3hKLEWS54hKtXjKt3hKt3hKt3hKt3hKtb1ZgEVPtfkKt3RM4o2cK8VNG4hKtjmVC0jKtXVPt3BTq8zPMEjKX4hKt3xS1gjPA4hKt3hYKMmPqAkKt3hKt3xYzT0Qt3BVt3hK2Tjc0LmLqbjKtXGdCwDZP4hKt3hKlgkKwICYqTlKtXmdBQyQBEjKt3hKtTWLtzjKtXVPt3hKt3hKt3hKt3hKt.kQ1UybxrxQt3BR0bFNmAkKt3hKt3lQScTcpUSYt3hKtgEYvDjKtXjKt3hKt3hKt3hKt3hKyHUbPkDQt3hKt3hKHYWMyIyJG4hKtjjPxQlM3rRPt3BTgI0RVIjKX4hKtvTbMomKt3hQt3hKxEjbjYCNqDjKtPTYqfFRD4hKt3hKmYjc0LmLqbjKt3haocmZP4hKt3hKB4hKt3hKt3hKt3hdW0jdt3hKF4hKH4hKZ4DQ4rRPt3hKt3hKt3hKt3hKtn1Q1UybqrxJqrRZ4vzX2HEbqDjKt.UXRsjUB4BVt3hKl4jQSITPt3hKt3BRBIGY1fyJA4hK1IWLPMjKtfkKt3hYNYzTBEjKt3hKtj2b4gjKtXVPt3BTk4RbxP1Jk4hKlgGU5cjPA4hKt3hK3DjbjYCNqDjKtLGcPUFRD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RMXwTRD4hKt3hK5cUS54hKtXjKt3haocmZP4hKt3hKtjGYJMjKtfkKt3hZGYWMyIyJG4hK1gyP3bFTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtk1cpAkKt3hKtXmbw.0Pt3BVt3hKl4jQSITPt3hKt3BS17FSt3hYA4hKPUlKwICYqTlKt3hLOo2QBEjKt3hKtHjPxQlM3rRPt3hPkcCYHQjKt3hKtLjKyLCZgUTb3ckPtk1cpAkKt3hKt3BNpU0Tt3BVt3hKLc2blAkKtXjKt3hKt3hKt3hKt3hK1IlMLIjKtfkKt3BVHYWMyIyJG4hKHcyc1bFTt3hKt3hYz0zbt3hKX4hKt3hKt3hKt3hKt3hK5MkUMEjKlEjKtHjKt3hKt3hKt3hKhQ1UmAkKtXjKtfjKt3hKt3hKt3hKtblKwICYqTlKt3hYHYWMyIyJG4hKtTSL5IjKtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY4vzX2HEbqDjKt.UX13hPA4BVt3hYt3hKt3hKt3hKt3BRBIGY1fyJA4hK1klLHQjKtfkKt3hbXYWMyIyJG4hKPM0UyUCTt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BSt3hKt3hKt3hKt31SScTcpUSYt3hYt3haz.0LqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3lR1UybxrxQt3hY1s1MmAkKt3hKtfzbX4xSrUSYt3hK43VQ1k1a4bjKtXlKt3hKt3hKt3hKt3hYgEVPtfkKt3hKtbFVBEjKt3hKtTlSzMWQtXVPt3hKt3hKt3RRt3hKt3hKmgkPA4hKt3hYiQmMmUjKlEjKtDjKt3hKt3hKt3hKwLCcGYkKtXjKtXlKt3hKt3hKt3hKlQmKwICYqTlKtXGdh41LtLyJG4hKt3hKt3hKt3hKt3hKt3hKlIjKX4hKtDCMzcjUt3hQt3hKtnFRrAkKt3hKt3hKt3BVA4BVt3hKt3hKtfkKtXjKt3hKt3hKD4hYUUCUnAURt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 															}
 
 														}
@@ -16016,14 +14887,14 @@
 														"subtype" : "Undefined",
 														"embed" : 1,
 														"snapshot" : 														{
-															"pluginname" : "Neoverb.vst3",
-															"plugindisplayname" : "Neoverb",
-															"pluginsavedname" : "/Library/Audio/Plug-Ins/VST3/Neoverb.vst3",
-															"pluginsaveduniqueid" : 0,
+															"pluginname" : "Stratus3D.vst3info",
+															"plugindisplayname" : "Stratus3D",
+															"pluginsavedname" : "C74_VST3:/Stratus3D",
+															"pluginsaveduniqueid" : -952463768,
 															"version" : 1,
 															"isbank" : 0,
 															"isbase64" : 1,
-															"blob" : "5832.VMjLg7qE...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HSLzPiK1YkSn4hKt3hKt3RUH4hKtX2RH4hKlcTayICMVU2bM4jUhciL40lPBshc4nmQCIURRMVVAEyQ2.Cax4VVvElXzI2bKEyQXIWVoAiQYkzUIQCayjkc2LVYuImXrcmU2ojUTgmd3vjKJgTQAY0cQcSaHsRYzkzXvQSciYjPmoELKwDRQciTBokXB8TT5IDNOA0JVUyYSsRSxHmV2UyP5AWcxnFQ0YmKjoGbVsBNWsxZxbGNWQWdg8DNlMFZDIyRFU2MmMSRQQ1SyTzMyzzYiIjUEYjZqfyb4kTcggkaqTlXZkWY3shQx7jU2z1JzUVYwIyUwQ1RogFQAkjaQEEZXEEd13DQ2f0YEMmcA8FLoU1J0z1J3sRN0XWayTGSTIVTWsRR4gyT4TCNLcyUzUVUyLTYyPWVkgSRwH2QzsRNUUlSyT1byDmQ4Y2UNYlbyDGN0DSaqb1YIUVV4LVbZUkKmUlcOcSPz8TMwrTYOMSL4olM1vTQqTCQ3nWY1MDaHwFZFc2PDkia1bCZ3PlcksRcxLTSYUlYuciLjk0bz7DVpsBdGgiPzA0L3Lib3vDMsUlYGUyQ3MkS1gTXmMmR3LSNKcCMqMCdiIlTpQUQjY1YyAScHIzJmgTMmY0ZjYWcxDlV3IWZ4Aibyk1TIYTL2ITY2oFQ2oWPkkCb181RKkmP3L2UFIlamYzUnETN4j0YH81cEoTVr4xZiMWZJICSkslQqjmRyTkMXQ0Zmc2bxPVVqHSdvoUcwcSXywlL4ECVtEzcFUlSv.WYxj2apQmd4MlX1gySxfkauE1UvYiYjYEN2UTVV8jShkkdDc2cmk1bGkVdwTSaYMDVwkSZGMFUhwTajQlQyrDaKgyUFUldiYDLOoELtYWaEEUZWgTQuE0RsUFVvD0YCkWPGIWS0cVSWsTcwgESqXVNN4zP38jb0giTZsxJQUGLnkUdYUCdlUzRSAUYlYSQTYUMJESVQQ1Ljk1X4EDVYQzSn8zQi0FRJYkSqckUhojd4Lmb5IWaCsBaoM2QG4zU2kVYRQmRisFRQQzXBoWTic0blczQoECSv4FYhsRRKgCMIoDSQUEVDAyMHImLy.WQM8jbz7DcsUmYGcVMEUiM1rFcyTTZFYjQmYzRIAyUlUCdCwFZ4PkK0vlcGUlbyfjPzbWUkgmbxXGb3I2ax7FdWEzPMIkckIzXQ41JToWSjkWQtsRd2LyJ1DkLvYFUYUiQKIDZ3H0M4b1U3AWY4D2a0DSS13jU1.GdV4xUrg2RRY0bQIEQkIDVLk0Q3k1ZvHUSOwDSYYEbGslSIkzMI8zamUEdwf0PnYSM0oFMygkMnMWUUg2ZCoWbq8FVJszTRsjZ3YWVkk0TYgEa4EVd3shKpQVVlwDNhkTbwMkMBgiLVYybzMiaCQSRyoWbwf2L2.GcXsxc1s1TCQDdtfzXpQDdkwzXjcySsE0T3Pmao81TrgFT4nkcMk0aCsFasIkMtkGTYgEY2EVN3QiaxQjZVUlVPU1RM4VLDQWYJoFdpUkT2nFLL0VXrU0PSolQJ8zS0TjKDoWRvoUbqjWREYmLmwFNME0aM0DbvcyZzYlRvgCduYUZ3wTLOcCMSIEUFgmQWICQvsDaPIGRvoUcsMDUyUzZQkEc3IDaxQGROoWbUQSPpITLwnzZFgEVPIVXx4RSH4zcg4zSQwzX3nFQRkybNk2M0LFZEc0cBszJ5gGQuElMMkjdjIDbxIWY5AmMEkzUzfCd2c0S2YlUZciMNICbHIVVxn1MxIzcAcVcvHWbFg0LJMScTIiMrE0Y2kzP4jiTYECTqTSRzvlL5c2SYIlakgkUmYlYPUibm41YQgVc0QEQLE0PUYWXlUUUBM2YIgkasIiK401S4nFVvgTRtf2YoQ2XOUWbi8FbqMiRyDUP34VNwU2XogEQlwTL3EEaF0TMRMkPzQlcAMTb0IFTuETbPIVXgIGN0TSQxkjUVQzTgYSMlgTPxgWSBo1ZgQDRJICR1cEcY4hUzvVPpsVXFAEUzkkKkQCaIg0ZgwFTVQWVBEEMrkzMqEFU1ojLtAkUzE0YtIVZBUFMFMjb30jQpsVXLgjRxfkcWQWVAYEMrUjZqElUPQEcYETYzvVSXsVXw.kUzk0PQQCaMcyZg4jYUQGMtjEMrMDQqElS1cEczHjUzv1RpsVXzAEUzQiPYQiUJc1ciw1QzI2LGkTYvblZTASU4ACUqkUPLUDQr4hcvgybz0jUDMlPj41RwHWLNwFSWMzUGElbEwVTyIVbA0VM2Y2MhIzbMACZZg1azYDULcFVtUyPmIVXDclaYUSL2zDYFUVTukFRhIDQkoUNQY2L0TSLVkySxcVRvnmUvXUQiElRmEESmMWRBEiRMIzLTokV37VcX4FYRcTXSYjdTckc2PCcx0TYsYELvPlSh8lVqAGRQMUaTAidIUUSiI0ZZ4la33zaZEVd3UCUUY0ToQUUQMiYmc2USkFUvnGRUAiYwwlQuo0UNElVpoDTq0TYSkFUvnGRUAiYwwlQuo0UNElVpAGaF8FbFgTL5gTUUQjStnjLZokZvoUTFY1Zg0TSRUELPI2aQAGbHIlKTQGL5gTUvfFStrjLZokZvA2YXMUZTUUTy3hahE2aQAGbFUUSMIELOQiQugGdu0zZnMWSx0DSMMlXxIWRtHWTvImVgkmZFEDQvoFUWg1bgMmVwrDRZ0VL5kTUMMlTUMUaTAidIUEbPQjbUc0JE81TvQmUxQVci4lKJ8DZ3.UU0k0YQsTZ1rjUTciUCEUN2Q0YrcFawvFdXgmaowFaLcEL3fFa2ECLzDyQA4jStkULrEUSHQGQFwVTM0DRF4DbFUiSCQ2UGQSYvQFb5M1JCMWTLAmRUUmZDcWTic0ZHoTYWY0b0M1MrIjYvkWa1n2aSsRckE0MyMTNsAGZwTzY2kTZWUDSYQkZtUmcsckV0UyZjUDUUsxTzDDbuUSZB8VT2sFS3.iKmkkUEMzLQkSb4PkYt.0bSMCclAiL1DVYgkUMR0FcvkWLTU0SsYCdxTSYvE2SIYVSkkWLToVMxgSTzb1Mv.0coMSLrQDaCc2ZmkjSwXkSrQjbvc2QxLjbogyPKUlKIUUNtYiSwoERgYTduoTT3IyPuUCM4kEYwUSVE0FNvcGYq.mSPE2bwkUMFUlK4ETX0fkVncWUSEFYCISdGgVNgEicUUVN2TDdDsjQ30lZDYUMMYiYRczbtoUMzIlaucmMYsVPMACS2gFMXYVSIozJQAyJzoGbgsRLvU1JQIyY0ETPRICZR0VS0bmSwPmUxM1YxbzP1fGNSISbAAST24lUYU1L3EFV0.URNwTXWUkLWMTLqASSukybzXlRLElU4LGLGUkL0HkStXFTJYidiAENoc1SxrjRL4jSikVT2LSc1kmbvslaLYSQ0nTXBIDcMEiPgYmZvjGZygEcpoUQhEUamETStMWSuYESBkGZ2gEQgwFNQYFU3LyP34VSogkThIFRFwVLXk0MZkFbq4lMzoFboYyUPACNqHVd4clYLEkPIcETMEEZyA0ToICUXYiVDIlSqAERsciYp8TSscCTvL1aHk0T4kzSTszZGI2TVgUctHTdpUjZtIjLpUjZ18lLpUjbgk1aV4jUrkkMtTFVJMWMQESNCYELSEiPDYSLLI2aMcGL5YWUVombwMzb4nFbG0lS5ECUxslX3QkUC41ZKAyclAWMjYid4fDNTkidEESdmsTdSAmV3j1T1n1MqDSYMUjRSUkMT0zZ1QUQwbzQvfSd3jUdREGZTEzLMsRa4ozLUYSXOwzJJkyJKwjVkckQE4xXzo2ckgibyTDUwkGdYsRNYsRYHMERGolP77RRC8Vav8lak4Fc9vSREQVZzMzatQmbuwFakImOxDCMz3hcV4DZt3hKt3hKtTERt3hK1sDRt3hYG01bxPiU0MWSNYkX2HSdsIjPqXWN5YzPRkjTikUPwbzMvvlbtkEbgIFcxM2RwbDVxkUZvXTVIcURzv1LYY2MiU1axIFa2Y0cJYEU3oGNL4hRHUTPVcWT2zFRqTFcIMFbzT2XFIzYZAyRLgTT2HkPZIlPOEkdBgySPshU0b1TqzjLxo0c0LjdvUmLpQTc14BY5AmUqfyUqrlL2gyUzkWXOgiYigFQxrjQ0cyYyjTTj8zLEcyLMc1XBYUQFo1J3LWdIUWXX41JkIlV4UFdqXjLOY0MssBckUVbxbUbjsTZnQTPI4VTQgFVQgmMNQzMXcVQyYWPuASZksRMssBdqjSM101L0wDUhE0UqjTd3LUN0fCS2bEckU0LCU1LzkUY3jTLxcDcqjSUk4zLkM2LwYTd1ckSlI2LwgSMwz1JmcVRkkUNiEmVU4xYkY2S2DDcOUSLKU1SyDSdpYiMLUzJ0PDN5UlcCwFRrglQ2MDQ43lM2fFNjYWYqTmLC0TVkY1a2HCYYMGMOgkZqf2Q3HDcPMCNyHGNLQSakY1Q0bDdS4jcHE1YyoDNyjyR2PyZyf2XhIkZTUDYlc1bvTGRBsxYHUyYVsFY1UmLgoEdxkVdvH2boMURFEycBU1cpQzc5ETY4.mcuszR4IDNyckQh41YFcEZAkSNYcFRucWQJkEatr1XyklRxvTYqYzJ4ozLUYCVTs1Y2MmLjk0JxjGbZUWb2D1brISdwfkaAcmQk4DLvUlL48lZzoWdiIlc37jLX41agcEb1XFYVgycEkkUO4jXYoGQ2c2YoM2QokWL0zVVCgUb4j1QiQkXL0FYjYzLKw1R3bkQko2XFAySZAia10VQQk1UHUzaQsTakgELQc1P4EzQx0Tcm0zUKUWbXwzJlkiSNMDdOIWc3HkVqrRT0ACZYkWV0fmYEszTPUlY1TDUVUiRwjUTjMCYoMVdAgUVD8DZOczXsgjRV4zZWYkXJoWNyImdx01PqvVZyczQNc0coUlTzozXqgTTDMlP5E0XWMmYGcTZwvDbtQlXqjzR3PSRJwTTUgEQvbCRxIyLvUTSOIGMOQWa0Y1QmUSQ0XiMqQ2LEklQFYzYFsTRvbkY0f2PrgVNT4RMrY2QkI2LHIDM2UUY3ImL1AGdx8lLug2UAMTSRYWYBMVTtsBU50DY4Ujaqj2MyrhMQICblQUV0XzRBgFNRcSNmcEdvUVNw8VMwzjMNYkMvgmUtbEa3sjTVMWTRQTYBgESYcDdosFLR0zSLwTVVA2Qq4TRIcSRO81YUgWLXMDZ1TScpQybXYCZyUUU3s1P5E2ZugkRKMkTKoFd1kUYYMUVXwVdgkGdq3hZjkkYLgiXIEWbSYiP3HiU1LGcy31Pzjzb5EWL3MyMvQGVqbmcqM0PDgmKHMlZDgWYLMFY27TaQMENz4VZuMEanAUNZYWSY81PqwVaRYia4AUVXQ1cgkCdz3lbDolUkoETksTStECQzUlRpgmZUI0MpACSsEFaUMzTpYjRO8TME4BQ5kDbZE2J4kTQ1IyYrgSSQ8VSMAGb2rFcloDb3f2aVkFdLEyS2PyTRQkQ3YzUxPDbKwFTxgDbZUWaCQ0bEsVTYQGdBwlbzgzS5EWUzDjZBESLJslQXgEThElbtzDRNcWXN8TTLMFNpQjT4LmS4cSMigVQWcmPKshd3QzagYSSIoGYBAmbxUldvYSQIcEM3f2cW8zclYkV2XiSx.GRhkkLpcibBcWPmUGLxEmQXMiRyTGUxXCaQc1cIMTN4HUVw.0J0jDMrIid28TVh4VYXY0YlYFT0H2YtcVTnUWcTQDSQMTU1ElYUUkPycVRX4Vax3Rds8TNpgEbHkjK3cVZzM1S0E2XuA2ZynzLQEDdtkSb0MVZXQjYLECdQwlQMUiTSIDcjYWPCEWchA0aAEGThEVXxgSM0TjbIYkUDMUX1TiYHEjb30jPpsVXDgjRxfjcWQWVtXEMrEjZqElQPQEcY4RYzvVRXsVXrAkUzkkPQQCaIcyZgQkcJIiaPYEcQclahklPkQiQCIGdMYjZqEFSHojLXY2UzkUPVQCaEo1ZgYETTQWVAUFMr0DVqEVLPYEcYMTTzvVS2rVXNYVUzQiKYQCaCQzZg4jcWQGMBYEMrsjZqEFcPQEczHTVzXkRmc2XrcDcxMyQIUFLmoFUvTUdvP0ZYEDSEQDatXGb3LGcMYEQiIDYtsTLxEiSrwzUCc0QgIWQrE0bhEWPsUyc1ciXBMWSvflVn8FcFQESmgka0LzYhEFQm4VV0DyMMQlQkE0aogjXBQTYZkST1MSM0DiU47jbmkDL5YELVUzXgozYQwzYykjPwnTSBMCUZoENuUGVtQlTGE1TFoGUWY2MzPmbMUVaVACLj4jXuo0ZvgTTS0FUvnWRU0zXRslVt4FNN8lVgkGd0PUUVMUZTUUTyX1Y2c0ToQEL5gTUvXVbrYzaZckSgokZJA0ZMU1ToQEL5gTUvXVbrYzaZckSgokZvwlQuAmQHEidHUUUD4jKJIiVZoFbZEkQlsVXM0jTUACTx8VTvAGRh4BUzAidHUELnwjKKIiVZoFbvcFVSkFUUE0Lt3lXw8VTvAmQU0TSRAySzXza3g2aMsFZy0jbMwTSiIlbxkjKxEEbxoUX4olQAQDbpQ0UnMWXyoULKgjVsEidIUUSiIUUS0FUvnWRUAGTDIWUWsRQuMEbzYkbjU2Xt4hROgFNPUUcYcVTKklMKYEU2X0PQkycTcFamwVLrgGV34VZrwFSWACNnw1cw.CMwbTPN4jaYECaQ0DRzQjQrEUSMgjQNAmQ03zPzc0QzTFbjAmdisxPyEESvoTU0oFQ2E0XWsFRJU1UVMWcicCaBYFb40lM581TqTWYQcybCkSavgVLEc1cIk1UEwTVTola0YWaWoUc0rFYEQUUqLEMAA2a0jlPuE0cqwDNv3xYYYUQCMST4DWNTYlKPM2TyPmYvHiMgUVXYUiTsQGb4ECUU8Ta1fmL0TFbw8TRl0TY4ECUpUib3DEMmcCLPcWZyDCaDw1P2s1YI4TLV4DaDIGb2cjLCIWZ3LzRk4RRUkia13TbZgTXFk2aJEEdxLza0PSdYQVb0jUQsgCb2Q1Jv4DTwMWbYUiQk4RdAEVMXoEZ2U0TgQ1Pxj2QnkSXwXWUkkyMEgGQKYDdsoFQVUSS1XlTGMmaZUCch41a2YSVqETSvvzcnQCVl0TRJsRTvrBc5AWXqDCbksRTxbVcAEjTxflTs0TM24TLzYkbiclLGMjM3gyTxDWPvD0ctYUVkMCdggUMPkjSLE1UUIyUCEyZvzza4LGMloDSgYUNyAyQUISMR4jKlAkR1n2XPgSZm8jLKoDSN4zXoE0MyTmc4IGbq4FS1TTMJElPBQWSwHTX1oFL4g1bXQmZZUjXQ01YA0jay0zaVwjP4g1cXQTXrgSTlQENyLDdt0TZXIkXhgjQrECVYciVoA2ZtYCcpAWZ1bETvfyJhkWdmYFSQITRWAUSQg1bPMUZxPEV1nEQh4zZPgTa2XlZO0Ta2.ELi8FRYMUdI8DUKs1QxMkUXUmKBkmZEolaBIiZEolcuIiZEIWXo8lUNYEaYYiKkgkRyUSTwjyPVAyTwHDQ1DCSx8VS2Aid1UkU5IWbCMWNpA2Qs4jdwPkbqIFdTY0Pts1RvbmYvUCY1nWNHgCU4nWQwj2YKk2TvoENoMkMpcyJwTVSEozTUYCUMslcTUTLGcDL3jGNYkmTwgFUAMSSqzVdJMSU1D1SLshR4rxRLoUYWYTQtLFc5cWY3H2LEQUb4gWVqjSVqTFRSgzQpIDOujTQjkFcC8lazI2arwVYx4COuX0TTMCTrU2Yo41TzEFck4C."
+															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlUUcMYEVxEjPRc1cFElYHMDRtMCUXgWRWojKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKqbia1ACLC4hKtLySt3hKt3hKt3hKtXFRngjVO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKOojX3jiaYwVV1jlMwLWdOUDcjoWN1ASZBcyTs4zX38DMv.UVqnWd4kmMCwDQwY2S2ASZnkCVxg0c2LUdLkmbOQ2Ygg0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMocGZEk2SzLyLtkidLkGS1j1cnUTdOQyLy3VNt3hKt3hKt3hKt3hKt3hYqXFTHQzMC4hKtj2St3hKlsBUUUUU1LjKt3xLOEGbvAWNt3hKtjSdLkGSx7jKt3hKtfzRpUzLC4hKtf0S0YCc1jiKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKPM0ZQYkVv.iQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYUUWSVgkbA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRWkULUwlXn0TUYIWUwfkdAYlS3UEaisVRsg0TAcEVoUkQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3hKtHTZB4hKF4hKt3BTHwFTt3hKt3BTlkDSJ4hKX4hKt3hKt3hKPEjKt3hKt.ERrAkKt3hKtvDczPFRt3BVt3BTt3hKt3hKt3hKtXlKt3hKt3hKt3hKt3hZgEVPtfkKt3hKtbFVBEjKt3hKtzlUzMWQtXVPt3hKt3hKt3RRt3hKtHjKt3hKt3hKt3BSt3hKt3hKt3hKt3hKl4VVB4BVt3hKB4hKt3hKt3hKt3hKPQ2bE4hYA4hKt3BQnkDQt3hKt3haWQSLV4hKF4hKlYEZ1bVRp4hKt3BRt3hKt3hKt3hK14hKt3hKt3hKt3hKt3BZrkjKlEjKtPjKt3hKt3hKt3hKt3RQoIjKtXjKtvjKt3hKt3hKt3hKt3hYtkkPtfkKt3hKtbFVBEjKt3hKtfESnwVRtXVPt3BQt3hKt3BQt3hK14hKt3hKt3hKt3BSt3hKt3hKt3hKt3hKDgVRD4hKt3hKtXzYXITPt3hKt3hKt3hKt3hKt3hKtHkKwICYqTlKtX2XV41LtLyJG4hKL4hKt3hKt3hKt3hKtXlaYIjKX4hKt3hKmgkPA4hKt3hKxUDZrkjKlEjKt3hKt3hKtPjKt3hct3hKt3hKt3hKtvjKt3hKt3hKt3hKt3BQnkDQt3hKt3hKFcFVBEjKt3hKt3hKt3hKt3hKt3hYS4RbxP1Jk4hK1MlUtMiKyrxQt3hcVUjRN4RNqDjKt3hKA4hKm4BTso0JqrxPt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hXqTlKt3hSt3hKt3hKt3hKtDUa4USTvsRPt3BThckRC4hKX4hKt3hKt3hKt3hKt3hKCkUP2fEbqDjKt.UUtDmLjsRYt3hKTMycGITPt3hKtXmUEojStjyJA4hK1AkUt7Da0TlKt3hKt3hKt3hKt3hKtDUa4USTvsRPt3hKt3hKt3hKt3hKPk0aSEjRA4hKt3hKTUCUlIkKt3hKtXmbw.0Pt3BVt3hK1IWa34hKtXjKt3RTigVMD4hYA4hKt3hKt3hKt3hKt3BSpUjco8VNG4hKtHVPxQlM3rRPt3RQrcTYHQjKt3hKP4hKt3hKt3hKt3hKCkUP2fEbqDjKtXmUtDmLjsRYt3hKLEWS54hKtXjKt3hKt3hKt3hKt3hKtb1ZgEVPtfkKt3RM4o2cK8VNG4hKtjmVC0jKtXVPt3BTq8zPMEjKX4hKt3xS1gjPA4hKt3hYKMmPqAkKt3hKt3xYzT0Qt3BVt3hK2Tjc0LmLqbjKtXGdCwDZP4hKt3hKlgkKwICYqTlKtXmdBQyQBEjKt3hKtTWLtzjKtXVPt3hKt3hKt3hKt3hKt.kQ1UybxrxQt3BR0bFNmAkKt3hKt3lQScTcpUSYt3hKtgEYvDjKtXjKt3hKt3hKt3hKt3hKyHUbPkDQt3hKt3hKHYWMyIyJG4hKtjjPxQlM3rRPt3BTgI0RVIjKX4hKtvTbMomKt3hQt3hKxEjbjYCNqDjKtPTYqfFRD4hKt3hKmYjc0LmLqbjKt3haocmZP4hKt3hKB4hKt3hKt3hKt3hdW0jdt3hKF4hKH4hKZ4DQ4rRPt3hKt3hKt3hKt3hKtn1Q1UybqrxJqrRZ4vzX2HEbqDjKt.UXRsjUB4BVt3hKl4jQSITPt3hKt3BRBIGY1fyJA4hK1IWLPMjKtfkKt3hYNYzTBEjKt3hKtj2b4gjKtXVPt3BTk4RbxP1Jk4hKlgGU5cjPA4hKt3hK3DjbjYCNqDjKtLGcPUFRD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RMXwTRD4hKt3hK5cUS54hKtXjKt3haocmZP4hKt3hKtjGYJMjKtfkKt3hZGYWMyIyJG4hK1gyP3bFTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtk1cpAkKt3hKtXmbw.0Pt3BVt3hKl4jQSITPt3hKt3BS17FSt3hYA4hKPUlKwICYqTlKt3hLOo2QBEjKt3hKtHjPxQlM3rRPt3hPkcCYHQjKt3hKtLjKyLCZgUTb3ckPtk1cpAkKt3hKt3BNpU0Tt3BVt3hKLc2blAkKtXjKt3hKt3hKt3hKt3hK1IlMLIjKtfkKt3BVHYWMyIyJG4hKHcyc1bFTt3hKt3hYz0zbt3hKX4hKt3hKt3hKt3hKt3hK5MkUMEjKlEjKtHjKt3hKt3hKt3hKhQ1UmAkKtXjKtfjKt3hKt3hKt3hKtblKwICYqTlKt3hYHYWMyIyJG4hKtTSL5IjKtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY4vzX2HEbqDjKt.UX13hPA4BVt3hYt3hKt3hKt3hKt3BRBIGY1fyJA4hK1klLHQjKtfkKt3hbXYWMyIyJG4hKPM0UyUCTt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BSt3hKt3hKt3hKt31SScTcpUSYt3hYt3haz.0LqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3lR1UybxrxQt3hY1s1MmAkKt3hKtfzbX4xSrUSYt3hK43VQ1k1a4bjKtXlKt3hKt3hKt3hKt3hYgEVPtfkKt3hKtbFVBEjKt3hKtTlSzMWQtXVPt3hKt3hKt3RRt3hKt3hKmgkPA4hKt3hYiQmMmUjKlEjKtDjKt3hKt3hKt3hKwLCcGYkKtXjKtXlKt3hKt3hKt3hKlQmKwICYqTlKtXGdh41LtLyJG4hKt3hKt3hKt3hKt3hKt3hKlIjKX4hKtDCMzcjUt3hQt3hKtnFRrAkKt3hKt3hKt3BVA4BVt3hKt3hKtfkKtXjKt3hKt3hKD4hYUUCUnAURt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 														}
 ,
 														"snapshotlist" : 														{
@@ -16032,28 +14903,28 @@
 																	"filetype" : "C74Snapshot",
 																	"version" : 2,
 																	"minorversion" : 0,
-																	"name" : "Neoverb",
-																	"origin" : "Neoverb.vst3",
+																	"name" : "Stratus3D",
+																	"origin" : "Stratus3D.vst3info",
 																	"type" : "VST3",
 																	"subtype" : "AudioEffect",
 																	"embed" : 0,
 																	"snapshot" : 																	{
-																		"pluginname" : "Neoverb.vst3",
-																		"plugindisplayname" : "Neoverb",
-																		"pluginsavedname" : "/Library/Audio/Plug-Ins/VST3/Neoverb.vst3",
-																		"pluginsaveduniqueid" : 0,
+																		"pluginname" : "Stratus3D.vst3info",
+																		"plugindisplayname" : "Stratus3D",
+																		"pluginsavedname" : "C74_VST3:/Stratus3D",
+																		"pluginsaveduniqueid" : -952463768,
 																		"version" : 1,
 																		"isbank" : 0,
 																		"isbase64" : 1,
-																		"blob" : "5832.VMjLg7qE...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HSLzPiK1YkSn4hKt3hKt3RUH4hKtX2RH4hKlcTayICMVU2bM4jUhciL40lPBshc4nmQCIURRMVVAEyQ2.Cax4VVvElXzI2bKEyQXIWVoAiQYkzUIQCayjkc2LVYuImXrcmU2ojUTgmd3vjKJgTQAY0cQcSaHsRYzkzXvQSciYjPmoELKwDRQciTBokXB8TT5IDNOA0JVUyYSsRSxHmV2UyP5AWcxnFQ0YmKjoGbVsBNWsxZxbGNWQWdg8DNlMFZDIyRFU2MmMSRQQ1SyTzMyzzYiIjUEYjZqfyb4kTcggkaqTlXZkWY3shQx7jU2z1JzUVYwIyUwQ1RogFQAkjaQEEZXEEd13DQ2f0YEMmcA8FLoU1J0z1J3sRN0XWayTGSTIVTWsRR4gyT4TCNLcyUzUVUyLTYyPWVkgSRwH2QzsRNUUlSyT1byDmQ4Y2UNYlbyDGN0DSaqb1YIUVV4LVbZUkKmUlcOcSPz8TMwrTYOMSL4olM1vTQqTCQ3nWY1MDaHwFZFc2PDkia1bCZ3PlcksRcxLTSYUlYuciLjk0bz7DVpsBdGgiPzA0L3Lib3vDMsUlYGUyQ3MkS1gTXmMmR3LSNKcCMqMCdiIlTpQUQjY1YyAScHIzJmgTMmY0ZjYWcxDlV3IWZ4Aibyk1TIYTL2ITY2oFQ2oWPkkCb181RKkmP3L2UFIlamYzUnETN4j0YH81cEoTVr4xZiMWZJICSkslQqjmRyTkMXQ0Zmc2bxPVVqHSdvoUcwcSXywlL4ECVtEzcFUlSv.WYxj2apQmd4MlX1gySxfkauE1UvYiYjYEN2UTVV8jShkkdDc2cmk1bGkVdwTSaYMDVwkSZGMFUhwTajQlQyrDaKgyUFUldiYDLOoELtYWaEEUZWgTQuE0RsUFVvD0YCkWPGIWS0cVSWsTcwgESqXVNN4zP38jb0giTZsxJQUGLnkUdYUCdlUzRSAUYlYSQTYUMJESVQQ1Ljk1X4EDVYQzSn8zQi0FRJYkSqckUhojd4Lmb5IWaCsBaoM2QG4zU2kVYRQmRisFRQQzXBoWTic0blczQoECSv4FYhsRRKgCMIoDSQUEVDAyMHImLy.WQM8jbz7DcsUmYGcVMEUiM1rFcyTTZFYjQmYzRIAyUlUCdCwFZ4PkK0vlcGUlbyfjPzbWUkgmbxXGb3I2ax7FdWEzPMIkckIzXQ41JToWSjkWQtsRd2LyJ1DkLvYFUYUiQKIDZ3H0M4b1U3AWY4D2a0DSS13jU1.GdV4xUrg2RRY0bQIEQkIDVLk0Q3k1ZvHUSOwDSYYEbGslSIkzMI8zamUEdwf0PnYSM0oFMygkMnMWUUg2ZCoWbq8FVJszTRsjZ3YWVkk0TYgEa4EVd3shKpQVVlwDNhkTbwMkMBgiLVYybzMiaCQSRyoWbwf2L2.GcXsxc1s1TCQDdtfzXpQDdkwzXjcySsE0T3Pmao81TrgFT4nkcMk0aCsFasIkMtkGTYgEY2EVN3QiaxQjZVUlVPU1RM4VLDQWYJoFdpUkT2nFLL0VXrU0PSolQJ8zS0TjKDoWRvoUbqjWREYmLmwFNME0aM0DbvcyZzYlRvgCduYUZ3wTLOcCMSIEUFgmQWICQvsDaPIGRvoUcsMDUyUzZQkEc3IDaxQGROoWbUQSPpITLwnzZFgEVPIVXx4RSH4zcg4zSQwzX3nFQRkybNk2M0LFZEc0cBszJ5gGQuElMMkjdjIDbxIWY5AmMEkzUzfCd2c0S2YlUZciMNICbHIVVxn1MxIzcAcVcvHWbFg0LJMScTIiMrE0Y2kzP4jiTYECTqTSRzvlL5c2SYIlakgkUmYlYPUibm41YQgVc0QEQLE0PUYWXlUUUBM2YIgkasIiK401S4nFVvgTRtf2YoQ2XOUWbi8FbqMiRyDUP34VNwU2XogEQlwTL3EEaF0TMRMkPzQlcAMTb0IFTuETbPIVXgIGN0TSQxkjUVQzTgYSMlgTPxgWSBo1ZgQDRJICR1cEcY4hUzvVPpsVXFAEUzkkKkQCaIg0ZgwFTVQWVBEEMrkzMqEFU1ojLtAkUzE0YtIVZBUFMFMjb30jQpsVXLgjRxfkcWQWVAYEMrUjZqElUPQEcYETYzvVSXsVXw.kUzk0PQQCaMcyZg4jYUQGMtjEMrMDQqElS1cEczHjUzv1RpsVXzAEUzQiPYQiUJc1ciw1QzI2LGkTYvblZTASU4ACUqkUPLUDQr4hcvgybz0jUDMlPj41RwHWLNwFSWMzUGElbEwVTyIVbA0VM2Y2MhIzbMACZZg1azYDULcFVtUyPmIVXDclaYUSL2zDYFUVTukFRhIDQkoUNQY2L0TSLVkySxcVRvnmUvXUQiElRmEESmMWRBEiRMIzLTokV37VcX4FYRcTXSYjdTckc2PCcx0TYsYELvPlSh8lVqAGRQMUaTAidIUUSiI0ZZ4la33zaZEVd3UCUUY0ToQUUQMiYmc2USkFUvnGRUAiYwwlQuo0UNElVpoDTq0TYSkFUvnGRUAiYwwlQuo0UNElVpAGaF8FbFgTL5gTUUQjStnjLZokZvoUTFY1Zg0TSRUELPI2aQAGbHIlKTQGL5gTUvfFStrjLZokZvA2YXMUZTUUTy3hahE2aQAGbFUUSMIELOQiQugGdu0zZnMWSx0DSMMlXxIWRtHWTvImVgkmZFEDQvoFUWg1bgMmVwrDRZ0VL5kTUMMlTUMUaTAidIUEbPQjbUc0JE81TvQmUxQVci4lKJ8DZ3.UU0k0YQsTZ1rjUTciUCEUN2Q0YrcFawvFdXgmaowFaLcEL3fFa2ECLzDyQA4jStkULrEUSHQGQFwVTM0DRF4DbFUiSCQ2UGQSYvQFb5M1JCMWTLAmRUUmZDcWTic0ZHoTYWY0b0M1MrIjYvkWa1n2aSsRckE0MyMTNsAGZwTzY2kTZWUDSYQkZtUmcsckV0UyZjUDUUsxTzDDbuUSZB8VT2sFS3.iKmkkUEMzLQkSb4PkYt.0bSMCclAiL1DVYgkUMR0FcvkWLTU0SsYCdxTSYvE2SIYVSkkWLToVMxgSTzb1Mv.0coMSLrQDaCc2ZmkjSwXkSrQjbvc2QxLjbogyPKUlKIUUNtYiSwoERgYTduoTT3IyPuUCM4kEYwUSVE0FNvcGYq.mSPE2bwkUMFUlK4ETX0fkVncWUSEFYCISdGgVNgEicUUVN2TDdDsjQ30lZDYUMMYiYRczbtoUMzIlaucmMYsVPMACS2gFMXYVSIozJQAyJzoGbgsRLvU1JQIyY0ETPRICZR0VS0bmSwPmUxM1YxbzP1fGNSISbAAST24lUYU1L3EFV0.URNwTXWUkLWMTLqASSukybzXlRLElU4LGLGUkL0HkStXFTJYidiAENoc1SxrjRL4jSikVT2LSc1kmbvslaLYSQ0nTXBIDcMEiPgYmZvjGZygEcpoUQhEUamETStMWSuYESBkGZ2gEQgwFNQYFU3LyP34VSogkThIFRFwVLXk0MZkFbq4lMzoFboYyUPACNqHVd4clYLEkPIcETMEEZyA0ToICUXYiVDIlSqAERsciYp8TSscCTvL1aHk0T4kzSTszZGI2TVgUctHTdpUjZtIjLpUjZ18lLpUjbgk1aV4jUrkkMtTFVJMWMQESNCYELSEiPDYSLLI2aMcGL5YWUVombwMzb4nFbG0lS5ECUxslX3QkUC41ZKAyclAWMjYid4fDNTkidEESdmsTdSAmV3j1T1n1MqDSYMUjRSUkMT0zZ1QUQwbzQvfSd3jUdREGZTEzLMsRa4ozLUYSXOwzJJkyJKwjVkckQE4xXzo2ckgibyTDUwkGdYsRNYsRYHMERGolP77RRC8Vav8lak4Fc9vSREQVZzMzatQmbuwFakImOxDCMz3hcV4DZt3hKt3hKtTERt3hK1sDRt3hYG01bxPiU0MWSNYkX2HSdsIjPqXWN5YzPRkjTikUPwbzMvvlbtkEbgIFcxM2RwbDVxkUZvXTVIcURzv1LYY2MiU1axIFa2Y0cJYEU3oGNL4hRHUTPVcWT2zFRqTFcIMFbzT2XFIzYZAyRLgTT2HkPZIlPOEkdBgySPshU0b1TqzjLxo0c0LjdvUmLpQTc14BY5AmUqfyUqrlL2gyUzkWXOgiYigFQxrjQ0cyYyjTTj8zLEcyLMc1XBYUQFo1J3LWdIUWXX41JkIlV4UFdqXjLOY0MssBckUVbxbUbjsTZnQTPI4VTQgFVQgmMNQzMXcVQyYWPuASZksRMssBdqjSM101L0wDUhE0UqjTd3LUN0fCS2bEckU0LCU1LzkUY3jTLxcDcqjSUk4zLkM2LwYTd1ckSlI2LwgSMwz1JmcVRkkUNiEmVU4xYkY2S2DDcOUSLKU1SyDSdpYiMLUzJ0PDN5UlcCwFRrglQ2MDQ43lM2fFNjYWYqTmLC0TVkY1a2HCYYMGMOgkZqf2Q3HDcPMCNyHGNLQSakY1Q0bDdS4jcHE1YyoDNyjyR2PyZyf2XhIkZTUDYlc1bvTGRBsxYHUyYVsFY1UmLgoEdxkVdvH2boMURFEycBU1cpQzc5ETY4.mcuszR4IDNyckQh41YFcEZAkSNYcFRucWQJkEatr1XyklRxvTYqYzJ4ozLUYCVTs1Y2MmLjk0JxjGbZUWb2D1brISdwfkaAcmQk4DLvUlL48lZzoWdiIlc37jLX41agcEb1XFYVgycEkkUO4jXYoGQ2c2YoM2QokWL0zVVCgUb4j1QiQkXL0FYjYzLKw1R3bkQko2XFAySZAia10VQQk1UHUzaQsTakgELQc1P4EzQx0Tcm0zUKUWbXwzJlkiSNMDdOIWc3HkVqrRT0ACZYkWV0fmYEszTPUlY1TDUVUiRwjUTjMCYoMVdAgUVD8DZOczXsgjRV4zZWYkXJoWNyImdx01PqvVZyczQNc0coUlTzozXqgTTDMlP5E0XWMmYGcTZwvDbtQlXqjzR3PSRJwTTUgEQvbCRxIyLvUTSOIGMOQWa0Y1QmUSQ0XiMqQ2LEklQFYzYFsTRvbkY0f2PrgVNT4RMrY2QkI2LHIDM2UUY3ImL1AGdx8lLug2UAMTSRYWYBMVTtsBU50DY4Ujaqj2MyrhMQICblQUV0XzRBgFNRcSNmcEdvUVNw8VMwzjMNYkMvgmUtbEa3sjTVMWTRQTYBgESYcDdosFLR0zSLwTVVA2Qq4TRIcSRO81YUgWLXMDZ1TScpQybXYCZyUUU3s1P5E2ZugkRKMkTKoFd1kUYYMUVXwVdgkGdq3hZjkkYLgiXIEWbSYiP3HiU1LGcy31Pzjzb5EWL3MyMvQGVqbmcqM0PDgmKHMlZDgWYLMFY27TaQMENz4VZuMEanAUNZYWSY81PqwVaRYia4AUVXQ1cgkCdz3lbDolUkoETksTStECQzUlRpgmZUI0MpACSsEFaUMzTpYjRO8TME4BQ5kDbZE2J4kTQ1IyYrgSSQ8VSMAGb2rFcloDb3f2aVkFdLEyS2PyTRQkQ3YzUxPDbKwFTxgDbZUWaCQ0bEsVTYQGdBwlbzgzS5EWUzDjZBESLJslQXgEThElbtzDRNcWXN8TTLMFNpQjT4LmS4cSMigVQWcmPKshd3QzagYSSIoGYBAmbxUldvYSQIcEM3f2cW8zclYkV2XiSx.GRhkkLpcibBcWPmUGLxEmQXMiRyTGUxXCaQc1cIMTN4HUVw.0J0jDMrIid28TVh4VYXY0YlYFT0H2YtcVTnUWcTQDSQMTU1ElYUUkPycVRX4Vax3Rds8TNpgEbHkjK3cVZzM1S0E2XuA2ZynzLQEDdtkSb0MVZXQjYLECdQwlQMUiTSIDcjYWPCEWchA0aAEGThEVXxgSM0TjbIYkUDMUX1TiYHEjb30jPpsVXDgjRxfjcWQWVtXEMrEjZqElQPQEcY4RYzvVRXsVXrAkUzkkPQQCaIcyZgQkcJIiaPYEcQclahklPkQiQCIGdMYjZqEFSHojLXY2UzkUPVQCaEo1ZgYETTQWVAUFMr0DVqEVLPYEcYMTTzvVS2rVXNYVUzQiKYQCaCQzZg4jcWQGMBYEMrsjZqEFcPQEczHTVzXkRmc2XrcDcxMyQIUFLmoFUvTUdvP0ZYEDSEQDatXGb3LGcMYEQiIDYtsTLxEiSrwzUCc0QgIWQrE0bhEWPsUyc1ciXBMWSvflVn8FcFQESmgka0LzYhEFQm4VV0DyMMQlQkE0aogjXBQTYZkST1MSM0DiU47jbmkDL5YELVUzXgozYQwzYykjPwnTSBMCUZoENuUGVtQlTGE1TFoGUWY2MzPmbMUVaVACLj4jXuo0ZvgTTS0FUvnWRU0zXRslVt4FNN8lVgkGd0PUUVMUZTUUTyX1Y2c0ToQEL5gTUvXVbrYzaZckSgokZJA0ZMU1ToQEL5gTUvXVbrYzaZckSgokZvwlQuAmQHEidHUUUD4jKJIiVZoFbZEkQlsVXM0jTUACTx8VTvAGRh4BUzAidHUELnwjKKIiVZoFbvcFVSkFUUE0Lt3lXw8VTvAmQU0TSRAySzXza3g2aMsFZy0jbMwTSiIlbxkjKxEEbxoUX4olQAQDbpQ0UnMWXyoULKgjVsEidIUUSiIUUS0FUvnWRUAGTDIWUWsRQuMEbzYkbjU2Xt4hROgFNPUUcYcVTKklMKYEU2X0PQkycTcFamwVLrgGV34VZrwFSWACNnw1cw.CMwbTPN4jaYECaQ0DRzQjQrEUSMgjQNAmQ03zPzc0QzTFbjAmdisxPyEESvoTU0oFQ2E0XWsFRJU1UVMWcicCaBYFb40lM581TqTWYQcybCkSavgVLEc1cIk1UEwTVTola0YWaWoUc0rFYEQUUqLEMAA2a0jlPuE0cqwDNv3xYYYUQCMST4DWNTYlKPM2TyPmYvHiMgUVXYUiTsQGb4ECUU8Ta1fmL0TFbw8TRl0TY4ECUpUib3DEMmcCLPcWZyDCaDw1P2s1YI4TLV4DaDIGb2cjLCIWZ3LzRk4RRUkia13TbZgTXFk2aJEEdxLza0PSdYQVb0jUQsgCb2Q1Jv4DTwMWbYUiQk4RdAEVMXoEZ2U0TgQ1Pxj2QnkSXwXWUkkyMEgGQKYDdsoFQVUSS1XlTGMmaZUCch41a2YSVqETSvvzcnQCVl0TRJsRTvrBc5AWXqDCbksRTxbVcAEjTxflTs0TM24TLzYkbiclLGMjM3gyTxDWPvD0ctYUVkMCdggUMPkjSLE1UUIyUCEyZvzza4LGMloDSgYUNyAyQUISMR4jKlAkR1n2XPgSZm8jLKoDSN4zXoE0MyTmc4IGbq4FS1TTMJElPBQWSwHTX1oFL4g1bXQmZZUjXQ01YA0jay0zaVwjP4g1cXQTXrgSTlQENyLDdt0TZXIkXhgjQrECVYciVoA2ZtYCcpAWZ1bETvfyJhkWdmYFSQITRWAUSQg1bPMUZxPEV1nEQh4zZPgTa2XlZO0Ta2.ELi8FRYMUdI8DUKs1QxMkUXUmKBkmZEolaBIiZEolcuIiZEIWXo8lUNYEaYYiKkgkRyUSTwjyPVAyTwHDQ1DCSx8VS2Aid1UkU5IWbCMWNpA2Qs4jdwPkbqIFdTY0Pts1RvbmYvUCY1nWNHgCU4nWQwj2YKk2TvoENoMkMpcyJwTVSEozTUYCUMslcTUTLGcDL3jGNYkmTwgFUAMSSqzVdJMSU1D1SLshR4rxRLoUYWYTQtLFc5cWY3H2LEQUb4gWVqjSVqTFRSgzQpIDOujTQjkFcC8lazI2arwVYx4COuX0TTMCTrU2Yo41TzEFck4C."
+																		"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlUUcMYEVxEjPRc1cFElYHMDRtMCUXgWRWojKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKqbia1ACLC4hKtLySt3hKt3hKt3hKtXFRngjVO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKOojX3jiaYwVV1jlMwLWdOUDcjoWN1ASZBcyTs4zX38DMv.UVqnWd4kmMCwDQwY2S2ASZnkCVxg0c2LUdLkmbOQ2Ygg0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMocGZEk2SzLyLtkidLkGS1j1cnUTdOQyLy3VNt3hKt3hKt3hKt3hKt3hYqXFTHQzMC4hKtj2St3hKlsBUUUUU1LjKt3xLOEGbvAWNt3hKtjSdLkGSx7jKt3hKtfzRpUzLC4hKtf0S0YCc1jiKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKPM0ZQYkVv.iQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYUUWSVgkbA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRWkULUwlXn0TUYIWUwfkdAYlS3UEaisVRsg0TAcEVoUkQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3hKtHTZB4hKF4hKt3BTHwFTt3hKt3BTlkDSJ4hKX4hKt3hKt3hKPEjKt3hKt.ERrAkKt3hKtvDczPFRt3BVt3BTt3hKt3hKt3hKtXlKt3hKt3hKt3hKt3hZgEVPtfkKt3hKtbFVBEjKt3hKtzlUzMWQtXVPt3hKt3hKt3RRt3hKtHjKt3hKt3hKt3BSt3hKt3hKt3hKt3hKl4VVB4BVt3hKB4hKt3hKt3hKt3hKPQ2bE4hYA4hKt3BQnkDQt3hKt3haWQSLV4hKF4hKlYEZ1bVRp4hKt3BRt3hKt3hKt3hK14hKt3hKt3hKt3hKt3BZrkjKlEjKtPjKt3hKt3hKt3hKt3RQoIjKtXjKtvjKt3hKt3hKt3hKt3hYtkkPtfkKt3hKtbFVBEjKt3hKtfESnwVRtXVPt3BQt3hKt3BQt3hK14hKt3hKt3hKt3BSt3hKt3hKt3hKt3hKDgVRD4hKt3hKtXzYXITPt3hKt3hKt3hKt3hKt3hKtHkKwICYqTlKtX2XV41LtLyJG4hKL4hKt3hKt3hKt3hKtXlaYIjKX4hKt3hKmgkPA4hKt3hKxUDZrkjKlEjKt3hKt3hKtPjKt3hct3hKt3hKt3hKtvjKt3hKt3hKt3hKt3BQnkDQt3hKt3hKFcFVBEjKt3hKt3hKt3hKt3hKt3hYS4RbxP1Jk4hK1MlUtMiKyrxQt3hcVUjRN4RNqDjKt3hKA4hKm4BTso0JqrxPt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hXqTlKt3hSt3hKt3hKt3hKtDUa4USTvsRPt3BThckRC4hKX4hKt3hKt3hKt3hKt3hKCkUP2fEbqDjKt.UUtDmLjsRYt3hKTMycGITPt3hKtXmUEojStjyJA4hK1AkUt7Da0TlKt3hKt3hKt3hKt3hKtDUa4USTvsRPt3hKt3hKt3hKt3hKPk0aSEjRA4hKt3hKTUCUlIkKt3hKtXmbw.0Pt3BVt3hK1IWa34hKtXjKt3RTigVMD4hYA4hKt3hKt3hKt3hKt3BSpUjco8VNG4hKtHVPxQlM3rRPt3RQrcTYHQjKt3hKP4hKt3hKt3hKt3hKCkUP2fEbqDjKtXmUtDmLjsRYt3hKLEWS54hKtXjKt3hKt3hKt3hKt3hKtb1ZgEVPtfkKt3RM4o2cK8VNG4hKtjmVC0jKtXVPt3BTq8zPMEjKX4hKt3xS1gjPA4hKt3hYKMmPqAkKt3hKt3xYzT0Qt3BVt3hK2Tjc0LmLqbjKtXGdCwDZP4hKt3hKlgkKwICYqTlKtXmdBQyQBEjKt3hKtTWLtzjKtXVPt3hKt3hKt3hKt3hKt.kQ1UybxrxQt3BR0bFNmAkKt3hKt3lQScTcpUSYt3hKtgEYvDjKtXjKt3hKt3hKt3hKt3hKyHUbPkDQt3hKt3hKHYWMyIyJG4hKtjjPxQlM3rRPt3BTgI0RVIjKX4hKtvTbMomKt3hQt3hKxEjbjYCNqDjKtPTYqfFRD4hKt3hKmYjc0LmLqbjKt3haocmZP4hKt3hKB4hKt3hKt3hKt3hdW0jdt3hKF4hKH4hKZ4DQ4rRPt3hKt3hKt3hKt3hKtn1Q1UybqrxJqrRZ4vzX2HEbqDjKt.UXRsjUB4BVt3hKl4jQSITPt3hKt3BRBIGY1fyJA4hK1IWLPMjKtfkKt3hYNYzTBEjKt3hKtj2b4gjKtXVPt3BTk4RbxP1Jk4hKlgGU5cjPA4hKt3hK3DjbjYCNqDjKtLGcPUFRD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RMXwTRD4hKt3hK5cUS54hKtXjKt3haocmZP4hKt3hKtjGYJMjKtfkKt3hZGYWMyIyJG4hK1gyP3bFTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtk1cpAkKt3hKtXmbw.0Pt3BVt3hKl4jQSITPt3hKt3BS17FSt3hYA4hKPUlKwICYqTlKt3hLOo2QBEjKt3hKtHjPxQlM3rRPt3hPkcCYHQjKt3hKtLjKyLCZgUTb3ckPtk1cpAkKt3hKt3BNpU0Tt3BVt3hKLc2blAkKtXjKt3hKt3hKt3hKt3hK1IlMLIjKtfkKt3BVHYWMyIyJG4hKHcyc1bFTt3hKt3hYz0zbt3hKX4hKt3hKt3hKt3hKt3hK5MkUMEjKlEjKtHjKt3hKt3hKt3hKhQ1UmAkKtXjKtfjKt3hKt3hKt3hKtblKwICYqTlKt3hYHYWMyIyJG4hKtTSL5IjKtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY4vzX2HEbqDjKt.UX13hPA4BVt3hYt3hKt3hKt3hKt3BRBIGY1fyJA4hK1klLHQjKtfkKt3hbXYWMyIyJG4hKPM0UyUCTt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BSt3hKt3hKt3hKt31SScTcpUSYt3hYt3haz.0LqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3lR1UybxrxQt3hY1s1MmAkKt3hKtfzbX4xSrUSYt3hK43VQ1k1a4bjKtXlKt3hKt3hKt3hKt3hYgEVPtfkKt3hKtbFVBEjKt3hKtTlSzMWQtXVPt3hKt3hKt3RRt3hKt3hKmgkPA4hKt3hYiQmMmUjKlEjKtDjKt3hKt3hKt3hKwLCcGYkKtXjKtXlKt3hKt3hKt3hKlQmKwICYqTlKtXGdh41LtLyJG4hKt3hKt3hKt3hKt3hKt3hKlIjKX4hKtDCMzcjUt3hQt3hKtnFRrAkKt3hKt3hKt3BVA4BVt3hKt3hKtfkKtXjKt3hKt3hKD4hYUUCUnAURt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 																	}
 ,
 																	"fileref" : 																	{
-																		"name" : "Neoverb",
-																		"filename" : "Neoverb.maxsnap",
-																		"filepath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/data",
+																		"name" : "Stratus3D",
+																		"filename" : "Stratus3D_20230619_1.maxsnap",
+																		"filepath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/data",
 																		"filepos" : -1,
-																		"snapshotfileid" : "804663a847bdcb3af81d8f85c6a0921e"
+																		"snapshotfileid" : "3d6bf6ce2903b5acd0f20e22a115ec66"
 																	}
 
 																}
@@ -16924,7 +15795,7 @@
 													"outlettype" : [ "multichannelsignal" ],
 													"patching_rect" : [ 2.0, 200.0, 110.0, 22.0 ],
 													"saved_object_attributes" : 													{
-														"active" : [ 1 ],
+														"active" : [ 1, 1 ],
 														"center_att_db" : 6.0,
 														"center_curve" : 0.2,
 														"center_size" : 1.0,
@@ -24522,7 +23393,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-30",
-																	"items" : "<empty>",
+																	"items" : [ "01_middle.wav", ",", "02_front row.wav", ",", "03_balcony.wav" ],
 																	"maxclass" : "umenu",
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
@@ -24538,7 +23409,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-29",
-																	"items" : "<empty>",
+																	"items" : [ "01 Ascousmonium Arthur Sykes Rymer Auditorium", ",", "02 Auditorium Ron Cooke Hub", ",", "03 Early Music Center St. Margrets", ",", "04 Symphony Hall Usina del Arte", ",", "05 Chapel St. Albans", ",", "06 Cathedral York Minster", ",", "07 St.Paul" ],
 																	"maxclass" : "umenu",
 																	"numinlets" : 1,
 																	"numoutlets" : 3,
@@ -25267,7 +24138,7 @@
 													"outlettype" : [ "multichannelsignal" ],
 													"patching_rect" : [ 2.0, 200.0, 110.0, 22.0 ],
 													"saved_object_attributes" : 													{
-														"active" : [ 1 ],
+														"active" : [ 1, 1 ],
 														"center_att_db" : 6.0,
 														"center_curve" : 0.2,
 														"center_size" : 1.0,
@@ -31165,8 +30036,8 @@
 													"maxclass" : "ambimonitor",
 													"mode" : 1,
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 85.0, 235.0, 169.836065573770384, 259.754098360655576 ]
 												}
 
@@ -33528,12 +32399,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 256.0, 179.5, 50.0, 22.0 ],
-									"text" : "47 0."
+									"text" : "46 0.921053"
 								}
 
 							}
@@ -33920,7 +32792,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 450.0, 149.0, 60.0, 22.0 ],
-									"text" : "0."
+									"text" : "0.209684"
 								}
 
 							}
@@ -47602,20 +46474,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-26",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 9.0, 93.0, 78.0, 22.0 ],
-									"text" : "mc.r~ test 64"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-4",
 									"maxclass" : "newobj",
@@ -47838,7 +46697,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 93.500015258789062, 621.0, 50.0, 22.0 ],
+									"patching_rect" : [ 93.500015258789062, 650.0, 50.0, 22.0 ],
 									"text" : "mc.*~ 1",
 									"varname" : "fader"
 								}
@@ -50321,7 +49180,7 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-15",
+									"id" : "obj-52",
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -50334,13 +49193,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-17",
+									"id" : "obj-63",
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 113.5, 10.0, 800.0, 35.0 ],
+									"patching_rect" : [ 113.5, 10.0, 800.0, 20.0 ],
 									"text" : "mc.adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64",
 									"varname" : "adc"
 								}
@@ -50348,12 +49207,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-18",
+									"id" : "obj-65",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "" ],
-									"patching_rect" : [ 113.5, 198.0, 180.0, 22.0 ],
+									"patching_rect" : [ 113.5, 198.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 64 48 0. @ramp 10",
 									"varname" : "inputMatrix"
 								}
@@ -50361,12 +49221,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-21",
+									"id" : "obj-67",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "" ],
-									"patching_rect" : [ 113.5, 240.0, 180.0, 22.0 ],
+									"patching_rect" : [ 113.5, 240.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 64 48 0. @ramp 10",
 									"varname" : "outputMatrix"
 								}
@@ -50374,12 +49235,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-22",
+									"id" : "obj-69",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "" ],
-									"patching_rect" : [ 399.833252000000016, 168.0, 180.0, 22.0 ],
+									"patching_rect" : [ 399.833252000000016, 168.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 64 16 0. @ramp 10",
 									"varname" : "recordingMatrix"
 								}
@@ -50388,24 +49250,8 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
+									"destination" : [ "obj-67", 0 ],
 									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"order" : 3,
-									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"order" : 0,
-									"source" : [ "obj-12", 0 ]
 								}
 
 							}
@@ -50427,29 +49273,38 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
+									"destination" : [ "obj-65", 0 ],
+									"order" : 3,
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"order" : 0,
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-65", 0 ],
 									"source" : [ "obj-129", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
+									"destination" : [ "obj-67", 0 ],
 									"source" : [ "obj-134", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
+									"destination" : [ "obj-69", 0 ],
 									"source" : [ "obj-16", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-17", 0 ]
 								}
 
 							}
@@ -50457,45 +49312,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-44", 0 ],
 									"source" : [ "obj-171", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"source" : [ "obj-18", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"order" : 0,
-									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-40", 0 ],
-									"order" : 1,
-									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"order" : 0,
-									"source" : [ "obj-22", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-42", 1 ],
-									"order" : 1,
-									"source" : [ "obj-22", 0 ]
 								}
 
 							}
@@ -50522,21 +49338,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-26", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
+									"destination" : [ "obj-52", 0 ],
 									"source" : [ "obj-35", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
+									"destination" : [ "obj-67", 0 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -50669,6 +49478,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-63", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-62", 0 ],
 									"source" : [ "obj-64", 0 ]
 								}
@@ -50676,8 +49492,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"source" : [ "obj-66", 0 ]
+									"destination" : [ "obj-67", 0 ],
+									"source" : [ "obj-65", 0 ]
 								}
 
 							}
@@ -50690,8 +49506,47 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-52", 0 ],
+									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 0,
+									"source" : [ "obj-67", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"order" : 1,
+									"source" : [ "obj-67", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-66", 0 ],
 									"source" : [ "obj-68", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"order" : 0,
+									"source" : [ "obj-69", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 1 ],
+									"order" : 1,
+									"source" : [ "obj-69", 0 ]
 								}
 
 							}
@@ -52544,7 +51399,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 53.0, 100.0, 50.0, 22.0 ],
-													"text" : "1 8"
+													"text" : "1 24"
 												}
 
 											}
@@ -55886,17 +54741,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Liscense.png",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/media",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Neoverb.maxsnap",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/data",
+				"name" : "Stratus3D_20230619_1.maxsnap",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/data",
 				"patcherrelativepath" : "../data",
 				"type" : "mx@s",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "ambimonitor.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "bufresample~.mxo",
@@ -55910,42 +54769,42 @@
 			}
 , 			{
 				"name" : "cemi_logo_black.png",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/media",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.view.js",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/misc/n4m/dictParam.view",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/misc/n4m/dictParam.view",
 				"patcherrelativepath" : "../misc/n4m/dictParam.view",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictParam.view.maxpat",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/patchers",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dictorder.js",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/code",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "diffusionRecorder.maxpat",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/patchers",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "inputRouter.maxpat",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/patchers",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -55960,28 +54819,28 @@
 			}
 , 			{
 				"name" : "mc.audio_safety~.maxpat",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/patchers",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mc.outputFixer~.maxpat",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/patchers",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "meit_ambi_desk.maxpat",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/mixing desk/abisonicDome",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/mixing desk/abisonicDome",
 				"patcherrelativepath" : "../mixing desk/abisonicDome",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "meit_ambi_routing.maxpat",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/mixing desk/abisonicDome",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/mixing desk/abisonicDome",
 				"patcherrelativepath" : "../mixing desk/abisonicDome",
 				"type" : "JSON",
 				"implicit" : 1
@@ -55992,14 +54851,14 @@
 			}
 , 			{
 				"name" : "operations.js",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/code",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "outputSlider.maxpat",
-				"bootpath" : "~/Downloads/MEIT-Diffusion-System-me/MIET Diffusion System/patchers",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
