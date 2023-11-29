@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 273.0, 53.0, 1647.0, 863.0 ],
+		"rect" : [ 65.0, 68.0, 1712.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,62 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-136",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 739.0, 827.0, 91.0, 22.0 ],
+					"text" : "s PlayWelcome"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgoncolor" : [ 0.486274509803922, 0.486274509803922, 0.486274509803922, 1.0 ],
+					"id" : "obj-135",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 739.0, 753.0, 107.0, 44.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1232.734130859375, 582.0, 96.0, 39.0 ],
+					"rounded" : 10.0,
+					"text" : "MEIT Welcome",
+					"texton" : "Welcome On",
+					"textoncolor" : [ 0.129411764705882, 1.0, 0.141176470588235, 1.0 ],
+					"usebgoncolor" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-134",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 739.0, 717.0, 41.0, 22.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-133",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 739.0, 680.0, 89.0, 22.0 ],
+					"text" : "r PlayWelcome"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.666666666666667, 0.63921568627451, 0.63921568627451, 1.0 ],
 					"id" : "obj-150",
@@ -173,7 +229,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 737.5, 633.0, 37.0, 22.0 ],
+					"patching_rect" : [ 901.5, 633.0, 37.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -185,7 +241,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 737.5, 598.0, 53.0, 22.0 ],
+					"patching_rect" : [ 901.5, 598.0, 53.0, 22.0 ],
 					"text" : "r openrp"
 				}
 
@@ -244,7 +300,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 127.0, 113.0, 982.0, 865.0 ],
+						"rect" : [ 210.0, 128.0, 1910.0, 866.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -274,12 +330,619 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-107",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "tapconnect" ],
+									"patching_rect" : [ 1485.0, 493.0, 91.0, 22.0 ],
+									"text" : "mc.tapin~ 3000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-106",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1211.0, 272.0, 81.0, 22.0 ],
+									"text" : "r PlayRumble"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-105",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1211.0, 306.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-103",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1211.0, 347.0, 57.0, 22.0 ],
+									"text" : "active $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-82",
+									"maxclass" : "preset",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "preset", "int", "preset", "int", "" ],
+									"patching_rect" : [ 1773.0, 188.0, 100.0, 40.0 ],
+									"preset_data" : [ 										{
+											"number" : 1,
+											"data" : [ 5, "obj-70", "flonum", "float", 0.660000026226044, 5, "obj-71", "flonum", "float", 250.0 ]
+										}
+ ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-81",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "multichannelsignal" ],
+									"patching_rect" : [ 1481.0, 452.0, 90.0, 22.0 ],
+									"text" : "mc.combine~ 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-80",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1106.25, 432.0, 81.0, 22.0 ],
+									"text" : "r PlayRumble"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-79",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1106.0, 467.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-77",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "bang" ],
+									"patching_rect" : [ 1106.0, 536.0, 34.0, 22.0 ],
+									"text" : "line~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-76",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1106.0, 505.0, 39.0, 22.0 ],
+									"presentation_linecount" : 2,
+									"text" : "$1 10"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-69",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 1095.5, 569.0, 29.5, 22.0 ],
+									"text" : "*~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-73",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "multichannelsignal" ],
+									"patching_rect" : [ 1661.0, 405.0, 72.0, 22.0 ],
+									"text" : "mc.dup~ 20"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-72",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "multichannelsignal" ],
+									"patching_rect" : [ 1481.0, 409.0, 72.0, 22.0 ],
+									"text" : "mc.dup~ 20"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-71",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1801.0, 237.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-70",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1801.0, 297.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-68",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 1516.0, 361.0, 29.5, 22.0 ],
+									"text" : "*~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-67",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 1662.0, 370.0, 29.5, 22.0 ],
+									"text" : "*~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-62",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 1661.0, 297.0, 72.0, 22.0 ],
+									"text" : "tapout~ 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-66",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "tapconnect" ],
+									"patching_rect" : [ 1661.0, 237.0, 72.0, 22.0 ],
+									"text" : "tapin~ 3000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-61",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 1516.0, 297.0, 72.0, 22.0 ],
+									"text" : "tapout~ 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-60",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "tapconnect" ],
+									"patching_rect" : [ 1511.0, 233.0, 72.0, 22.0 ],
+									"text" : "tapin~ 3000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-59",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "multichannelsignal" ],
+									"patching_rect" : [ 1095.5, 597.0, 72.0, 22.0 ],
+									"text" : "mc.dup~ 40"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autosave" : 1,
+									"bgmode" : 1,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-57",
+									"linecount" : 4,
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 4,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "signal", "signal", "", "" ],
+									"patching_rect" : [ 1211.25, 374.0, 171.0, 196.0 ],
+									"presentation_linecount" : 4,
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_invisible" : 1,
+											"parameter_longname" : "amxd~",
+											"parameter_shortname" : "amxd~",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"saved_object_attributes" : 									{
+										"active" : 0,
+										"parameter_enable" : 1,
+										"patchername" : "Shephard Tones.amxd",
+										"patchername_fallback" : "C74:/packages/Max for Live/patchers/Max Instrument/Shephard Tones/Shephard Tones.amxd"
+									}
+,
+									"snapshot" : 									{
+										"filetype" : "C74Snapshot",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "max~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
+										"snapshot" : 										{
+											"name" : "Shephard Tones.amxd",
+											"origname" : "C74:/packages/Max for Live/patchers/Max Instrument/Shephard Tones/Shephard Tones.amxd",
+											"valuedictionary" : 											{
+												"parameter_values" : 												{
+													"Dropoff" : 41.071999000000048,
+													"Pitch" : 46.999999999999993,
+													"interval" : 60.248001000000038,
+													"level" : -25.900262467191588,
+													"rate" : 7.519999999999996
+												}
+
+											}
+
+										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "Shephard Tones.amxd",
+													"origin" : "Shephard Tones.amxd",
+													"type" : "amxd",
+													"subtype" : "Undefined",
+													"embed" : 0,
+													"snapshot" : 													{
+														"name" : "Shephard Tones.amxd",
+														"origname" : "C74:/packages/Max for Live/patchers/Max Instrument/Shephard Tones/Shephard Tones.amxd",
+														"valuedictionary" : 														{
+															"parameter_values" : 															{
+																"Dropoff" : 41.071999000000048,
+																"Pitch" : 46.999999999999993,
+																"interval" : 60.248001000000038,
+																"level" : -25.900262467191588,
+																"rate" : 7.519999999999996
+															}
+
+														}
+
+													}
+,
+													"fileref" : 													{
+														"name" : "Shephard Tones.amxd",
+														"filename" : "Shephard Tones.amxd.maxsnap",
+														"filepath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/data",
+														"filepos" : -1,
+														"snapshotfileid" : "0281bd7a73752f03251cf69b05074d58"
+													}
+
+												}
+ ]
+										}
+
+									}
+,
+									"text" : "amxd~ \"C74:/packages/Max for Live/patchers/Max Instrument/Shephard Tones/Shephard Tones.amxd\"",
+									"varname" : "amxd~",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-58",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1189.0, 215.5, 29.5, 22.0 ],
+									"text" : "0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-54",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1189.0, 154.0, 90.0, 22.0 ],
+									"text" : "r welcomedone"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "multichannelsignal" ],
+									"patching_rect" : [ 633.5, 362.0, 60.0, 22.0 ],
+									"text" : "mc.*~ 0.2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-56",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1010.0, 167.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-55",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1010.0, 208.0, 91.0, 22.0 ],
+									"text" : "s PlayWelcome"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-53",
+									"lastchannelcount" : 40,
+									"maxclass" : "mc.live.gain~",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "multichannelsignal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 410.0, 544.0, 161.0, 226.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "mc.live.gain~[3]",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_shortname" : "mc.live.gain~[1]",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "mc.live.gain~[2]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-52",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "multichannelsignal" ],
+									"patching_rect" : [ 633.5, 309.0, 72.0, 22.0 ],
+									"text" : "mc.dup~ 40"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 744.5, 268.0, 92.0, 22.0 ],
+									"text" : "s welcomedone"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-31",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 746.5, 147.0, 44.0, 22.0 ],
+									"text" : "sel 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-38",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 803.5, 328.0, 39.0, 22.0 ],
+									"text" : "0 500"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-42",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 751.5, 328.0, 39.0, 22.0 ],
+									"text" : "1 100"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-43",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "bang" ],
+									"patching_rect" : [ 751.5, 385.0, 64.0, 22.0 ],
+									"text" : "line~ 0 20."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-45",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "multichannelsignal" ],
+									"patching_rect" : [ 633.5, 437.0, 40.0, 22.0 ],
+									"text" : "mc.*~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-48",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 669.5, 171.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-51",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "multichannelsignal", "bang" ],
+									"patching_rect" : [ 633.5, 228.5, 124.0, 22.0 ],
+									"text" : "mcs.play~ welcome 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 637.0, 104.0, 89.0, 22.0 ],
+									"text" : "r PlayWelcome"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 923.5, 659.0, 159.0, 22.0 ],
+									"text" : "replace welcometocemi.wav"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"patching_rect" : [ 923.5, 723.0, 97.0, 22.0 ],
+									"text" : "buffer~ welcome"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-50",
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 729.25, 248.0, 29.5, 22.0 ],
+									"patching_rect" : [ 1036.25, 305.0, 29.5, 22.0 ],
 									"text" : "0"
 								}
 
@@ -291,7 +954,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 699.0, 248.0, 29.5, 22.0 ],
+									"patching_rect" : [ 1006.0, 305.0, 29.5, 22.0 ],
 									"text" : "0"
 								}
 
@@ -303,7 +966,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 699.0, 207.0, 90.0, 22.0 ],
+									"patching_rect" : [ 1006.0, 249.0, 90.0, 22.0 ],
 									"text" : "r PlayIntrodone"
 								}
 
@@ -339,7 +1002,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 657.333333333333371, 237.0, 24.0, 24.0 ]
+									"patching_rect" : [ 972.333333333333371, 288.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -349,7 +1012,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 657.333333333333371, 283.0, 65.0, 22.0 ],
+									"patching_rect" : [ 964.333333333333371, 355.0, 65.0, 22.0 ],
 									"text" : "s PlayIntro"
 								}
 
@@ -362,7 +1025,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 618.0, 237.0, 24.0, 24.0 ]
+									"patching_rect" : [ 928.0, 272.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -372,7 +1035,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 618.0, 312.0, 83.0, 22.0 ],
+									"patching_rect" : [ 928.0, 437.0, 83.0, 22.0 ],
 									"text" : "s PlayRumble"
 								}
 
@@ -480,7 +1143,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 576.0, 162.0, 34.0, 22.0 ],
+									"patching_rect" : [ 884.0, 168.0, 34.0, 22.0 ],
 									"text" : "sel 1"
 								}
 
@@ -489,11 +1152,11 @@
 								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
-									"numinlets" : 4,
-									"numoutlets" : 4,
-									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 576.0, 112.5, 141.0, 22.0 ],
-									"text" : "route setup Rumble Intro"
+									"numinlets" : 5,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 884.0, 118.5, 191.0, 22.0 ],
+									"text" : "route setup Rumble Intro welcome"
 								}
 
 							}
@@ -504,7 +1167,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 928.0, 516.0, 88.0, 22.0 ],
+									"patching_rect" : [ 746.333333333333485, 659.0, 88.0, 22.0 ],
 									"text" : "replace rumble"
 								}
 
@@ -528,8 +1191,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 737.0, 72.0, 136.0, 22.0 ],
-									"text" : "MEITintro Intro 1"
+									"patching_rect" : [ 1148.0, 81.0, 136.0, 22.0 ],
+									"text" : "MEITintro Rumble 0"
 								}
 
 							}
@@ -540,7 +1203,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 928.0, 580.0, 72.0, 22.0 ],
+									"patching_rect" : [ 746.333333333333485, 723.0, 72.0, 22.0 ],
 									"text" : "buffer~ loop"
 								}
 
@@ -552,7 +1215,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 1024.0, 580.0, 75.0, 22.0 ],
+									"patching_rect" : [ 842.333333333333485, 723.0, 75.0, 22.0 ],
 									"text" : "buffer~ main"
 								}
 
@@ -564,7 +1227,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 576.0, 59.5, 91.0, 22.0 ],
+									"patching_rect" : [ 884.0, 65.5, 91.0, 22.0 ],
 									"text" : "route MEITintro"
 								}
 
@@ -576,7 +1239,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 576.0, 4.0, 35.0, 22.0 ],
+									"patching_rect" : [ 884.0, 10.0, 35.0, 22.0 ],
 									"text" : "r osc"
 								}
 
@@ -735,7 +1398,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 1024.0, 433.0, 58.0, 22.0 ],
+									"patching_rect" : [ 842.333333333333485, 576.0, 58.0, 22.0 ],
 									"text" : "loadbang"
 								}
 
@@ -748,7 +1411,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1024.0, 516.0, 57.0, 35.0 ],
+									"patching_rect" : [ 842.333333333333485, 659.0, 57.0, 35.0 ],
 									"text" : "replace intro.wav"
 								}
 
@@ -789,6 +1452,27 @@
 								"patchline" : 								{
 									"destination" : [ "obj-7", 1 ],
 									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-57", 0 ],
+									"source" : [ "obj-103", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-103", 0 ],
+									"source" : [ "obj-105", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-105", 0 ],
+									"source" : [ "obj-106", 0 ]
 								}
 
 							}
@@ -890,8 +1574,29 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-56", 0 ],
+									"source" : [ "obj-2", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
 									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-45", 0 ],
+									"source" : [ "obj-21", 0 ]
 								}
 
 							}
@@ -906,6 +1611,30 @@
 								"patchline" : 								{
 									"destination" : [ "obj-27", 0 ],
 									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-31", 0 ],
+									"order" : 0,
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-48", 0 ],
+									"order" : 1,
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-51", 0 ],
+									"order" : 2,
+									"source" : [ "obj-25", 0 ]
 								}
 
 							}
@@ -936,6 +1665,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
 									"source" : [ "obj-30", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-38", 0 ],
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 0 ],
+									"source" : [ "obj-31", 1 ]
 								}
 
 							}
@@ -993,6 +1736,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-43", 0 ],
+									"source" : [ "obj-38", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-37", 0 ],
 									"source" : [ "obj-39", 0 ]
 								}
@@ -1014,8 +1764,29 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-43", 0 ],
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-45", 1 ],
+									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-44", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 0 ],
+									"source" : [ "obj-45", 0 ]
 								}
 
 							}
@@ -1067,8 +1838,79 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
+									"source" : [ "obj-51", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-52", 0 ],
+									"source" : [ "obj-51", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"source" : [ "obj-52", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-120", 0 ],
+									"source" : [ "obj-53", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-58", 0 ],
+									"source" : [ "obj-54", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-55", 0 ],
+									"source" : [ "obj-56", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 0 ],
+									"source" : [ "obj-57", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-56", 0 ],
+									"source" : [ "obj-58", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-59", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"order" : 0,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
-									"order" : 1,
+									"order" : 2,
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -1076,8 +1918,75 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-61", 0 ],
+									"source" : [ "obj-60", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-68", 0 ],
+									"order" : 0,
+									"source" : [ "obj-61", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-72", 0 ],
+									"order" : 1,
+									"source" : [ "obj-61", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-67", 0 ],
+									"order" : 0,
+									"source" : [ "obj-62", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-73", 0 ],
+									"order" : 1,
+									"source" : [ "obj-62", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-62", 0 ],
+									"source" : [ "obj-66", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-60", 0 ],
+									"source" : [ "obj-67", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-66", 0 ],
+									"source" : [ "obj-68", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"source" : [ "obj-69", 0 ]
 								}
 
 							}
@@ -1090,8 +1999,98 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-67", 1 ],
+									"order" : 0,
+									"source" : [ "obj-70", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-68", 1 ],
+									"order" : 1,
+									"source" : [ "obj-70", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-61", 0 ],
+									"order" : 1,
+									"source" : [ "obj-71", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-62", 0 ],
+									"order" : 0,
+									"source" : [ "obj-71", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 0 ],
+									"source" : [ "obj-72", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 1 ],
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-77", 0 ],
+									"source" : [ "obj-76", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-69", 1 ],
+									"source" : [ "obj-77", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-76", 0 ],
+									"source" : [ "obj-79", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-79", 0 ],
+									"source" : [ "obj-80", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-70", 0 ],
+									"order" : 0,
+									"source" : [ "obj-82", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-71", 0 ],
+									"order" : 1,
+									"source" : [ "obj-82", 0 ]
 								}
 
 							}
@@ -1106,7 +2105,8 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p MEIT_intro"
+					"text" : "p MEIT_intro",
+					"varname" : "MEIT_intro"
 				}
 
 			}
@@ -1765,7 +2765,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 674.0, 234.0, 61.0, 116.0 ],
+									"patching_rect" : [ 674.0, 234.0, 64.0, 116.0 ],
 									"text" : "reset spat37.2 \"Video 25 26 L R\" \"perf 9 10 L R\" \"Teaching Cart\""
 								}
 
@@ -2649,7 +3649,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 741.0, 671.0, 266.0, 66.0 ],
+					"patching_rect" : [ 905.0, 671.0, 266.0, 66.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1012.0, 102.0, 260.0, 64.0 ],
 					"viewvisibility" : 1
@@ -2720,7 +3720,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1343.0, 599.0, 164.0, 89.0 ],
-									"text" : "write \"DiffusionCPU:/Users/cemistaff/Documents/MEIT-Diffusion-System/MIET Diffusion System/Saves/Spectrum_1.json\""
+									"text" : "write \"DiffusionCPU:/Users/cemistaff/Documents/MEIT-Diffusion-System/MIET Diffusion System/Saves/SchnurrClass.json\""
 								}
 
 							}
@@ -4513,12 +5513,12 @@
 												"box" : 												{
 													"data" : 													{
 														"Scene1" : 														{
-															"name" : "Insun",
+															"name" : "Percshow",
 															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"0" : [ 0.0, 1.0, 0, 0.0, 0, 0, 0, 0, 1.0, 0.0, 0, 0, 0, 0, 0.0, 0.0, 1.0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"1" : [ 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -4539,8 +5539,8 @@
 																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"24" : [ 1.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0, 1.0, 0.0, 0.0, 0, 0, 0, 0, 0, 1.0, 0.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"25" : [ 0, 1.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0.0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 1.0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -4619,7 +5619,7 @@
 																}
 ,
 																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
+																	"eqOutStateVST" : 1.0,
 																	"inputEqStateVST" : 0.0,
 																	"inputHpFreqVST" : 15000.0,
 																	"inputHpGainVST" : 0.0,
@@ -4631,19 +5631,19 @@
 																	"inputPk2GainVST" : 0.0,
 																	"inputPk3FreqVST" : 4000.0,
 																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 0.0,
+																	"live.text" : 1.0,
 																	"outputHpFreqVST" : 15000.0,
 																	"outputHpGainVST" : 0.0,
 																	"outputLpFreqVST" : 50.0,
 																	"outputLpGainVST" : 0.0,
 																	"outputPk1FreqVST" : 250.0,
 																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
+																	"outputPk2FreqVST" : 539.370078740156714,
+																	"outputPk2GainVST" : -6.614173228346448,
+																	"outputPk3FreqVST" : 4511.811023622049106,
+																	"outputPk3GainVST" : -0.188976377952756,
 																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.354330708661417,
+																	"reverbVST" : 0.488188976377953,
 																	"vstFile" : 																	{
 																		"filetype" : "C74Snapshot",
 																		"version" : 2,
@@ -4661,7 +5661,7 @@
 																			"version" : 1,
 																			"isbank" : 0,
 																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT0azXEYlQjZgk1ZVkEcQcDRPcmUXoWUF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq3hKt3RNC4hKt3hKt3hKt3hKt3hKtXGbvAmTO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK33lcvjiYwcTQ0j1RWQmdOgia1ASNX8jRhQSZCcjS58DNZ4lX4nWd4kmM4E2ZCQ2SEQGYDshXwHWV3jVVrkULOYCdzwzJt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoMzQNo2SzLyLtkidLkGS1j1PG4jdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqXGVLYjM4AGbvw1SrkEaYsBUUUUU1LjKt3xLO4hKt3hKlMyYGcyT4wTdx8zJ58zXq3hKt3hKt3hKt3hKwAGbJshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtTTXmE0UY4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPUEahkVUxHVdqESXzEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3haxHVPtfkKtXmKt3hKt3hKt3hKt3hKZgiPtXVPt3hKt7VVGQjKt3hKtX2QtAyRt3hQt3BTSUlS1TDTt3hKt3hKuk0QD4hKt3hKB4hKt3hKt3hKt3hK14hLF4hYA4hKt3xaYcDQt3hKt3hYtMjXg4hKF4hKtXCSM01Rp4hKt3hKt7VVGQjKt3hKtHlQzHWXt3hQt3BQt3hKt3hKt3hKtXWSpkGcA4BVt3hKB4hKt3hKt3hKt3RNL0Ta1fyJA4hKKkmQvjjYqTlKt3hKt3hKH4hKF4hKt3hKt3hQtXVPt3hcYoVdzEjKX4hKt3hYgESPA4hKt3hKt3hK1YjKlEjKt3hKt3hcA4BVt3hct3hKt3hKt3hKt3hKPoENB4hYA4hKt3xaYcDQt3hKt3BT58FLK4hKF4hKl4hKt3hKP4hKt3hKt7VVGQjKt3hKtDjKt3hKt3hKt3hKt3BY4UjKlEjKtLjKt3hKt3hKt3hKt3xavrjKtXjKt3hKpw1XP4hKt3hKtLDaVUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKt3hKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3hKP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKt.kV3HjKlEjKt3hKuk0QD4hKt3hKt.yavrjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKt3hKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt3hKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3hYsklLhEjKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3xMqrBYGYyJq7jVv.WUwY0bZgyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3BLhIWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKTk2cr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjK1sxJ1LlbqrxJtUUbVMmVv.GLq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKt3RNJkDTzD2JG4hKtbETM0lM3rRPt3BRvvlKqUWNk4hKtH2R1njKt3hQt3hKMAUSsYCNqDjKtTyZNckQD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT2Px3hKtfkKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hK23FV1kCQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQ0ZMYkV5UjQgYlYTgkb2YjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKtXlLiISUO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK2ASZnkCTmE2Qzj2aS0VLOgia1ASNlE2QEUyT0QFN38TTz.CTqbiM1XCMSoTS431SxcTQzkCVzIFM2LjKt3hcOkCY0c0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4k1MHIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYSduMUaw7DMyLia4nGS4wjMogSMvj2SzLyLtkidLkGS1jFN0.SdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtb2St3hKlsBUUUUU1LjKt3xLOEGbvAWN2DWc4LyP1D0Yg8jKt3hYq3hKt3hKt3hKt3hKZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMUkQY8VUWElY1QkVwTkQHMUPWgUZUEiXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtbyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shKt3hKqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4hKtX2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxPt3hK27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3hKt3xJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcySt3hKlAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbFIjKt3hKt3hKt3hKAkUZ4P1Jk4hKt3BTw3VcxrxQt3hKtHjKt3hKt3hKtX1JXkVNjsRYt3hKTQiTxPzLqbjKt3hLo0TM1fyJA4hKtIzbrEDQt3hKt3RNrUjK0IVNG4hKtPmZMUiM3rRPt3BRqsjKyfGMk4hKtvTPMIiKt3hQt3hKpoVS0XCNqDjKtTyZL0VPD4hKt3hcz3hKt3hKt3hKt3hKxIWXA01JA4hK1gTRtLjKtfkKtXmKt3hKt3hKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKl4hKt3hKt3hKt3hY1oDMwDTaqDjKtfjbRQ2X1QSYt3hKDkjKt3hKt3hKt.kKt3hKt3hKtI1bpMyQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 																		}
 
 																	}
@@ -4671,15 +5671,15 @@
 															}
 ,
 															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 1.0,
-																"mic_routing2" : 1.0,
-																"mic_routing3" : 1.0,
-																"mic_routing4" : 0.0,
-																"mic_routing5" : 0.0,
+																"mic_routing0" : 0.787401574803149,
+																"mic_routing1" : 0.275590551181102,
+																"mic_routing2" : 0,
+																"mic_routing3" : 0,
+																"mic_routing4" : 0,
+																"mic_routing5" : 0,
 																"mic_routing6" : 0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0.0,
+																"mic_routing7" : 0,
+																"mic_routing8" : 0,
 																"mic_routing9" : 0,
 																"mic_routing10" : 0,
 																"mic_routing11" : 0,
@@ -4687,7 +5687,7 @@
 																"mic_routing13" : 0,
 																"mic_routing14" : 0,
 																"mic_routing15" : 0,
-																"mic_routing16" : 1.0,
+																"mic_routing16" : 0,
 																"mic_routing17" : 0,
 																"mic_routing18" : 0,
 																"mic_routing19" : 0,
@@ -4695,8 +5695,8 @@
 																"mic_routing21" : 0,
 																"mic_routing22" : 0,
 																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
+																"mic_routing24" : 0.0,
+																"mic_routing25" : 0.0,
 																"mic_routing26" : 0,
 																"mic_routing27" : 0,
 																"mic_routing28" : 0,
@@ -4737,20 +5737,20 @@
 																"mic_routing63" : 0
 															}
 ,
-															"outputLevel" : [ 0.921053, 0.921053, 0.858174, 0.855263, 0.791706, 0.792902, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.802398, 0.820192, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
-															"record" : [ 0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.852267, 0.883071, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
+															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 															"ambisonicPlayer" : 															{
 																"playback" : 0
 															}
 ,
-															"reverbSettings:roomMicsState" : 0
+															"reverbSettings:roomMicsState" : 1
 														}
 ,
 														"Scene2" : 														{
-															"name" : "Ben",
+															"name" : "seaborn",
 															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"0" : [ 0.0, 1.0, 0, 0.0, 0, 0, 0, 0, 1.0, 0.0, 0, 0, 0, 0, 0.0, 1.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"1" : [ 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -4773,8 +5773,8 @@
 																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"24" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"25" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -4853,7 +5853,7 @@
 																}
 ,
 																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
+																	"eqOutStateVST" : 1.0,
 																	"inputEqStateVST" : 0.0,
 																	"inputHpFreqVST" : 15000.0,
 																	"inputHpGainVST" : 0.0,
@@ -4872,12 +5872,12 @@
 																	"outputLpGainVST" : 0.0,
 																	"outputPk1FreqVST" : 250.0,
 																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
+																	"outputPk2FreqVST" : 539.370078740156714,
+																	"outputPk2GainVST" : -6.614173228346448,
+																	"outputPk3FreqVST" : 4511.811023622049106,
+																	"outputPk3GainVST" : -0.188976377952756,
 																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
+																	"reverbVST" : 0.606299212598425,
 																	"vstFile" : 																	{
 																		"filetype" : "C74Snapshot",
 																		"version" : 2,
@@ -4895,7 +5895,7 @@
 																			"version" : 1,
 																			"isbank" : 0,
 																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQ0ZMYkV5UjQgYlYTgkb2YjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKtXlLiISUO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK2ASZnkCTmE2Qzj2aS0VLOgia1ASNlE2QEUyT0QFN38jR0YjRqbiM1XCMSoTS431SxcTQzkCVzIFM2LjKt3hcOkCY0c0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4k1MHIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYSduMUaw7DMyLia4nGS4wjMogSMvj2SzLyLtkidLkGS1jFN0.SdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtb2St3hKlsBUUUUU1LjKt3xLOEGbvAWN2DWc4LyP1D0Yg8jKt3hYq3hKt3hKt3hKt3hKZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMUkQY8VUWElY1QkVwTkQHMUPWgUZUEiXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKxUTLtUmLqbjKtLCStHTbCckcTkGNPI0U1IjKtfkKt.ESt3hKt3hKt3hKtjzXAsjKtXVPt3hSCYlc0XWQLAiXkwjKt3hKt3hKt3BQC4hKt3hKt3hKt.kTWYmPt3BVt3hK5UTLtUmLqbjKt3hYq0TM1fyJA4hKEkCLyEFQt3hKt3hKt3hKt3hKt3hKtPlLOgUPssRPt3xPt3hKt3hKt3hKtv1cT8DchkyQt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3BTt3xMmMTPt3hKt3hKt3hKt3hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3RPtX2QNQjKt3hKt3hKt3hKt3hKt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3BTt3xMmMTPt3hKt3hKt3hKt3hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3RPtX2QNQjKt3hKt3hKt3hKt3hKt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3hKLgTLtUmLqbjKtPUMOElQP4hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3hcjgUZ4P1Jk4hK1cFc3jkKA4hKt3hKYAiMzEkKt3hKt.ka2X1Q2QSYt3hKxcTLtUmLqbjKtnlamckQP4hKt3hKlUFVokCYqTlKtXVXVUmMFEjKt3hKpcyQLYWd3PWSDAETtkCLK4hKX4hKt3hKt3hKt3hKt3hZ1UEVFAkKt3hKtXmYXkVNjsRYt3hKv.GNY4RPt3hKtPjKtT1LP4hKt3hKIsRPCciX0E1PAQjKt3hKt3hKt3hKtzFNjQWPtXVPt3BTwESPBEjKX4hKt3hKt3hKt3hKt3hKBQySIAkKt3hKtLyMnYmPt3BVt3hKyfTLtUmLqbjKtXmVMElQP4hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKlUEb2EjKtfkKtXlKtbyYCEjKt3hKpcyQLYWd3PWSDAUPtX2QNQjKt3hKt3hKt3hKt3hKt3hZ2bDS1kGNz0DQPEjKt3hKt3hKt3hKLkULtUmLqbjKt3BL3YDRD4hYA4hKPEWLAITPtfkKt3xMHEia0IyJG4hKtHEaMUiM3rRPt3BdJIybgQjKt3hKl4hK2XVQhkyQt3hZ2bDS1kGNz0DQP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLGZMUiM3rRPt3hRScmbLY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RPt3hKD4hKt3hKt3hKt3hcTMScGYlK1g1LP4hKt3hK23hKt3BTlYlcTgjKt3hKt3hKt3hKX4hYDgDRLUTN1DjKtLGRNQjKt3hKt3hKt3hKt3hKt3hK2cGZy.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hPt.ULN4hKtg1LP4hKt3hKw.kZxMFdzcmPt3RRt3hKt3hKt3hKP4hKt3BTt3hKt3hPt.ULN4hKt3hKtXlZJg1PA4hKt3hKEkVS0XCNqDjKt3hKkEWbC4hKt3hKPg2YJUjKtXjKt3hKtXVPt3hKt3hKF4BRAIjPSc1Jj4hciEia0IyJG4hKHkWaogmK4rRPt3RPt3hKt3hKt3hKPYSXNozPyrxQt3hKt3hKt3hKt3hKtXGUyT2Qt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hRLEia0IyJG4hKtLCZMUiM3rRPt3haygUZ4P1Jk4hKtf0Rw3VcxrxQt3hYJomVFAkKt3hKtXVXQgjM3QSYt3BTtPVLtUmLqbjKtXlViEjVK01JA4hKtDScIIjKtfkKt3haKEia0IyJG4hK5QkQiYDTt3hKt3hYzgUZ4P1Jk4hKt.GTwkkKA4hKt3hKzUzYxsTaqDjKtDzLYkVNjsRYt3hKvASQtMmX4bjKt3BVqvFRt3hYA4hKlUWVokCYqTlKt3hL2oWVtDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXVah4lTA4hYA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hcTMScG4hKt3hKt3hKt3hKtHjKt3BRt3hKt3hKt3hKt3hK2XjKt3BVt3hKt.ERnMTPt3hKt3BYzDlKt3hYA4hKR4hKt3hKC4hKtXlKt3hKt3hKt3hKH4hKt3hKt3hKt3hKtbFRNQjKt3hKt3BUHg1PA4hKt3hYt3hKt3hKt3hKt3RdXkVNjsRYt3hYZczLJMzLqbjKt3hKt3hKt3hKt3hKH4RPt3xYt3BLZsxJqLjKt3hKt3hKtLjKt3hKt3hKt3RPt3hKt3hKt3hKtvjKt3hKt3hKt3hKtPDZy.kKt3hKt3hKy7jSmsRYt3hKt.ERnMTPt3hKtPjKt3hKt3hKt3hKlkGVokCYqTlKtXWZrMiRCMyJG4hKtHFSvACTt3hKt3hct3hKt3hKt3hKtPTSw3VcxrxQt3BVhkyaYAkKt3hKt3xQooUSD4hKt3hKt3RNoM0LqbjKt3xPt3hKt3hKt3hKA4hKt3hKt3hKt3BTMEia0IyJG4hKXIVNukETt3hKt3hcvrVYOc1Jk4hKP4hKt3hKt3hKt3hKPUCV4PTNqDjKtXmKt3hKt3hKt3hKl0TLtUmLqbjKtPkL3UGdtjyJA4hKtTDNN4zYqTlKt3hXiQiLSMyJG4hKL4hKt3hKt3hKt3hYWkiQt3hKX4hKtf0aoQyTyrxQt3hKWcUN3PTNqDjKtXlLXkVNjsRYt3hKMQDQMMzLqbjKtXmUAQGdtjyJA4hKA4hKt3hKt3hKt3hct3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtr1aQoGSlsRYt3hKD4RPtDDTt3hKtXVZo0TM1fyJA4hKlMCVokCYqTlKtXVZYQTSCMyJG4hKPACVQkmK4rRPt3hK1olVN4hKX4hKt3hKt3hKt3hKt3hYAMEbz3hKlEjKt3BMXkVNjsRYt3hKpcFZLMzLqbjKt3xao0TM1fyJA4hK0gVV0MFdzcmPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK0fUZ4P1Jk4hKtDmQrszPyrxQt3hYOcFU44RNqDjKtPUSVoGSlsRYt3hKp4BQ4ojKt3hKtnlKt3hKt3hKt3hK1UCVokCYqTlKtXWTGgFSCMyJG4hKp4hKt3hKt3hKt3hK1olVN4hKX4hKPMlZynVaxElbt3hYAMEbz3hKlEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLs0TM1fyJA4hKrsRUvvjYqTlKt.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hKt3hKt3hc0HTcJoURwg0cAEjKt3hKt3hKt3hKBgmav41ZxgVQGQjKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hLo0TM1fyJA4hKtIzbrEDQt3hKt3RNrUjK0IVNG4hKtPmZMUiM3rRPt3BRqsjKyfGMk4hKtvTPMIiKt3hQt3hKpoVS0XCNqDjKtTyZL0VPD4hKt3BTt3hKt3hKt3hKt3hKt3hKt3hKt3hK1gTRtLjKtfkKt3hKt3hKt3hKt3hKH4hKFgDQtXVPt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKtUlV1I2Pt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 																		}
 
 																	}
@@ -4905,242 +5905,8 @@
 															}
 ,
 															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.829688, 0.840379, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene3" : 														{
-															"name" : "Alvin",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
+																"mic_routing0" : 1.0,
+																"mic_routing1" : 0.275590551181102,
 																"mic_routing2" : 0,
 																"mic_routing3" : 0,
 																"mic_routing4" : 0,
@@ -5163,8 +5929,8 @@
 																"mic_routing21" : 0,
 																"mic_routing22" : 0,
 																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
+																"mic_routing24" : 0.0,
+																"mic_routing25" : 0.0,
 																"mic_routing26" : 0,
 																"mic_routing27" : 0,
 																"mic_routing28" : 0,
@@ -5205,1646 +5971,7 @@
 																"mic_routing63" : 0
 															}
 ,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.5852, 0.586396, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene4" : 														{
-															"name" : "JD",
-															"inputRouting" : 															{
-																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0.0,
-																"mic_routing5" : 0.0,
-																"mic_routing6" : 0.0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0.0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.834473, 0.840379, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene5" : 														{
-															"name" : "Marco",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0.0,
-																"mic_routing5" : 0.0,
-																"mic_routing6" : 0.0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0.0,
-																"mic_routing9" : 0.0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0.0,
-																"mic_routing17" : 0.0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0.0,
-																"mic_routing39" : 0.0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0, 0.957895, 0.955595, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1,
-															"0" : 0.0
-														}
-,
-														"Scene6" : 														{
-															"name" : "Justin",
-															"inputRouting" : 															{
-																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 1.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 1.0, 0.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.181102362204725,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK1Q0b2YDRHsVLY4VPBI0Y2YTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKqfEaYw1MC4hKtLySt3hKlshKt3hKt.EQQQTVO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKzQFUyjCTmE2Q0jVPCYjdOwVVrQSNtYGLoUyTmITQ38jbmg2Rq3FarwVMC4lLuQ2SCc0SvkCVzIFM2LUdLkmbOAENSU1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNocULqAySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoYSLyk2SzLyLtkidLkGS1jlMwLWdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNlMyYGUyPt3hKy7DYpcTVq3hKt3hKt3hKt3hKt3hKtrhKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3xSJIFN4HlRyrlMC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcLQTPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlKt3hKt3hKt3hKt3xL4MWPtfkKt3hKPoULAEjKt3hKtDiYOIiQtXVPt3hKt3hKt3RRt3hKt3BTZESPA4hKt3hKWQlS1XjKlEjKt3hKt3hKt3hKt3hKhkCMxElKtXjKtXlKt3hKt3hKt3hKC4hKt3hKt3hKt3hKtPkdK4hKF4hKt3hZrMFTt3hKt3hKvEUT04hKX4hKtHFMzHWXtDjKt3hKtnFaiAkKt3hKt.UZpkGct3BVt3BTt3hKt3hKt3hKt3RSU4jMB4hYA4hKC4hKt3hKt3hKt3xM4omXzIyJG4hKxwTXT0lK4rRPt3BTqnVdz4hKX4hKt3hKt3BVt3hQt3hKMIkS1HjKlEjKt3BVyk0QD4hKt3hKt3hKtrjKtXjKt3hKt3hKD4hYA4hKt3hKtXlKtfkKt3hKt3hKh4hKF4hKtfyTNYiPtDjKt3BTA4hKtH2JqbjKtDjKt3hKt3hKt3hKtX2Z4UjKlEjKtLjKt3hKt3hKt3hKt3BU5sjKtXjKt3hKpw1XP4hKt3hKtHjTQUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKt3hKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3hKP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKt3RQ3HjKlEjKt3hKuk0QD4hKt3hK1ACU5sjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKt3hKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt3hKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3BT0QFMhEjKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3hKt3hKt3hKt3xXzf2ZKcEchcyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3BM4TWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKpYyJr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjKt3hKt3hKt3hK5s1RWQmXzf2cq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKt3RNJkDTzD2JG4hKtbETM0lM3rRPt3BRvvlKqUWNk4hKtH2R1njKt3hQt3hKMAUSsYCNqDjKtTyZNckQD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT2Px3hKtfkKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKyHFT3DVSt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0.0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0.0,
-																"mic_routing9" : 0.0,
-																"mic_routing10" : 0.0,
-																"mic_routing11" : 0.0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0.0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0.0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.841575, 0.84509, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 7, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene7" : 														{
-															"name" : "Patrick",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0.0,
-																"mic_routing12" : 0.0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.93191, 0.936842, 0.908043, 0.906847, 0.834473, 0.83679, 0.723684, 0.723684, 0.0, 0.881579, 0.815789, 0.763158, 0.0, 0.763158, 0.815789, 0.881579, 0.0, 0.712154, 0.775108, 0.807108, 0.85937, 0.0, 0.827295, 0.769126, 0.783407, 0.749014, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.8178, 0.906847, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene8" : 														{
-															"name" : "Halie",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 1.0, 0, 1.0, 0, 0.0, 0, 0.0, 0, 0, 1.0, 1.0, 0.0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 1.0, 0, 1.0, 0, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.181102362204724,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPM0ZQYDRCclUXMWRVkEdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RSUYTVuU0Ug4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq3hKt3RN4AGbvg2ShUSS3jiKt3hKt3Rc1P2TO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kicjQ0LyjVQKYkdO0TdLkWNyTSTmQyToYTS38jbmgWb4nGd3g2M48FcVQ1SW8jRLsBVzIFM2jFaYw1cOQ2Ygg0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNCQ0J5IySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoYSLyk2SzLyLtkidLkGS1jlMwLWdOQyLy3VNt3hKtbyPt3hKt3hKt3hKqnmVyYEMC4hKtf2SrkEaYsBUUUUU1LjKt3xLOEGbvAWNlMyYGcyT4wTdx8zJ58zXqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtTjKPM0ZQYkVv.iQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKLQjVmACaXsVRG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKIQSLhoWRWM1bUwVX5UjQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTsVRxfELMIiXugCag4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BVvDVZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKB4hKt3hKt3hKt3hKtvzQD4hYA4hKC4hKt3hKt3hKt3hKt3hdK4hKF4hKt3hZrMFTt3hKt3hKpEDT04hKX4hKtHVdzHGTtDjKt3hKtnFaiAkKt3hKtLjKt3hKt3hKt3hKt3xS5sjKtXjKt3hKpw1XP4hKt3hKtTzJPUmKtfkKt3xM4omXz4RPt3hKt3hZrMFTt3hKt3BTGoVdz4hKX4hKP4hKt3hKt3hKt3hK3LkS1HjKlEjKtLjKt3hKt3hKt3hKHomdhQmLqbjKtHGSgQUatjyJA4hKt3hKtXlKtfkKt3hKt3hKX4hKF4hKtLFTNYiPtXVPt3hYXMWVGQjKt3hKtDjKt3hKt3hKt3hKt3xSnIjKlEjKtLjKt3hKt3hKt3hKt3xS5sjKtXjKt3hKpw1XP4hKt3hKtXyMPUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKtPjKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3RPP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKtX2P3HjKlEjKt3hKuk0QD4hKt3hKlY1S5sjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKtDjKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt.kKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3hcokWZt4hKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3hKt3hKt3hKtXlXzf2ZKcEchcyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3hMYQWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKx0FMr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjKt3hKt3hKt3hK3s1RWQmXzf2cq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKtXmKt3hKt3hKt3hKt3BTCgiPtXVPt3hKt7VVGQjKt3hKtXFSMo2Rt3hQt3hKMAUSssDTt3hKt3hKuk0QD4hKt3hK5wDMxsjKtXjKtPjKt3hKt3hKt3hKPIiZ4QmKtfkKtXmKt3hKt3hKt3hKtT2SM0lM3rRPt3xR4YDLIY1Jk4hKt3hKt3hKt3hKt3hKt3hKtXjKlEjKt.UdpkGct3BVt3hKHYUXwDTPt3hKt3hKt3hcB4hY2Emax0DQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0.0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0.0,
-																"mic_routing9" : 0.0,
-																"mic_routing10" : 0.0,
-																"mic_routing11" : 0.0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.835594, 0.835594, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 9, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene9" : 														{
-															"name" : "Connor",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.76322, 0.765612, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene10" : 														{
-															"name" : "Benjamin",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0, 1.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0.0,
-																"mic_routing5" : 0.0,
-																"mic_routing6" : 0.0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0.0,
-																"mic_routing9" : 0.0,
-																"mic_routing10" : 0.0,
-																"mic_routing11" : 0.0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.921053, 0.921053, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.852267, 0.883071, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
 															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 															"ambisonicPlayer" : 															{
 																"playback" : 0
@@ -7418,7 +6545,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 246.166707333333306, 428.0, 50.0, 22.0 ],
-													"text" : "2 1"
+													"text" : "6 5"
 												}
 
 											}
@@ -7478,7 +6605,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 61.0, 428.0, 50.0, 22.0 ],
-													"text" : "4 5"
+													"text" : "8 9"
 												}
 
 											}
@@ -8065,7 +7192,7 @@
 									"patching_rect" : [ 933.5, 605.5, 170.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 146.733371615409851, 81.0, 160.0, 22.0 ],
-									"text" : "Spectrum_1.json",
+									"text" : "PercShow.json",
 									"textjustification" : 1
 								}
 
@@ -10974,12 +10101,12 @@
 												"box" : 												{
 													"data" : 													{
 														"Scene1" : 														{
-															"name" : "Insun",
+															"name" : "Percshow",
 															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"0" : [ 0.0, 1.0, 0, 0.0, 0, 0, 0, 0, 1.0, 0.0, 0, 0, 0, 0, 0.0, 0.0, 1.0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"1" : [ 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -11000,8 +10127,8 @@
 																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"24" : [ 1.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0, 1.0, 0.0, 0.0, 0, 0, 0, 0, 0, 1.0, 0.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"25" : [ 0, 1.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0.0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 1.0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -11080,7 +10207,7 @@
 																}
 ,
 																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
+																	"eqOutStateVST" : 1.0,
 																	"inputEqStateVST" : 0.0,
 																	"inputHpFreqVST" : 15000.0,
 																	"inputHpGainVST" : 0.0,
@@ -11092,19 +10219,19 @@
 																	"inputPk2GainVST" : 0.0,
 																	"inputPk3FreqVST" : 4000.0,
 																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 0.0,
+																	"live.text" : 1.0,
 																	"outputHpFreqVST" : 15000.0,
 																	"outputHpGainVST" : 0.0,
 																	"outputLpFreqVST" : 50.0,
 																	"outputLpGainVST" : 0.0,
 																	"outputPk1FreqVST" : 250.0,
 																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
+																	"outputPk2FreqVST" : 539.370078740156714,
+																	"outputPk2GainVST" : -6.614173228346448,
+																	"outputPk3FreqVST" : 4511.811023622049106,
+																	"outputPk3GainVST" : -0.188976377952756,
 																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.354330708661417,
+																	"reverbVST" : 0.488188976377953,
 																	"vstFile" : 																	{
 																		"filetype" : "C74Snapshot",
 																		"version" : 2,
@@ -11122,7 +10249,7 @@
 																			"version" : 1,
 																			"isbank" : 0,
 																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT0azXEYlQjZgk1ZVkEcQcDRPcmUXoWUF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq3hKt3RNC4hKt3hKt3hKt3hKt3hKtXGbvAmTO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK33lcvjiYwcTQ0j1RWQmdOgia1ASNX8jRhQSZCcjS58DNZ4lX4nWd4kmM4E2ZCQ2SEQGYDshXwHWV3jVVrkULOYCdzwzJt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoMzQNo2SzLyLtkidLkGS1j1PG4jdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqXGVLYjM4AGbvw1SrkEaYsBUUUUU1LjKt3xLO4hKt3hKlMyYGcyT4wTdx8zJ58zXq3hKt3hKt3hKt3hKwAGbJshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtTTXmE0UY4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPUEahkVUxHVdqESXzEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3haxHVPtfkKtXmKt3hKt3hKt3hKt3hKZgiPtXVPt3hKt7VVGQjKt3hKtX2QtAyRt3hQt3BTSUlS1TDTt3hKt3hKuk0QD4hKt3hKB4hKt3hKt3hKt3hK14hLF4hYA4hKt3xaYcDQt3hKt3hYtMjXg4hKF4hKtXCSM01Rp4hKt3hKt7VVGQjKt3hKtHlQzHWXt3hQt3BQt3hKt3hKt3hKtXWSpkGcA4BVt3hKB4hKt3hKt3hKt3RNL0Ta1fyJA4hKKkmQvjjYqTlKt3hKt3hKH4hKF4hKt3hKt3hQtXVPt3hcYoVdzEjKX4hKt3hYgESPA4hKt3hKt3hK1YjKlEjKt3hKt3hcA4BVt3hct3hKt3hKt3hKt3hKPoENB4hYA4hKt3xaYcDQt3hKt3BT58FLK4hKF4hKl4hKt3hKP4hKt3hKt7VVGQjKt3hKtDjKt3hKt3hKt3hKt3BY4UjKlEjKtLjKt3hKt3hKt3hKt3xavrjKtXjKt3hKpw1XP4hKt3hKtLDaVUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKt3hKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3hKP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKt.kV3HjKlEjKt3hKuk0QD4hKt3hKt.yavrjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKt3hKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt3hKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3hYsklLhEjKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3xMqrBYGYyJq7jVv.WUwY0bZgyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3BLhIWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKTk2cr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjK1sxJ1LlbqrxJtUUbVMmVv.GLq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKt3RNJkDTzD2JG4hKtbETM0lM3rRPt3BRvvlKqUWNk4hKtH2R1njKt3hQt3hKMAUSsYCNqDjKtTyZNckQD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT2Px3hKtfkKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hK23FV1kCQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQ0ZMYkV5UjQgYlYTgkb2YjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKtXlLiISUO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK2ASZnkCTmE2Qzj2aS0VLOgia1ASNlE2QEUyT0QFN38TTz.CTqbiM1XCMSoTS431SxcTQzkCVzIFM2LjKt3hcOkCY0c0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4k1MHIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYSduMUaw7DMyLia4nGS4wjMogSMvj2SzLyLtkidLkGS1jFN0.SdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtb2St3hKlsBUUUUU1LjKt3xLOEGbvAWN2DWc4LyP1D0Yg8jKt3hYq3hKt3hKt3hKt3hKZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMUkQY8VUWElY1QkVwTkQHMUPWgUZUEiXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtbyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shKt3hKqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4hKtX2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxPt3hK27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3hKt3xJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcySt3hKlAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbFIjKt3hKt3hKt3hKAkUZ4P1Jk4hKt3BTw3VcxrxQt3hKtHjKt3hKt3hKtX1JXkVNjsRYt3hKTQiTxPzLqbjKt3hLo0TM1fyJA4hKtIzbrEDQt3hKt3RNrUjK0IVNG4hKtPmZMUiM3rRPt3BRqsjKyfGMk4hKtvTPMIiKt3hQt3hKpoVS0XCNqDjKtTyZL0VPD4hKt3hcz3hKt3hKt3hKt3hKxIWXA01JA4hK1gTRtLjKtfkKtXmKt3hKt3hKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKl4hKt3hKt3hKt3hY1oDMwDTaqDjKtfjbRQ2X1QSYt3hKDkjKt3hKt3hKt.kKt3hKt3hKtI1bpMyQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 																		}
 
 																	}
@@ -11132,15 +10259,15 @@
 															}
 ,
 															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 1.0,
-																"mic_routing2" : 1.0,
-																"mic_routing3" : 1.0,
-																"mic_routing4" : 0.0,
-																"mic_routing5" : 0.0,
+																"mic_routing0" : 0.787401574803149,
+																"mic_routing1" : 0.275590551181102,
+																"mic_routing2" : 0,
+																"mic_routing3" : 0,
+																"mic_routing4" : 0,
+																"mic_routing5" : 0,
 																"mic_routing6" : 0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0.0,
+																"mic_routing7" : 0,
+																"mic_routing8" : 0,
 																"mic_routing9" : 0,
 																"mic_routing10" : 0,
 																"mic_routing11" : 0,
@@ -11148,7 +10275,7 @@
 																"mic_routing13" : 0,
 																"mic_routing14" : 0,
 																"mic_routing15" : 0,
-																"mic_routing16" : 1.0,
+																"mic_routing16" : 0,
 																"mic_routing17" : 0,
 																"mic_routing18" : 0,
 																"mic_routing19" : 0,
@@ -11156,8 +10283,8 @@
 																"mic_routing21" : 0,
 																"mic_routing22" : 0,
 																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
+																"mic_routing24" : 0.0,
+																"mic_routing25" : 0.0,
 																"mic_routing26" : 0,
 																"mic_routing27" : 0,
 																"mic_routing28" : 0,
@@ -11198,20 +10325,20 @@
 																"mic_routing63" : 0
 															}
 ,
-															"outputLevel" : [ 0.921053, 0.921053, 0.858174, 0.855263, 0.791706, 0.792902, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.802398, 0.820192, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
-															"record" : [ 0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.852267, 0.883071, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
+															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 															"ambisonicPlayer" : 															{
 																"playback" : 0
 															}
 ,
-															"reverbSettings:roomMicsState" : 0
+															"reverbSettings:roomMicsState" : 1
 														}
 ,
 														"Scene2" : 														{
-															"name" : "Ben",
+															"name" : "seaborn",
 															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"0" : [ 0.0, 1.0, 0, 0.0, 0, 0, 0, 0, 1.0, 0.0, 0, 0, 0, 0, 0.0, 1.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"1" : [ 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -11234,8 +10361,8 @@
 																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"24" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+																"25" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -11314,7 +10441,7 @@
 																}
 ,
 																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
+																	"eqOutStateVST" : 1.0,
 																	"inputEqStateVST" : 0.0,
 																	"inputHpFreqVST" : 15000.0,
 																	"inputHpGainVST" : 0.0,
@@ -11333,12 +10460,12 @@
 																	"outputLpGainVST" : 0.0,
 																	"outputPk1FreqVST" : 250.0,
 																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
+																	"outputPk2FreqVST" : 539.370078740156714,
+																	"outputPk2GainVST" : -6.614173228346448,
+																	"outputPk3FreqVST" : 4511.811023622049106,
+																	"outputPk3GainVST" : -0.188976377952756,
 																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
+																	"reverbVST" : 0.606299212598425,
 																	"vstFile" : 																	{
 																		"filetype" : "C74Snapshot",
 																		"version" : 2,
@@ -11356,7 +10483,7 @@
 																			"version" : 1,
 																			"isbank" : 0,
 																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQ0ZMYkV5UjQgYlYTgkb2YjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKtXlLiISUO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK2ASZnkCTmE2Qzj2aS0VLOgia1ASNlE2QEUyT0QFN38jR0YjRqbiM1XCMSoTS431SxcTQzkCVzIFM2LjKt3hcOkCY0c0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4k1MHIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYSduMUaw7DMyLia4nGS4wjMogSMvj2SzLyLtkidLkGS1jFN0.SdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtb2St3hKlsBUUUUU1LjKt3xLOEGbvAWN2DWc4LyP1D0Yg8jKt3hYq3hKt3hKt3hKt3hKZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMUkQY8VUWElY1QkVwTkQHMUPWgUZUEiXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKxUTLtUmLqbjKtLCStHTbCckcTkGNPI0U1IjKtfkKt.ESt3hKt3hKt3hKtjzXAsjKtXVPt3hSCYlc0XWQLAiXkwjKt3hKt3hKt3BQC4hKt3hKt3hKt.kTWYmPt3BVt3hK5UTLtUmLqbjKt3hYq0TM1fyJA4hKEkCLyEFQt3hKt3hKt3hKt3hKt3hKtPlLOgUPssRPt3xPt3hKt3hKt3hKtv1cT8DchkyQt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3BTt3xMmMTPt3hKt3hKt3hKt3hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3RPtX2QNQjKt3hKt3hKt3hKt3hKt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3BTt3xMmMTPt3hKt3hKt3hKt3hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3RPtX2QNQjKt3hKt3hKt3hKt3hKt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3hKLgTLtUmLqbjKtPUMOElQP4hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3hcjgUZ4P1Jk4hK1cFc3jkKA4hKt3hKYAiMzEkKt3hKt.ka2X1Q2QSYt3hKxcTLtUmLqbjKtnlamckQP4hKt3hKlUFVokCYqTlKtXVXVUmMFEjKt3hKpcyQLYWd3PWSDAETtkCLK4hKX4hKt3hKt3hKt3hKt3hZ1UEVFAkKt3hKtXmYXkVNjsRYt3hKv.GNY4RPt3hKtPjKtT1LP4hKt3hKIsRPCciX0E1PAQjKt3hKt3hKt3hKtzFNjQWPtXVPt3BTwESPBEjKX4hKt3hKt3hKt3hKt3hKBQySIAkKt3hKtLyMnYmPt3BVt3hKyfTLtUmLqbjKtXmVMElQP4hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKlUEb2EjKtfkKtXlKtbyYCEjKt3hKpcyQLYWd3PWSDAUPtX2QNQjKt3hKt3hKt3hKt3hKt3hZ2bDS1kGNz0DQPEjKt3hKt3hKt3hKLkULtUmLqbjKt3BL3YDRD4hYA4hKPEWLAITPtfkKt3xMHEia0IyJG4hKtHEaMUiM3rRPt3BdJIybgQjKt3hKl4hK2XVQhkyQt3hZ2bDS1kGNz0DQP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLGZMUiM3rRPt3hRScmbLY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RPt3hKD4hKt3hKt3hKt3hcTMScGYlK1g1LP4hKt3hK23hKt3BTlYlcTgjKt3hKt3hKt3hKX4hYDgDRLUTN1DjKtLGRNQjKt3hKt3hKt3hKt3hKt3hK2cGZy.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hPt.ULN4hKtg1LP4hKt3hKw.kZxMFdzcmPt3RRt3hKt3hKt3hKP4hKt3BTt3hKt3hPt.ULN4hKt3hKtXlZJg1PA4hKt3hKEkVS0XCNqDjKt3hKkEWbC4hKt3hKPg2YJUjKtXjKt3hKtXVPt3hKt3hKF4BRAIjPSc1Jj4hciEia0IyJG4hKHkWaogmK4rRPt3RPt3hKt3hKt3hKPYSXNozPyrxQt3hKt3hKt3hKt3hKtXGUyT2Qt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hRLEia0IyJG4hKtLCZMUiM3rRPt3haygUZ4P1Jk4hKtf0Rw3VcxrxQt3hYJomVFAkKt3hKtXVXQgjM3QSYt3BTtPVLtUmLqbjKtXlViEjVK01JA4hKtDScIIjKtfkKt3haKEia0IyJG4hK5QkQiYDTt3hKt3hYzgUZ4P1Jk4hKt.GTwkkKA4hKt3hKzUzYxsTaqDjKtDzLYkVNjsRYt3hKvASQtMmX4bjKt3BVqvFRt3hYA4hKlUWVokCYqTlKt3hL2oWVtDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXVah4lTA4hYA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hcTMScG4hKt3hKt3hKt3hKtHjKt3BRt3hKt3hKt3hKt3hK2XjKt3BVt3hKt.ERnMTPt3hKt3BYzDlKt3hYA4hKR4hKt3hKC4hKtXlKt3hKt3hKt3hKH4hKt3hKt3hKt3hKtbFRNQjKt3hKt3BUHg1PA4hKt3hYt3hKt3hKt3hKt3RdXkVNjsRYt3hYZczLJMzLqbjKt3hKt3hKt3hKt3hKH4RPt3xYt3BLZsxJqLjKt3hKt3hKtLjKt3hKt3hKt3RPt3hKt3hKt3hKtvjKt3hKt3hKt3hKtPDZy.kKt3hKt3hKy7jSmsRYt3hKt.ERnMTPt3hKtPjKt3hKt3hKt3hKlkGVokCYqTlKtXWZrMiRCMyJG4hKtHFSvACTt3hKt3hct3hKt3hKt3hKtPTSw3VcxrxQt3BVhkyaYAkKt3hKt3xQooUSD4hKt3hKt3RNoM0LqbjKt3xPt3hKt3hKt3hKA4hKt3hKt3hKt3BTMEia0IyJG4hKXIVNukETt3hKt3hcvrVYOc1Jk4hKP4hKt3hKt3hKt3hKPUCV4PTNqDjKtXmKt3hKt3hKt3hKl0TLtUmLqbjKtPkL3UGdtjyJA4hKtTDNN4zYqTlKt3hXiQiLSMyJG4hKL4hKt3hKt3hKt3hYWkiQt3hKX4hKtf0aoQyTyrxQt3hKWcUN3PTNqDjKtXlLXkVNjsRYt3hKMQDQMMzLqbjKtXmUAQGdtjyJA4hKA4hKt3hKt3hKt3hct3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtr1aQoGSlsRYt3hKD4RPtDDTt3hKtXVZo0TM1fyJA4hKlMCVokCYqTlKtXVZYQTSCMyJG4hKPACVQkmK4rRPt3hK1olVN4hKX4hKt3hKt3hKt3hKt3hYAMEbz3hKlEjKt3BMXkVNjsRYt3hKpcFZLMzLqbjKt3xao0TM1fyJA4hK0gVV0MFdzcmPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK0fUZ4P1Jk4hKtDmQrszPyrxQt3hYOcFU44RNqDjKtPUSVoGSlsRYt3hKp4BQ4ojKt3hKtnlKt3hKt3hKt3hK1UCVokCYqTlKtXWTGgFSCMyJG4hKp4hKt3hKt3hKt3hK1olVN4hKX4hKPMlZynVaxElbt3hYAMEbz3hKlEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLs0TM1fyJA4hKrsRUvvjYqTlKt.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hKt3hKt3hc0HTcJoURwg0cAEjKt3hKt3hKt3hKBgmav41ZxgVQGQjKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hLo0TM1fyJA4hKtIzbrEDQt3hKt3RNrUjK0IVNG4hKtPmZMUiM3rRPt3BRqsjKyfGMk4hKtvTPMIiKt3hQt3hKpoVS0XCNqDjKtTyZL0VPD4hKt3BTt3hKt3hKt3hKt3hKt3hKt3hKt3hK1gTRtLjKtfkKt3hKt3hKt3hKt3hKH4hKFgDQtXVPt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKtUlV1I2Pt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 																		}
 
 																	}
@@ -11366,242 +10493,8 @@
 															}
 ,
 															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.829688, 0.840379, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene3" : 														{
-															"name" : "Alvin",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
+																"mic_routing0" : 1.0,
+																"mic_routing1" : 0.275590551181102,
 																"mic_routing2" : 0,
 																"mic_routing3" : 0,
 																"mic_routing4" : 0,
@@ -11624,8 +10517,8 @@
 																"mic_routing21" : 0,
 																"mic_routing22" : 0,
 																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
+																"mic_routing24" : 0.0,
+																"mic_routing25" : 0.0,
 																"mic_routing26" : 0,
 																"mic_routing27" : 0,
 																"mic_routing28" : 0,
@@ -11666,1646 +10559,7 @@
 																"mic_routing63" : 0
 															}
 ,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.5852, 0.586396, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene4" : 														{
-															"name" : "JD",
-															"inputRouting" : 															{
-																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0.0,
-																"mic_routing5" : 0.0,
-																"mic_routing6" : 0.0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0.0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.834473, 0.840379, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene5" : 														{
-															"name" : "Marco",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0.0,
-																"mic_routing5" : 0.0,
-																"mic_routing6" : 0.0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0.0,
-																"mic_routing9" : 0.0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0.0,
-																"mic_routing17" : 0.0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0.0,
-																"mic_routing39" : 0.0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0, 0.957895, 0.955595, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1,
-															"0" : 0.0
-														}
-,
-														"Scene6" : 														{
-															"name" : "Justin",
-															"inputRouting" : 															{
-																"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 1.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 1.0, 0.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.181102362204725,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK1Q0b2YDRHsVLY4VPBI0Y2YTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKqfEaYw1MC4hKtLySt3hKlshKt3hKt.EQQQTVO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKzQFUyjCTmE2Q0jVPCYjdOwVVrQSNtYGLoUyTmITQ38jbmg2Rq3FarwVMC4lLuQ2SCc0SvkCVzIFM2LUdLkmbOAENSU1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNocULqAySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoYSLyk2SzLyLtkidLkGS1jlMwLWdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNlMyYGUyPt3hKy7DYpcTVq3hKt3hKt3hKt3hKt3hKtrhKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3xSJIFN4HlRyrlMC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcLQTPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlKt3hKt3hKt3hKt3xL4MWPtfkKt3hKPoULAEjKt3hKtDiYOIiQtXVPt3hKt3hKt3RRt3hKt3BTZESPA4hKt3hKWQlS1XjKlEjKt3hKt3hKt3hKt3hKhkCMxElKtXjKtXlKt3hKt3hKt3hKC4hKt3hKt3hKt3hKtPkdK4hKF4hKt3hZrMFTt3hKt3hKvEUT04hKX4hKtHFMzHWXtDjKt3hKtnFaiAkKt3hKt.UZpkGct3BVt3BTt3hKt3hKt3hKt3RSU4jMB4hYA4hKC4hKt3hKt3hKt3xM4omXzIyJG4hKxwTXT0lK4rRPt3BTqnVdz4hKX4hKt3hKt3BVt3hQt3hKMIkS1HjKlEjKt3BVyk0QD4hKt3hKt3hKtrjKtXjKt3hKt3hKD4hYA4hKt3hKtXlKtfkKt3hKt3hKh4hKF4hKtfyTNYiPtDjKt3BTA4hKtH2JqbjKtDjKt3hKt3hKt3hKtX2Z4UjKlEjKtLjKt3hKt3hKt3hKt3BU5sjKtXjKt3hKpw1XP4hKt3hKtHjTQUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKt3hKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3hKP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKt3RQ3HjKlEjKt3hKuk0QD4hKt3hK1ACU5sjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKt3hKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt3hKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3BT0QFMhEjKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3hKt3hKt3hKt3xXzf2ZKcEchcyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3BM4TWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKpYyJr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjKt3hKt3hKt3hK5s1RWQmXzf2cq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKt3RNJkDTzD2JG4hKtbETM0lM3rRPt3BRvvlKqUWNk4hKtH2R1njKt3hQt3hKMAUSsYCNqDjKtTyZNckQD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT2Px3hKtfkKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKyHFT3DVSt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0.0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0.0,
-																"mic_routing9" : 0.0,
-																"mic_routing10" : 0.0,
-																"mic_routing11" : 0.0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0.0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0.0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.841575, 0.84509, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 7, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene7" : 														{
-															"name" : "Patrick",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0.0,
-																"mic_routing12" : 0.0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.93191, 0.936842, 0.908043, 0.906847, 0.834473, 0.83679, 0.723684, 0.723684, 0.0, 0.881579, 0.815789, 0.763158, 0.0, 0.763158, 0.815789, 0.881579, 0.0, 0.712154, 0.775108, 0.807108, 0.85937, 0.0, 0.827295, 0.769126, 0.783407, 0.749014, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.8178, 0.906847, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene8" : 														{
-															"name" : "Halie",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 1.0, 0, 1.0, 0, 0.0, 0, 0.0, 0, 0, 1.0, 1.0, 0.0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 1.0, 0, 1.0, 0, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.181102362204724,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPM0ZQYDRCclUXMWRVkEdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RSUYTVuU0Ug4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq3hKt3RN4AGbvg2ShUSS3jiKt3hKt3Rc1P2TO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kicjQ0LyjVQKYkdO0TdLkWNyTSTmQyToYTS38jbmgWb4nGd3g2M48FcVQ1SW8jRLsBVzIFM2jFaYw1cOQ2Ygg0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNCQ0J5IySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoYSLyk2SzLyLtkidLkGS1jlMwLWdOQyLy3VNt3hKtbyPt3hKt3hKt3hKqnmVyYEMC4hKtf2SrkEaYsBUUUUU1LjKt3xLOEGbvAWNlMyYGcyT4wTdx8zJ58zXqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtTjKPM0ZQYkVv.iQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKLQjVmACaXsVRG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKIQSLhoWRWM1bUwVX5UjQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTsVRxfELMIiXugCag4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BVvDVZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKB4hKt3hKt3hKt3hKtvzQD4hYA4hKC4hKt3hKt3hKt3hKt3hdK4hKF4hKt3hZrMFTt3hKt3hKpEDT04hKX4hKtHVdzHGTtDjKt3hKtnFaiAkKt3hKtLjKt3hKt3hKt3hKt3xS5sjKtXjKt3hKpw1XP4hKt3hKtTzJPUmKtfkKt3xM4omXz4RPt3hKt3hZrMFTt3hKt3BTGoVdz4hKX4hKP4hKt3hKt3hKt3hK3LkS1HjKlEjKtLjKt3hKt3hKt3hKHomdhQmLqbjKtHGSgQUatjyJA4hKt3hKtXlKtfkKt3hKt3hKX4hKF4hKtLFTNYiPtXVPt3hYXMWVGQjKt3hKtDjKt3hKt3hKt3hKt3xSnIjKlEjKtLjKt3hKt3hKt3hKt3xS5sjKtXjKt3hKpw1XP4hKt3hKtXyMPUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKtPjKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3RPP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKtX2P3HjKlEjKt3hKuk0QD4hKt3hKlY1S5sjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKtDjKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt.kKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3hcokWZt4hKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3hKt3hKt3hKtXlXzf2ZKcEchcyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3hMYQWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKx0FMr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjKt3hKt3hKt3hK3s1RWQmXzf2cq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKtXmKt3hKt3hKt3hKt3BTCgiPtXVPt3hKt7VVGQjKt3hKtXFSMo2Rt3hQt3hKMAUSssDTt3hKt3hKuk0QD4hKt3hK5wDMxsjKtXjKtPjKt3hKt3hKt3hKPIiZ4QmKtfkKtXmKt3hKt3hKt3hKtT2SM0lM3rRPt3xR4YDLIY1Jk4hKt3hKt3hKt3hKt3hKt3hKtXjKlEjKt.UdpkGct3BVt3hKHYUXwDTPt3hKt3hKt3hcB4hY2Emax0DQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0.0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0.0,
-																"mic_routing9" : 0.0,
-																"mic_routing10" : 0.0,
-																"mic_routing11" : 0.0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.835594, 0.835594, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 9, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene9" : 														{
-															"name" : "Connor",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0,
-																"mic_routing3" : 0,
-																"mic_routing4" : 0,
-																"mic_routing5" : 0,
-																"mic_routing6" : 0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0,
-																"mic_routing9" : 0,
-																"mic_routing10" : 0,
-																"mic_routing11" : 0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.76322, 0.765612, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-															"ambisonicPlayer" : 															{
-																"playback" : 0
-															}
-,
-															"reverbSettings:roomMicsState" : 1
-														}
-,
-														"Scene10" : 														{
-															"name" : "Benjamin",
-															"inputRouting" : 															{
-																"0" : [ 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0, 1.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"1" : [ 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"2" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"3" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"4" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"5" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"6" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"7" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"8" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"9" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"10" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"11" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-																"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-															}
-,
-															"reverbSettings" : 															{
-																"Reverb_picker" : "",
-																"IRVerb" : 																{
-																	"eqOutState" : 0.0,
-																	"inputEqState" : 1.0,
-																	"inputHpFreq" : 5905.511811023623522,
-																	"inputHpGain" : -18.141732283464542,
-																	"inputLpFreq" : 50.0,
-																	"inputLpGain" : 0.0,
-																	"inputPk1Freq" : 505.905511811023302,
-																	"inputPk1Gain" : -10.204724409448811,
-																	"inputPk2Freq" : 1000.0,
-																	"inputPk2Gain" : 0.0,
-																	"inputPk3Freq" : 4000.0,
-																	"inputPk3Gain" : -0.944881889763778,
-																	"live.text" : 1.0,
-																	"outputHpFreq" : 15000.0,
-																	"outputHpGain" : -24.0,
-																	"outputLpFreq" : 269.685039370078016,
-																	"outputLpGain" : 0.0,
-																	"outputPk1Freq" : 314.566929133858935,
-																	"outputPk1Gain" : 0.0,
-																	"outputPk2Freq" : 925.196850393701425,
-																	"outputPk2Gain" : -1.889763779527556,
-																	"outputPk3Freq" : 3212.598425196849348,
-																	"outputPk3Gain" : -10.204724409448804,
-																	"pre-delay" : 0.0,
-																	"reverb" : 0.0,
-																	"scale" : -2.047244094488186,
-																	"volume" : 1.0,
-																	"reverbSelect" : 																	{
-																		"ReverbFile" : 0,
-																		"reverbSpace" : 0
-																	}
-
-																}
-,
-																"VstVerb" : 																{
-																	"eqOutStateVST" : 0.0,
-																	"inputEqStateVST" : 0.0,
-																	"inputHpFreqVST" : 15000.0,
-																	"inputHpGainVST" : 0.0,
-																	"inputLpFreqVST" : 50.0,
-																	"inputLpGainVST" : 0.0,
-																	"inputPk1FreqVST" : 250.0,
-																	"inputPk1GainVST" : 0.0,
-																	"inputPk2FreqVST" : 1000.0,
-																	"inputPk2GainVST" : 0.0,
-																	"inputPk3FreqVST" : 4000.0,
-																	"inputPk3GainVST" : 0.0,
-																	"live.text" : 1.0,
-																	"outputHpFreqVST" : 15000.0,
-																	"outputHpGainVST" : 0.0,
-																	"outputLpFreqVST" : 50.0,
-																	"outputLpGainVST" : 0.0,
-																	"outputPk1FreqVST" : 250.0,
-																	"outputPk1GainVST" : 0.0,
-																	"outputPk2FreqVST" : 1000.0,
-																	"outputPk2GainVST" : 0.0,
-																	"outputPk3FreqVST" : 4000.0,
-																	"outputPk3GainVST" : 0.0,
-																	"pre-delayVST" : 0.0,
-																	"reverbVST" : 0.0,
-																	"vstFile" : 																	{
-																		"filetype" : "C74Snapshot",
-																		"version" : 2,
-																		"minorversion" : 0,
-																		"name" : "Stratus3D",
-																		"origin" : "Stratus3D.vst3info",
-																		"type" : "VST3",
-																		"subtype" : "AudioEffect",
-																		"embed" : 1,
-																		"snapshot" : 																		{
-																			"pluginname" : "Stratus3D.vst3info",
-																			"plugindisplayname" : "Stratus3D",
-																			"pluginsavedname" : "C74_VST3:/Stratus3D",
-																			"pluginsaveduniqueid" : -952463768,
-																			"version" : 1,
-																			"isbank" : 0,
-																			"isbase64" : 1,
-																			"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-																		}
-
-																	}
-
-																}
-
-															}
-,
-															"reverbRouting" : 															{
-																"mic_routing0" : 0.0,
-																"mic_routing1" : 0.0,
-																"mic_routing2" : 0.0,
-																"mic_routing3" : 0.0,
-																"mic_routing4" : 0.0,
-																"mic_routing5" : 0.0,
-																"mic_routing6" : 0.0,
-																"mic_routing7" : 0.0,
-																"mic_routing8" : 0.0,
-																"mic_routing9" : 0.0,
-																"mic_routing10" : 0.0,
-																"mic_routing11" : 0.0,
-																"mic_routing12" : 0,
-																"mic_routing13" : 0,
-																"mic_routing14" : 0,
-																"mic_routing15" : 0,
-																"mic_routing16" : 0,
-																"mic_routing17" : 0,
-																"mic_routing18" : 0,
-																"mic_routing19" : 0,
-																"mic_routing20" : 0,
-																"mic_routing21" : 0,
-																"mic_routing22" : 0,
-																"mic_routing23" : 0,
-																"mic_routing24" : 0,
-																"mic_routing25" : 0,
-																"mic_routing26" : 0,
-																"mic_routing27" : 0,
-																"mic_routing28" : 0,
-																"mic_routing29" : 0,
-																"mic_routing30" : 0,
-																"mic_routing31" : 0,
-																"mic_routing32" : 0,
-																"mic_routing33" : 0,
-																"mic_routing34" : 0,
-																"mic_routing35" : 0,
-																"mic_routing36" : 0,
-																"mic_routing37" : 0,
-																"mic_routing38" : 0,
-																"mic_routing39" : 0,
-																"mic_routing40" : 0,
-																"mic_routing41" : 0,
-																"mic_routing42" : 0,
-																"mic_routing43" : 0,
-																"mic_routing44" : 0,
-																"mic_routing45" : 0,
-																"mic_routing46" : 0,
-																"mic_routing47" : 0,
-																"mic_routing48" : 0,
-																"mic_routing49" : 0,
-																"mic_routing50" : 0,
-																"mic_routing51" : 0,
-																"mic_routing52" : 0,
-																"mic_routing53" : 0,
-																"mic_routing54" : 0,
-																"mic_routing55" : 0,
-																"mic_routing56" : 0,
-																"mic_routing57" : 0,
-																"mic_routing58" : 0,
-																"mic_routing59" : 0,
-																"mic_routing60" : 0,
-																"mic_routing61" : 0,
-																"mic_routing62" : 0,
-																"mic_routing63" : 0
-															}
-,
-															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.921053, 0.921053, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+															"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.852267, 0.883071, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
 															"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 															"ambisonicPlayer" : 															{
 																"playback" : 0
@@ -16837,12 +14091,12 @@
 								"box" : 								{
 									"data" : 									{
 										"Scene1" : 										{
-											"name" : "Insun",
+											"name" : "Percshow",
 											"inputRouting" : 											{
-												"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"0" : [ 0.0, 1.0, 0, 0.0, 0, 0, 0, 0, 1.0, 0.0, 0, 0, 0, 0, 0.0, 0.0, 1.0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"1" : [ 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -16863,8 +14117,8 @@
 												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"24" : [ 1.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0, 1.0, 0.0, 0.0, 0, 0, 0, 0, 0, 1.0, 0.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"25" : [ 0, 1.0, 0, 0.0, 0, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0.0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0.0, 1.0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 1.0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -16943,7 +14197,7 @@
 												}
 ,
 												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
+													"eqOutStateVST" : 1.0,
 													"inputEqStateVST" : 0.0,
 													"inputHpFreqVST" : 15000.0,
 													"inputHpGainVST" : 0.0,
@@ -16955,19 +14209,19 @@
 													"inputPk2GainVST" : 0.0,
 													"inputPk3FreqVST" : 4000.0,
 													"inputPk3GainVST" : 0.0,
-													"live.text" : 0.0,
+													"live.text" : 1.0,
 													"outputHpFreqVST" : 15000.0,
 													"outputHpGainVST" : 0.0,
 													"outputLpFreqVST" : 50.0,
 													"outputLpGainVST" : 0.0,
 													"outputPk1FreqVST" : 250.0,
 													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
+													"outputPk2FreqVST" : 539.370078740156714,
+													"outputPk2GainVST" : -6.614173228346448,
+													"outputPk3FreqVST" : 4511.811023622049106,
+													"outputPk3GainVST" : -0.188976377952756,
 													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.354330708661417,
+													"reverbVST" : 0.488188976377953,
 													"vstFile" : 													{
 														"filetype" : "C74Snapshot",
 														"version" : 2,
@@ -16985,7 +14239,7 @@
 															"version" : 1,
 															"isbank" : 0,
 															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT0azXEYlQjZgk1ZVkEcQcDRPcmUXoWUF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq3hKt3RNC4hKt3hKt3hKt3hKt3hKtXGbvAmTO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK33lcvjiYwcTQ0j1RWQmdOgia1ASNX8jRhQSZCcjS58DNZ4lX4nWd4kmM4E2ZCQ2SEQGYDshXwHWV3jVVrkULOYCdzwzJt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoMzQNo2SzLyLtkidLkGS1j1PG4jdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqXGVLYjM4AGbvw1SrkEaYsBUUUUU1LjKt3xLO4hKt3hKlMyYGcyT4wTdx8zJ58zXq3hKt3hKt3hKt3hKwAGbJshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtTTXmE0UY4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPUEahkVUxHVdqESXzEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3haxHVPtfkKtXmKt3hKt3hKt3hKt3hKZgiPtXVPt3hKt7VVGQjKt3hKtX2QtAyRt3hQt3BTSUlS1TDTt3hKt3hKuk0QD4hKt3hKB4hKt3hKt3hKt3hK14hLF4hYA4hKt3xaYcDQt3hKt3hYtMjXg4hKF4hKtXCSM01Rp4hKt3hKt7VVGQjKt3hKtHlQzHWXt3hQt3BQt3hKt3hKt3hKtXWSpkGcA4BVt3hKB4hKt3hKt3hKt3RNL0Ta1fyJA4hKKkmQvjjYqTlKt3hKt3hKH4hKF4hKt3hKt3hQtXVPt3hcYoVdzEjKX4hKt3hYgESPA4hKt3hKt3hK1YjKlEjKt3hKt3hcA4BVt3hct3hKt3hKt3hKt3hKPoENB4hYA4hKt3xaYcDQt3hKt3BT58FLK4hKF4hKl4hKt3hKP4hKt3hKt7VVGQjKt3hKtDjKt3hKt3hKt3hKt3BY4UjKlEjKtLjKt3hKt3hKt3hKt3xavrjKtXjKt3hKpw1XP4hKt3hKtLDaVUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKt3hKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3hKP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKt.kV3HjKlEjKt3hKuk0QD4hKt3hKt.yavrjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKt3hKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt3hKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3hYsklLhEjKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3xMqrBYGYyJq7jVv.WUwY0bZgyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3BLhIWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKTk2cr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjK1sxJ1LlbqrxJtUUbVMmVv.GLq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKt3RNJkDTzD2JG4hKtbETM0lM3rRPt3BRvvlKqUWNk4hKtH2R1njKt3hQt3hKMAUSsYCNqDjKtTyZNckQD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT2Px3hKtfkKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hK23FV1kCQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQ0ZMYkV5UjQgYlYTgkb2YjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKtXlLiISUO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK2ASZnkCTmE2Qzj2aS0VLOgia1ASNlE2QEUyT0QFN38TTz.CTqbiM1XCMSoTS431SxcTQzkCVzIFM2LjKt3hcOkCY0c0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4k1MHIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYSduMUaw7DMyLia4nGS4wjMogSMvj2SzLyLtkidLkGS1jFN0.SdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtb2St3hKlsBUUUUU1LjKt3xLOEGbvAWN2DWc4LyP1D0Yg8jKt3hYq3hKt3hKt3hKt3hKZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMUkQY8VUWElY1QkVwTkQHMUPWgUZUEiXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtbyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shKt3hKqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4hKtX2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxPt3hK27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3hKt3xJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcyStrRZ1shK27jPqLjcqfzMO4xJoY2JtbySBsxP1sBR27jKqjlcq3xMOIzJCY2JHcySt3hKlAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbFIjKt3hKt3hKt3hKAkUZ4P1Jk4hKt3BTw3VcxrxQt3hKtHjKt3hKt3hKtX1JXkVNjsRYt3hKTQiTxPzLqbjKt3hLo0TM1fyJA4hKtIzbrEDQt3hKt3RNrUjK0IVNG4hKtPmZMUiM3rRPt3BRqsjKyfGMk4hKtvTPMIiKt3hQt3hKpoVS0XCNqDjKtTyZL0VPD4hKt3hcz3hKt3hKt3hKt3hKxIWXA01JA4hK1gTRtLjKtfkKtXmKt3hKt3hKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKl4hKt3hKt3hKt3hY1oDMwDTaqDjKtfjbRQ2X1QSYt3hKDkjKt3hKt3hKt.kKt3hKt3hKtI1bpMyQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 														}
 
 													}
@@ -16995,15 +14249,15 @@
 											}
 ,
 											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 1.0,
-												"mic_routing2" : 1.0,
-												"mic_routing3" : 1.0,
-												"mic_routing4" : 0.0,
-												"mic_routing5" : 0.0,
+												"mic_routing0" : 0.787401574803149,
+												"mic_routing1" : 0.275590551181102,
+												"mic_routing2" : 0,
+												"mic_routing3" : 0,
+												"mic_routing4" : 0,
+												"mic_routing5" : 0,
 												"mic_routing6" : 0,
-												"mic_routing7" : 0.0,
-												"mic_routing8" : 0.0,
+												"mic_routing7" : 0,
+												"mic_routing8" : 0,
 												"mic_routing9" : 0,
 												"mic_routing10" : 0,
 												"mic_routing11" : 0,
@@ -17011,7 +14265,7 @@
 												"mic_routing13" : 0,
 												"mic_routing14" : 0,
 												"mic_routing15" : 0,
-												"mic_routing16" : 1.0,
+												"mic_routing16" : 0,
 												"mic_routing17" : 0,
 												"mic_routing18" : 0,
 												"mic_routing19" : 0,
@@ -17019,8 +14273,8 @@
 												"mic_routing21" : 0,
 												"mic_routing22" : 0,
 												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
+												"mic_routing24" : 0.0,
+												"mic_routing25" : 0.0,
 												"mic_routing26" : 0,
 												"mic_routing27" : 0,
 												"mic_routing28" : 0,
@@ -17061,20 +14315,20 @@
 												"mic_routing63" : 0
 											}
 ,
-											"outputLevel" : [ 0.921053, 0.921053, 0.858174, 0.855263, 0.791706, 0.792902, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.802398, 0.820192, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
-											"record" : [ 0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.852267, 0.883071, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
+											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 											"ambisonicPlayer" : 											{
 												"playback" : 0
 											}
 ,
-											"reverbSettings:roomMicsState" : 0
+											"reverbSettings:roomMicsState" : 1
 										}
 ,
 										"Scene2" : 										{
-											"name" : "Ben",
+											"name" : "seaborn",
 											"inputRouting" : 											{
-												"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"0" : [ 0.0, 1.0, 0, 0.0, 0, 0, 0, 0, 1.0, 0.0, 0, 0, 0, 0, 0.0, 1.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"1" : [ 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -17097,8 +14351,8 @@
 												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"24" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+												"25" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -17177,7 +14431,7 @@
 												}
 ,
 												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
+													"eqOutStateVST" : 1.0,
 													"inputEqStateVST" : 0.0,
 													"inputHpFreqVST" : 15000.0,
 													"inputHpGainVST" : 0.0,
@@ -17196,12 +14450,12 @@
 													"outputLpGainVST" : 0.0,
 													"outputPk1FreqVST" : 250.0,
 													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
+													"outputPk2FreqVST" : 539.370078740156714,
+													"outputPk2GainVST" : -6.614173228346448,
+													"outputPk3FreqVST" : 4511.811023622049106,
+													"outputPk3GainVST" : -0.188976377952756,
 													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.0,
+													"reverbVST" : 0.606299212598425,
 													"vstFile" : 													{
 														"filetype" : "C74Snapshot",
 														"version" : 2,
@@ -17219,7 +14473,7 @@
 															"version" : 1,
 															"isbank" : 0,
 															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQ0ZMYkV5UjQgYlYTgkb2YjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKtXlLiISUO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK2ASZnkCTmE2Qzj2aS0VLOgia1ASNlE2QEUyT0QFN38jR0YjRqbiM1XCMSoTS431SxcTQzkCVzIFM2LjKt3hcOkCY0c0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4k1MHIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYSduMUaw7DMyLia4nGS4wjMogSMvj2SzLyLtkidLkGS1jFN0.SdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtb2St3hKlsBUUUUU1LjKt3xLOEGbvAWN2DWc4LyP1D0Yg8jKt3hYq3hKt3hKt3hKt3hKZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMUkQY8VUWElY1QkVwTkQHMUPWgUZUEiXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKxUTLtUmLqbjKtLCStHTbCckcTkGNPI0U1IjKtfkKt.ESt3hKt3hKt3hKtjzXAsjKtXVPt3hSCYlc0XWQLAiXkwjKt3hKt3hKt3BQC4hKt3hKt3hKt.kTWYmPt3BVt3hK5UTLtUmLqbjKt3hYq0TM1fyJA4hKEkCLyEFQt3hKt3hKt3hKt3hKt3hKtPlLOgUPssRPt3xPt3hKt3hKt3hKtv1cT8DchkyQt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3BTt3xMmMTPt3hKt3hKt3hKt3hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3RPtX2QNQjKt3hKt3hKt3hKt3hKt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3BTt3xMmMTPt3hKt3hKt3hKt3hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3RPtX2QNQjKt3hKt3hKt3hKt3hKt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3hKLgTLtUmLqbjKtPUMOElQP4hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3hcjgUZ4P1Jk4hK1cFc3jkKA4hKt3hKYAiMzEkKt3hKt.ka2X1Q2QSYt3hKxcTLtUmLqbjKtnlamckQP4hKt3hKlUFVokCYqTlKtXVXVUmMFEjKt3hKpcyQLYWd3PWSDAETtkCLK4hKX4hKt3hKt3hKt3hKt3hZ1UEVFAkKt3hKtXmYXkVNjsRYt3hKv.GNY4RPt3hKtPjKtT1LP4hKt3hKIsRPCciX0E1PAQjKt3hKt3hKt3hKtzFNjQWPtXVPt3BTwESPBEjKX4hKt3hKt3hKt3hKt3hKBQySIAkKt3hKtLyMnYmPt3BVt3hKyfTLtUmLqbjKtXmVMElQP4hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKlUEb2EjKtfkKtXlKtbyYCEjKt3hKpcyQLYWd3PWSDAUPtX2QNQjKt3hKt3hKt3hKt3hKt3hZ2bDS1kGNz0DQPEjKt3hKt3hKt3hKLkULtUmLqbjKt3BL3YDRD4hYA4hKPEWLAITPtfkKt3xMHEia0IyJG4hKtHEaMUiM3rRPt3BdJIybgQjKt3hKl4hK2XVQhkyQt3hZ2bDS1kGNz0DQP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLGZMUiM3rRPt3hRScmbLY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RPt3hKD4hKt3hKt3hKt3hcTMScGYlK1g1LP4hKt3hK23hKt3BTlYlcTgjKt3hKt3hKt3hKX4hYDgDRLUTN1DjKtLGRNQjKt3hKt3hKt3hKt3hKt3hK2cGZy.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hPt.ULN4hKtg1LP4hKt3hKw.kZxMFdzcmPt3RRt3hKt3hKt3hKP4hKt3BTt3hKt3hPt.ULN4hKt3hKtXlZJg1PA4hKt3hKEkVS0XCNqDjKt3hKkEWbC4hKt3hKPg2YJUjKtXjKt3hKtXVPt3hKt3hKF4BRAIjPSc1Jj4hciEia0IyJG4hKHkWaogmK4rRPt3RPt3hKt3hKt3hKPYSXNozPyrxQt3hKt3hKt3hKt3hKtXGUyT2Qt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hRLEia0IyJG4hKtLCZMUiM3rRPt3haygUZ4P1Jk4hKtf0Rw3VcxrxQt3hYJomVFAkKt3hKtXVXQgjM3QSYt3BTtPVLtUmLqbjKtXlViEjVK01JA4hKtDScIIjKtfkKt3haKEia0IyJG4hK5QkQiYDTt3hKt3hYzgUZ4P1Jk4hKt.GTwkkKA4hKt3hKzUzYxsTaqDjKtDzLYkVNjsRYt3hKvASQtMmX4bjKt3BVqvFRt3hYA4hKlUWVokCYqTlKt3hL2oWVtDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXVah4lTA4hYA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hcTMScG4hKt3hKt3hKt3hKtHjKt3BRt3hKt3hKt3hKt3hK2XjKt3BVt3hKt.ERnMTPt3hKt3BYzDlKt3hYA4hKR4hKt3hKC4hKtXlKt3hKt3hKt3hKH4hKt3hKt3hKt3hKtbFRNQjKt3hKt3BUHg1PA4hKt3hYt3hKt3hKt3hKt3RdXkVNjsRYt3hYZczLJMzLqbjKt3hKt3hKt3hKt3hKH4RPt3xYt3BLZsxJqLjKt3hKt3hKtLjKt3hKt3hKt3RPt3hKt3hKt3hKtvjKt3hKt3hKt3hKtPDZy.kKt3hKt3hKy7jSmsRYt3hKt.ERnMTPt3hKtPjKt3hKt3hKt3hKlkGVokCYqTlKtXWZrMiRCMyJG4hKtHFSvACTt3hKt3hct3hKt3hKt3hKtPTSw3VcxrxQt3BVhkyaYAkKt3hKt3xQooUSD4hKt3hKt3RNoM0LqbjKt3xPt3hKt3hKt3hKA4hKt3hKt3hKt3BTMEia0IyJG4hKXIVNukETt3hKt3hcvrVYOc1Jk4hKP4hKt3hKt3hKt3hKPUCV4PTNqDjKtXmKt3hKt3hKt3hKl0TLtUmLqbjKtPkL3UGdtjyJA4hKtTDNN4zYqTlKt3hXiQiLSMyJG4hKL4hKt3hKt3hKt3hYWkiQt3hKX4hKtf0aoQyTyrxQt3hKWcUN3PTNqDjKtXlLXkVNjsRYt3hKMQDQMMzLqbjKtXmUAQGdtjyJA4hKA4hKt3hKt3hKt3hct3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtr1aQoGSlsRYt3hKD4RPtDDTt3hKtXVZo0TM1fyJA4hKlMCVokCYqTlKtXVZYQTSCMyJG4hKPACVQkmK4rRPt3hK1olVN4hKX4hKt3hKt3hKt3hKt3hYAMEbz3hKlEjKt3BMXkVNjsRYt3hKpcFZLMzLqbjKt3xao0TM1fyJA4hK0gVV0MFdzcmPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK0fUZ4P1Jk4hKtDmQrszPyrxQt3hYOcFU44RNqDjKtPUSVoGSlsRYt3hKp4BQ4ojKt3hKtnlKt3hKt3hKt3hK1UCVokCYqTlKtXWTGgFSCMyJG4hKp4hKt3hKt3hKt3hK1olVN4hKX4hKPMlZynVaxElbt3hYAMEbz3hKlEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLs0TM1fyJA4hKrsRUvvjYqTlKt.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hKt3hKt3hc0HTcJoURwg0cAEjKt3hKt3hKt3hKBgmav41ZxgVQGQjKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hLo0TM1fyJA4hKtIzbrEDQt3hKt3RNrUjK0IVNG4hKtPmZMUiM3rRPt3BRqsjKyfGMk4hKtvTPMIiKt3hQt3hKpoVS0XCNqDjKtTyZL0VPD4hKt3BTt3hKt3hKt3hKt3hKt3hKt3hKt3hK1gTRtLjKtfkKt3hKt3hKt3hKt3hKH4hKFgDQtXVPt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKtUlV1I2Pt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 														}
 
 													}
@@ -17229,242 +14483,8 @@
 											}
 ,
 											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 0.0,
-												"mic_routing2" : 0,
-												"mic_routing3" : 0.0,
-												"mic_routing4" : 0,
-												"mic_routing5" : 0,
-												"mic_routing6" : 0,
-												"mic_routing7" : 0,
-												"mic_routing8" : 0,
-												"mic_routing9" : 0,
-												"mic_routing10" : 0,
-												"mic_routing11" : 0,
-												"mic_routing12" : 0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0,
-												"mic_routing16" : 0,
-												"mic_routing17" : 0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0,
-												"mic_routing39" : 0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.829688, 0.840379, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : 0
-											}
-,
-											"reverbSettings:roomMicsState" : 1
-										}
-,
-										"Scene3" : 										{
-											"name" : "Alvin",
-											"inputRouting" : 											{
-												"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
-													"inputEqStateVST" : 0.0,
-													"inputHpFreqVST" : 15000.0,
-													"inputHpGainVST" : 0.0,
-													"inputLpFreqVST" : 50.0,
-													"inputLpGainVST" : 0.0,
-													"inputPk1FreqVST" : 250.0,
-													"inputPk1GainVST" : 0.0,
-													"inputPk2FreqVST" : 1000.0,
-													"inputPk2GainVST" : 0.0,
-													"inputPk3FreqVST" : 4000.0,
-													"inputPk3GainVST" : 0.0,
-													"live.text" : 1.0,
-													"outputHpFreqVST" : 15000.0,
-													"outputHpGainVST" : 0.0,
-													"outputLpFreqVST" : 50.0,
-													"outputLpGainVST" : 0.0,
-													"outputPk1FreqVST" : 250.0,
-													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
-													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.0,
-													"vstFile" : 													{
-														"filetype" : "C74Snapshot",
-														"version" : 2,
-														"minorversion" : 0,
-														"name" : "Stratus3D",
-														"origin" : "Stratus3D.vst3info",
-														"type" : "VST3",
-														"subtype" : "AudioEffect",
-														"embed" : 1,
-														"snapshot" : 														{
-															"pluginname" : "Stratus3D.vst3info",
-															"plugindisplayname" : "Stratus3D",
-															"pluginsavedname" : "C74_VST3:/Stratus3D",
-															"pluginsaveduniqueid" : -952463768,
-															"version" : 1,
-															"isbank" : 0,
-															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-														}
-
-													}
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 0.0,
+												"mic_routing0" : 1.0,
+												"mic_routing1" : 0.275590551181102,
 												"mic_routing2" : 0,
 												"mic_routing3" : 0,
 												"mic_routing4" : 0,
@@ -17487,8 +14507,8 @@
 												"mic_routing21" : 0,
 												"mic_routing22" : 0,
 												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
+												"mic_routing24" : 0.0,
+												"mic_routing25" : 0.0,
 												"mic_routing26" : 0,
 												"mic_routing27" : 0,
 												"mic_routing28" : 0,
@@ -17529,1646 +14549,7 @@
 												"mic_routing63" : 0
 											}
 ,
-											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.5852, 0.586396, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : 0
-											}
-,
-											"reverbSettings:roomMicsState" : 1
-										}
-,
-										"Scene4" : 										{
-											"name" : "JD",
-											"inputRouting" : 											{
-												"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
-													"inputEqStateVST" : 0.0,
-													"inputHpFreqVST" : 15000.0,
-													"inputHpGainVST" : 0.0,
-													"inputLpFreqVST" : 50.0,
-													"inputLpGainVST" : 0.0,
-													"inputPk1FreqVST" : 250.0,
-													"inputPk1GainVST" : 0.0,
-													"inputPk2FreqVST" : 1000.0,
-													"inputPk2GainVST" : 0.0,
-													"inputPk3FreqVST" : 4000.0,
-													"inputPk3GainVST" : 0.0,
-													"live.text" : 1.0,
-													"outputHpFreqVST" : 15000.0,
-													"outputHpGainVST" : 0.0,
-													"outputLpFreqVST" : 50.0,
-													"outputLpGainVST" : 0.0,
-													"outputPk1FreqVST" : 250.0,
-													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
-													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.0,
-													"vstFile" : 													{
-														"filetype" : "C74Snapshot",
-														"version" : 2,
-														"minorversion" : 0,
-														"name" : "Stratus3D",
-														"origin" : "Stratus3D.vst3info",
-														"type" : "VST3",
-														"subtype" : "AudioEffect",
-														"embed" : 1,
-														"snapshot" : 														{
-															"pluginname" : "Stratus3D.vst3info",
-															"plugindisplayname" : "Stratus3D",
-															"pluginsavedname" : "C74_VST3:/Stratus3D",
-															"pluginsaveduniqueid" : -952463768,
-															"version" : 1,
-															"isbank" : 0,
-															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-														}
-
-													}
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 0.0,
-												"mic_routing2" : 0.0,
-												"mic_routing3" : 0.0,
-												"mic_routing4" : 0.0,
-												"mic_routing5" : 0.0,
-												"mic_routing6" : 0.0,
-												"mic_routing7" : 0,
-												"mic_routing8" : 0,
-												"mic_routing9" : 0,
-												"mic_routing10" : 0,
-												"mic_routing11" : 0,
-												"mic_routing12" : 0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0,
-												"mic_routing16" : 0,
-												"mic_routing17" : 0.0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0,
-												"mic_routing39" : 0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.834473, 0.840379, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-											"record" : [ 0, 0, 0, 0, 3, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : 0
-											}
-,
-											"reverbSettings:roomMicsState" : 1
-										}
-,
-										"Scene5" : 										{
-											"name" : "Marco",
-											"inputRouting" : 											{
-												"0" : [ 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
-													"inputEqStateVST" : 0.0,
-													"inputHpFreqVST" : 15000.0,
-													"inputHpGainVST" : 0.0,
-													"inputLpFreqVST" : 50.0,
-													"inputLpGainVST" : 0.0,
-													"inputPk1FreqVST" : 250.0,
-													"inputPk1GainVST" : 0.0,
-													"inputPk2FreqVST" : 1000.0,
-													"inputPk2GainVST" : 0.0,
-													"inputPk3FreqVST" : 4000.0,
-													"inputPk3GainVST" : 0.0,
-													"live.text" : 1.0,
-													"outputHpFreqVST" : 15000.0,
-													"outputHpGainVST" : 0.0,
-													"outputLpFreqVST" : 50.0,
-													"outputLpGainVST" : 0.0,
-													"outputPk1FreqVST" : 250.0,
-													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
-													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.0,
-													"vstFile" : 													{
-														"filetype" : "C74Snapshot",
-														"version" : 2,
-														"minorversion" : 0,
-														"name" : "Stratus3D",
-														"origin" : "Stratus3D.vst3info",
-														"type" : "VST3",
-														"subtype" : "AudioEffect",
-														"embed" : 1,
-														"snapshot" : 														{
-															"pluginname" : "Stratus3D.vst3info",
-															"plugindisplayname" : "Stratus3D",
-															"pluginsavedname" : "C74_VST3:/Stratus3D",
-															"pluginsaveduniqueid" : -952463768,
-															"version" : 1,
-															"isbank" : 0,
-															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-														}
-
-													}
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 0.0,
-												"mic_routing2" : 0.0,
-												"mic_routing3" : 0.0,
-												"mic_routing4" : 0.0,
-												"mic_routing5" : 0.0,
-												"mic_routing6" : 0.0,
-												"mic_routing7" : 0.0,
-												"mic_routing8" : 0.0,
-												"mic_routing9" : 0.0,
-												"mic_routing10" : 0,
-												"mic_routing11" : 0,
-												"mic_routing12" : 0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0,
-												"mic_routing16" : 0.0,
-												"mic_routing17" : 0.0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0.0,
-												"mic_routing39" : 0.0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0, 0.957895, 0.955595, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
-											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : 0
-											}
-,
-											"reverbSettings:roomMicsState" : 1,
-											"0" : 0.0
-										}
-,
-										"Scene6" : 										{
-											"name" : "Justin",
-											"inputRouting" : 											{
-												"0" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 1.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 1.0, 0.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 1.0, 1.0, 0.0, 0, 0.0, 1.0, 1.0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
-													"inputEqStateVST" : 0.0,
-													"inputHpFreqVST" : 15000.0,
-													"inputHpGainVST" : 0.0,
-													"inputLpFreqVST" : 50.0,
-													"inputLpGainVST" : 0.0,
-													"inputPk1FreqVST" : 250.0,
-													"inputPk1GainVST" : 0.0,
-													"inputPk2FreqVST" : 1000.0,
-													"inputPk2GainVST" : 0.0,
-													"inputPk3FreqVST" : 4000.0,
-													"inputPk3GainVST" : 0.0,
-													"live.text" : 1.0,
-													"outputHpFreqVST" : 15000.0,
-													"outputHpGainVST" : 0.0,
-													"outputLpFreqVST" : 50.0,
-													"outputLpGainVST" : 0.0,
-													"outputPk1FreqVST" : 250.0,
-													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
-													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.181102362204725,
-													"vstFile" : 													{
-														"filetype" : "C74Snapshot",
-														"version" : 2,
-														"minorversion" : 0,
-														"name" : "Stratus3D",
-														"origin" : "Stratus3D.vst3info",
-														"type" : "VST3",
-														"subtype" : "AudioEffect",
-														"embed" : 1,
-														"snapshot" : 														{
-															"pluginname" : "Stratus3D.vst3info",
-															"plugindisplayname" : "Stratus3D",
-															"pluginsavedname" : "C74_VST3:/Stratus3D",
-															"pluginsaveduniqueid" : -952463768,
-															"version" : 1,
-															"isbank" : 0,
-															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK1Q0b2YDRHsVLY4VPBI0Y2YTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKqfEaYw1MC4hKtLySt3hKlshKt3hKt.EQQQTVO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKzQFUyjCTmE2Q0jVPCYjdOwVVrQSNtYGLoUyTmITQ38jbmg2Rq3FarwVMC4lLuQ2SCc0SvkCVzIFM2LUdLkmbOAENSU1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNocULqAySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoYSLyk2SzLyLtkidLkGS1jlMwLWdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNlMyYGUyPt3hKy7DYpcTVq3hKt3hKt3hKt3hKt3hKtrhKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3xSJIFN4HlRyrlMC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcLQTPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlKt3hKt3hKt3hKt3xL4MWPtfkKt3hKPoULAEjKt3hKtDiYOIiQtXVPt3hKt3hKt3RRt3hKt3BTZESPA4hKt3hKWQlS1XjKlEjKt3hKt3hKt3hKt3hKhkCMxElKtXjKtXlKt3hKt3hKt3hKC4hKt3hKt3hKt3hKtPkdK4hKF4hKt3hZrMFTt3hKt3hKvEUT04hKX4hKtHFMzHWXtDjKt3hKtnFaiAkKt3hKt.UZpkGct3BVt3BTt3hKt3hKt3hKt3RSU4jMB4hYA4hKC4hKt3hKt3hKt3xM4omXzIyJG4hKxwTXT0lK4rRPt3BTqnVdz4hKX4hKt3hKt3BVt3hQt3hKMIkS1HjKlEjKt3BVyk0QD4hKt3hKt3hKtrjKtXjKt3hKt3hKD4hYA4hKt3hKtXlKtfkKt3hKt3hKh4hKF4hKtfyTNYiPtDjKt3BTA4hKtH2JqbjKtDjKt3hKt3hKt3hKtX2Z4UjKlEjKtLjKt3hKt3hKt3hKt3BU5sjKtXjKt3hKpw1XP4hKt3hKtHjTQUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKt3hKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3hKP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKt3RQ3HjKlEjKt3hKuk0QD4hKt3hK1ACU5sjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKt3hKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt3hKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3BT0QFMhEjKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3hKt3hKt3hKt3xXzf2ZKcEchcyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3BM4TWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKpYyJr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjKt3hKt3hKt3hK5s1RWQmXzf2cq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKt3RNJkDTzD2JG4hKtbETM0lM3rRPt3BRvvlKqUWNk4hKtH2R1njKt3hQt3hKMAUSsYCNqDjKtTyZNckQD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT2Px3hKtfkKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKyHFT3DVSt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-														}
-
-													}
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 0.0,
-												"mic_routing2" : 0.0,
-												"mic_routing3" : 0.0,
-												"mic_routing4" : 0,
-												"mic_routing5" : 0.0,
-												"mic_routing6" : 0,
-												"mic_routing7" : 0,
-												"mic_routing8" : 0.0,
-												"mic_routing9" : 0.0,
-												"mic_routing10" : 0.0,
-												"mic_routing11" : 0.0,
-												"mic_routing12" : 0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0.0,
-												"mic_routing16" : 0,
-												"mic_routing17" : 0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0,
-												"mic_routing39" : 0.0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.841575, 0.84509, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 5, 6, 7, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : 0
-											}
-,
-											"reverbSettings:roomMicsState" : 1
-										}
-,
-										"Scene7" : 										{
-											"name" : "Patrick",
-											"inputRouting" : 											{
-												"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
-													"inputEqStateVST" : 0.0,
-													"inputHpFreqVST" : 15000.0,
-													"inputHpGainVST" : 0.0,
-													"inputLpFreqVST" : 50.0,
-													"inputLpGainVST" : 0.0,
-													"inputPk1FreqVST" : 250.0,
-													"inputPk1GainVST" : 0.0,
-													"inputPk2FreqVST" : 1000.0,
-													"inputPk2GainVST" : 0.0,
-													"inputPk3FreqVST" : 4000.0,
-													"inputPk3GainVST" : 0.0,
-													"live.text" : 1.0,
-													"outputHpFreqVST" : 15000.0,
-													"outputHpGainVST" : 0.0,
-													"outputLpFreqVST" : 50.0,
-													"outputLpGainVST" : 0.0,
-													"outputPk1FreqVST" : 250.0,
-													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
-													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.0,
-													"vstFile" : 													{
-														"filetype" : "C74Snapshot",
-														"version" : 2,
-														"minorversion" : 0,
-														"name" : "Stratus3D",
-														"origin" : "Stratus3D.vst3info",
-														"type" : "VST3",
-														"subtype" : "AudioEffect",
-														"embed" : 1,
-														"snapshot" : 														{
-															"pluginname" : "Stratus3D.vst3info",
-															"plugindisplayname" : "Stratus3D",
-															"pluginsavedname" : "C74_VST3:/Stratus3D",
-															"pluginsaveduniqueid" : -952463768,
-															"version" : 1,
-															"isbank" : 0,
-															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-														}
-
-													}
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 0.0,
-												"mic_routing2" : 0.0,
-												"mic_routing3" : 0,
-												"mic_routing4" : 0,
-												"mic_routing5" : 0,
-												"mic_routing6" : 0,
-												"mic_routing7" : 0,
-												"mic_routing8" : 0,
-												"mic_routing9" : 0,
-												"mic_routing10" : 0,
-												"mic_routing11" : 0.0,
-												"mic_routing12" : 0.0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0,
-												"mic_routing16" : 0,
-												"mic_routing17" : 0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0,
-												"mic_routing39" : 0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0.93191, 0.936842, 0.908043, 0.906847, 0.834473, 0.83679, 0.723684, 0.723684, 0.0, 0.881579, 0.815789, 0.763158, 0.0, 0.763158, 0.815789, 0.881579, 0.0, 0.712154, 0.775108, 0.807108, 0.85937, 0.0, 0.827295, 0.769126, 0.783407, 0.749014, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.8178, 0.906847, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : 0
-											}
-,
-											"reverbSettings:roomMicsState" : 1
-										}
-,
-										"Scene8" : 										{
-											"name" : "Halie",
-											"inputRouting" : 											{
-												"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 1.0, 0, 1.0, 0, 0.0, 0, 0.0, 0, 0, 1.0, 1.0, 0.0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0, 1.0, 0, 1.0, 0, 0.0, 0, 0.0, 0, 0, 0, 0, 0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0.0, 0.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
-													"inputEqStateVST" : 0.0,
-													"inputHpFreqVST" : 15000.0,
-													"inputHpGainVST" : 0.0,
-													"inputLpFreqVST" : 50.0,
-													"inputLpGainVST" : 0.0,
-													"inputPk1FreqVST" : 250.0,
-													"inputPk1GainVST" : 0.0,
-													"inputPk2FreqVST" : 1000.0,
-													"inputPk2GainVST" : 0.0,
-													"inputPk3FreqVST" : 4000.0,
-													"inputPk3GainVST" : 0.0,
-													"live.text" : 1.0,
-													"outputHpFreqVST" : 15000.0,
-													"outputHpGainVST" : 0.0,
-													"outputLpFreqVST" : 50.0,
-													"outputLpGainVST" : 0.0,
-													"outputPk1FreqVST" : 250.0,
-													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
-													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.181102362204724,
-													"vstFile" : 													{
-														"filetype" : "C74Snapshot",
-														"version" : 2,
-														"minorversion" : 0,
-														"name" : "Stratus3D",
-														"origin" : "Stratus3D.vst3info",
-														"type" : "VST3",
-														"subtype" : "AudioEffect",
-														"embed" : 1,
-														"snapshot" : 														{
-															"pluginname" : "Stratus3D.vst3info",
-															"plugindisplayname" : "Stratus3D",
-															"pluginsavedname" : "C74_VST3:/Stratus3D",
-															"pluginsaveduniqueid" : -952463768,
-															"version" : 1,
-															"isbank" : 0,
-															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPM0ZQYDRCclUXMWRVkEdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RSUYTVuU0Ug4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq3hKt3RN4AGbvg2ShUSS3jiKt3hKt3Rc1P2TO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kicjQ0LyjVQKYkdO0TdLkWNyTSTmQyToYTS38jbmgWb4nGd3g2M48FcVQ1SW8jRLsBVzIFM2jFaYw1cOQ2Ygg0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNCQ0J5IySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoYSLyk2SzLyLtkidLkGS1jlMwLWdOQyLy3VNt3hKtbyPt3hKt3hKt3hKqnmVyYEMC4hKtf2SrkEaYsBUUUUU1LjKt3xLOEGbvAWNlMyYGcyT4wTdx8zJ58zXqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtTjKPM0ZQYkVv.iQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKLQjVmACaXsVRG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKIQSLhoWRWM1bUwVX5UjQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTsVRxfELMIiXugCag4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BVvDVZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKB4hKt3hKt3hKt3hKtvzQD4hYA4hKC4hKt3hKt3hKt3hKt3hdK4hKF4hKt3hZrMFTt3hKt3hKpEDT04hKX4hKtHVdzHGTtDjKt3hKtnFaiAkKt3hKtLjKt3hKt3hKt3hKt3xS5sjKtXjKt3hKpw1XP4hKt3hKtTzJPUmKtfkKt3xM4omXz4RPt3hKt3hZrMFTt3hKt3BTGoVdz4hKX4hKP4hKt3hKt3hKt3hK3LkS1HjKlEjKtLjKt3hKt3hKt3hKHomdhQmLqbjKtHGSgQUatjyJA4hKt3hKtXlKtfkKt3hKt3hKX4hKF4hKtLFTNYiPtXVPt3hYXMWVGQjKt3hKtDjKt3hKt3hKt3hKt3xSnIjKlEjKtLjKt3hKt3hKt3hKt3xS5sjKtXjKt3hKpw1XP4hKt3hKtXyMPUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKtPjKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3RPP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKtX2P3HjKlEjKt3hKuk0QD4hKt3hKlY1S5sjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKtDjKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt.kKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3hcokWZt4hKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3hKt3hKt3hKtXlXzf2ZKcEchcyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3hMYQWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKx0FMr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjKt3hKt3hKt3hK3s1RWQmXzf2cq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKtXmKt3hKt3hKt3hKt3BTCgiPtXVPt3hKt7VVGQjKt3hKtXFSMo2Rt3hQt3hKMAUSssDTt3hKt3hKuk0QD4hKt3hK5wDMxsjKtXjKtPjKt3hKt3hKt3hKPIiZ4QmKtfkKtXmKt3hKt3hKt3hKtT2SM0lM3rRPt3xR4YDLIY1Jk4hKt3hKt3hKt3hKt3hKt3hKtXjKlEjKt.UdpkGct3BVt3hKHYUXwDTPt3hKt3hKt3hcB4hY2Emax0DQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-														}
-
-													}
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 0.0,
-												"mic_routing2" : 0.0,
-												"mic_routing3" : 0,
-												"mic_routing4" : 0,
-												"mic_routing5" : 0,
-												"mic_routing6" : 0.0,
-												"mic_routing7" : 0.0,
-												"mic_routing8" : 0.0,
-												"mic_routing9" : 0.0,
-												"mic_routing10" : 0.0,
-												"mic_routing11" : 0.0,
-												"mic_routing12" : 0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0,
-												"mic_routing16" : 0,
-												"mic_routing17" : 0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0,
-												"mic_routing39" : 0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.835594, 0.835594, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-											"record" : [ 0, 0, 0, 0, 0, 0, 9, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : 0
-											}
-,
-											"reverbSettings:roomMicsState" : 1
-										}
-,
-										"Scene9" : 										{
-											"name" : "Connor",
-											"inputRouting" : 											{
-												"0" : [ 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0, 1.0, 0, 1.0, 0, 1.0, 0, 1.0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
-													"inputEqStateVST" : 0.0,
-													"inputHpFreqVST" : 15000.0,
-													"inputHpGainVST" : 0.0,
-													"inputLpFreqVST" : 50.0,
-													"inputLpGainVST" : 0.0,
-													"inputPk1FreqVST" : 250.0,
-													"inputPk1GainVST" : 0.0,
-													"inputPk2FreqVST" : 1000.0,
-													"inputPk2GainVST" : 0.0,
-													"inputPk3FreqVST" : 4000.0,
-													"inputPk3GainVST" : 0.0,
-													"live.text" : 1.0,
-													"outputHpFreqVST" : 15000.0,
-													"outputHpGainVST" : 0.0,
-													"outputLpFreqVST" : 50.0,
-													"outputLpGainVST" : 0.0,
-													"outputPk1FreqVST" : 250.0,
-													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
-													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.0,
-													"vstFile" : 													{
-														"filetype" : "C74Snapshot",
-														"version" : 2,
-														"minorversion" : 0,
-														"name" : "Stratus3D",
-														"origin" : "Stratus3D.vst3info",
-														"type" : "VST3",
-														"subtype" : "AudioEffect",
-														"embed" : 1,
-														"snapshot" : 														{
-															"pluginname" : "Stratus3D.vst3info",
-															"plugindisplayname" : "Stratus3D",
-															"pluginsavedname" : "C74_VST3:/Stratus3D",
-															"pluginsaveduniqueid" : -952463768,
-															"version" : 1,
-															"isbank" : 0,
-															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-														}
-
-													}
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 0.0,
-												"mic_routing2" : 0,
-												"mic_routing3" : 0,
-												"mic_routing4" : 0,
-												"mic_routing5" : 0,
-												"mic_routing6" : 0,
-												"mic_routing7" : 0.0,
-												"mic_routing8" : 0,
-												"mic_routing9" : 0,
-												"mic_routing10" : 0,
-												"mic_routing11" : 0,
-												"mic_routing12" : 0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0,
-												"mic_routing16" : 0,
-												"mic_routing17" : 0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0,
-												"mic_routing39" : 0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.76322, 0.765612, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
-											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-											"ambisonicPlayer" : 											{
-												"playback" : 0
-											}
-,
-											"reverbSettings:roomMicsState" : 1
-										}
-,
-										"Scene10" : 										{
-											"name" : "Benjamin",
-											"inputRouting" : 											{
-												"0" : [ 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0, 1.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"1" : [ 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0, 0.0, 1.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"2" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"3" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"4" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"5" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"6" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"7" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"8" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"9" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"10" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"11" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"12" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"13" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"14" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"15" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"16" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"17" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"18" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"19" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"20" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"21" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"22" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"23" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"24" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"25" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"26" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"27" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"28" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"29" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"30" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"31" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"32" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"33" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"34" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"35" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"36" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"37" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"38" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"39" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"40" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"41" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"42" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"43" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"44" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"45" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"46" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"47" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"48" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"49" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"50" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"51" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"52" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"53" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"54" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"55" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"56" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"57" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"58" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"59" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"60" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"61" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"62" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-												"63" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-											}
-,
-											"reverbSettings" : 											{
-												"Reverb_picker" : "",
-												"IRVerb" : 												{
-													"eqOutState" : 0.0,
-													"inputEqState" : 1.0,
-													"inputHpFreq" : 5905.511811023623522,
-													"inputHpGain" : -18.141732283464542,
-													"inputLpFreq" : 50.0,
-													"inputLpGain" : 0.0,
-													"inputPk1Freq" : 505.905511811023302,
-													"inputPk1Gain" : -10.204724409448811,
-													"inputPk2Freq" : 1000.0,
-													"inputPk2Gain" : 0.0,
-													"inputPk3Freq" : 4000.0,
-													"inputPk3Gain" : -0.944881889763778,
-													"live.text" : 1.0,
-													"outputHpFreq" : 15000.0,
-													"outputHpGain" : -24.0,
-													"outputLpFreq" : 269.685039370078016,
-													"outputLpGain" : 0.0,
-													"outputPk1Freq" : 314.566929133858935,
-													"outputPk1Gain" : 0.0,
-													"outputPk2Freq" : 925.196850393701425,
-													"outputPk2Gain" : -1.889763779527556,
-													"outputPk3Freq" : 3212.598425196849348,
-													"outputPk3Gain" : -10.204724409448804,
-													"pre-delay" : 0.0,
-													"reverb" : 0.0,
-													"scale" : -2.047244094488186,
-													"volume" : 1.0,
-													"reverbSelect" : 													{
-														"ReverbFile" : 0,
-														"reverbSpace" : 0
-													}
-
-												}
-,
-												"VstVerb" : 												{
-													"eqOutStateVST" : 0.0,
-													"inputEqStateVST" : 0.0,
-													"inputHpFreqVST" : 15000.0,
-													"inputHpGainVST" : 0.0,
-													"inputLpFreqVST" : 50.0,
-													"inputLpGainVST" : 0.0,
-													"inputPk1FreqVST" : 250.0,
-													"inputPk1GainVST" : 0.0,
-													"inputPk2FreqVST" : 1000.0,
-													"inputPk2GainVST" : 0.0,
-													"inputPk3FreqVST" : 4000.0,
-													"inputPk3GainVST" : 0.0,
-													"live.text" : 1.0,
-													"outputHpFreqVST" : 15000.0,
-													"outputHpGainVST" : 0.0,
-													"outputLpFreqVST" : 50.0,
-													"outputLpGainVST" : 0.0,
-													"outputPk1FreqVST" : 250.0,
-													"outputPk1GainVST" : 0.0,
-													"outputPk2FreqVST" : 1000.0,
-													"outputPk2GainVST" : 0.0,
-													"outputPk3FreqVST" : 4000.0,
-													"outputPk3GainVST" : 0.0,
-													"pre-delayVST" : 0.0,
-													"reverbVST" : 0.0,
-													"vstFile" : 													{
-														"filetype" : "C74Snapshot",
-														"version" : 2,
-														"minorversion" : 0,
-														"name" : "Stratus3D",
-														"origin" : "Stratus3D.vst3info",
-														"type" : "VST3",
-														"subtype" : "AudioEffect",
-														"embed" : 1,
-														"snapshot" : 														{
-															"pluginname" : "Stratus3D.vst3info",
-															"plugindisplayname" : "Stratus3D",
-															"pluginsavedname" : "C74_VST3:/Stratus3D",
-															"pluginsaveduniqueid" : -952463768,
-															"version" : 1,
-															"isbank" : 0,
-															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK27jPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLUaUYDRNUkUioWRWgkbAIjTmcmQg4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BREYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3BQt3hKtXlKt3hKtHjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKt.UdLkmXO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMkGS4kidLkGS0jVQKYkdOUFUyTSNt3hKtXyT0QFN38TXtciVq.ETPA0M4gWPxH2S1D0YwkCUuI0Z2LjKt3hcOUVcxD1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN48DNSIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMokGaMk2SzLyLtkidLkGS1jVdr0TdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqnmVyYkMC4hKtf2St3hKlsBUUUUU1LjKt3xLOEGbvAWNh81ZVUyP1D0Yw8jKt3hYqfzRpUzLC4hKtf0SZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtPjKtL0YIISVqEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKCcmUXkWSWoUZEYTXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BTRQWSGMFdUcUXqQiQic1cF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtflM1TjM3rRPt3BTzkCY2Q1Jk4hKt3hKt3hKt3hKt3BSoQCVQIkKt3hKtDjKt3hKt3hKt3hcSMWcWImLqbjKtPjKt3hKt3hKt3hKt3hKt3hKt3hKt3xTXoEZDMyJG4hKD4hKt3hKt3hKt3RPt3hKt3hKt3hKtvjb0ckbxrxQt3hcvrFaHETNqDjKt3hKt3hKt3hKt3hKt3hKt3hKngEMtDER1XSQ1fyJA4hKLc1aIIkYqTlKt3hKt3hKt3hKt3hKx4hKt3hKt3hKt3hc1kCY2Q1Jk4hKPMSVZgFQyrxQt3BTt3hKt3hKt3hKtPjKt3hKt3hKt3hKtLWcWImLqbjKtn1ZqwFRAkyJA4hKlESNjcGYqTlKt3RbzU2UxIyJG4hKt3hKt3hKlgjUNAEQt3hKt3hKt3hKtDjKt3hKD4hKt3BTt3hKt3hKt3hKt3BL4P1cjsRYt3hYt3hKt3hKt3hKt3BY1rRSlMjKt3hKC4hKt3hKt3hKtXlKt3hKt3hKt3hKt3hKt3BTt3hKt3hZt3laA4hKX4hKtLEVZgFQyrxQt3hKPYiMEYCNqDjKtDFSikjTlsRYt3hKtPWcWImLqbjKtfUVrwFRAkyJA4hKtTDVpMjKtfkKt3hKt3hKt3hKt3hKTEEMXEkTt3hKt3hLB4hKt3hKt3hKP4hKt3hKt3hKt3BUQQCVQIkKt3hKt.kPqP1cjsRYt3hcCwzUnQzLqbjKt3BUlEkSt3hYA4hKt3hKt3hKt3hKt.0PokVQIEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hKtnlc0ckbxrxQt3hKt3hKt3hKt3hKt7jchkjTlsRYtPzPt3hKt3hKt3hKt3hKt3hKt3hKt3hKlIzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKtj0ahsjTlsRYt3hKioVZEkTPt3hKtPkPlglQt3hYA4hKtnmVKIkYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLB4hKt3hKt3hKtjjKJokKt3hQt3hKt3hKt3hKt3hKtXjKt3hKt3hKt3hKt3hKt3BbLEEMJMzR2XSQ1fyJA4hKt3hKt3hKt3hKt3ha1U2UxIyJG4hKtblM1TjM3rRPt3hKt3hKt3hKt3hKPUzZoUTRA4hKt3BQt3hKt3hKt3hKtHyLMYkZD4hKt3hYA4hKt3hKt3hKtn1Z3MGRAkyJA4hKA4hKt3hKt3hKt3BSyECZDMyJG4hKX4hKt3hKt3hKt3hc5o0RRY1Jk4hKlEjKt3hKt3hKt3xMqMCVQIkKt3hKtzjKt3hKt3hKt3hKLMWLnQzLqbjKtfjKt3hKt3hKt3hKY8lXKIkYqTlKt3hczU2UxIyJG4hKtLUbygTP4rRPt3hQt3hKt3hKt3hKlEjKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hcMQVZEkTPt3hKt3hKt3hKt3hKt3hKPwzJjcGYqTlKt3hQ4U2UxIyJG4hK2rxJqrxJqrxJqrhKt3hKtXlKt3hK1MmKt3hKt3hKt3hKt3hKt3hKt3hKtXFSsA2TmsRYt3hKt3hKt3hKt3hKtvjc2XSQ1fyJmUjKH4hKt3hKC4hKt3hX1T2UxIyJG4hKtv1M1TjM3rRPt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hYzXiMEYCNqDjKtXFN4P1cjsRYt3hYnIlVnQzLqbjKt3xL1XSQ1fyJA4hKqYSbIIkYqTlKt3hKFImbpETNG4hKyPjKt3hKt3hKt3hKt3hKt3hKt3hKtfWUvUCUyrxQt3BRt3hKt3hKt3hKtXGSxQmZD4hKt3hKxUWcWImLqbjKt3FRswFRAkyJA4hKt3hKt3hKt3hKtX1Tt3hKt3hKt3hKtrzM1TjM3rRPt3BTLsBY2Q1Jk4hKtnWc0ckbxrxQt3hZxDzcPIkKt3hKLYVZqP1cjsRYt3hYnYibAkTPt3hKt3hKt3hKt3hKt3hKxLSSVoFQt3hKt.kKt3hKt3hKt3hKH4hKt3hKt3hKt3RPt3hKt3hKt3hK1MiPqUTRA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLlKPwzLwgGQqEGSLkWcWImLqbjKt3hKt3hKt3hKt3hK1IWUoEjKtfkKt3hKH4hKt3hKt3hKyL0M1TjM3rRPt3hcHsBY2Q1Jk4hKtn0LngFQyrxQt3hX4biMEYCNqDjKtXWSqP1cnoWPt3hKBIzMqrBLI0lX0ETd2XSQ1fyJA4hKqTlKt3BV5EFdvXEV5EjTZkWP3QkdUwlXqgiQH4FQSoDctH0Tmc1UPESQVokbEwFVxUULP4VQrEFcUYTX4EDZLImKRI0bvXUVpslUXoWUFgzct4hKtbyJA4hKt3hKt3hKtTzJjcGYqTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLCL4.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtfTMvAmRC4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hctDGbvwjKt3hKt3BY2XSQ1fyJA4hK1vzXIIkYqTlKt3hKt3hKt3hKt3hKlI1Zv4TQ4rRPt3hPt3hKt3hKt3hKtXDd0ckbxrxQt3hKjciMEYCNqDjKtnDdukjTlsRYt3hKtfWcWImLqbjKtPEc0wFRAkyJA4hKtfkc3IkQyTlKtX2bt3hKt3hKt3hKt3hKt3hKt3hKt3BRW8FbSc1Jk4hKl4hKt3hKt3hKt3hK4YWMRIkKt3hKtXGRqP1cjsRYt3hYnIlVnQzLqbjKt3hKt3hKt3hKt3hKxHjKt3hKt3hKt3BS4U2UxIyJG4hKtjmc0HkTt3hKt3BTIsBY2Q1Jk4hKPQ1QDMTRA4hKt3hKwjiMEYCNqDjKtnDc4YjZD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKtHjKt3hKt3hKt3hKt3hKt3hLyzjUpQjKt3hKt3hKt3hKtfFVz3RPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlQIU1TqrxZtbyJt3hKt3hKt3hKt3xJqrxJqrxJqrxJO4hKt3hKt3hKt3xMqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJqrxJq7jKt3hKt3hKt3hKtLjKt3hKT4hKt3hcysBY2Q1Jk4hKtfEd0ckbxrxQt3hcDwFaHETNqDjKtjVSUMFdIISXvPiQYIUUrM1ZI0FVNUkQjo2XTkEcIQEV4UULPIWQwHVduMDRPkzUYYWQrI1ZQASXPcmUXQCLRszTIUDR5A0TLYmKosjctLDS14xPLYlKRIEcAc0X5EDdP4VQrEVdAIDSlcCUioWPWMldAgGVtUDagkWPBwDctYGTvjTahsFMFMlYHYEV4UkQHwFNrI1bEYzXl4xPLYmKCwjctLESz4hTSsVTWgkcEwlXmACaNY2LBwjctLDS14xPHETTFk0ZI0lS14BdPASRsI1ZzXzXlwTUigWRxDFLzXTVlgkdggGLVgkdAgGU5UEahsFNrIjKP4hKt3hKt3hKt3BdtfWYCYVPt3hKPEjKt3hKt3hKt3hKt3xJMYlPt3hKtLjKt3hKt3hKt3BTA4hKt3hKt3hKt3hKt3hKP4hKt3hKp4hatEjKtfkKt3xTXoEZDMyJG4hKtfDN1TjM3rRPt3RXLMVRRY1Jk4hKtXFL0ckbxrxQt3BVYwFaHETNqDjKt3RQXo1Pt3BVt3hKt3hKt3hKt3hKt3RQlgUTR4hKt3hKG4hKt3hKt3hKt3hc5U2UxIyJG4hKxcmdqgTP4rRPt3hKWsBY2Q1Jk4hK1MDSWgFQyrxQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcyHzZEkTPt3hKtfjKt3hKt3hKt3hKt3hKt3hKt3hKtX2LBsVQIEjKt3hKtTTN1TjM3rRPt3xS1IVRRY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXlYqP1cjsRYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hK1IkKnUTRA4hKt3hKFkiMEYCNqDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKA4hKt3hKt3hKt.kKt3hKt3hKt3hKpsFdygTP4rRPt3hYKQkUpQjKt3hKP4hKt3hKt3hKt3hKtXWYG4hKlEjKt3hKEQ2SD4hKt3hKt3xJi4hKtXjKtfjKt3hKtfjKt3hKt3RQz8DQt3hKt3xXyPEVt3hKF4hKD4hKt3hKt3hKt3hd3L0YA4hKX4hKP4hKt3hKt3hKt3hKsgiMEYCNqDjKtrTdtYjTlsRYt3hKPEScWImKA4hKt3hKt3hKF4hYA4hK5c1TmEjKtfkKt3hKRglMCEjKt3hKt3hKt3hKtXVPt3hKt3hKl4hKX4hKt3hKt3hKt3hQt3hKt3hKPcjKlEjKt3hKEQ2StXlKt3hKT4hKt3hMqrxPtPjKt3hKl4hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKt3BLqLlKt3hQt3BQt3hKt3BRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtLGN1TjM3rRPt3hLY4lQRY1Jk4hKP4hKt3hKtDjKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hKP4hKt3hKk4hKt3hKt3hKt.kKt3hKt3hKt3hKt3hckcjKtXVPt3hKtTDcOQjKt3hKtfDLqLlKt3hQt3hK1giMEsDRt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3hKTMSNP4hKt3hKtfTQz8DQt3hKt3hKt3hKt3hKt3hKtDCN1TjM3rRPt3hLY4lQRY1Jk4hKt.EM3kkRA4hKt3hKtPjKtPjPtTSb3rxJO4hKt3hKt3hKH4hKt3hKt3hKt3hKt3hK1gyJA4hKX4hKt3hKt3hKt3hQt3hKt3hKt3hKt.UVPEVPtXVPt3hKtTDcOQjKt3hKt3BTmYyPA4hKt3hKzfiMEYCNqDjKtnlUtYjTlsRYt3hKgUDbmQzLqbjKt3hX2HlPS4hKt3hKX4hKt3hKt3hKt3hKPclMCEjKt3hKtbCN1TjM3rRPt3xZqsTauQjKt3hKt.EM3kkRA4hKt3hKhciXBMkKt3hKtfkKt3hKt3hKt3hKt3hc0P0LqbjKt3xJ3XSQ1fyJA4hKqs1Rs8FQt3hKt3hKP4hKt3hKt3hKlEjKt3hKt3hKt3RPt3hKt3hKt3hKt3hK1UCUyrxQt3hKCkiMEYCNqDjKtXCbDcjTlsRYt3hK3YScWImLqbjKtXVPt3hKt3hKt3hKvblKt3hKt3hKt3hKPclMCEjKt3hKtPlQrUjKtXVPt3hRK8lQRY1Jk4hKt3hKt3hKt3hKt3hKjYDaE4hKlEjKt3BZqP1cjsRYt3BTUEjKt3hKt3hKtHlTRYFSM4hKt3hKt3hKt3hKt3hKtX1XH4hKt3hKt3hKtLVVPEVPtXVPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKshMEYCNqDjKtLiZlIiSD4hKt3BTigjKt3RSAAkTt.EQtjTPtfjKLQjKCEjKH4BQC4BLt3RYtPzPtfmKP4jKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKTAGNwgzQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
-														}
-
-													}
-
-												}
-
-											}
-,
-											"reverbRouting" : 											{
-												"mic_routing0" : 0.0,
-												"mic_routing1" : 0.0,
-												"mic_routing2" : 0.0,
-												"mic_routing3" : 0.0,
-												"mic_routing4" : 0.0,
-												"mic_routing5" : 0.0,
-												"mic_routing6" : 0.0,
-												"mic_routing7" : 0.0,
-												"mic_routing8" : 0.0,
-												"mic_routing9" : 0.0,
-												"mic_routing10" : 0.0,
-												"mic_routing11" : 0.0,
-												"mic_routing12" : 0,
-												"mic_routing13" : 0,
-												"mic_routing14" : 0,
-												"mic_routing15" : 0,
-												"mic_routing16" : 0,
-												"mic_routing17" : 0,
-												"mic_routing18" : 0,
-												"mic_routing19" : 0,
-												"mic_routing20" : 0,
-												"mic_routing21" : 0,
-												"mic_routing22" : 0,
-												"mic_routing23" : 0,
-												"mic_routing24" : 0,
-												"mic_routing25" : 0,
-												"mic_routing26" : 0,
-												"mic_routing27" : 0,
-												"mic_routing28" : 0,
-												"mic_routing29" : 0,
-												"mic_routing30" : 0,
-												"mic_routing31" : 0,
-												"mic_routing32" : 0,
-												"mic_routing33" : 0,
-												"mic_routing34" : 0,
-												"mic_routing35" : 0,
-												"mic_routing36" : 0,
-												"mic_routing37" : 0,
-												"mic_routing38" : 0,
-												"mic_routing39" : 0,
-												"mic_routing40" : 0,
-												"mic_routing41" : 0,
-												"mic_routing42" : 0,
-												"mic_routing43" : 0,
-												"mic_routing44" : 0,
-												"mic_routing45" : 0,
-												"mic_routing46" : 0,
-												"mic_routing47" : 0,
-												"mic_routing48" : 0,
-												"mic_routing49" : 0,
-												"mic_routing50" : 0,
-												"mic_routing51" : 0,
-												"mic_routing52" : 0,
-												"mic_routing53" : 0,
-												"mic_routing54" : 0,
-												"mic_routing55" : 0,
-												"mic_routing56" : 0,
-												"mic_routing57" : 0,
-												"mic_routing58" : 0,
-												"mic_routing59" : 0,
-												"mic_routing60" : 0,
-												"mic_routing61" : 0,
-												"mic_routing62" : 0,
-												"mic_routing63" : 0
-											}
-,
-											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.921053, 0.921053, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+											"outputLevel" : [ 0.921053, 0.921053, 0.855263, 0.855263, 0.789474, 0.789474, 0.723684, 0.723684, 0.921053, 0.881579, 0.815789, 0.763158, 0.723684, 0.763158, 0.815789, 0.881579, 0.921053, 0.921053, 0.855263, 0.789474, 0.723684, 0.723684, 0.723684, 0.789474, 0.855263, 0.921053, 0.921053, 0.881579, 0.815789, 0.763158, 0.815789, 0.881579, 0.881579, 0.855263, 0.763158, 0.855263, 0.881579, 0, 0.852267, 0.883071, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.921053, 0.0 ],
 											"record" : [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
 											"ambisonicPlayer" : 											{
 												"playback" : 0
@@ -19249,7 +14630,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 371.25, 40.0, 189.0, 25.0 ],
 									"rounded" : 0.0,
-									"text" : "Insun",
+									"text" : "seaborn",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "sceneName",
 									"wordwrap" : 0
@@ -19271,7 +14652,7 @@
 									"fontface" : 1,
 									"fontsize" : 16.0,
 									"id" : "obj-33",
-									"items" : [ "1.)", "Insun", ",", "2.)", "Ben", ",", "3.)", "Alvin", ",", "4.)", "JD", ",", "5.)", "Marco", ",", "6.)", "Justin", ",", "7.)", "Patrick", ",", "8.)", "Halie", ",", "9.)", "Connor", ",", "10.)", "Benjamin" ],
+									"items" : [ "1.)", "Percshow", ",", "2.)", "seaborn" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -21052,7 +16433,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 937.0, 217.0, 934.0, 644.0 ],
+										"rect" : [ 1424.0, 335.0, 445.0, 509.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -21117,7 +16498,7 @@
 																"version" : 1,
 																"isbank" : 0,
 																"isbase64" : 1,
-																"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT0azXEYlQjZgk1ZVkEcQcDRPcmUXoWUF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq3hKt3RNC4hKt3hKt3hKt3hKt3hKtXGbvAmTO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK33lcvjiYwcTQ0j1RWQmdOgia1ASNX8jRhQSZCcjS58DNZ4lX4nWd4kmM4E2ZCQ2SEQGYDshXwHWV3jVVrkULOYCdzwzJt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoMzQNo2SzLyLtkidLkGS1j1PG4jdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqXGVLYjM4AGbvw1SrkEaYsBUUUUU1LjKt3xLO4hKt3hKlMyYGcyT4wTdx8zJ58zXq3hKt3hKt3hKt3hKwAGbJshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtTTXmE0UY4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPUEahkVUxHVdqESXzEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKt3haxHVPtfkKtXmKt3hKt3hKt3hKt3hKZgiPtXVPt3hKt7VVGQjKt3hKtX2QtAyRt3hQt3BTSUlS1TDTt3hKt3hKuk0QD4hKt3hKB4hKt3hKt3hKt3hK14hLF4hYA4hKt3xaYcDQt3hKt3hYtMjXg4hKF4hKtXCSM01Rp4hKt3hKt7VVGQjKt3hKtHlQzHWXt3hQt3BQt3hKt3hKt3hKtXWSpkGcA4BVt3hKB4hKt3hKt3hKt3RNL0Ta1fyJA4hKKkmQvjjYqTlKt3hKt3hKH4hKF4hKt3hKt3hQtXVPt3hcYoVdzEjKX4hKt3hYgESPA4hKt3hKt3hK1YjKlEjKt3hKt3hcA4BVt3hct3hKt3hKt3hKt3hKPoENB4hYA4hKt3xaYcDQt3hKt3BT58FLK4hKF4hKl4hKt3hKP4hKt3hKt7VVGQjKt3hKtDjKt3hKt3hKt3hKt3BY4UjKlEjKtLjKt3hKt3hKt3hKt3xavrjKtXjKt3hKpw1XP4hKt3hKtLDaVUmKtfkKt3RPt3hKt3RPt3hKL4hKt3hKt3hKt3xPt3hKt3hKt3hKt3BTZESPA4hKt3hKlsFaiAkKt3hKt3hKt3hKt3hKt3hKTomdhQmLqbjKtHVaYQUatjyJA4hKqrxSt3hKt3hKt3hKP4hKPgjK1QWLqrxJt3BTt3hKt3hKA4hKt3hKt3hK14hKt3hKt3hKt3hKt.kV3HjKlEjKt3hKuk0QD4hKt3hKt.yavrjKtXjKt3hKpw1Xt.kKt3hKC4hKt3hKt3hKtXmKt3hKt3hKt3hKt3hZrMFTt3hKt3hKX8VVGQjKt3hKt3hKt3hKt3hKt3hKM0TSsYCNqDjKtHSVFASRlsRYt3hKxomdhQmLqbjKt3hKD4hKDIjKxEGNP4TPO01b4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hcXolKqUWNk4hKt.EL5IFcxrxQt3BRZomVYAkKt3hKt3hKuk0QD4hKt3hKt.kVwDTPt3hKt3BTM0Ta1fyJA4hKpYkQvjjYqTlKt3RXqE0XBMyJG4hKtjVTBQUN0rRPt3hKt3hKt3hKt3hKtn1T1kWVwsxQt3hKt3hKt3hKt3hKtr1Zx.2aD4hKt3hKD4TUBIjKtXjKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3ha4USVt3hKF4hKt3hKt3hKt3hKt3hcXolKqUWNk4hKtnGL5IFcxrxQt3xLxomVYAkKt3hKtDjKt3hKt3hKt3hKtX1UwH0LqbjKt3hVM0Ta1fyJA4hK1.GZvjjYqTlKt3hKt3hKt3hKt3hKtjVTBQUN0rRPt3hYsklLhEjKX4hKtHWZzUlKt3hQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hMtYyQt3hYA4hKPAmVTElKtfkKt3hZ34FaAEjKt3hKlQkRmIFTt3hKt3BTZQyLE4hKX4hKt3RL5IFcxrxQt3hcwwDbYAkKt3hKt.kTpMUXt3BVt3hKR8FQ3ETPt3hKt3Rcqk1Ut3hYA4hK1AGQ4DjKtfkKt3BUwnmXzIyJG4hKholdgkETt3hKt3BRyUmKxLWNk4hKtH2L5IFcxrxQt3hKIEkSyEjKlEjKtfzZRgzQD4hKt3hYt3hKt3hKt3hKt3xRN0Ta1fyJA4hKt3jbybiKtfkKt3hboQWYt3hKF4hKtLWSM0lM3rRPt3BZ0blVFQjKt3hKtjVL5IFcxrxQt3hKKY1LG4hKlEjKtX1YSkGMjsRYt3hYt3xMqrBYGYyJq7jVv.WUwY0bZgyS1kkb5QzMqrxJq7DZ3rjciE2JG4hKtLicnk2PtXVPt3hKt3hKt3hKt3hKtHWZzUlKt3hQt3hKJ4TSsYCNqDjKt.0QNAmXt3BVt3hKpMjK2ETPt3hKt3Ra2I0Tt3hYA4hKlU1T4QCYqTlKtX1LvM2ZAEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BMt.kXP4hKt3hKt3hKt3hKt3hKt3hZC4xcAEjKt3hKtTibjYjKtXVPt3hYjMUdzP1Jk4hK14jaysVPA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKpMjK2ETPt3hKt3hKt3hKt3hKt3hKP4jKDcDQt3hKt3ha4USVt3hKF4hKtjSSM0lM3rRPt3hMlEiUFQjKt3hKt3hKt3hKt3hKt3hKxHlKmEjKlEjKtXWVxoGQt3BVt3hKxYiSi8jKtXjKt3BQN0Ta1fyJA4hKzw1YVYDQt3hKtX2PtPkVSgWTrQCQCQiKPIFTt3hKt3hKt3hKt3hKt3hKtn2YoozQt3hQt3hKscmTS4hKlEjKtXmPjEyXt3BVt3hKlMidhQmLqbjKtLiVFoUVP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXjSM0lM3rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKKMSVxDjKlEjKtHjKt3hKt3hKt3hKyLyPl4hKtXjKt3BLhIWRt3hYA4hKlc1T4QCYqTlKt3haynmXzIyJG4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnFTwsjQt3hQt3BRt3hKt3hKt3hKtfTL04hLykSYt3hKTk2cr4hKtXjKt3hRN0Ta1fyJA4hKPkFU4QCYqTlKtXWSiI2SCEjKt3hKt3hKt3hKt3hKt3RPt3hKt3hKt3hK14hKt3hKt3hKt3hYXshPhISMqDjKtHjK1sxJ1LlbqrxJtUUbVMmVv.GLq3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hYO0Ta1fyJA4hKtITcVYDQt3hKt3RNJkDTzD2JG4hKtbETM0lM3rRPt3BRvvlKqUWNk4hKtH2R1njKt3hQt3hKMAUSsYCNqDjKtTyZNckQD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT2Px3hKtfkKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hK23FV1kCQt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+																"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQ0ZMYkV5UjQgYlYTgkb2YjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKtXlLiISUO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK2ASZnkCTmE2Qzj2aS0VLOgia1ASNlE2QEUyT0QFN38jR0YjRqbiM1XCMSoTS431SxcTQzkCVzIFM2LjKt3hcOkCY0c0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4k1MHIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYSduMUaw7DMyLia4nGS4wjMogSMvj2SzLyLtkidLkGS1jFN0.SdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtb2St3hKlsBUUUUU1LjKt3xLOEGbvAWN2DWc4LyP1D0Yg8jKt3hYq3hKt3hKt3hKt3hKZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMUkQY8VUWElY1QkVwTkQHMUPWgUZUEiXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKxUTLtUmLqbjKtLCStHTbCckcTkGNPI0U1IjKtfkKt.ESt3hKt3hKt3hKtjzXAsjKtXVPt3hSCYlc0XWQLAiXkwjKt3hKt3hKt3BQC4hKt3hKt3hKt.kTWYmPt3BVt3hK5UTLtUmLqbjKt3hYq0TM1fyJA4hKEkCLyEFQt3hKt3hKt3hKt3hKt3hKtPlLOgUPssRPt3xPt3hKt3hKt3hKtv1cT8DchkyQt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3BTt3xMmMTPt3hKt3hKt3hKt3hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3RPtX2QNQjKt3hKt3hKt3hKt3hKt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3BTt3xMmMTPt3hKt3hKt3hKt3hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3RPtX2QNQjKt3hKt3hKt3hKt3hKt3BQt3RYy.kKt3hKt3hKt3hKt3hKt3hKLgTLtUmLqbjKtPUMOElQP4hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKP4hK2b1PA4hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKt3hKt3hKt3hKt.kKtbyYCEjKt3hKt3hKt3hKt3hKt3hcjgUZ4P1Jk4hK1cFc3jkKA4hKt3hKYAiMzEkKt3hKt.ka2X1Q2QSYt3hKxcTLtUmLqbjKtnlamckQP4hKt3hKlUFVokCYqTlKtXVXVUmMFEjKt3hKpcyQLYWd3PWSDAETtkCLK4hKX4hKt3hKt3hKt3hKt3hZ1UEVFAkKt3hKtXmYXkVNjsRYt3hKv.GNY4RPt3hKtPjKtT1LP4hKt3hKIsRPCciX0E1PAQjKt3hKt3hKt3hKtzFNjQWPtXVPt3BTwESPBEjKX4hKt3hKt3hKt3hKt3hKBQySIAkKt3hKtLyMnYmPt3BVt3hKyfTLtUmLqbjKtXmVMElQP4hKt3hKA4hcG4DQt3hKt3hKt3hKt3hKt3hKD4hKkMCTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtDjK1cjSD4hKt3hKt3hKt3hKt3hKtPjKtT1LP4hKt3hKlUEb2EjKtfkKtXlKtbyYCEjKt3hKpcyQLYWd3PWSDAUPtX2QNQjKt3hKt3hKt3hKt3hKt3hZ2bDS1kGNz0DQPEjKt3hKt3hKt3hKLkULtUmLqbjKt3BL3YDRD4hYA4hKPEWLAITPtfkKt3xMHEia0IyJG4hKtHEaMUiM3rRPt3BdJIybgQjKt3hKl4hK2XVQhkyQt3hZ2bDS1kGNz0DQP4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtLGZMUiM3rRPt3hRScmbLY1Jk4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RPt3hKD4hKt3hKt3hKt3hcTMScGYlK1g1LP4hKt3hK23hKt3BTlYlcTgjKt3hKt3hKt3hKX4hYDgDRLUTN1DjKtLGRNQjKt3hKt3hKt3hKt3hKt3hK2cGZy.kKt3hKt3hKt3hKD4hKt3hKt3hKt3hPt.ULN4hKtg1LP4hKt3hKw.kZxMFdzcmPt3RRt3hKt3hKt3hKP4hKt3BTt3hKt3hPt.ULN4hKt3hKtXlZJg1PA4hKt3hKEkVS0XCNqDjKt3hKkEWbC4hKt3hKPg2YJUjKtXjKt3hKtXVPt3hKt3hKF4BRAIjPSc1Jj4hciEia0IyJG4hKHkWaogmK4rRPt3RPt3hKt3hKt3hKPYSXNozPyrxQt3hKt3hKt3hKt3hKtXGUyT2Qt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hRLEia0IyJG4hKtLCZMUiM3rRPt3haygUZ4P1Jk4hKtf0Rw3VcxrxQt3hYJomVFAkKt3hKtXVXQgjM3QSYt3BTtPVLtUmLqbjKtXlViEjVK01JA4hKtDScIIjKtfkKt3haKEia0IyJG4hK5QkQiYDTt3hKt3hYzgUZ4P1Jk4hKt.GTwkkKA4hKt3hKzUzYxsTaqDjKtDzLYkVNjsRYt3hKvASQtMmX4bjKt3BVqvFRt3hYA4hKlUWVokCYqTlKt3hL2oWVtDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtXVah4lTA4hYA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hcTMScG4hKt3hKt3hKt3hKtHjKt3BRt3hKt3hKt3hKt3hK2XjKt3BVt3hKt.ERnMTPt3hKt3BYzDlKt3hYA4hKR4hKt3hKC4hKtXlKt3hKt3hKt3hKH4hKt3hKt3hKt3hKtbFRNQjKt3hKt3BUHg1PA4hKt3hYt3hKt3hKt3hKt3RdXkVNjsRYt3hYZczLJMzLqbjKt3hKt3hKt3hKt3hKH4RPt3xYt3BLZsxJqLjKt3hKt3hKtLjKt3hKt3hKt3RPt3hKt3hKt3hKtvjKt3hKt3hKt3hKtPDZy.kKt3hKt3hKy7jSmsRYt3hKt.ERnMTPt3hKtPjKt3hKt3hKt3hKlkGVokCYqTlKtXWZrMiRCMyJG4hKtHFSvACTt3hKt3hct3hKt3hKt3hKtPTSw3VcxrxQt3BVhkyaYAkKt3hKt3xQooUSD4hKt3hKt3RNoM0LqbjKt3xPt3hKt3hKt3hKA4hKt3hKt3hKt3BTMEia0IyJG4hKXIVNukETt3hKt3hcvrVYOc1Jk4hKP4hKt3hKt3hKt3hKPUCV4PTNqDjKtXmKt3hKt3hKt3hKl0TLtUmLqbjKtPkL3UGdtjyJA4hKtTDNN4zYqTlKt3hXiQiLSMyJG4hKL4hKt3hKt3hKt3hYWkiQt3hKX4hKtf0aoQyTyrxQt3hKWcUN3PTNqDjKtXlLXkVNjsRYt3hKMQDQMMzLqbjKtXmUAQGdtjyJA4hKA4hKt3hKt3hKt3hct3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtr1aQoGSlsRYt3hKD4RPtDDTt3hKtXVZo0TM1fyJA4hKlMCVokCYqTlKtXVZYQTSCMyJG4hKPACVQkmK4rRPt3hK1olVN4hKX4hKt3hKt3hKt3hKt3hYAMEbz3hKlEjKt3BMXkVNjsRYt3hKpcFZLMzLqbjKt3xao0TM1fyJA4hK0gVV0MFdzcmPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK0fUZ4P1Jk4hKtDmQrszPyrxQt3hYOcFU44RNqDjKtPUSVoGSlsRYt3hKp4BQ4ojKt3hKtnlKt3hKt3hKt3hK1UCVokCYqTlKtXWTGgFSCMyJG4hKp4hKt3hKt3hKt3hK1olVN4hKX4hKPMlZynVaxElbt3hYAMEbz3hKlEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RLs0TM1fyJA4hKrsRUvvjYqTlKt.kKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hKt3hKt3hc0HTcJoURwg0cAEjKt3hKt3hKt3hKBgmav41ZxgVQGQjKt3hKt3hKt3hKD4hKt3hKt3hKt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hKt3hKt3hKt3hKt3hLo0TM1fyJA4hKtIzbrEDQt3hKt3RNrUjK0IVNG4hKtPmZMUiM3rRPt3BRqsjKyfGMk4hKtvTPMIiKt3hQt3hKpoVS0XCNqDjKtTyZL0VPD4hKt3BTt3hKt3hKt3hKt3hKt3hKt3hKt3hK1gTRtLjKtfkKt3hKt3hKt3hKt3hKH4hKFgDQtXVPt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hKt3hKt3hKt3hKt.kKt3hKt3hKtUlV1I2Pt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 															}
 
 														}
@@ -22065,7 +17446,7 @@
 													"outlettype" : [ "", "", "", "" ],
 													"patching_rect" : [ 1782.5, 92.25, 56.0, 22.0 ],
 													"restore" : 													{
-														"eqOutStateVST" : [ 0.0 ],
+														"eqOutStateVST" : [ 1.0 ],
 														"inputEqStateVST" : [ 0.0 ],
 														"inputHpFreqVST" : [ 15000.0 ],
 														"inputHpGainVST" : [ 0.0 ],
@@ -22077,19 +17458,19 @@
 														"inputPk2GainVST" : [ 0.0 ],
 														"inputPk3FreqVST" : [ 4000.0 ],
 														"inputPk3GainVST" : [ 0.0 ],
-														"live.text" : [ 0.0 ],
+														"live.text" : [ 1.0 ],
 														"outputHpFreqVST" : [ 15000.0 ],
 														"outputHpGainVST" : [ 0.0 ],
 														"outputLpFreqVST" : [ 50.0 ],
 														"outputLpGainVST" : [ 0.0 ],
 														"outputPk1FreqVST" : [ 250.0 ],
 														"outputPk1GainVST" : [ 0.0 ],
-														"outputPk2FreqVST" : [ 1000.0 ],
-														"outputPk2GainVST" : [ 0.0 ],
-														"outputPk3FreqVST" : [ 4000.0 ],
-														"outputPk3GainVST" : [ 0.0 ],
+														"outputPk2FreqVST" : [ 539.370078740156714 ],
+														"outputPk2GainVST" : [ -6.614173228346448 ],
+														"outputPk3FreqVST" : [ 4511.811023622049106 ],
+														"outputPk3GainVST" : [ -0.188976377952756 ],
 														"pre-delayVST" : [ 0.0 ],
-														"reverbVST" : [ 0.354330708661417 ]
+														"reverbVST" : [ 0.606299212598425 ]
 													}
 ,
 													"text" : "autopattr",
@@ -24380,7 +19761,7 @@
 													"patching_rect" : [ 949.0, 766.75, 263.0, 73.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 227.0, 160.0, 186.0, 73.0 ],
-													"setfilter" : [ 4, 7, 1, 0, 0, 15000.0, 1.0, 0.70710676908493, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3, 5, 1, 0, 0, 4000.0, 1.0, 0.707000017166138, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2, 5, 1, 0, 0, 1000.0, 1.0, 0.707000017166138, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 5, 1, 0, 0, 250.0, 1.0, 0.707000017166138, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 6, 1, 0, 0, 50.0, 1.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+													"setfilter" : [ 4, 7, 1, 0, 0, 15000.0, 1.0, 0.70710676908493, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3, 5, 1, 0, 0, 4511.81103515625, 0.978478252887726, 0.707000017166138, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2, 5, 1, 0, 0, 539.37005615234375, 0.466972529888153, 0.707000017166138, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 5, 1, 0, 0, 250.0, 1.0, 0.707000017166138, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 6, 1, 0, 0, 50.0, 1.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 												}
 
 											}
@@ -24600,7 +19981,7 @@
 															"version" : 1,
 															"isbank" : 0,
 															"isbase64" : 1,
-															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKBAidhQmLqbjKt3hKt3hKt3hKt3hKt3hKt3haLQlMSYjY1ImdRMyJG4hK1QyJSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT0azXEYlQjZgk1ZVkEcQcDRPcmUXoWUF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq3hKt3RNC4hKt3hKt3hKt3hKt3hKtXGbvAmTO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK33lcvjiYwcTQ0j1RWQmdOgia1ASNX8jRhQSZCcjS58DNZ4lX4nWd4kmM4E2ZCQ2SEQGYDshXwHWV3jVVrkULOYCdzwzJt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoMzQNo2SzLyLtkidLkGS1j1PG4jdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqXGVLYjM4AGbvw1SrkEaYsBUUUUU1LjKt3xLO4hKt3hKlMyYGcyT4wTdx8zJ58zXq3hKt3hKt3hKt3hKwAGbJshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtTTXmE0UY4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPUEahkVUxHVdqESXzEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPUjX4nVc4TlKt3hYHYmdzD2JG4hKlgjPLMVN0rRPt3hXRMUPrMWNk4hKtflaBUVVwsxQt3hK0wTQXESMqDjKtDjKt3hKt3hKt3hcA4hKt3hKt3hKtPjKt3hKP4hKt3hKC4hKt3hKt3hKt3hRA01SzD2JG4hKlIjKt3hKt3hKt3xLio2TsUWNk4hKtH0c5IFcxrxQt3BVt3hKt3hKt3hKtfUQSkGMjsRYt3hKDQmdhQmLqbjKt3RQhQzZP4hKt3hK1MiT4QCYqTlKtXlcxIGQCMyJG4hKl4hKt3hKt3hKt3hYYMUdzP1Jk4hKt3hKt3hKt4hct3hKt3RSsYCNqDjKtPjKt3hKhsRYt3hKtPjKt3xLqbjKt3RaK0TaK4hKt3hK2jic2XEQt3hKt3hXwnmXz4hKt3hKHAWVxgUTt3hKt3hYZMUdzP1Jk4hKlY2T4QzPyrxQt3hKtHFQqAkKt3hKtvzPIMURD4hKt3hKt3hKt3hKx0DRt3hKt3hKPYSPA4hKt3hKt3hK1EiYt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3hKXcUVGQjKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3xMRkGMjsRYt3hK1EjTiIzLqbjKt3xLXo1XP4hKt3hKt3jQYcDQt3hKt3hKt3hKt3hKt3hKtX1XqMFTt3hKt3hKXcUVGQjKt3hKtDjKt3hKt3hKt3hKzrTSsYCNqDjKtPTaGASRlsRYt3hYAAkKt.ERtXGcwrxJqPUatjyJA4hKybiT4QCYqTlKt3hS0omXzIyJG4hKlAyRM0lM3rRPt3hVRw1MVQjKt3hKtzjKt3hKt3hKt3hKlIUSsYCNqDjKtXGNRkGMjsRYt3hYUslbvHzLqbjKt.0Pt3hKt3hKt3hKvnmKt3hKt3hKt3xM2omXzIyJG4hK5A2ctMmK4rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK14hKt3hKt3hKt3hKMAiXzIyJG4hKtjyRM0lM3rRPt3hUUgmUKY1Jk4hKt3hKt3hKt3hKt3hKC4hKt3hKt3hKtXlKSkGMjsRYt3BTEQFcvHzLqbjKt3hKt3hKt3hKt3hKHE0T4QCYqTlKt3hT5omXzIyJG4hKtj1REgUL0rRPt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKA4hKt3hKt3hKt3BSt3hKt3hKt3hKtrBSM0lM3rRPt3Ba4QiUKY1Jk4hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKtXFY5MUa0kSYt3hKl4lPkkUbqbjKtXFRvY2UwTyJA4hKhshTAw1b4TlKtX2JqrxJG4hKt3hKtj1REgUL0rRPt3RPt3hKt3hKt3hKt3hKtX1JqrxJq3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hKjcDN5QSbqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hT5omXzIyJG4hKt3xSt3hKtjyJt3hKt3hKt3hKt3hKt3hKt3hKtbySt3hcA4hKt3hK23xU4DjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKls1T4QCYqTlKt3hKtLyJt3hKt3hKPg1ctMmK4rRPt3hcKMUPrMWNk4hK1IjKt3hKt3hKt3hKD0TQXYjKt3hKtflVFsjUD4hKt3BTt3hKt3BbvAGbvkyJqrxJqrxJqrxJM4hKt3hKt3hKt.0Pt3hKt3hKt3hKtLCVpMFTt3hKt3hQt3hKt3hKt3hKtbyc5IFcxrxQt3hZT4FUs4RNqDjKtXmQSkGMjsRYt3hKlUmdhQmLqbjKt3hKt3hKt3hKt3hKt3xJRAEc4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xSt.0aMkzQYw1Th4hKt3hKt3hKt3hYpEUSsYCNqDjKtHjKt3hKt3hKt3hKt3hKt3hKt3hKt3xZQ0Ta1fyJA4hKlYEU4QCYqTlKt3hMzLGLBMyJG4hKt3hKt3hc3rRPt3BQscDLIY1Jk4hKlEDTt3BTH4hczEyJqrhbIYjKt3hKtLCRSkGMjsRYt3hKNgmdhQmLqbjKtX1ZL0Ta1fyJA4hKt3hKt3hKt3hKt3BSt3hKt3hKt3hKt.0TM0lM3rRPt3hcIMUdzP1Jk4hKlU0ZxAiPyrxQt3hKC4hKt3hKt3hKt.idt3hKt3hKt3hK2nmdhQmLqbjKtnGb241btjyJA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlsxJZ4hKt3hKt3hKt3hKt3xLk4hKt3RPt3hKt3hKtX1St3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRt3hKt3hKt3hKt3hKt3hKt3hKtDTPt3hKK4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY2MjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKy7zJxMjKt3BRt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtbyJqrxJqrxJqrBMqrxJqbjKt3hKt3hKt3hKt3hK4DjKt3hKt3hKt3hKt3hKt3hYqrxJqrhKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKO4hKt3RNq3hKt3hKt3hKt3hKt3hKt3hKt3xMO4hK1EjKt3hKtbiKWkSPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtX2Pt3hKt3hKt3hKt3xLq3hKt3hKt.EZ241btjyJA4hK1MiTAw1b4TlKtXmPt3hKt3hKt3hKtLyREgUL0rRPt3hK5QUdzP1Jk4hKP4hKt3hKvAGbvAWNqrxJqrxJqrxJqDjKt3hKt3hKt3hcqrxJqrxJqrxJqbjKt3hKt3hKt3hKA4hKt3hKt3hKt3hKJYGQpE2JG4hKt3BRpMFTt3hKt3hcRMUdzP1Jk4hKtXFd5IFcxrxQt3hKt3hKt3hKt3hKt3hatLETzkSYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKO4BTu0TRGkEaSIlKt3hKt3hKt3hKlQkTM0lM3rRPt3hPt3hKt3hKt3hKt3hKt3hKt3hKt3hKUIUSsYCNqDjKtXFZTkGMjsRYt3hK1PybvHzLqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xX4slQYMWVsg0YvDyXxkjQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BQhQiRVQjKt3hKlcWVzgVQA4hKt3hKlAGbvAGbvAGbv4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RRt3hKt3hKt3hKt.mLHMlTyrxQt3BQt3hKtXFbvAGbvYWXJcyZykSYt3hKDQidhQmLqbjKt3BVyEGVQ4hKt3hKnokQKYEQt3hKtX1JvPGZEEjKt3hKXc1bwgUTt3hKt3xMhYiRVQjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtPWTWgkbA4hKt3BTt.GbvAGbvAGbvoUMxQ1b0UjRt3hK1QlR2r1b4TlKt3xMrITYYE2JG4hKtAGbvAGbvAGbvAGbvAGbvojKt3hKt3hKt3hKt3hKt3hYTIUSsYCNqDjKtPzZTkGMjsRYt3hKHUidhQmPt3hKt3hYBwTPzTyJA4hKt3lKSAEc4TlKt3hYPYGQpE2JG4hKt3hKt3hYvAGbvAGRuMUdzP1Jk4hKtHUM5IFcxrxQt3hYq4TSsYCNqDjKt3hKt3hKt3hKt3BTt3hKt3hKt3hKt3FbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGZp4TSsYCNqDjKt3hKt3hKtAGbvAmRxUidhQmLqbjKt3RbN0Ta1fyJA4hKtD2T4QCYqTlKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3BbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGb1A2T4QCYqTlKt.UPt3hKt.GbvAGbncmSM0lM3rRPt3BVxMUdzP1Jk4hKtnjM5IFcxrxQt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hYvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbJYjM5IFcxrxQt3hKt3hKtXFbvAGbv4BcSkGMjsRYt3hKlYidhQmLqbjKt3BMN0Ta1fyJA4hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvIzLN0Ta1fyJA4hKE4hKt3havAGbvoTM1nmXzIyJG4hKlkiSM0lM3rRPt3xL0MUdzP1Jk4hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKt.GbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAma0MUdzP1Jk4hKlEjKt3hKvAGbvAmPE8TSsYCNqDjKt.0cSkGMjsRYt3hKXcidhQmLqbjKt3BRO0Ta1fyJA4hKtITcVYDQt3hKt3RNJkDTzD2JG4hKtrxSM0lM3rRPt3BRvvlKqUWNk4hKtH2R1njKt3hQt3hKv7TSsYCNqDjKtTyZNckQD4hKt3hKTcidhQmLqbjKtHlKt3hKlAGbvAGbtT2Px3hKtfkKt3Bc2nmXzIyJG4hKlwzSM0lM3rRPt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3havAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvIkKt3hKt3hK14RVw81Pt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+															"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hYR4hKt3hKt3hKtPjKt3hKt3hKt3hKJEjKt3hKt3hKt3haMAia0IyJG4hKX4zPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQ0ZMYkV5UjQgYlYTgkb2YjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtX2PD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKtXlLiISUO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK2ASZnkCTmE2Qzj2aS0VLOgia1ASNlE2QEUyT0QFN38jR0YjRqbiM1XCMSoTS431SxcTQzkCVzIFM2LjKt3hcOkCY0c0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4k1MHIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYSduMUaw7DMyLia4nGS4wjMogSMvj2SzLyLtkidLkGS1jFN0.SdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtb2St3hKlsBUUUUU1LjKt3xLOEGbvAWN2DWc4LyP1D0Yg8jKt3hYq3hKt3hKt3hKt3hKZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMUkQY8VUWElY1QkVwTkQHMUPWgUZUEiXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlMCVK4xczTlKt3hYWYWYEIVNG4hKlMSQ2bUPssRPt3hbn8lPxXGMk4hKt3hKt3hKt3hKt3hK1slRhMTaqDjKtDjKt3hKt3hKt3hcA4hKt3hKt3hKt3hKt3hKP4hKt3hKC4hKt3hKt3hKt3RNMEiPPIVNG4hKlIjKt3hKt3hKt3hKt3hKt3hKt3hKtTCTv3VcxrxQt3BVt3hKt3hKt3hKt3hKt3hKt3hKt3hKtbiKt3hKyrxPt3hKt3hKt3hKt3hKt3hKt3hK1shKt3xQt3hKt3hcCIFMo4hKt3hKt3hKt3hKXUUZ4P1Jk4hKt3hKt3hKt4hct3hKt3hKt3hKt3hKtPjKt3hKhsRYt3hKtPjKt3xLqbjKt3halojXC4hKt3hK2jSUHMFQt3hKt3hdCAmcMIVNG4hKtDWVMUiM3rRPt3RPt3hKt3FbvAGb0rxJqrxJqrxJqrhMt3hKt3hKt3hKt3jKt3hKt3hKt3hKlk1JmMTPt3hKt3lKt3hKt3hKt3hKlUCUokCYqTlKt.kTAQiRCMyJG4hKD4hKt3hKt3hKt3hKtsDRNQjKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtXVMTkVNjsRYt3hK1c1LJMzLqbjKt3xLyT1LP4hKt3hKt3TNG4DQt3hKt3hKt3hKt3hKt3hKtXFclMCTt3hKt3hKtsDRNQjKt3hKtDjKt3hKt3hKt3hK4MUS0XCNqDjKtPTamEGSlsRYt3hKt.kKt.ERt.0bwrxJqPGdtjyJA4hKXYCUokCYqTlKt3RLNAia0IyJG4hKlU2TMUiM3rRPt3hVRsDRiQjKt3hKtzjKt3hKt3hKt3hKZoUS0XCNqDjKt.0MTkVNjsRYt3hYUUkToMzLqbjKt.0Pt3hKt3hKt3hKvnmKt3hKt3hKt3hZQAia0IyJG4hK5AWSBQiK4rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK14hKt3hKt3hKt3haxAia0IyJG4hKtLyTMUiM3rRPt3hUUkTSNY1Jk4hKt3hKt3hKt3hKt3hKC4hKt3hKt3hKt3xJTkVNjsRYt3BTE4DUoMzLqbjKt3hKt3hKt3hKt3hKt8TUokCYqTlKt3RMSAia0IyJG4hKt3lYJI1PssRPt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKA4hKt3hKt3hKt3BSt3hKt3hKt3hKtPCUMUiM3rRPt3Ba4AUSNY1Jk4hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKtXFLKUmL3QSYt3hKDAUUCAkX4bjKtXVPTAiKD01JA4hKxAkaBIiczTlKtX2JqrxJG4hKt3hKt3lYJI1PssRPt3RPt3hKt3hKt3hKt3hKtX1JqrxJq3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hKNgCd1LmX4bjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RMSAia0IyJG4hKt3xSt3hKtjyJt3hKt3hKt3hKt3hKt3hKt3hKtbySt3hcA4hKt3hK23xU4DjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnVUokCYqTlKt3hKtLyJt3hKt3hKPgVSBQiK4rRPt3hKh8lPxXGMk4hK1IjKt3hKt3hKt3hKEwlRhMjKt3hKtflVrMiXD4hKt3BTt3hKt3BbvAGbvkyJqrxJqrxJqrxJ34hKt3hKt3hKtXFSt3hKt3hKt3hKtLyLkMCTt3hKt3hKt3hKt3hKt3hKtnVTv3VcxrxQt3hZTAEc34RNqDjKt.UQUkVNjsRYt3hKH8DLtUmLqbjKt3hKNACSD01JA4hKtX1TMMzczTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hSCYlc0XWQLAiXk4hKt3hKt3hKt3hYjkUS0XCNqDjKtHjKt3hKt3hKt3hKt3hKt3hKt3hKt3RYY0TM1fyJA4hKtTkUokCYqTlKt3hMuMUZCMyJG4hKt3hKt3hc3rRPt3BQscVbLY1Jk4hKlIDTt3BTH4BTyEyJqrhbIYjKt3hKtf0QUkVNjsRYt3hKwDELtUmLqbjKtXVYT0TM1fyJA4hKt3hKt3hKt3hKt3BSt3hKt3hKt3hKtnTXMUiM3rRPt3BTHUUZ4P1Jk4hKlUUURk1PyrxQt3hKC4hKt3hKt3hKt.idt3hKt3hKt3hKpQELtUmLqbjKtnGbMIDMtjyJA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlsxJZ4hKt3hKt3hKt3hKt3xLk4hKt3RPt3hKt3hKtX1St3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRt3hKt3hKt3hKt3hKt3hKt3hKtDTPt3hKK4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY2MjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKy7zJxMjKt3BRt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtbyJqrxJqrxJqrBMqrxJqbjKt3hKt3hKt3hKt3hK4DjKt3hKt3hKt3hKt3hKt3hYqrxJqrhKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKO4hKt3RNq3hKt3hKt3hKt3hKt3hKt3hKt3xMO4hK1EjKt3hKtbiKWkSPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtX2Pt3hKt3hKt3hKt3xLq3hKt3hKt.EZMIDMtjyJA4hKtnjaBIiczTlKtXmPt3hKt3hKt3hKtfiYJI1PssRPt3hY3YUZ4P1Jk4hKP4hKt3hKvAGbvAWNqrxJqrxJqrxJqDjKt3hKt3hKt3hcqrxJqrxJqrxJqbjKt3hKt3hKt3hKA4hKt3hKt3hKt3hKzMlbIIVNG4hKt3hakMCTt3hKt3BTQUUZ4P1Jk4hKtfjTv3VcxrxQt3hKt3hKt3hKt3hKt3xLwbGa1QSYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKNMjY1UicEwDLhUlKt3hKt3hKt3hKl4jVMUiM3rRPt3hPt3hKt3hKt3hKt3hKt3hKt3hKt3hKOoUS0XCNqDjKt3xYVkVNjsRYt3hK171ToMzLqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xX4slQYMWVsg0YvDyXxkjQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BQhk0LhQjKt3hKlcWVF4zQA4hKt3hKlAGbvAGbvAGbv4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RRt3hKt3hKt3hKt.2U0ozTyrxQt3BQt3hKtXFbvAGbv4RMT0jK2QSYt3hKxgELtUmLqbjKt3BVycVdQ4hKt3hKnoEayHFQt3hKtX1JvXjSGEjKt3hKXc1bmkWTt3hKt3xMhE1LhQjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtPWTWgkbA4hKt3BTt.GbvAGbvAGbvoUMxQ1b0UjRt3hKtfCUM4xczTlKt3hYNU0PPIVNG4hKtAGbvAGbvAGbvAGbvAGbvojKt3hKt3hKt3hKt3hKt3hYNoUS0XCNqDjKtnVZVkVNjsRYt3hK1kELtUmPt3hKt3hYgcTXB01JA4hKtLSL2wlczTlKt3hY5MlbIIVNG4hKt3hKt3hYvAGbvAmasUUZ4P1Jk4hKtTSVv3VcxrxQt3hYkYUS0XCNqDjKt3hKt3hKt3hKt3BTt3hKt3hKt3hKt3FbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGZjYUS0XCNqDjKt3hKt3hKtAGbvAmRToELtUmLqbjKt3xZV0TM1fyJA4hKl8VUokCYqTlKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3BbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbP8VUokCYqTlKt.UPt3hKt.GbvAGbnEmUMUiM3rRPt3xLvUUZ4P1Jk4hKtfmVv3VcxrxQt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hYvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbJQmVv3VcxrxQt3hKt3hKtXFbvAGbvYlbUkVNjsRYt3hKHEFLtUmLqbjKt3RdV0TM1fyJA4hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvIDdV0TM1fyJA4hKE4hKt3havAGbvoDZgAia0IyJG4hKlMiUMUiM3rRPt3BVzUUZ4P1Jk4hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKt.GbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGRzUUZ4P1Jk4hKlEjKt3hKvAGbvAmPqXUS0XCNqDjKtXWcUkVNjsRYt3hKtHFLtUmLqbjKt3hPW0TM1fyJA4hKtIzbrEDQt3hKt3RNrUjK0IVNG4hKtPyUMUiM3rRPt3BRqsjKyfGMk4hKtvTPMIiKt3hQt3hK0cUS0XCNqDjKtTyZL0VPD4hKt3hK2DFLtUmLqbjKtHlKt3hKlAGbvAGb1gTRtLjKtfkKt3hUhAia0IyJG4hKlYzUMUiM3rRPt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3havAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvIkKt3hKt3hKxkFYjsxPt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 														}
 ,
 														"snapshotlist" : 														{
@@ -24622,7 +20003,7 @@
 																		"version" : 1,
 																		"isbank" : 0,
 																		"isbase64" : 1,
-																		"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hKBAidhQmLqbjKt3hKt3hKt3hKt3hKt3hKt3haLQlMSYjY1ImdRMyJG4hK1QyJSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtT0azXEYlQjZgk1ZVkEcQcDRPcmUXoWUF4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq3hKt3RNC4hKt3hKt3hKt3hKt3hKtXGbvAmTO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK33lcvjiYwcTQ0j1RWQmdOgia1ASNX8jRhQSZCcjS58DNZ4lX4nWd4kmM4E2ZCQ2SEQGYDshXwHWV3jVVrkULOYCdzwzJt3hKtjyPt3hKy7jKt3hYq3hKt3RN4YCNjIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYyPt3hKy7DMyLia4nGS4wjMoMzQNo2SzLyLtkidLkGS1j1PG4jdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqXGVLYjM4AGbvw1SrkEaYsBUUUUU1LjKt3xLO4hKt3hKlMyYGcyT4wTdx8zJ58zXq3hKt3hKt3hKt3hKwAGbJshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtTTXmE0UY4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPUEahkVUxHVdqESXzEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKPUjX4nVc4TlKt3hYHYmdzD2JG4hKlgjPLMVN0rRPt3hXRMUPrMWNk4hKtflaBUVVwsxQt3hK0wTQXESMqDjKtDjKt3hKt3hKt3hcA4hKt3hKt3hKtPjKt3hKP4hKt3hKC4hKt3hKt3hKt3hRA01SzD2JG4hKlIjKt3hKt3hKt3xLio2TsUWNk4hKtH0c5IFcxrxQt3BVt3hKt3hKt3hKtfUQSkGMjsRYt3hKDQmdhQmLqbjKt3RQhQzZP4hKt3hK1MiT4QCYqTlKtXlcxIGQCMyJG4hKl4hKt3hKt3hKt3hYYMUdzP1Jk4hKt3hKt3hKt4hct3hKt3RSsYCNqDjKtPjKt3hKhsRYt3hKtPjKt3xLqbjKt3RaK0TaK4hKt3hK2jic2XEQt3hKt3hXwnmXz4hKt3hKHAWVxgUTt3hKt3hYZMUdzP1Jk4hKlY2T4QzPyrxQt3hKtHFQqAkKt3hKtvzPIMURD4hKt3hKt3hKt3hKx0DRt3hKt3hKPYSPA4hKt3hKt3hK1EiYt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3hKXcUVGQjKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKt3xMRkGMjsRYt3hK1EjTiIzLqbjKt3xLXo1XP4hKt3hKt3jQYcDQt3hKt3hKt3hKt3hKt3hKtX1XqMFTt3hKt3hKXcUVGQjKt3hKtDjKt3hKt3hKt3hKzrTSsYCNqDjKtPTaGASRlsRYt3hYAAkKt.ERtXGcwrxJqPUatjyJA4hKybiT4QCYqTlKt3hS0omXzIyJG4hKlAyRM0lM3rRPt3hVRw1MVQjKt3hKtzjKt3hKt3hKt3hKlIUSsYCNqDjKtXGNRkGMjsRYt3hYUslbvHzLqbjKt.0Pt3hKt3hKt3hKvnmKt3hKt3hKt3xM2omXzIyJG4hK5A2ctMmK4rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK14hKt3hKt3hKt3hKMAiXzIyJG4hKtjyRM0lM3rRPt3hUUgmUKY1Jk4hKt3hKt3hKt3hKt3hKC4hKt3hKt3hKtXlKSkGMjsRYt3BTEQFcvHzLqbjKt3hKt3hKt3hKt3hKHE0T4QCYqTlKt3hT5omXzIyJG4hKtj1REgUL0rRPt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKA4hKt3hKt3hKt3BSt3hKt3hKt3hKtrBSM0lM3rRPt3Ba4QiUKY1Jk4hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKtXFY5MUa0kSYt3hKl4lPkkUbqbjKtXFRvY2UwTyJA4hKhshTAw1b4TlKtX2JqrxJG4hKt3hKtj1REgUL0rRPt3RPt3hKt3hKt3hKt3hKtX1JqrxJq3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hKjcDN5QSbqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hT5omXzIyJG4hKt3xSt3hKtjyJt3hKt3hKt3hKt3hKt3hKt3hKtbySt3hcA4hKt3hK23xU4DjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKls1T4QCYqTlKt3hKtLyJt3hKt3hKPg1ctMmK4rRPt3hcKMUPrMWNk4hK1IjKt3hKt3hKt3hKD0TQXYjKt3hKtflVFsjUD4hKt3BTt3hKt3BbvAGbvkyJqrxJqrxJqrxJM4hKt3hKt3hKt.0Pt3hKt3hKt3hKtLCVpMFTt3hKt3hQt3hKt3hKt3hKtbyc5IFcxrxQt3hZT4FUs4RNqDjKtXmQSkGMjsRYt3hKlUmdhQmLqbjKt3hKt3hKt3hKt3hKt3xJRAEc4TlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xSt.0aMkzQYw1Th4hKt3hKt3hKt3hYpEUSsYCNqDjKtHjKt3hKt3hKt3hKt3hKt3hKt3hKt3xZQ0Ta1fyJA4hKlYEU4QCYqTlKt3hMzLGLBMyJG4hKt3hKt3hc3rRPt3BQscDLIY1Jk4hKlEDTt3BTH4hczEyJqrhbIYjKt3hKtLCRSkGMjsRYt3hKNgmdhQmLqbjKtX1ZL0Ta1fyJA4hKt3hKt3hKt3hKt3BSt3hKt3hKt3hKt.0TM0lM3rRPt3hcIMUdzP1Jk4hKlU0ZxAiPyrxQt3hKC4hKt3hKt3hKt.idt3hKt3hKt3hK2nmdhQmLqbjKtnGb241btjyJA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlsxJZ4hKt3hKt3hKt3hKt3xLk4hKt3RPt3hKt3hKtX1St3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRt3hKt3hKt3hKt3hKt3hKt3hKtDTPt3hKK4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY2MjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKy7zJxMjKt3BRt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtbyJqrxJqrxJqrBMqrxJqbjKt3hKt3hKt3hKt3hK4DjKt3hKt3hKt3hKt3hKt3hYqrxJqrhKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKO4hKt3RNq3hKt3hKt3hKt3hKt3hKt3hKt3xMO4hK1EjKt3hKtbiKWkSPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtX2Pt3hKt3hKt3hKt3xLq3hKt3hKt.EZ241btjyJA4hK1MiTAw1b4TlKtXmPt3hKt3hKt3hKtLyREgUL0rRPt3hK5QUdzP1Jk4hKP4hKt3hKvAGbvAWNqrxJqrxJqrxJqDjKt3hKt3hKt3hcqrxJqrxJqrxJqbjKt3hKt3hKt3hKA4hKt3hKt3hKt3hKJYGQpE2JG4hKt3BRpMFTt3hKt3hcRMUdzP1Jk4hKtXFd5IFcxrxQt3hKt3hKt3hKt3hKt3hatLETzkSYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKO4BTu0TRGkEaSIlKt3hKt3hKt3hKlQkTM0lM3rRPt3hPt3hKt3hKt3hKt3hKt3hKt3hKt3hKUIUSsYCNqDjKtXFZTkGMjsRYt3hK1PybvHzLqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xX4slQYMWVsg0YvDyXxkjQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BQhQiRVQjKt3hKlcWVzgVQA4hKt3hKlAGbvAGbvAGbv4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RRt3hKt3hKt3hKt.mLHMlTyrxQt3BQt3hKtXFbvAGbvYWXJcyZykSYt3hKDQidhQmLqbjKt3BVyEGVQ4hKt3hKnokQKYEQt3hKtX1JvPGZEEjKt3hKXc1bwgUTt3hKt3xMhYiRVQjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtPWTWgkbA4hKt3BTt.GbvAGbvAGbvoUMxQ1b0UjRt3hK1QlR2r1b4TlKt3xMrITYYE2JG4hKtAGbvAGbvAGbvAGbvAGbvojKt3hKt3hKt3hKt3hKt3hYTIUSsYCNqDjKtPzZTkGMjsRYt3hKHUidhQmPt3hKt3hYBwTPzTyJA4hKt3lKSAEc4TlKt3hYPYGQpE2JG4hKt3hKt3hYvAGbvAGRuMUdzP1Jk4hKtHUM5IFcxrxQt3hYq4TSsYCNqDjKt3hKt3hKt3hKt3BTt3hKt3hKt3hKt3FbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGZp4TSsYCNqDjKt3hKt3hKtAGbvAmRxUidhQmLqbjKt3RbN0Ta1fyJA4hKtD2T4QCYqTlKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3BbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGb1A2T4QCYqTlKt.UPt3hKt.GbvAGbncmSM0lM3rRPt3BVxMUdzP1Jk4hKtnjM5IFcxrxQt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hYvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbJYjM5IFcxrxQt3hKt3hKtXFbvAGbv4BcSkGMjsRYt3hKlYidhQmLqbjKt3BMN0Ta1fyJA4hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvIzLN0Ta1fyJA4hKE4hKt3havAGbvoTM1nmXzIyJG4hKlkiSM0lM3rRPt3xL0MUdzP1Jk4hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKt.GbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAma0MUdzP1Jk4hKlEjKt3hKvAGbvAmPE8TSsYCNqDjKt.0cSkGMjsRYt3hKXcidhQmLqbjKt3BRO0Ta1fyJA4hKtITcVYDQt3hKt3RNJkDTzD2JG4hKtrxSM0lM3rRPt3BRvvlKqUWNk4hKtH2R1njKt3hQt3hKv7TSsYCNqDjKtTyZNckQD4hKt3hKTcidhQmLqbjKtHlKt3hKlAGbvAGbtT2Px3hKtfkKt3Bc2nmXzIyJG4hKlwzSM0lM3rRPt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3havAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvIkKt3hKt3hK14RVw81Pt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
+																		"blob" : "6781.VMjLgPmF...OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9TCLy.iKV0zQicUPt3hKl4hKt3BTt3hKt3hKLoGVzMGQt3BSmklQIoGTtEjKt3BR1QEUIczXtvDTt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtHEVk4xQIAEa0nTPt3BQt3hKDYmKtPjKt3hKtbiPQ4hKD4hYR4hKt3hKt3hKtPjKt3hKt3hKt3hKJEjKt3hKt3hKt3haMAia0IyJG4hKX4zPSEUahcVTWMVdA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQ0ZMYkV5UjQgYlYTgkb2YjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xTvXEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtX2PD4hKt3BTt3hKtXlKt3hKtPjKt3hKTMjKt3hYt3hKt3RUA4hKt3xLO4hKtX1Jt3hKt3hKt3hK18jKt3hKq.0YwcDNC4hKtLySt3hKt3hKt3hKtXlLiISUO4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK2ASZnkCTmE2Qzj2aS0VLOgia1ASNlE2QEUyT0QFN38jR0YjRqbiM1XCMSoTS431SxcTQzkCVzIFM2LjKt3hcOkCY0c0Jt3hKtjyPt3hKy7jKt3hYq3hKt3RN4k1MHIySt3hKlshKt3hK4LjKt3xLO4hKtX1J5wTdLYSduMUaw7DMyLia4nGS4wjMogSMvj2SzLyLtkidLkGS1jFN0.SdOQyLy3VNt3hKtbyPt3hKt3hKt3hYqfESFkFNC4hKtb2St3hKlsBUUUUU1LjKt3xLOEGbvAWN2DWc4LyP1D0Yg8jKt3hYq3hKt3hKt3hKt3hKZwVVFshKt3hK2LjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RNC4hKtLySt3hKlshKt3hK4LjKt3xLO4hKtX1Jt3hKtjyPt3hKy7jKt3hYq3hKt3RNC4hKtLySt3hKlshKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKt3hK2fFctgSZPUzMkIUZDYWSt3hKt3hKt3hKt3hKtPjct3BQt3hKt3hKt3hKtLjK1Q0bEYTXxEjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlQEVxcmQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKMUkQY8VUWElY1QkVwTkQHMUPWgUZUEiXt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlMCVK4xczTlKt3hYWYWYEIVNG4hKlMSQ2bUPssRPt3hbn8lPxXGMk4hKt3hKt3hKt3hKt3hK1slRhMTaqDjKtDjKt3hKt3hKt3hcA4hKt3hKt3hKt3hKt3hKP4hKt3hKC4hKt3hKt3hKt3RNMEiPPIVNG4hKlIjKt3hKt3hKt3hKt3hKt3hKt3hKtTCTv3VcxrxQt3BVt3hKt3hKt3hKt3hKt3hKt3hKt3hKtbiKt3hKyrxPt3hKt3hKt3hKt3hKt3hKt3hK1shKt3xQt3hKt3hcCIFMo4hKt3hKt3hKt3hKXUUZ4P1Jk4hKt3hKt3hKt4hct3hKt3hKt3hKt3hKtPjKt3hKhsRYt3hKtPjKt3xLqbjKt3halojXC4hKt3hK2jSUHMFQt3hKt3hdCAmcMIVNG4hKtDWVMUiM3rRPt3RPt3hKt3FbvAGb0rxJqrxJqrxJqrhMt3hKt3hKt3hKt3jKt3hKt3hKt3hKlk1JmMTPt3hKt3lKt3hKt3hKt3hKlUCUokCYqTlKt.kTAQiRCMyJG4hKD4hKt3hKt3hKt3hKtsDRNQjKt3hKtDjKt3hKt3hKt3BTt3hKt3hKt3hKtXVMTkVNjsRYt3hK1c1LJMzLqbjKt3xLyT1LP4hKt3hKt3TNG4DQt3hKt3hKt3hKt3hKt3hKtXFclMCTt3hKt3hKtsDRNQjKt3hKtDjKt3hKt3hKt3hK4MUS0XCNqDjKtPTamEGSlsRYt3hKt.kKt.ERt.0bwrxJqPGdtjyJA4hKXYCUokCYqTlKt3RLNAia0IyJG4hKlU2TMUiM3rRPt3hVRsDRiQjKt3hKtzjKt3hKt3hKt3hKZoUS0XCNqDjKt.0MTkVNjsRYt3hYUUkToMzLqbjKt.0Pt3hKt3hKt3hKvnmKt3hKt3hKt3hZQAia0IyJG4hK5AWSBQiK4rRPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hK14hKt3hKt3hKt3haxAia0IyJG4hKtLyTMUiM3rRPt3hUUkTSNY1Jk4hKt3hKt3hKt3hKt3hKC4hKt3hKt3hKt3xJTkVNjsRYt3BTE4DUoMzLqbjKt3hKt3hKt3hKt3hKt8TUokCYqTlKt3RMSAia0IyJG4hKt3lYJI1PssRPt3RPt3hKt3hKt3hKP4hKt3hKt3hKt3BQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xPt3hKt3hKt3hKA4hKt3hKt3hKt3BSt3hKt3hKt3hKtPCUMUiM3rRPt3Ba4AUSNY1Jk4hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKtXFLKUmL3QSYt3hKDAUUCAkX4bjKtXVPTAiKD01JA4hKxAkaBIiczTlKtX2JqrxJG4hKt3hKt3lYJI1PssRPt3RPt3hKt3hKt3hKt3hKtX1JqrxJq3hKt3hKt.kKt3hKt3hKt3hKt3hKt3hKNgCd1LmX4bjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RMSAia0IyJG4hKt3xSt3hKtjyJt3hKt3hKt3hKt3hKt3hKt3hKtbySt3hcA4hKt3hK23xU4DjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtnVUokCYqTlKt3hKtLyJt3hKt3hKPgVSBQiK4rRPt3hKh8lPxXGMk4hK1IjKt3hKt3hKt3hKEwlRhMjKt3hKtflVrMiXD4hKt3BTt3hKt3BbvAGbvkyJqrxJqrxJqrxJ34hKt3hKt3hKtXFSt3hKt3hKt3hKtLyLkMCTt3hKt3hKt3hKt3hKt3hKtnVTv3VcxrxQt3hZTAEc34RNqDjKt.UQUkVNjsRYt3hKH8DLtUmLqbjKt3hKNACSD01JA4hKtX1TMMzczTlKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hSCYlc0XWQLAiXk4hKt3hKt3hKt3hYjkUS0XCNqDjKtHjKt3hKt3hKt3hKt3hKt3hKt3hKt3RYY0TM1fyJA4hKtTkUokCYqTlKt3hMuMUZCMyJG4hKt3hKt3hc3rRPt3BQscVbLY1Jk4hKlIDTt3BTH4BTyEyJqrhbIYjKt3hKtf0QUkVNjsRYt3hKwDELtUmLqbjKtXVYT0TM1fyJA4hKt3hKt3hKt3hKt3BSt3hKt3hKt3hKtnTXMUiM3rRPt3BTHUUZ4P1Jk4hKlUUURk1PyrxQt3hKC4hKt3hKt3hKt.idt3hKt3hKt3hKpQELtUmLqbjKtnGbMIDMtjyJA4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKlsxJZ4hKt3hKt3hKt3hKt3xLk4hKt3RPt3hKt3hKtX1St3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BRt3hKt3hKt3hKt3hKt3hKt3hKtDTPt3hKK4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hY2MjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKy7zJxMjKt3BRt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtbyJqrxJqrxJqrBMqrxJqbjKt3hKt3hKt3hKt3hK4DjKt3hKt3hKt3hKt3hKt3hYqrxJqrhKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKO4hKt3RNq3hKt3hKt3hKt3hKt3hKt3hKt3xMO4hK1EjKt3hKtbiKWkSPt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtX2Pt3hKt3hKt3hKt3xLq3hKt3hKt.EZMIDMtjyJA4hKtnjaBIiczTlKtXmPt3hKt3hKt3hKtfiYJI1PssRPt3hY3YUZ4P1Jk4hKP4hKt3hKvAGbvAWNqrxJqrxJqrxJqDjKt3hKt3hKt3hcqrxJqrxJqrxJqbjKt3hKt3hKt3hKA4hKt3hKt3hKt3hKzMlbIIVNG4hKt3hakMCTt3hKt3BTQUUZ4P1Jk4hKtfjTv3VcxrxQt3hKt3hKt3hKt3hKt3xLwbGa1QSYt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKNMjY1UicEwDLhUlKt3hKt3hKt3hKl4jVMUiM3rRPt3hPt3hKt3hKt3hKt3hKt3hKt3hKt3hKOoUS0XCNqDjKt3xYVkVNjsRYt3hK171ToMzLqbjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3xX4slQYMWVsg0YvDyXxkjQt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3BQhk0LhQjKt3hKlcWVF4zQA4hKt3hKlAGbvAGbvAGbv4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3RRt3hKt3hKt3hKt.2U0ozTyrxQt3BQt3hKtXFbvAGbv4RMT0jK2QSYt3hKxgELtUmLqbjKt3BVycVdQ4hKt3hKnoEayHFQt3hKtX1JvXjSGEjKt3hKXc1bmkWTt3hKt3xMhE1LhQjKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKtPWTWgkbA4hKt3BTt.GbvAGbvAGbvoUMxQ1b0UjRt3hKtfCUM4xczTlKt3hYNU0PPIVNG4hKtAGbvAGbvAGbvAGbvAGbvojKt3hKt3hKt3hKt3hKt3hYNoUS0XCNqDjKtnVZVkVNjsRYt3hK1kELtUmPt3hKt3hYgcTXB01JA4hKtLSL2wlczTlKt3hY5MlbIIVNG4hKt3hKt3hYvAGbvAmasUUZ4P1Jk4hKtTSVv3VcxrxQt3hYkYUS0XCNqDjKt3hKt3hKt3hKt3BTt3hKt3hKt3hKt3FbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGZjYUS0XCNqDjKt3hKt3hKtAGbvAmRToELtUmLqbjKt3xZV0TM1fyJA4hKl8VUokCYqTlKt3hKt3hKt3hKt3hKD4hKt3hKt3hKt3BbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbP8VUokCYqTlKt.UPt3hKt.GbvAGbnEmUMUiM3rRPt3xLvUUZ4P1Jk4hKtfmVv3VcxrxQt3hKt3hKt3hKt3hKtDjKt3hKt3hKt3hYvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbJQmVv3VcxrxQt3hKt3hKtXFbvAGbvYlbUkVNjsRYt3hKHEFLtUmLqbjKt3RdV0TM1fyJA4hKt3hKt3hKt3hKt.kKt3hKt3hKt3hKtAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvIDdV0TM1fyJA4hKE4hKt3havAGbvoDZgAia0IyJG4hKlMiUMUiM3rRPt3BVzUUZ4P1Jk4hKt3hKt3hKt3hKt3BQt3hKt3hKt3hKt.GbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGRzUUZ4P1Jk4hKlEjKt3hKvAGbvAmPqXUS0XCNqDjKtXWcUkVNjsRYt3hKtHFLtUmLqbjKt3hPW0TM1fyJA4hKtIzbrEDQt3hKt3RNrUjK0IVNG4hKtPyUMUiM3rRPt3BRqsjKyfGMk4hKtvTPMIiKt3hQt3hK0cUS0XCNqDjKtTyZL0VPD4hKt3hK2DFLtUmLqbjKtHlKt3hKlAGbvAGb1gTRtLjKtfkKt3hUhAia0IyJG4hKlYzUMUiM3rRPt3hKt3hKt3hKt3hKP4hKt3hKt3hKt3havAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvAGbvIkKt3hKt3hKxkFYjsxPt3hKt3hKt3hKt3FUUMTUDQEdqw1XmE0UYQTQFM1YAAkKAgDUjYWQwHVdAAkKAwjKtLlKt3hKt3hKt3hYRUUSTEETIckVwTjQisVTTgkdEYDOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO.."
 																	}
 ,
 																	"fileref" : 																	{
@@ -24648,13 +20029,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-12",
-													"linecount" : 2,
+													"linecount" : 8,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 464.5, 586.696288999999979, 44.0, 35.0 ],
-													"text" : "0.354331"
+													"patching_rect" : [ 464.5, 586.696288999999979, 18.0, 116.0 ],
+													"text" : "0.606299"
 												}
 
 											}
@@ -42026,7 +37407,7 @@
 					"patching_rect" : [ 1552.666748046875, 12.772735595703125, 100.0, 35.227272727272727 ],
 					"pic" : "Liscense.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 1236.4027099609375, 683.874003263818054, 100.0, 35.227272727272727 ]
+					"presentation_rect" : [ 1232.734130859375, 699.874003263818054, 100.0, 35.227272727272727 ]
 				}
 
 			}
@@ -42042,7 +37423,7 @@
 					"patching_rect" : [ 1447.0, 12.64690026640892, 100.0, 39.353099730458219 ],
 					"pic" : "cemi_logo_black.png",
 					"presentation" : 1,
-					"presentation_rect" : [ 1232.734130859375, 605.421028137207031, 164.0, 64.539083557951471 ]
+					"presentation_rect" : [ 1232.734130859375, 631.421028137207031, 164.0, 64.539083557951471 ]
 				}
 
 			}
@@ -44153,7 +39534,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 555.0, 276.0, 589.0, 445.0 ],
+						"rect" : [ 729.0, 87.0, 589.0, 445.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -44181,7 +39562,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-10",
@@ -45267,7 +40647,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 470.0, 261.0, 640.0, 480.0 ],
+										"rect" : [ 280.0, 87.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -45295,7 +40675,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-2",
@@ -50361,7 +45740,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-69",
@@ -58972,7 +54350,7 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-30",
+									"id" : "obj-91",
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -58985,13 +54363,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-33",
+									"id" : "obj-92",
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "multichannelsignal" ],
-									"patching_rect" : [ 113.5, 10.0, 800.0, 35.0 ],
+									"patching_rect" : [ 113.5, 10.0, 800.0, 20.0 ],
 									"text" : "mc.adc~ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64",
 									"varname" : "adc"
 								}
@@ -58999,12 +54377,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-34",
+									"id" : "obj-93",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "" ],
-									"patching_rect" : [ 113.5, 198.0, 180.0, 22.0 ],
+									"patching_rect" : [ 113.5, 198.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 64 48 0. @ramp 10",
 									"varname" : "inputMatrix"
 								}
@@ -59012,12 +54391,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-37",
+									"id" : "obj-94",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "" ],
-									"patching_rect" : [ 113.5, 240.0, 180.0, 22.0 ],
+									"patching_rect" : [ 113.5, 240.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 64 48 0. @ramp 10",
 									"varname" : "outputMatrix"
 								}
@@ -59025,12 +54405,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-38",
+									"id" : "obj-95",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "multichannelsignal", "" ],
-									"patching_rect" : [ 399.833252000000016, 168.0, 180.0, 22.0 ],
+									"patching_rect" : [ 399.833252000000016, 168.0, 100.0, 0.0 ],
 									"text" : "mcs.matrix~ 64 16 0. @ramp 10",
 									"varname" : "recordingMatrix"
 								}
@@ -59039,16 +54420,8 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-37", 0 ],
+									"destination" : [ "obj-94", 0 ],
 									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-34", 0 ],
-									"order" : 3,
-									"source" : [ "obj-12", 0 ]
 								}
 
 							}
@@ -59056,14 +54429,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-36", 0 ],
 									"order" : 2,
-									"source" : [ "obj-12", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
-									"order" : 0,
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -59078,21 +54443,37 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-34", 0 ],
+									"destination" : [ "obj-93", 0 ],
+									"order" : 3,
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-95", 0 ],
+									"order" : 0,
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-93", 0 ],
 									"source" : [ "obj-129", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-37", 0 ],
+									"destination" : [ "obj-94", 0 ],
 									"source" : [ "obj-134", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-38", 0 ],
+									"destination" : [ "obj-95", 0 ],
 									"source" : [ "obj-16", 0 ]
 								}
 
@@ -59143,60 +54524,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
-									"source" : [ "obj-33", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-37", 0 ],
-									"source" : [ "obj-34", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
+									"destination" : [ "obj-91", 0 ],
 									"source" : [ "obj-35", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"order" : 0,
-									"source" : [ "obj-37", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-40", 0 ],
-									"order" : 1,
-									"source" : [ "obj-37", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"order" : 0,
-									"source" : [ "obj-38", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-42", 1 ],
-									"order" : 1,
-									"source" : [ "obj-38", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-37", 0 ],
+									"destination" : [ "obj-94", 0 ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -59336,15 +54671,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
-									"source" : [ "obj-66", 0 ]
+									"destination" : [ "obj-35", 0 ],
+									"source" : [ "obj-66", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-35", 0 ],
-									"source" : [ "obj-66", 1 ]
+									"destination" : [ "obj-91", 0 ],
+									"source" : [ "obj-66", 0 ]
 								}
 
 							}
@@ -59373,6 +54708,52 @@
 								"patchline" : 								{
 									"destination" : [ "obj-45", 0 ],
 									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-92", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-94", 0 ],
+									"source" : [ "obj-93", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 0,
+									"source" : [ "obj-94", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-40", 0 ],
+									"order" : 1,
+									"source" : [ "obj-94", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"order" : 0,
+									"source" : [ "obj-95", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 1 ],
+									"order" : 1,
+									"source" : [ "obj-95", 0 ]
 								}
 
 							}
@@ -59473,7 +54854,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 173.0, 53.0, 1154.0, 921.0 ],
+						"rect" : [ 514.0, 60.0, 1154.0, 921.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -59501,7 +54882,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-31",
@@ -59550,12 +54930,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-26",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 809.0, 842.5, 200.183838000000037, 22.0 ],
-									"text" : "reverbRouting::mic_routing15 0."
+									"patching_rect" : [ 809.0, 842.5, 200.183838000000037, 35.0 ],
+									"text" : "reverbRouting::mic_routing0 0.92126"
 								}
 
 							}
@@ -61274,7 +56655,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 53.0, 100.0, 50.0, 22.0 ],
-													"text" : "1 15"
+													"text" : "0 0"
 												}
 
 											}
@@ -62432,7 +57813,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 860.0, 764.0, 128.0, 128.0 ],
+					"patching_rect" : [ 1024.0, 764.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 806.0, 284.64044189453125, 394.0, 106.0 ],
 					"proportion" : 0.5
@@ -62591,6 +57972,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-132", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-134", 0 ],
+					"source" : [ "obj-133", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-135", 0 ],
+					"source" : [ "obj-134", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
+					"source" : [ "obj-135", 0 ]
 				}
 
 			}
@@ -63053,6 +58455,8 @@
 			"obj-11" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
 			"obj-110::obj-12" : [ "mc.live.gain~[2]", "mc.live.gain~[1]", 0 ],
 			"obj-110::obj-19" : [ "mc.live.gain~[1]", "mc.live.gain~[1]", 0 ],
+			"obj-110::obj-53" : [ "mc.live.gain~[3]", "mc.live.gain~[1]", 0 ],
+			"obj-110::obj-57" : [ "amxd~", "amxd~", 0 ],
 			"obj-156::obj-104" : [ "live.text[256]", "live.text", 0 ],
 			"obj-156::obj-106" : [ "live.text[258]", "live.text", 0 ],
 			"obj-156::obj-10::obj-1" : [ "1[66]", "1", 0 ],
@@ -64733,6 +60137,19 @@
 				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Shephard Tones.amxd",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Shephard Tones",
+				"type" : "amxd",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Shephard Tones.amxd.maxsnap",
+				"bootpath" : "~/Documents/MEIT-Diffusion-System/MIET Diffusion System/data",
+				"patcherrelativepath" : "../data",
+				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{

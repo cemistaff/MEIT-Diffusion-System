@@ -1,0 +1,26 @@
+{
+	"filetype" : "C74Snapshot",
+	"version" : 2,
+	"minorversion" : 0,
+	"name" : "Shephard Tones.amxd",
+	"origin" : "Shephard Tones.amxd",
+	"type" : "amxd",
+	"subtype" : "Undefined",
+	"embed" : 0,
+	"snapshot" : 	{
+		"name" : "Shephard Tones.amxd",
+		"origname" : "C74:/packages/Max for Live/patchers/Max Instrument/Shephard Tones/Shephard Tones.amxd",
+		"valuedictionary" : 		{
+			"parameter_values" : 			{
+				"Dropoff" : 41.071999000000048,
+				"Pitch" : 46.999999999999993,
+				"interval" : 60.248001000000038,
+				"level" : -25.900262467191588,
+				"rate" : 7.519999999999996
+			}
+
+		}
+
+	}
+
+}
